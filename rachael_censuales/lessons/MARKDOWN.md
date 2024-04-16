@@ -10,7 +10,7 @@
 - "#": Intestazione di livello 1
 - "##": Intestazione di livello 2
 - "###": Intestazione di livello 3
-- "**": Grassetto
-- "*" : Corsivo
+- "\*\*": Grassetto
+- "\*" : Corsivo
 - "-": Elenco puntato
 - "1. 2. 3.": Elenco numerato
