@@ -1,0 +1,28 @@
+- `<html>`: Tag che incorpora l'intero documento.
+- `<head>`: Definisce la parte non grafica della pagina.
+- `<title>`: Titolo della pagina che apparirà nella scheda del browser.
+- `<body>`: Parte grafica della pagina.
+- `<h (numero)>`: Intestazione, minore il numero piu' grande la grandezza (min. 1 e max. 6).
+- `<p>`: paragrafo.
+- `<b>`: testo in grassetto.
+- `<i>`: testo italico.
+- `<u>`: testo sottolineato.
+- `<a href="">`: link che va in cosa c'è in href.
+- `<img src="">`: immagine da "src".
+- `<video src="">`: video da "src".
+- `<audio src="">`: audio da "src".
+- `<hr>`: linea orizzontale.
+- `<table>`: tabella.
+- - `<tr>`: riga della tabella.
+- - `<td>`: cella della tabella.
+- `<ol>`: lista ordinata. 
+- `<ul>`: lista non ordinata.
+- `<form>`: modulo.
+- - `<input>`: area di input per il modulo.
+- `<footer>`: footer della pagina (sezione piu' sotto).
+- `<header>`: header della pagina (sezione piu' sopra).
+- `<nav>`: definisce un set di link di navigazione.
+- `<section>`: sezione.
+- `<script src="">`: script da "src" (solitamente javascript, può essere inserito direttamente tra i tag il codice.)
+- `<style>`: definisce stile CSS.
+- `<div>`: contenitore.
