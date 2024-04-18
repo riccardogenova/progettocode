@@ -37,13 +37,17 @@
 - `git checkout nome-branch:` Passa a un branch esistente.
 - `git merge nome-branch:` Unisce un branch al branch corrente.
 - `git branch -m vecchio-nome nuovo-nome:` cambiare il nome di un branch in Git
+- `git checkout:` viene utilizzato per spostarsi tra i branch
+- - `git push nome-branch:` forzare quello che abbiamo in locale in remoto
+- `git branch -m nome-branch_nuovi:` rinominare un branch
+- `git branch -d nome branch:` cancellare branch
 
   ***
 
   ### _ANNULLARE_
 
-- `git checkout:` viene utilizzato per spostarsi tra i branch
 - `git checkout nomefile:` annullerà le modifiche non ancora committate nel file e lo ripristinerà allo stato dell'ultimo commit
+- - `git origin -- delete:` eliminare branch remoti da terminale
 
   ***
 
@@ -55,4 +59,6 @@
 
 ### _REMOTI_
 
-- `git remote:` Mostra l'elenco dei repository remoti collegati. \*`git remote add nome_remoto url_remoto:` Collega un repository remoto.
+- `git remote:` Mostra l'elenco dei repository remoti collegati.
+- `git remote add nome_remoto url_remoto:` Collega un repository remoto.
+- `git fetch origin:` per conoscere le ultime informazioni sullo stato del repository remoto senza fondere automaticamente le modifiche in locale
