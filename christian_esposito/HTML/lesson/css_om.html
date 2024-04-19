@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+          <div>Lezioni</div>
+          <ul>
+            <li>
+              <a href="./git.html"> Lezione Git</a>
+            </li>
+            <li>
+              <a href="./html.html"> Lezione HTML</a>
+            </li>
+            <li>
+              <a href="./markdown.html"> Lezione MARKDOWN</a>
+            </li>
+            <li>
+              <a href="./dom.html"> Lezione DOM</a>
+            </li>
+            <li>
+              <a href="./css.html"> Lezione CSS</a>
+            </li>
+          </ul>
+          <div>Helpers</div>
+  
+          <ul>
+            <li>
+              <a href="./helpers/git_command.html">Git command</a>
+            </li>
+            <li>
+              <a href="./helpers/git_flows.html">Git Flows</a>
+            </li>
+            <li>
+              <a href="./helpers/markdown.html">MarkDown</a>
+            </li>
+            <li>
+              <a href="./helpers/tag_html.html">Tag Html</a>
+            </li>
+            <li>
+              <a href="./helpers/css_sheet.html">CSS</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <h1>Cascading Style Sheets Object Model</h1>
+    <p> Non esiste un vero e proprio modello a oggetti per i CSS standardizzato universalmente come il DOM (Document
+        Object Model) per l&#39;HTML. Tuttavia, ci sono due concetti correlati che riguardano l&#39;accesso e la
+        manipolazione degli stili CSS usando JavaScript:</p>
+    <ol>
+        <li>
+            <h2 >Fogli di stile CSS (CSSOM)</h2>
+            <ul>
+                <li>Il CSSOM è un&#39;API (Application Programming Interface - Interfaccia di programmazione
+                    dell&#39;applicazione) che consente di accedere e modificare le regole CSS definite in un foglio di
+                    stile o incorporate nel documento HTML. Fornisce un modo programmatico per interagire con gli stili
+                    applicati agli elementi su una pagina web</li>
+                <li>
+                    <p>Ecco alcuni aspetti chiave del CSSOM</p>
+                    <ul>
+                        <li>
+                            <p>Accesso agli stili: Puoi utilizzare metodi come document.styleSheets e element.style per
+                                accedere rispettivamente ai fogli di stile e agli stili di singoli elementi.</p>
+                        </li>
+                        <li>
+                            <p>Modifica degli stili: Il CSSOM consente di modificare gli stili esistenti o aggiungerne
+                                di nuovi in modo dinamico utilizzando JavaScript.</p>
+                        </li>
+                        <li>
+                            <p>Funzionalità limitata: Sebbene il CSSOM offra l&#39;accesso agli stili, non fornisce lo
+                                stesso livello di capacità di manipolazione del DOM per gli elementi HTML. Non puoi
+                                direttamente aggiungere, rimuovere o riordinare le regole CSS utilizzando il CSSOM.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h2>Modello a oggetti tipizzato CSS (CSSOM-TR)</h2>
+            <ul>
+                <li>
+                    <p>Il modello a oggetti tipizzato CSS è una specifica più recente che si basa sul CSSOM introducendo
+                        una rappresentazione tipizzata dei valori CSS.</p>
+                </li>
+                <li>
+                    <p>Invece di lavorare con valori stringa per proprietà come &quot;color&quot; o
+                        &quot;font-size&quot;, il CSS Typed OM consente di interagire con questi valori come tipi di
+                        dati specifici (ad esempio, Color, UnitValue). Ciò consente una manipolazione più robusta e
+                        sicura dei tipi di stili CSS.</p>
+                </li>
+                <li>
+                    <p>Vantaggi:</p>
+                    <ul>
+                        <li>Migliorata leggibilità e manutenzione del codice.</li>
+                        <li>Riduzione degli errori dovuti a mancata corrispondenza dei tipi.</li>
+                        <li>Abilita funzionalità come completamento automatico e controllo dei tipi negli ambienti di
+                            sviluppo.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Supporto del browser:
+                        Il CSS Typed OM è una specifica relativamente nuova e il supporto del browser è ancora in
+                        evoluzione. Sebbene non tutti i principali browser lo supportino ancora completamente,
+                        l&#39;adozione sta aumentando. Puoi controllare caniuse.com per le informazioni di compatibilità
+                        più recenti.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
