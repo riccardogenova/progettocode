@@ -2,7 +2,9 @@ CSSOM (CSS Object Model) è una rappresentazione ad oggetti dei fogli di stile C
 
 Il CSSOM è utilizzato dai browser web per interpretare e applicare le regole di stile ai nodi HTML della pagina. Ogni regola CSS all'interno di un foglio di stile viene rappresentata come un oggetto nel CSSOM. Questi oggetti possono essere manipolati dinamicamente utilizzando JavaScript per modificare lo stile degli elementi HTML sulla pagina.
 
-Ad esempio, se hai un selettore CSS che definisce il colore del testo di tutti i paragrafi `<p>` in rosso:
+Ad esempio, se hai un selettore CSS che definisce il colore del testo di tutti i paragrafi
+
+`<p>` in rosso:
 
 ```css
 p {
