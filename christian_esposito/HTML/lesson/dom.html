@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>DOM Document Object Model</h1>
+    <p>rappresenta un&#39;interfaccia tra un documento web e un linguaggio di scripting come JavaScript.
+        Permette di accedere e modificare la struttura e il contenuto di una pagina HTML in modo dinamico.</p>
+    <h2>Struttura ad albero del DOM:</h2>
+    <p>Il DOM organizza gli elementi HTML in una struttura ad albero gerarchica, dove ogni elemento è un nodo. Il nodo
+        radice è l&#39;elemento <html> e i nodi successivi rappresentano elementi come <code>&lt;head&gt;</code> ,
+        <code>&lt;body&gt;</code>, <code>&lt;div&gt;</code>,<code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>, e così
+        via. Ogni nodo può avere attributi e proprietà che ne definiscono le caratteristiche.</p>
+    <h2>Accesso e manipolazione del DOM:</h2>
+    <p>Il DOM fornisce metodi e proprietà per accedere e modificare i nodi della struttura ad albero. </p>
+    <h3>Ad esempio, è possibile:</h3>
+    <ul>
+        <li>Selezionare elementi specifici utilizzando selettori CSS o XPath
+            Aggiungere, rimuovere o modificare elementi
+            Modificare il contenuto testuale degli elementi
+            Applicare stili CSS agli elementi
+            Gestire eventi come click del mouse o tastiera
+            Vantaggi del DOM:</li>
+    </ul>
+    <h2>L&#39;utilizzo del DOM offre diversi vantaggi:</h2>
+    <ul>
+        <li>
+            <p>Dinamicità: Permette di modificare il contenuto e l&#39;aspetto di una pagina web in modo dinamico, senza
+                ricaricare la pagina intera.</p>
+        </li>
+        <li>
+            <p>Interattività: Consente di creare interazioni con l&#39;utente, come moduli, menu a discesa e animazioni.
+            </p>
+        </li>
+        <li>
+            <p>Accessibilità: Facilita l&#39;accesso e la modifica del contenuto di una pagina web da parte di script e
+                applicazioni esterne.</p>
+        </li>
+    </ul>
+    <h2>Esempio di utilizzo del DOM:</h2>
+    <pre><code><span>&lt;<span>p</span> <span>id</span>=<span>"mioParagrafo"</span>&gt;</span>Questo è un paragrafo.<span>&lt;/<span>p</span>&gt;</span>
+
+<span>&lt;<span>script</span>&gt;</span><span>
+  <span>const</span> paragrafo = <span>document</span>.getElementById(<span>'mioParagrafo'</span>);
+
+  paragrafo.addEventListener(<span>'click'</span>, <span><span>function</span>(<span></span>) </span>{
+    <span>this</span>.style.color = <span>'red'</span>;
+  });
+</span><span>&lt;/<span>script</span>&gt;</span>
+</code></pre>
+    <ul>
+        <li>La prima riga definisce un paragrafo HTML con l&#39;ID mioParagrafo.</li>
+        <li>La seconda riga seleziona l&#39;elemento paragrafo utilizzando il metodo getElementById del DOM.</li>
+        <li>La terza riga aggiunge un evento click all&#39;elemento paragrafo.</li>
+        <li>La funzione callback definita gestisce l&#39;evento click. All&#39;interno della funzione, il colore del
+            testo del paragrafo viene impostato su rosso utilizzando la proprietà style.color.</li>
+    </ul>
+    <p>Questo è solo un semplice esempio di come il DOM può essere utilizzato per manipolare dinamicamente una pagina
+        web. Le sue potenzialità sono molto più ampie e permettono di creare esperienze web interattive e complesse.</p>
+
+</body>
+
+</html>
