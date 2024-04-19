@@ -18,3 +18,5 @@ Language", ovvero "Linguaggio a marcatori per ipertesti". Si può spiegare
 in maniera più semplice: HTML è un linguaggio che permette di impaginare e
 formattare pagine collegate fra di loro attraverso link - ovvero, i siti
 web.
+
+**CSS**, acronimo di _Cascading Style Sheets_, è un linguaggio utilizzato per definire la presentazione di una pagina web, incluso il layout, i colori e i tipi di carattere.
