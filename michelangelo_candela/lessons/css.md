@@ -1,5 +1,3 @@
-Ecco il testo tradotto in Markdown:
-
 ````markdown
 **CSS**, acronimo di Cascading Style Sheets, è un linguaggio di stile utilizzato per descrivere l'aspetto e la formattazione di un documento HTML. In altre parole, CSS è ciò che permette di rendere le pagine web visualmente accattivanti e ben strutturate.
 
