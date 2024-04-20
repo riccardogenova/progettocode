@@ -1,10 +1,8 @@
 .css_om{
     position: absolute;
-    width: 95vw;
-    height: 80vh;
+    width: 96vw;
     top: 6em;
     left: 2.6vw;
-    /* background-color: rgba(0, 0, 0, 0.132); */
     -webkit-box-shadow: 3px 9px 14px 3px rgba(0,0,0,0.4);
     -moz-box-shadow: 3px 9px 14px 3px rgba(0,0,0,0.4);
     box-shadow: 3px 9px 14px 3px rgba(0,0,0,0.4);
@@ -12,7 +10,6 @@
 
 p, h2, h3, h4 {
     font-size: 1.3em;
-    margin-left: 15px;
     margin-bottom: 8px;
     margin-top: 10px;
 }
@@ -24,7 +21,11 @@ h2, h3{
 
 
 h3, h4{
-    margin-left: 1px;
+    margin-left: 3px;
+}
+
+h4{
+    margin-left: 30px;
 }
 
 p{
@@ -41,8 +42,16 @@ li {
     list-style: none;
 }
 
+.modello > ol >li{
+    margin-left: -30px;
+}
+
 .vantaggi > ol > li{
     margin-top: 5px;
     margin-left: 60px;
     list-style:upper-roman;
+}
+
+.supporto{
+    margin-left: 25px;
 }
