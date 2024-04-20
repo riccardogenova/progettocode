@@ -16,6 +16,7 @@ a {
   width: 100%;
   z-index: 10;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .header ul {
@@ -125,140 +126,23 @@ a {
 }
 
 .overlay {
-  position: absolute;
-  top: 19em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
   width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 55%;
   z-index: 1;
   color: black;
   background: white;
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
-.overlay-css {
-  position: absolute;
-  top: 45em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  width: 90%;
+
+.center-items {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  color: black;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.overlay-html {
-  position: absolute;
-  top: 21em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  color: black;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.overlay-md {
-  position: absolute;
-  top: 57em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  color: black;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.overlay-git {
-  position: absolute;
-  top: 109em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  color: black;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.overlay-os {
-  position: absolute;
-  top: 42em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  color: black;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.overlay-vsc {
-  position: absolute;
-  top: 31em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  color: black;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-.overlay-vim {
-  position: absolute;
-  top: 32em;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 55%;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  color: black;
-  background: white;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .overlay h1,
