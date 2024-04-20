@@ -6,14 +6,6 @@
     --bg-img: url("../../img/924.png");
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-}
 
 body {
     /* background-image: var(--bg-img); */
