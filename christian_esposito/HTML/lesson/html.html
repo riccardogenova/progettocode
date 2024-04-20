@@ -3,54 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cos'è HTML</title>
+    <link rel="stylesheet" href="../css/lesson/html.css">
+    <link rel="stylesheet" href="../css/utils/navbar.css">
+    <link rel="stylesheet" href="../css/utils/reset_all.css">
+    <link rel="stylesheet" href="../css/utils/bg_img.css">
   </head>
   <body>
     <header>
-      <nav>
-        <div>Lezioni</div>
-        <ul>
-          <li>
-            <a href="./git.html"> Lezione Git</a>
-          </li>
-          <li>
-            <a href="./markdown.html"> Lezione MARKDOWN</a>
-          </li>
-          <li>
-            <a href="./dom.html"> Lezione DOM</a>
-          </li>
-          <li>
-            <a href="./css.html"> Lezione CSS</a>
-          </li>
-          <li>
-            <a href="./css_om.html"> Lezione CSS_OM</a>
-          </li>
 
-        </ul>
-        <div>Helpers</div>
+      <input type="checkbox" id="hamburger"/> 
+           <label class="menuicon" for="hamburger"> 
+                 <span></span> 
+           </label> 
+      <div id="bar"> 
+          <a id="logo" href="../index.html"></a> 
+               <!--/fine logo-->
+      </div>
+        <nav class="menu-visibility">
+          <ul>
+      
+            <li><a class="submenu" href="#">LEZIONI</a>
+              <ul>
+                <li>
+                  <a href="./git.html">Lezione GIT</a>
+                </li>
+                <li>
+                  <a href="./html.html"> Lezione HTML</a>
+                </li>
+                <li>
+                  <a href="./markdown.html"> Lezione MARKDOWN</a>
+                </li>
+                <li>
+                  <a href="./dom.html"> Lezione DOM</a>
+                </li>
+                <li>
+                  <a href="./css.html"> Lezione CSS</a>
+                </li>
+                <li>
+                  <a href="./css_om.html"> Lezione CSS_OM</a>
+                </li>
+              </ul>
+            </li>
+      
+            <li><a class="submenu" href="#"></a>HELPERS</a>
+              <ul>
+                <li>
+                  <a href="../helpers/git_command.html">Git command</a>
+                </li>
+                <li>
+                  <a href="../helpers/git_flows.html">Git Flows</a>
+                </li>
+                <li>
+                  <a href="../helpers/markdown.html">MarkDown</a>
+                </li>
+                <li>
+                  <a href="../helpers/tag_html.html">Tag Html</a>
+                </li>
+                <li>
+                  <a href="../helpers/css_sheet.html">CSS</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-        <ul>
-          <li>
-            <a href="./helpers/git_command.html">Git command</a>
-          </li>
-          <li>
-            <a href="./helpers/git_flows.html">Git Flows</a>
-          </li>
-          <li>
-            <a href="./helpers/markdown.html">MarkDown</a>
-          </li>
-          <li>
-            <a href="./helpers/tag_html.html">Tag Html</a>
-          </li>
-          <li>
-            <a href="./helpers/css_sheet.html">CSS</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-    <div>
-      <h3>HTML</h3>
+    <div class="inbox">
+      <h2>HTML</h3>
 
       <p>
         L'HTML, acronimo di HyperText Markup Language, è il linguaggio di markup
@@ -75,24 +95,23 @@
       </p>
 
       <p>
-        <ul>
+        <ol>
           <li>
-            "<! DOCTYPE html >"
-            <li>
-              dichiara il documento come pagina HTML
-            </li>
+            &lt;!DOCTYPE html&gt : dichiara il documento come pagina HTML
           </li>
-        </ul>
-        <!-- <p>
-        <! DOCTYPE html>
-        dichiara il documento come pagina HTML. L'elemento < html> è l'elemento
-        radice di una pagina web HTML. L'elemento < head> contiene metadati
-        sulla pagina, come il titolo definito da < title>. L'elemento < body>
-        contiene il contenuto principale della pagina web visualizzato nel
-        browser. Elementi come < h1>, < pre>, e < img> definiscono
-        rispettivamente titoli, paragrafi e immagini. Perché è importante
-        l'HTML?
-      </p> -->
+          <li>
+            &lt;html&gt &lt;html&gt  : è l'elemento radice di una pagina web HTML.
+          </li>
+          <li>
+            &lt;head&gt contiene metadati sulla pagina, come il titolo definito da &lt;title&gt.
+          </li>
+          <li>
+            &lt;body&gt contiene il contenuto principale della pagina web visualizzato nel browser.
+          </li>
+          <li>
+            &lt;h1&gt, &lt;pre&gt, e &lt;img&lt; definiscono rispettivamente titoli, paragrafi e immagini.
+          </li>
+        </ol>
 
       <p>
         È il fondamento del web: HTML è il linguaggio di base che consente di
