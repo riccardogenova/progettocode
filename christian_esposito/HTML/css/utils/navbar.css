@@ -1,7 +1,8 @@
 :root {
     --primary-color: #fff414;
-    --second-color: #ffb103;
-    --third-color:#1797f0;
+    --second-color:#004c7e;
+    --third-color: #ffb103;
+    /* --third-color:#1796f09f; */
     --bg-img-header: url("../../img/924_resize.png");
     --bg-img: url("../../img/924.png");
 }
@@ -233,7 +234,7 @@ nav ul li ul li a {
 
     .active {
         background-color: transparent;
-        color: var(--third-color);
+        color: var(--second-color);
     }
 
     .active-dropdown {
@@ -259,7 +260,8 @@ nav ul li ul li a {
 
     .submenu {
         padding-left: 0;
-        color: var(--second-color);
+        color: rgb(0, 21, 255);
+        font-weight:bolder;
     }
 
     nav ul li {

@@ -3,12 +3,13 @@
     --second-color: #ffb103;
     --third-color: #1796f0ce;
     --bg-img-header: url("../../img/924_resize.png");
-    --bg-img: url("../../img/924.png");
+    /* --bg-img: url("../../img/123.png"); */
+    --bg: url("../../img/123.png");
 }
 
 
 body {
-    /* background-image: var(--bg-img); */
+    background-image: var(--bg);
     background-color: #f2f4f5;
     background-size: cover;
     background-repeat: no-repeat, no-repeat;
@@ -22,7 +23,7 @@ body {
     height: 60vh;
     top: 8em;
     left: 5vw;
-    /* background-color: rgba(0, 0, 0, 0.132); */
+    background-color: rgba(211, 211, 211, 0.691);
     -webkit-box-shadow: 3px 9px 14px 3px rgba(0,0,0,0.4);
     -moz-box-shadow: 3px 9px 14px 3px rgba(0,0,0,0.4);
     box-shadow: 3px 9px 14px 3px rgba(0,0,0,0.4);
