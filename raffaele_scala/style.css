@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-size: 22px;
+}
+
+a {
+  color: black;
+}
+
+.header {
+  background-color: lightblue;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  /* position: fixed; */
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: lightblue;
+  z-index: 10;
+  position: relative;
+}
+
+.header ul a {
+  display: block;
+  padding: 20px;
+  border-right: 1px red;
+  text-decoration: none;
+}
+
+.header ul a:hover {
+  background-color: #181818;
+  color: lightblue;
+}
+
+.header .logo {
+  float: left;
+  font-size: 36px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  z-index: 10;
+}
+
+.header .menu-icon {
+  padding: 34px 26px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+  background-color: black;
+  display: block;
+  width: 18px;
+  height: 2px;
+  position: relative;
+  transition: background-color 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon::before,
+.header .menu-icon .nav-icon::after {
+  background-color: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: all 0.2s ease-out;
+  position: absolute;
+}
+.header .menu-icon .nav-icon::before {
+  top: 5px;
+}
+.header .menu-icon .nav-icon::after {
+  top: -5px;
+}
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 460px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.night-mode-checkbox {
+  display: none;
+}
+
+.blurred-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://cdn-st.evolcampus.com/ec109623/1/ficheros/clientes/109623/fondo-login-tmp/924.png);
+  background-size: cover;
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 19em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay-css {
+  position: absolute;
+  top: 45em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay-html {
+  position: absolute;
+  top: 21em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay-md {
+  position: absolute;
+  top: 57em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay-git {
+  position: absolute;
+  top: 109em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay-os {
+  position: absolute;
+  top: 42em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay-vsc {
+  position: absolute;
+  top: 31em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.overlay-vim {
+  position: absolute;
+  top: 32em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: black;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.overlay h1,
+.overlay p {
+  margin: 10px;
+}
+
+#presentazione::first-letter {
+  font-size: 250%;
+  font-weight: bold;
+  float: left;
+  margin-right: 5px;
+  line-height: 0.5;
+}
+
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 175%;
+}
+h3 {
+  font-size: 150%;
+}
