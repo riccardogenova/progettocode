@@ -8,14 +8,7 @@
 }
 
 
-body {
-    background-image: var(--bg);
-    background-color: #f2f4f5;
-    background-size: cover;
-    background-repeat: no-repeat, no-repeat;
-    background-attachment: scroll;
-    width: 100vw;
-}
+
 
 .git {
     position: absolute;
