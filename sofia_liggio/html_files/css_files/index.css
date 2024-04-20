@@ -1,0 +1,14 @@
+.coloriamo {
+  color: rgb(9, 126, 83);
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#paragrafi {
+  float: left;
+}

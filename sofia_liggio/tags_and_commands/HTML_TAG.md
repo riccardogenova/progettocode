@@ -66,8 +66,8 @@ Ecco alcuni altri comandi HTML che possono essere utili per definire la struttur
 
 ## Formattazione del testo:
 
-**< br >**: Crea un'interruzione di riga.
-**< hr >**: Crea un righello orizzontale.
+**< br >**: Crea un'interruzione di riga. Ottimo per inserire spazi.
+**< hr >**: Crea un righello orizzontale. Utile sotto il titolo.
 **< pre >**: Preserva la formattazione del testo, come spazi e interruzioni di riga.
 
 ## Meta-Informazioni:
