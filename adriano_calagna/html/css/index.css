@@ -1,0 +1,139 @@
+h1 {
+  color: rgb(7, 6, 6);
+}
+body {
+  background-image: url("https://www.edutech.it/media/k2/items/cache/fa55c8bad0e242eb7986dc1135b50adb_L.jpg");
+  background-size: cover;
+}
+a {
+  font-size: 30px;
+  text-decoration: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c4c8c5;
+  min-width: 23px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 450px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d38508;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Stili aggiuntivi per il corpo della pagina */
+body {
+  font-family: Arial, sans-serif;
+}
+.rosso {
+  color: red;
+}
+.dropbtn {
+  width: 128px;
+  height: 36px;
+  font-size: 24px;
+}
+.search-container {
+  display: flexbox;
+  justify-content: center;
+  margin-top: 400px;
+}
+
+.search-container form {
+  display: flex;
+}
+
+.search-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #be0202;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+header {
+  color: #6e0303;
+  padding: 10px;
+  text-align: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 400px;
+  position: sticky;
+  margin-left: auto;
+}
+.logo2 {
+  text-align: right;
+}
+#chi-siamo {
+  background-color: #f4f4f4; /* Colore di sfondo */
+  padding: 10px; /* Spaziatura interna */
+  border-radius: 30px; /* Bordo arrotondato */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra */
+  max-width: 140px;
+}
+#chi-siamo h2 {
+  color: #d20d0d; /* Colore del titolo */
+}
+#chi-siamo p {
+  font-size: 16px; /* Dimensione del testo */
+  line-height: 1.6; /* Altezza della riga */
+}
+#Contatti {
+  width: 663px;
+  background-color: #f4f4f4; /* Colore di sfondo */
+  padding: 10px; /* Spaziatura interna */
+  border-radius: 30px; /* Bordo arrotondato */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra */
+  max-width: 140px;
+}
+#Contatti h2 {
+  color: rgb(0, 0, 0);
+}
+.container {
+  display: flex; /* Utilizza un layout flessibile */
+}
+.left-section {
+  flex: 1;
+  padding: 20px;
+  width: 455px;
+}
+.right-section {
+  padding: 20px;
+  width: 5px;
+  margin-left: 242px;
+}
+.arrow-icon {
+  width: 56px;
+  float: right;
+}
+.container2 {
+  display: block;
+}
+.sidebar {
+  width: 200px;
+  background-color: #000000;
+}
+.ingrandisci {
+  font-size: 58px;
+  text-align: center;
+  color: #000000;
+}
