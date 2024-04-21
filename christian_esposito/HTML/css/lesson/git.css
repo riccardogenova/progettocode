@@ -3,7 +3,6 @@
     --second-color: #ffb103;
     --third-color: #1796f0ce;
     --bg-img-header: url("../../img/924_resize.png");
-    /* --bg-img: url("../../img/123.png"); */
     --bg: url("../../img/123.png");
 }
 
@@ -36,8 +35,6 @@
 p,h2, h3, h4 {
     font-size: 1.3em;
     margin-left: 15px;
-    /* width: 95%; */
-    /* font-size: 1.5em; */
 
 }
 
