@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.background {
+  position: relative;
+
+  background-color: #041529;
+  background-image: url(https://mediaandmore.co.uk/wp-content/uploads/2020/06/web-development-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: cover;
+  height: 100vh;
+  width: auto;
+}
+
+.text-right-center {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: right;
+  width: calc(100% - 200px);
+  padding-right: 200px;
+}
+
+h1 {
+  font-size: 60px;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 540;
+  background-color: rgba(41, 165, 196, 0.363);
+  text-shadow: #000000 -6px -4px 5px;
+  color: rgb(9, 193, 218);
+  border: black 1px solid;
+}
+
+.subtitle {
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  font-style: oblique;
+  padding-left: 100px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
