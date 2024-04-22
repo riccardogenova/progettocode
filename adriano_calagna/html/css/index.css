@@ -1,5 +1,6 @@
 h1 {
   color: rgb(7, 6, 6);
+  font-style: oblique;
 }
 body {
   background-image: url("https://www.edutech.it/media/k2/items/cache/fa55c8bad0e242eb7986dc1135b50adb_L.jpg");
@@ -114,7 +115,8 @@ header {
   width: 380px;
   background-color: #ffffff;
   border: none;
-  height: 70%;
+  height: 100%;
+  font-style: italic;
 }
 .ingrandisci {
   font-size: 58px;
@@ -135,4 +137,20 @@ header {
 }
 .link_esterno {
   color: #be0202;
+}
+.logo {
+  margin: auto;
+  width: 100px;
+  margin-left: 1100px;
+  transform: scale(1.6);
+}
+.presentazione {
+  margin-left: 960px;
+  font-weight: bolder;
+  color: black;
+}
+.aside_link {
+  color: #ff0505;
+  font-size: 34px;
+  text-align: center;
 }
