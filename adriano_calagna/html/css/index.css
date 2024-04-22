@@ -75,24 +75,6 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.logo {
-  width: 400px;
-  position: sticky;
-  margin-left: auto;
-}
-.logo2 {
-  text-align: right;
-}
-#chi-siamo {
-  background-color: #f4f4f4; /* Colore di sfondo */
-  padding: 10px; /* Spaziatura interna */
-  border-radius: 30px; /* Bordo arrotondato */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra */
-  max-width: 140px;
-}
-#chi-siamo h2 {
-  color: #d20d0d; /* Colore del titolo */
-}
 #chi-siamo p {
   font-size: 16px; /* Dimensione del testo */
   line-height: 1.6; /* Altezza della riga */
@@ -129,11 +111,28 @@ header {
   display: block;
 }
 .sidebar {
-  width: 200px;
-  background-color: #000000;
+  width: 380px;
+  background-color: #ffffff;
+  border: none;
+  height: 70%;
 }
 .ingrandisci {
   font-size: 58px;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
+}
+#my_image {
+  font-size: smaller;
+  margin-left: 1040px;
+  border: 1px solid transparent;
+}
+.solo-questa {
+  margin-left: 1005px;
+  font-size: 56px;
+}
+.sher_lock {
+  margin-left: 910px;
+}
+.link_esterno {
+  color: #be0202;
 }
