@@ -5,5 +5,9 @@ h1 {
 }
 
 body {
-  background: url(https://unsplash.com/it/foto/un-dipinto-astratto-con-i-colori-arancione-e-blu-0ZPSX_mQ3xI);
+  background-image: url(https://unsplash.com/it/foto/un-dipinto-astratto-con-i-colori-arancione-e-blu-0ZPSX_mQ3xI);
+}
+
+a:visited {
+  color: green;
 }
