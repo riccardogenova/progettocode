@@ -15,12 +15,13 @@ body {
   background-position: auto;
   margin: 0;
   padding: 0;
-  height: 120%;
+  height: 120vh;
   width: 100vw;
   overflow: hidden;
 }
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
@@ -85,7 +86,7 @@ h2 {
   border-style: solid;
   height: 30px;
   width: 230px;
-  background-color: rgba(0, 217, 255, 0.507);
+  background-color: rgba(34, 138, 170, 0.719);
   display: block;
   text-align: center;
 }
@@ -99,11 +100,18 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.918);
+
   text-shadow: #000000 2px -1px 2px;
   text-transform: uppercase;
 }
 
 .nobullet {
   list-style: none;
+}
+
+@media (max-width: 768px) {
+}
+.elemento {
+  width: 100%;
 }
