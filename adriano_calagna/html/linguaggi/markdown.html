@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
+    <link rel="stylesheet" href="../markdown.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, _initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <label for="menu">Link utili:</label>
+  <select id="menu" name="menu">
+    <option value="opzione1">nozioni base</option>
+    <option value="opzione2">da markdown ad html</option>
+    <option value="opzione3">Opzione 3</option>
+  </select>
   <body>
-    <h1>Markdown</h1>
+    <div class="carousel">
+      <div class="slides">
+        <img
+          src="https://www.venetoformazione.it/wp-content/uploads/2022/02/ottimizzare-immagini-display-retina.jpg"
+          alt="Descrizione immagine 1"
+        />
+        <img
+          src="https://i0.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?resize=1024%2C675&ssl=1"
+          alt=""
+        />
+        <img src="immagine3.jpg" alt="" />
+      </div>
+      <button class="prev" onclick="prevSlide()">Prev</button>
+      <button class="next" onclick="nextSlide()">Next</button>
+    </div>
+    <div class="slide">
+      <img
+        src="https://thumbs.dreamstime.com/b/superficie-praticante-il-surfing-dell-acqua-onda-di-oceano-mare-124362369.jpg"
+        alt="Descrizione immagine 3"
+      />
+      <img src="immagine4.jpg" alt="" />
+    </div>
+    <a
+      href="https://www.ionos.it/digitalguide/siti-web/programmazione-del-sito-web/markdown/"
+      class="primo-link"
+      >Vai alla pagina di destinazione</a
+    >
+    <a
+      href="https://products.aspose.app/words/it/conversion/html-to-markdown"
+      class="secondo-link"
+      >Vai alla pagina di destinazione</a
+    >
+    <h1>Cosa è il markdown</h1>
     <p>
       <b>Markdown</b> Markdown è un linguaggio di formattazione leggero
       utilizzato per scrivere testo semplice formattato. È comunemente usato per
@@ -28,5 +67,31 @@
       <br /><br />
       <li>###### Titolo per un in'testazione di sesto livello</li>
     </ol>
+    <script>
+      let slideIndex = 0;
+
+      function showSlide(index) {
+        const slides = document.querySelector(".slides");
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      function nextSlide() {
+        slideIndex += 1; // Aumenta l'indice di uno
+        const slides = document.querySelector(".slides");
+        if (slideIndex >= slides.children.length) {
+          slideIndex = 0;
+        }
+        showSlide(slideIndex);
+      }
+
+      function prevSlide() {
+        slideIndex -= 1; // Diminuisci l'indice di uno
+        const slides = document.querySelector(".slides");
+        if (slideIndex < 0) {
+          slideIndex = slides.children.length - 1;
+        }
+        showSlide(slideIndex);
+      }
+    </script>
   </body>
 </html>
