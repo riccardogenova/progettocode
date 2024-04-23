@@ -79,7 +79,7 @@ p {
   padding: 12px 24px;
   border: none;
   border-radius: 36px;
-  margin-left: 410px;
+  margin-left: 675px;
 }
 
 .button:hover {
@@ -230,7 +230,7 @@ p {
   font-size: 24px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-left: 100px;
+  margin-left: 675px;
 }
 
 .input-field {
@@ -244,7 +244,7 @@ p {
   border-radius: 30px;
   margin-top: 8px;
   margin-bottom: 16px;
-  margin-left: 100px;
+  margin-left: 675px;
 }
 
 .input-textarea {
@@ -258,6 +258,6 @@ p {
   border-radius: 38px;
   margin-top: 8px;
   margin-bottom: 16px;
-  margin-left: 100px;
+  margin-left: 675px;
   height: 100px;
 }

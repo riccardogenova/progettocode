@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    135deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  font-family: "Work Sans", sans-serif;
+  font-size: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding: 64px 0;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header-container {
+  display: flex;
+  margin-left: 0px;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin-right: 128px;
+  text-shadow: 2px 2px 4px #0000008f;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 24px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px #0000008f;
+  padding-left: 10px;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.section_descriptions,
+.section_sheets,
+.section-personalprojects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title_descriptions,
+.title_sheets,
+.title_personalprojects {
+  flex-basis: 50%;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.links_descriptions,
+.links_sheets,
+.links_personalprojects {
+  flex-basis: 50%;
+}
+
+.links_descriptions ul,
+.links_sheets ul,
+.links_personalprojects ul {
+  font-size: 18px;
+  padding: 0;
+}
+
+.links_descriptions ul li,
+.links_sheets ul li,
+.links_personalprojects ul li {
+  font-weight: 600;
+  padding: 8px;
+}
+
+.links_descriptions ul li a,
+.links_sheets ul li a,
+.links_personalprojects ul li a {
+  text-decoration: none;
+  color: purple;
+  font-weight: 600;
+}
+
+.links_sheets ul li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: 60px;
+}
+
+.links_sheets ul li i {
+  margin-left: 5px;
+}
+
+.title_sheets {
+  margin-right: 20px;
+}

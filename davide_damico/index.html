@@ -4,71 +4,133 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/82742da272.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <header>
-      <strong>Description Links:</strong>
-
-      <ul>
-        <li>
-          All you need to know about
-          <a href="./lesson16.04/html_files/git-in-html.html">Git</a>
-        </li>
-        <li>
-          All you need to know about
-          <a href="./lesson16.04/html_files/github-in-html.html">GitHub</a>
-        </li>
-        <li>
-          All you need to know about
-          <a href="./lesson16.04/html_files/markdown-in-html.html">Markdown</a>
-        </li>
-        <li>
-          All you need to know about
-          <a href="./lesson16.04/html_files/html-description-page.html">HTML</a>
-        </li>
-        <li>
-          All you need to know about
-          <a href="./online_lesson19.04/css-description-in-html.html">CSS</a>
-        </li>
-        <li>
-          All you need to know about
-          <a href="./online_lesson19.04/cssom-description-in-html.html"
-            >CSSOM</a
-          >
-        </li>
-        <li>
-          All you need to know about
-          <a href="./online_lesson19.04/dom-description-in-html.html">DOM</a>
-        </li>
-      </ul>
-
-      <strong>Sheet Links:</strong>
-      <ul>
-        <li>
-          All you need to know about
-          <a href="./helpers/helpers_in_html/css-sheet-html.html">CSS</a>
-        </li>
-        <li>
-          All you need to know about
-          <a href="./helpers/helpers_in_html/git-sheet-html.html">GIT</a>
-        </li>
-        <li>
-          All you need to know about
-          <a href="./helpers/helpers_in_html/html-tags-sheet-html.html"
-            >HTML TAGS</a
-          >
-        </li>
-      </ul>
-
-      <strong>My Personal Projects:</strong>
-      <ul>
-        <li>
-          My
-          <a href="./personal_stuff/html-final-model-page.html"
-            >HTML PortFolio Example Page</a
-          >
-        </li>
-      </ul>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">Davide D'Amico x Progetto Code</div>
+        <nav class="menu">
+          <ul>
+            <li><a href="#descriptions">Descriptions</a></li>
+            <li><a href="#sheets">Sheets</a></li>
+            <li><a href="#personalprojects">Personal Projects</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
+    <main>
+      <section class="section_descriptions">
+        <div class="title_descriptions" id="descriptions">
+          <strong>Description Links:</strong>
+        </div>
+
+        <div class="links_descriptions">
+          <ul>
+            <li>
+              All you need to know about
+              <a href="./lesson16.04/html_files/git-in-html.html"
+                ><i class="fa-brands fa-git-alt" style="font-size: 24px"></i
+              ></a>
+            </li>
+            <li>
+              All you need to know about
+              <a href="./lesson16.04/html_files/github-in-html.html"
+                ><i class="fa-brands fa-github" style="font-size: 20px"></i
+              ></a>
+            </li>
+            <li>
+              All you need to know about
+              <a href="./lesson16.04/html_files/markdown-in-html.html"
+                ><i class="fa-brands fa-markdown" style="font-size: 20px"></i
+              ></a>
+            </li>
+            <li>
+              All you need to know about
+              <a href="./lesson16.04/html_files/html-description-page.html"
+                ><i class="fa-brands fa-html5" style="font-size: 20px"></i
+              ></a>
+            </li>
+            <li>
+              All you need to know about
+              <a href="./online_lesson19.04/css-description-in-html.html"
+                ><i class="fa-brands fa-css3-alt" style="font-size: 20px"></i
+              ></a>
+            </li>
+            <li>
+              All you need to know about
+              <a href="./online_lesson19.04/cssom-description-in-html.html"
+                >CSSOM</a
+              >
+            </li>
+            <li>
+              All you need to know about
+              <a href="./online_lesson19.04/dom-description-in-html.html"
+                >DOM</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section_sheets">
+        <div class="title_sheets" id="sheets">
+          <strong>Sheet Links:</strong>
+        </div>
+
+        <div class="links_sheets">
+          <ul>
+            <li>
+              All you need to know about
+              <a href="./helpers/helpers_in_html/css-sheet-html.html"
+                ><i class="fa-brands fa-css3-alt" style="font-size: 20px"></i
+              ></a>
+            </li>
+            <li>
+              All you need to know about
+              <a href="./helpers/helpers_in_html/git-sheet-html.html"
+                ><i class="fa-brands fa-git-alt" style="font-size: 24px"></i
+              ></a>
+            </li>
+            <li>
+              All you need to know about
+              <a href="./helpers/helpers_in_html/html-tags-sheet-html.html"
+                ><i class="fa-brands fa-html5" style="font-size: 20px"></i
+                ><i class="fa-solid fa-code" style="font-size: 20px"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section_personalprojects">
+        <div class="title_personalprojects" id="personalprojects">
+          <strong>My Personal Projects:</strong>
+        </div>
+
+        <div class="links_personalprojects">
+          <ul>
+            <li>
+              My
+              <a href="./personal_stuff/html-final-model-page.html"
+                >HTML PortFolio Example Page</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
