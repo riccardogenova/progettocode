@@ -13,7 +13,9 @@
   Nuovo ragazzo (Marco), solito daily dove spieghiamo cosa abbiamo fatto , le attività bloccanti etc. Sistemazione dei file , rinominazioni cartelle e file
 
 - **19.04**
-  Solita daily e ci ha lasciato in gruppi dicendo di fare uno sheet che spiega CSS
+  Solita daily e ci ha lasciato in gruppi dicendo di fare un file MD che spiega CSS , DOM , CSSOM e poi fare la loro versione HTML. Fare un file CSS SHEET
+
+- **24.04**
 
 # Descrizione day by day , di quello che facciamo durante le lezioni in presenza
 
@@ -22,3 +24,5 @@
 
 - **18.04**
   Lezione non fatta
+
+- **23.04**
