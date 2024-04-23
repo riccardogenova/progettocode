@@ -41,3 +41,21 @@
 3.  **Flexbox**: Flexbox è un modulo CSS che offre un modo flessibile per organizzare gli elementi all'interno di un contenitore, consentendo di creare layout complessi e reattivi con facilità. Flexbox è particolarmente utile per la creazione di layout a una dimensione, come barre di navigazione, colonne e griglie.
 4.  **Grid**: CSS Grid Layout è un modulo CSS avanzato che consente di creare layout a più dimensioni, definendo righe e colonne per posizionare e allineare gli elementi nella pagina. CSS Grid offre un controllo preciso sul layout della pagina e può essere utilizzato per creare layout complessi e reattivi.
 5.  **Immagini e media flessibili**: Le immagini e altri media possono essere rese responsive utilizzando regole CSS appropriate, come max-width: 100% per impedire il superamento del bordo del contenitore e height: auto per mantenere le proporzioni originali.
+
+## Classi e ID
+
+Classi:
+
+Una classe in CSS è un selettore utilizzato per identificare uno o più elementi HTML e applicare loro uno o più stili CSS.
+
+- Le classi vengono definite utilizzando l'attributo class negli elementi HTML. Più elementi possono condividere la stessa classe.
+- Per applicare uno stile a una classe, utilizziamo un selettore CSS preceduto da un punto (.), seguito dal nome della classe. Ad esempio, .mio-classe { ... }.
+
+- Le classi possono essere riutilizzate in più elementi HTML. Ad esempio, class="mio-classe" può essere applicato a più elementi nella stessa pagina HTML.
+
+- ID: Un ID in CSS è simile a una classe, ma deve essere univoco all'interno del documento HTML. Cioè, un ID può essere assegnato a un solo elemento HTML.
+
+- Gli ID vengono definiti utilizzando l'attributo id negli elementi HTML. Un ID può essere utilizzato solo una volta nel documento HTML.
+
+- Per applicare uno stile a un ID, utilizziamo un selettore CSS preceduto da un cancelletto (#), seguito dal nome dell'ID. Ad esempio, #mio-id { ... }.
+- Gli ID sono spesso utilizzati per selezionare specifici elementi HTML che devono avere stili univoci o comportamenti specifici.
