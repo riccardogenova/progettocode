@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSOM: Introduzione alla Manipolazione degli Stili con JavaScript</title>
+</head>
+<body>
+
+<h2>Introduzione</h2>
+
+<p>CSSOM, acronimo di "CSS Object Model", è una rappresentazione in JavaScript dei fogli di stile (CSS) di una pagina web. Simile al DOM (Document Object Model) che rappresenta la struttura HTML di una pagina, il CSSOM rappresenta i CSS. Consente agli sviluppatori web di manipolare dinamicamente gli stili di un documento HTML utilizzando JavaScript.</p>
+
+<h2>Struttura del CSSOM</h2>
+
+<p>Il CSSOM è una struttura ad albero, simile al DOM. Ogni nodo nell'albero rappresenta un elemento CSS come una regola CSS o una dichiarazione CSS all'interno di una regola. La radice dell'albero è rappresentata dall'oggetto <code>CSSStyleSheet</code>, che contiene tutte le regole CSS definite per il documento.</p>
+
+<h3>CSSStyleSheet</h3>
+
+<p>L'oggetto <code>CSSStyleSheet</code> rappresenta un foglio di stile CSS e contiene una lista di regole CSS.</p>
+
+<h3>CSSRule</h3>
+
+<p>Le regole CSS sono rappresentate dall'interfaccia <code>CSSRule</code>. Ci sono diversi tipi di regole, tra cui:</p>
+
+<ul>
+    <li><code>CSSStyleRule</code>: rappresenta una regola CSS standard con un selettore e un blocco di dichiarazioni.</li>
+    <li><code>CSSMediaRule</code>: rappresenta una regola CSS <code>@media</code>.</li>
+    <li><code>CSSKeyframesRule</code>: rappresenta una regola CSS <code>@keyframes</code> per le animazioni.</li>
+    <li>E altri.</li>
+</ul>
+
+<h3>CSSStyleRule</h3>
+
+<p>Le regole di stile CSS sono spesso rappresentate come oggetti <code>CSSStyleRule</code>. Ogni regola contiene un selettore CSS e un insieme di dichiarazioni CSS.</p>
+
+<h3>CSSStyleDeclaration</h3>
+
+<p>Le dichiarazioni CSS all'interno di una regola sono rappresentate come oggetti <code>CSSStyleDeclaration</code>. Ogni dichiarazione ha una proprietà e un valore, ad esempio <code>property: value</code>.</p>
+
+<h2>Manipolazione del CSSOM con JavaScript</h2>
+
+<p>Grazie al CSSOM, è possibile modificare dinamicamente gli stili di un documento HTML utilizzando JavaScript. Ecco alcuni esempi di operazioni comuni:</p>
+
+<h3>Aggiunta di una Nuova Regola CSS</h3>
+
+<pre><code>
+
+const styleSheet = document.styleSheets[0];
+
+styleSheet.insertRule("body { background-color: lightblue; }", 0);
+
+</code></pre>
+
+<h3>Modifica di una Proprietà CSS Esistente</h3>
+
+<pre><code>
+
+const rule = styleSheet.cssRules[0];
+
+
+rule.style.backgroundColor = "lightgreen";
+
+</code></pre>
+
+<h3>Rimozione di una Regola CSS</h3>
+
+<pre><code>
+
+styleSheet.deleteRule(0);
+
+</code></pre>
+
+<h2>Conclusioni</h2>
+
+<p>Il CSSOM è una potente API che consente agli sviluppatori di manipolare dinamicamente gli stili di una pagina web utilizzando JavaScript. Con esso, è possibile aggiungere, modificare o rimuovere regole CSS, consentendo un maggiore controllo sull'aspetto e il comportamento dei siti web dinamici. Utilizzando il CSSOM in combinazione con il DOM, è possibile creare esperienze utente altamente interattive e personalizzate.</p>
+
+</body>
+</html>
