@@ -1,11 +1,19 @@
 .pers {
+  color: blue;
+  font-family: Arial;
+  text-align: center;
+  font-size: 80px;
+}
+.orangepers {
   color: chocolate;
   font-family: Arial;
   text-align: center;
   font-size: 80px;
 }
 p,
-ul {
+ul,
+h2,
+ol {
   font-weight: bold;
 }
 img {
