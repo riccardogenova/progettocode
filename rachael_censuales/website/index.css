@@ -1,44 +1,83 @@
-body, html { font-family: Arial, Helvetica, sans-serif;
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(62, 240, 157, 0.123);
 }
 
-
+.body {
+  height: 100vh;
+  width: auto;
+}
+.container {
+  margin-bottom: 40px;
+}
 .nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(0, 140, 255);
-    height: 70px;
-    border: black 2px solid;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(40, 218, 173);
+  height: 100px;
+  width: auto;
 }
 
-.logo { 
-    display: flex;
-    align-items: center;
-    padding: 20px;
- text-transform: uppercase;
-    font-style: inherit;
-    font-weight: 600;
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  /* border: black 1px solid;
+  border-radius: 50px; */
+  color: rgb(0, 0, 0);
 }
-.nav-content {
-    display: flex;
-    align-items: center;
-    
-}
-.nav-content a { 
- 
-    font-size: medium;
- 
-    margin-right: 50px;
-    padding-left: 50px;
-    gap: 40px;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+  font-size: 19px;
 }
 
-.button { 
-
+.menu a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
-.button:hover { 
-    color: black;
+.menu button {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 40px;
+  background-color: rgba(0, 0, 0, 0.274);
+  text-decoration: none;
+  font-size: 19px;
+  margin-inline-end: -10px;
+}
+
+.a:hover {
+  color: rgb(176, 255, 235);
+  text-shadow: black -1px -2px 1px;
+}
+
+.sign-in:hover {
+  background-color: aquamarine;
+}
+.title {
+  font-size: 80px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.856);
+  text-decoration: underline;
+  font-weight: 200;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: rgb(0, 255, 200) -4px 5px 5px;
+  margin: 40px;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 300px;
 }
