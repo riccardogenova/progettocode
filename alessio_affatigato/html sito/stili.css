@@ -1,0 +1,13 @@
+.pers {
+  color: chocolate;
+  font-family: Arial;
+  text-align: center;
+  font-size: 80px;
+}
+p,
+ul {
+  font-weight: bold;
+}
+img {
+  float: right;
+}
