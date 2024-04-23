@@ -26,3 +26,4 @@
   Lezione non fatta
 
 - **23.04**
+  Solito daily , spiegazione di Merge Commit , Squash e Rebase.
