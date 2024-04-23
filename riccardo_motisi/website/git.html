@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git</title>
+  </head>
+  <body>
+    <h1>Git</h1>
+    <ol>
+      <li>
+        <strong>Cos'è Git?</strong>
+        <ul>
+          <li>
+            <p>
+              Git è un sistema di controllo versione distribuito che traccia le
+              modifiche al codice sorgente durante lo sviluppo del software.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Come funziona?</strong>
+        <ul>
+          <li>
+            <p>
+              Git memorizza una serie di snapshot o copie del tuo progetto nel
+              tempo, l’azione di registrare tale snapshot nella storia del
+              repository (archivio digitale) insieme ad un messaggio descrittivo
+              delle modifiche apportate viene detto commit. Ogni volta che fai
+              una modifica al codice, puoi registrare quei cambiamenti per
+              tenerli tracciati.
+            </p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Principali concetti di Git:</strong>
+        <ul>
+          <li>
+            <p>
+              Repository: una struttura di dati che archivia file e documenti
+              tenendo traccia delle versioni dei file nel tempo facilitando il
+              lavoro collaborativo.
+            </p>
+          </li>
+          <li>
+            <p>
+              Branch: Una "diramazione" dal codice principale che permette di
+              lavorare su nuove funzionalità o correzioni di bug senza
+              influenzare il codice principale.
+            </p>
+          </li>
+          <li>
+            <p>
+              Commit: Una singola revisione del codice sorgente (la base su cui
+              viene costruito un software), che rappresenta uno stato del tuo
+              progetto in un determinato momento.
+            </p>
+          </li>
+          <li>
+            <p>
+              Merge: Il processo di combinare i cambiamenti da un branch
+              all'altro.
+            </p>
+          </li>
+          <li>
+            Pull/Push: Prendere i cambiamenti da un repository remoto (pull) o
+            inviare i tuoi cambiamenti ad esso (push).
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <h3>I comandi di git in sintesi:</h3>
+    <ul>
+      <li>
+        <p>
+          <strong><code>git init</code></strong
+          >: Inizializza un nuovo repository Git nella directory corrente.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git clone [url]</code></strong
+          >: Clona un repository esistente nella directory corrente.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git add [file]</code></strong
+          >: Aggiunge un file alla staging area per il successivo commit.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git commit -m "[messaggio]"</code></strong
+          >: Crea un nuovo commit con le modifiche nella staging area,
+          associando un messaggio descrittivo.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git status</code></strong
+          >: Mostra lo stato attuale del repository, inclusi i file modificati,
+          aggiunti o eliminati.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git push</code></strong
+          >: Carica i commit locali sul repository remoto.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git pull</code></strong
+          >: Scarica i cambiamenti dal repository remoto e li applica al
+          repository locale.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git branch [nome]</code></strong
+          >: Crea un nuovo branch con il nome specificato.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git checkout [branch/nome_file]</code></strong
+          >: Cambia il branch corrente o ripristina un file a una versione
+          precedente.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong><code>git merge [branch]</code></strong
+          >: Unisce un branch specificato con il branch corrente.
+        </p>
+      </li>
+      <p>
+        <li>
+          <strong><code>git log</code></strong
+          >: Visualizza la cronologia dei commit.
+        </li>
+      </p>
+      <li>
+        <p>
+          <strong><code>git remote add [nome] [url]</code></strong
+          >: Aggiunge un repository remoto con un nome specificato.
+        </p>
+      </li>
+    </ul>
+
+    <a href="../index.html">HOME</a>
+  </body>
+</html>

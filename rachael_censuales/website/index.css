@@ -1,0 +1,44 @@
+body, html { font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 140, 255);
+    height: 70px;
+    border: black 2px solid;
+}
+
+.logo { 
+    display: flex;
+    align-items: center;
+    padding: 20px;
+ text-transform: uppercase;
+    font-style: inherit;
+    font-weight: 600;
+}
+.nav-content {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-content a { 
+ 
+    font-size: medium;
+ 
+    margin-right: 50px;
+    padding-left: 50px;
+    gap: 40px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.button { 
+
+}
+.button:hover { 
+    color: black;
+}

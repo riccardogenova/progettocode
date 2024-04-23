@@ -113,3 +113,5 @@
 16. **Accessibility**: Accessibility in HTML refers to the practice of making web content accessible to people with disabilities, ensuring that they can perceive, understand, navigate, and interact with the content effectively. This involves using semantic HTML, providing alternative text for images, ensuring keyboard navigation, etc.
 
 17. **Multimedia**: Multimedia in HTML refers to the integration of various types of media, such as images, audio, video, and interactive content, into web pages using appropriate HTML elements like `<img>`, `<audio>`, `<video>`, `<canvas>`, etc.
+
+### CSS Terms

@@ -36,7 +36,7 @@ href="https://www.esempio.com": Questo è l'attributo "href" che specifica l'URL
 
 ## Forme:
 
-**< form >**: Definisce un modulo.
+**< form >**: Definisce un modulo. ES: <form action="...">
 **< input >**: Definisce un campo di input. <input type="text" name="nome" id="campo-nome">
 type="text": Questo attributo specifica che l'elemento di input sarà un campo di testo, che permette agli utenti di inserire del testo.
 name="nome": Questo attributo assegna un nome al campo di input. Questo nome può essere utilizzato per identificare il campo quando viene inviato un modulo o utilizzato da JavaScript.
@@ -50,9 +50,20 @@ Puoi modificare il valore dell'attributo type per creare diversi tipi di campi d
 - type="checkbox": Casella di controllo per l'opzione di selezione multipla.
 - type="radio": Pulsante di opzione per l'opzione di selezione singola.
 - type="file": Campo per il caricamento di file.
+- **ESEMPIO**: <input type="text" placeholder="username"> Il placeholder serve a far capire cosa scrivere in quel riquadro.
+- **ESEMPIO**: <label>
+  Username:
+  <input type="text" placeholder="username">
+  </label>
+  OPPURE POSSIAMO USARE FOR E ID:
+  <label for="username">
+  Username:
+  </label>
 
-  **< textarea >**: Definisce un'area di testo multi-riga.
-  **< button >**: Definisce un pulsante di invio.
+<input id="username" type="text" placeholder="username">
+
+**< textarea >**: Definisce un'area di testo multi-riga.
+**< button >**: Definisce un pulsante di invio.
 
 ## Altri:
 
@@ -66,8 +77,8 @@ Ecco alcuni altri comandi HTML che possono essere utili per definire la struttur
 
 ## Formattazione del testo:
 
-**< br >**: Crea un'interruzione di riga.
-**< hr >**: Crea un righello orizzontale.
+**< br >**: Crea un'interruzione di riga. Ottimo per inserire spazi.
+**< hr >**: Crea un righello orizzontale. Utile sotto il titolo.
 **< pre >**: Preserva la formattazione del testo, come spazi e interruzioni di riga.
 
 ## Meta-Informazioni:
@@ -101,3 +112,4 @@ Ecco alcuni altri comandi HTML che possono essere utili per definire la struttur
 **id**: Identifica un elemento HTML in modo univoco all'interno della pagina.
 **class**: Assegna una o più classi CSS a un elemento per applicare stili o identificare gruppi di elementi.
 **style**: Specifica gli stili CSS inline per un elemento specifico.
+**border="..."**: per creare bordi all'interno di una tabella. Va inserito come attributoall'interno del tag **table**.

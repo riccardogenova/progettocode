@@ -1,99 +1,97 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
+    <link rel="stylesheet" href="css_files/markdown.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COS'È MARKDOWN?</title>
   </head>
   <body>
     <h1>COS'È MARKDOWN?</h1>
+    <h2>Guida a Markdown</h2>
 
-    <p>
-      <strong>Markdown</strong> è un linguaggio di markup leggero utilizzato per
-      formattare testo in modo semplice e leggibile. È particolarmente popolare
-      tra gli sviluppatori, i blogger e gli scrittori tecnici per la sua
-      facilità d'uso e la sua flessibilità. Markdown consente di formattare il
-      testo utilizzando una sintassi semplice e intuitiva, che viene quindi
-      convertita in HTML o altri formati di markup per la visualizzazione su
-      web, documenti o altri media.
-    </p>
+   
+      <p>
+        Markdown è un linguaggio di markup leggero utilizzato per formattare
+        testo in modo semplice e leggibile. <br />È particolarmente popolare tra
+        gli sviluppatori, i blogger e gli scrittori tecnici per la sua facilità
+        d'uso e la sua flessibilità. <br />Consente di formattare il testo
+        utilizzando una sintassi semplice e intuitiva, che viene quindi
+        convertita in HTML o altri formati di markup per la visualizzazione su
+        web, documenti o altri media.
+        <br />
+        <br />
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2016/01/choose-markdown.jpg"
+          width="150px"
+          height="150px"
+        />
+      </p>
 
-    <p>Ecco alcuni esempi di formattazione che Markdown supporta:</p>
+      <p>Ecco alcuni esempi di formattazione che Markdown supporta:</p>
 
-    <ul>
-      <li>
-        Testo in grassetto: <strong>Testo in grassetto</strong> o
-        <strong>Testo in grassetto</strong>
-      </li>
-      <li>
-        Testo in corsivo: <em>Testo in corsivo</em> o <em>Testo in corsivo</em>
-      </li>
-      <li>Link ipertestuale: <a href="URL del link">Testo del link</a></li>
-    </ul>
+      <ul>
+        <li>
+          <strong>Testo in grassetto</strong>
+        </li>
+        <li>
+          <em>Testo in corsivo</em>
+        </li>
+        <li><a href="URL del link">Link ipertestuale</a></li>
+        <li>Liste (ordinate o non ordinate)</li>
+        <li>Intestazioni</li>
+      </ul>
+      <p>
+        Markdown è ampiamente supportato da molte piattaforme, inclusi GitHub,
+        Reddit, Stack Overflow e molti altri. <br />È diventato uno standard per
+        la scrittura di documentazione tecnica, la creazione di post sui blog e
+        la collaborazione su progetti di sviluppo software, grazie alla sua
+        semplicità e alla sua facilità di lettura.
+      </p>
+    <hr />
+    
+    <h2>A cosa serve</h2>
+    <div id="paragrafi">
+      <p>Markdown è utile per diversi scopi:</p>
 
-    <p>Liste:</p>
-
-    <ul>
-      <li>Liste non ordinate: * Elemento 1, * Elemento 2, etc.</li>
-      <li>Liste ordinate: 1. Elemento 1, 2. Elemento 2, etc.</li>
-    </ul>
-
-    <p>Intestazioni: # Intestazione 1, ## Intestazione 2, etc.</p>
-
-    <blockquote>
-      <p>Citazioni: Questo è un blocco di citazione</p>
-    </blockquote>
-
-    <p>
-      Markdown è ampiamente supportato da molte piattaforme, inclusi GitHub,
-      Reddit, Stack Overflow e molti altri. È diventato uno standard per la
-      scrittura di documentazione tecnica, la creazione di post sui blog e la
-      collaborazione su progetti di sviluppo software, grazie alla sua
-      semplicità e alla sua facilità di lettura sia in formato sorgente che
-      renderizzato.
-    </p>
-
-    <h1>A COSA SERVE MARKDOWN?</h1>
-
-    <p>Markdown è utile per diversi scopi:</p>
-
-    <ul>
-      <li>
-        Scrittura di documentazione: Markdown è ampiamente utilizzato per
-        scrivere documentazione tecnica, guide utente, documenti di progetto e
-        altro ancora. È particolarmente utile perché consente di formattare il
-        testo in modo chiaro e leggibile, rendendo più facile per gli autori
-        creare e mantenere la documentazione.
-      </li>
-      <li>
-        Scrivere post su blog: Molti servizi di blogging supportano Markdown,
-        consentendo agli utenti di scrivere post formattati senza dover
-        conoscere HTML o altre lingue di markup complesse. Questo lo rende una
-        scelta popolare tra gli scrittori tecnici e gli sviluppatori che
-        vogliono condividere informazioni o tutorial online.
-      </li>
-      <li>
-        Scrivere messaggi e-mail: Alcune piattaforme di posta elettronica
-        consentono di scrivere e formattare i messaggi utilizzando Markdown.
-        Questo può rendere la composizione di e-mail più rapida e efficiente,
-        specialmente per coloro che sono abituati a utilizzare questa sintassi
-        per formattare il testo.
-      </li>
-      <li>
-        Scrivere contenuti per la web: Molti siti web consentono agli utenti di
-        contribuire con contenuti tramite Markdown. Ad esempio, GitHub utilizza
-        Markdown per formattare descrizioni di repository, issue, pull request e
-        altro ancora. Anche piattaforme di domande e risposte come Stack
-        Overflow utilizzano Markdown per formattare le domande e le risposte
-        degli utenti.
-      </li>
-      <li>
-        Creazione di presentazioni: Alcuni strumenti consentono di creare
-        presentazioni utilizzando Markdown. Questo può essere utile per gli
-        sviluppatori o coloro che preferiscono scrivere le proprie presentazioni
-        utilizzando un formato di testo semplice anziché software di
-        presentazione più complessi.
-      </li>
-    </ul>
+      <ol>
+        <li>
+          <p><strong> Scrittura di documentazione:</strong> per scrivere
+          documentazione tecnica, guide utente, documenti di progetto e altro
+          ancora. Consente di formattare il testo in modo chiaro e leggibile,
+          rendendo più facile per gli autori creare e mantenere la
+          documentazione.
+        </li></p>
+        <li>
+          <p><strong>Scrivere post su blog:</strong> molti servizi di blogging
+          supportano Markdown, consentendo agli utenti di scrivere post
+          formattati senza dover conoscere HTML o altre lingue di markup
+          complesse. Questo lo rende una scelta popolare tra gli scrittori
+          tecnici e gli sviluppatori che vogliono condividere informazioni o
+          tutorial online.
+        </li></p>
+        <li>
+         <p> <strong>Scrivere messaggi e-mail:</strong> alcune piattaforme di posta
+          elettronica consentono di scrivere e formattare i messaggi utilizzando
+          Markdown. Questo può rendere la composizione di e-mail più rapida e
+          efficiente, specialmente per coloro che sono abituati a utilizzare
+          questa sintassi per formattare il testo.
+        </li></p>
+        <li>
+          <p><strong>Scrivere contenuti per il web:</strong> molti siti web
+          consentono agli utenti di contribuire con contenuti tramite Markdown.
+          Ad esempio, GitHub utilizza Markdown per formattare descrizioni di
+          repository, issue, pull request e altro ancora. Anche piattaforme di
+          domande e risposte come Stack Overflow utilizzano Markdown per
+          formattare le domande e le risposte degli utenti.
+        </li></p>
+        <li>
+          <p><strong>Creazione di presentazioni:</strong> può essere utile per gli
+          sviluppatori o coloro che preferiscono scrivere le proprie
+          presentazioni utilizzando un formato di testo semplice anziché
+          software di presentazione più complessi.
+        </li></p>
+      </ol>
+    </div>
   </body>
 </html>

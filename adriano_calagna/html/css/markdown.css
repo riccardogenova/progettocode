@@ -1,0 +1,44 @@
+h1 {
+  color: red;
+}
+label {
+  font-size: 26px;
+}
+option {
+  font-size: 38px;
+}
+select {
+  font-size: 20px;
+}
+.primo-link {
+  text-decoration: none;
+  font-size: 17px;
+}
+.secondo-link {
+  text-decoration: none;
+  font-size: 17px;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: red;
+}
+.carousel img[src="https://i0.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?resize=1024%2C675&ssl=1"]
+{
+  width: 78px;
+}
+.carousel img[src="https://www.venetoformazione.it/wp-content/uploads/2022/02/ottimizzare-immagini-display-retina.jpg"]
+{
+  width: 128px;
+  height: 344px;
+}
+img[src="https://i0.wp.com/www.giacomocusano.com/wp-content/uploads/2016/07/coastal-wash-web.jpg?resize=1024%2C675&ssl=1"]
+{
+  width: 133px;
+  margin-left: 122px;
+  margin-left: 143px;
+}
+.slides {
+  width: 14px;
+}

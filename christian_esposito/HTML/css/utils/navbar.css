@@ -1,0 +1,320 @@
+:root {
+    --primary-color: #fff414;
+    --second-color:#004c7e;
+    --third-color: #ffb103;
+    /* --third-color:#1796f09f; */
+    --bg-img-header: url("../../img/924_resize.png");
+    --bg-img: url("../../img/924.png");
+}
+
+/* ------------------NAVBAR ----------------------------*/
+input:focus,
+button:focus {
+    outline: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: left;
+    font-weight: bold;
+    color: var(--third-color);
+}
+
+/* -----------------Menu nella versione mobile-----------------*/
+
+.active {
+    color: var(--third-color);
+    background-color: var(--third-color);
+}
+
+.active-dropdown {
+    color: var(--third-color);
+    background-color: var(--third-color);
+}
+
+nav {
+    height: 100%;
+    background-color: var(--third-color);
+    position: fixed;
+    width: 100%;
+    margin-top: 54px;
+    visibility: hidden;
+    overflow: auto;
+
+}
+
+nav ul {
+    padding-bottom: 54px;
+}
+
+nav ul li a {
+    padding: 16px 0 16px 32px;
+    display: block;
+    color: var(--third-color);
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submenu {
+    color: var(--third-color)
+        /* primary super-lightcolor*/
+    ;
+    padding-left: 55px;
+    padding-bottom: 5px;
+}
+
+nav ul li ul {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+nav ul li ul li a {
+    font-size: 16px;
+    padding: 10px 0 10px 55px;
+    border: hidden;
+}
+
+/* ----------------- div bar per l'attivazione del menu ------------------ */
+
+#bar {
+    background-color: var(--third-color);
+    height: 54px;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+#bar #logo {
+    float: right;
+    margin-right: 12px;
+    width: 10em;
+    background-image: var(--bg-img-header);
+    background-size: contain;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
+/* ----------------- animation ------------------ */
+
+#hamburger {
+    display: none;
+}
+
+.menuicon {
+    position: fixed;
+    height: 54px;
+    width: 54px;
+    margin-left: 5px;
+    z-index: 3;
+}
+
+.menuicon span {
+    display: block;
+    top: 25px;
+    width: 40px;
+    height: 3px;
+    left: 8px;
+    background-color: var(--third-color);
+    position: relative;
+    border-radius: 20px;
+    transition-duration: 0;
+    transition-delay: .1s;
+}
+
+.menuicon span::after,
+.menuicon span::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background-color: var(--third-color);
+    border-radius: 20px;
+    transition-duration: .1s;
+    -webkit-transition-delay: .1s, 0;
+    transition-delay: .1s, 0;
+}
+
+.menuicon span::before {
+    margin-top: -10px;
+}
+
+.menuicon span::after {
+    margin-top: 10px;
+}
+
+#hamburger:checked~.menuicon span {
+    background-color: var(--third-color);
+}
+
+#hamburger:checked~.menuicon span::before {
+    margin-top: 0px;
+    -webkit-transition-delay: 0, .3s;
+    -moz-transition-delay: 0, .3s;
+    -ms-transition-delay: 0, .3s;
+    -o-transition-delay: 0, .3s;
+    transition-delay: 0, .3s;
+}
+
+#hamburger:checked~.menuicon span::after {
+    margin-top: 0px;
+    -webkit-transition-delay: 0, .3s;
+    -moz-transition-delay: 0, .3s;
+    -ms-transition-delay: 0, .3s;
+    -o-transition-delay: 0, .3s;
+    transition-delay: 0, .3s;
+}
+
+#hamburger:checked~.menuicon span::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#hamburger:checked~.menuicon span::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* ----------------- menu animation faccio apparire il menu ------------------ */
+
+#hamburger:checked~.menu-visibility {
+    visibility: visible;
+}
+
+/* -----------------media per menu orizzontale ------------------ */
+
+@media screen and (min-width: 980px) {
+
+    .menuicon {
+        display: none;
+    }
+
+    #bar #logo {
+        float: left;
+        margin-left: 12px;
+        height: 3em;
+        background-image: var(--bg-img-header);
+        background-size: contain;
+        background-repeat: no-repeat, no-repeat;
+
+    }
+
+    nav {
+        z-index: 3;
+        margin-top: 19px;
+        height: auto;
+        background-color: transparent;
+        transition: none;
+        width: auto;
+        float: right;
+        right: 12px;
+        visibility: visible;
+        font-family: 'Roboto Slab', serif;
+        overflow: inherit;
+    }
+
+    .active {
+        background-color: transparent;
+        color: var(--second-color);
+    }
+
+    .active-dropdown {
+        color: var(--second-color);
+        background-color: var(--second-color);
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li a {
+        padding: 0;
+        display: inline;
+        font-size: 16px;
+        color: var(--second-color);
+    }
+
+    nav ul li a:hover {
+        background-color: transparent;
+        color: var(--second-color);
+    }
+
+    .submenu {
+        padding-left: 0;
+        color: rgb(0, 21, 255);
+        font-weight:bolder;
+    }
+
+    nav ul li {
+        margin: 0;
+        float: left;
+        position: relative;
+        padding: 0 16px;
+    }
+
+    .submenu::after {
+        content: url(https://chefstudio.it/img/blog/arrow-down.svg);
+        float: right;
+        padding-left: 6px;
+    }
+
+    /* ----------------- dropdown - attivare il menu a tendina ------------------ */
+
+    nav ul li ul {
+        position: fixed;
+        height: 0;
+        overflow: hidden;
+        background-color: var(--third-color)
+    }
+
+    nav ul li:hover ul {
+        height: auto;
+        padding-top: 14px;
+        position: absolute;
+        right: 0;
+    }
+
+    nav ul li ul li {
+        font-size: 14px;
+        font-weight: normal;
+        float: none;
+        padding: 0;
+        min-width: 160px;
+        border-top: 1px solid var(--second-color);
+    }
+
+    nav ul li ul li a {
+        padding: 16px 32px;
+        display: block;
+        background-color: var(--third-color);
+        color: var(--second-color);
+        font-weight: normal;
+    }
+
+    nav ul li ul li a:hover {
+        background-color: var(--third-color);
+        color: var(--primary-color);
+    }
+}
+
+
+/* ------------------NAVBAR ----------------------------*/

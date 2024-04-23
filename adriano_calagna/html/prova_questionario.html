@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulazione questionario</title>
+    <link rel="stylesheet" href="./prova_qustionario.css" />
+  </head>
+  <body>
+    <form id="myForm">
+      <p class="questionario">Quale linguaggio web preferisci?</p>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+
+      <input type="submit" value=" torna indietro" />
+    </form>
+
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Impedisce il comportamento predefinito del modulo di invio
+
+          // Esegui l'azione di reindirizzamento
+          window.location.href =
+            "file:///C:/Users/adric/Desktop/progettocode-v2/adriano_calagna/index.html#";
+        });
+    </script>
+  </body>
+</html>
