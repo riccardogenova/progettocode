@@ -1,0 +1,18 @@
+h1 {
+  text-align: center;
+  color: rgb(23, 163, 68);
+}
+.sfondo {
+  background-image: url("https://community-cdn-digitalocean-com.global.ssl.fastly.net/vUuUtKqDrY9gAbaD2czK9KrN");
+  opacity: 0.1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 100%;
+}
+p {
+  margin-bottom: 50px;
+}
