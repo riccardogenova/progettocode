@@ -7,21 +7,25 @@ body {
     line-height: 1.6;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 h1 {
     background-color: #007bff;
     color: #fff;
     padding: 20px;
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+a{
+    font-size: 50px;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    padding-right: 60px;
+   
+}
+
+i{
+    color: white;
 }
 
 h2 {

@@ -7,15 +7,6 @@ body {
     line-height: 1.6;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 h1,h2{
     background-color: #007bff;
     color: #fff;
@@ -32,5 +23,15 @@ ul ol {
 li {
     margin-bottom: 10px;
 }
+
+a{
+    float: right;
+    position: relative;
+    right: 50px;
+    font-size: 50px;
+    bottom: 100px;
+    color: #f9f9f9;
+}
+
 
 

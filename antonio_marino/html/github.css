@@ -10,17 +10,31 @@ body {
     color: #333;
 }
 
-h2 {
+a{
+    font-size: 50px;
+    float: right;
+    position: relative;
+    bottom: 70px;
+    padding-right: 60px;
+   
+}
+
+i{
+    color: white;
+}
+
+
+h1 {
     background-color: #007bff;
     color: #fff;
     padding: 20px;
     margin-top: 0;
-    margin-bottom: 10px; /* Aggiunto margine inferiore */
+    margin-bottom: 10px; 
 }
 
-h3 {
+h2 {
     color: #007bff;
-    margin-top: 10px; /* Aggiunto margine superiore */
+    margin-top: 10px;
 }
 
 p {
@@ -28,11 +42,4 @@ p {
     padding: 0 20px;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-}
 
-a:hover {
-    text-decoration: underline;
-}

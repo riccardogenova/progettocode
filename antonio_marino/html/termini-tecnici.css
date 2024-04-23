@@ -11,13 +11,17 @@ body {
     line-height: 1.6;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+a{
+    font-size: 50px;
+    float: right;
+    position: relative;
+    bottom: 100px;
+    padding-right: 60px;
+   
 }
 
-a:hover {
-    text-decoration: underline;
+i{
+    color: white;
 }
 
 h1 {
@@ -37,8 +41,7 @@ p {
     padding: 0 20px;
 }
 
-ol,
-ul {
+ol,ul {
     padding-left: 20px;
 }
 
