@@ -1,0 +1,13 @@
+h1 {
+  color: rgb(9, 126, 83);
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+body {
+  background-image: url(https://unsplash.com/it/foto/un-dipinto-astratto-con-i-colori-arancione-e-blu-0ZPSX_mQ3xI);
+}
+
+a:visited {
+  color: green;
+}
