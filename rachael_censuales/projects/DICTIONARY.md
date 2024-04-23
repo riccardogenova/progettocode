@@ -12,3 +12,12 @@
 - **Markdown**: E' un linguaggio di markup leggero con il quale è possibile formattare un testo utilizzando una sintassi semplice e intuitiva, aggiungere titoli, elenchi, citazioni, ecc.. .
 
 - **Valore semantico**: Il valore semantico in HTML si riferisce al significato o alla funzione di un elemento all'interno della struttura di una pagina web. In altre parole, indica cosa rappresenta o quale ruolo svolge quel particolare elemento nella pagina. Ad esempio, un elemento &lt;header&gt; ha un valore semantico perché rappresenta l'intestazione della pagina, mentre un elemento &lt;nav&gt; rappresenta un'area di navigazione. Utilizzare elementi con valore semantico aiuta gli utenti e i motori di ricerca a comprendere meglio la struttura e il significato del contenuto della pagina, migliorando l'accessibilità e l'indicizzazione del sito web.
+
+- **Sidebar**:
+
+- **Container**
+
+- **Float**: spostare
+- **Padding**: Margine -**Position**:
+- **Input** cose su cui puoi cercare
+- **content**
