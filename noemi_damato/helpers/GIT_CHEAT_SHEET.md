@@ -47,7 +47,7 @@
   ### _ANNULLARE_
 
 - `git checkout nomefile:` annullerà le modifiche non ancora committate nel file e lo ripristinerà allo stato dell'ultimo commit
-- - `git origin -- delete:` eliminare branch remoti da terminale
+- s`git origin -- delete:` eliminare branch remoti da terminale
 
   ***
 
