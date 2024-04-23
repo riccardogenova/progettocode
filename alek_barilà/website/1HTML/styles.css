@@ -4,6 +4,8 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  background-image: url(https://marketplace.canva.com/EAFCO6pfthY/1/0/1600w/canva-blue-green-watercolor-linktree-background-F2CyNS5sQdM.jpg);
+  background-size: cover;
 }
 
 header {
@@ -35,4 +37,7 @@ h1,
 h2,
 h3 {
   color: #940040;
+}
+ul {
+  list-style-type: none;
 }
