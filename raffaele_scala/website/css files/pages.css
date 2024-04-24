@@ -64,13 +64,7 @@ a {
   background-color: #d5c7bc;
   color: black;
 }
-.div-box {
-  /* height: 90vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-}
+
 .menu-content > a:hover {
   color: blue;
 }
