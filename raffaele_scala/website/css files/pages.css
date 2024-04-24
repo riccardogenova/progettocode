@@ -71,6 +71,7 @@ a {
 .text {
   font-size: 18px;
   padding: 10px;
+  font-family: sans-serif;
 }
 .text h1,
 .text p {
@@ -79,5 +80,4 @@ a {
 .navigation {
   font-weight: bold;
   font-size: 18px;
-  font-family: sans-serif;
 }
