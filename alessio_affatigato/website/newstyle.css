@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #188ad6;
+  overflow: hidden;
+}
+
+.navbar-right {
+  float: right;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: system-ui;
+}
+p {
+  font-size: x-large;
+  font-family: system-ui;
+}
+
+div {
+  color: antiquewhite;
+}

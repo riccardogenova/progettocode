@@ -1,0 +1,45 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a{
+    font-size: 50px;
+    float: right;
+    position: relative;
+    bottom: 70px;
+    padding-right: 60px;
+   
+}
+
+i{
+    color: white;
+}
+
+
+h1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 10px;
+}
+
+p {
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+

@@ -22,7 +22,7 @@ Git è un sistema di controllo delle versioni ampiamente utilizzato per gestire 
 
 git init: Inizializza un nuovo repository Git nella cartella corrente.
 
-"git clone <URL>": Clona un repository esistente da un server remoto.
+"git clone < URL >": Clona un repository esistente da un server remoto.
 
 1. **Lavorare sui file**: Dopo aver inizializzato o clonato il repository, puoi iniziare a lavorare sui tuoi file.
 
