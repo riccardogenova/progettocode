@@ -5,47 +5,71 @@
 }
 
 body {
-  background-color: aqua;
+  background-color: #f1fffa;
   height: 100%;
   margin: 0;
   border: 0;
   padding: 0;
 }
-.menu-helpers,
-.menu-lessons,
-.menu-singin {
-  padding: 10px;
-  float: right;
-  position: relative;
-  bottom: 25px;
-  font-size: 22px;
-}
+
 .menu {
-  background-color: #efeff2;
+  background-color: #93b7be;
   height: 60px;
-  margin: -10px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu-logo {
   max-width: 30%;
   font-size: 28px;
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-  position: relative;
-  bottom: -14px;
-  left: 3%;
+  margin: 12px;
 }
 .placeholder {
-  display: flex;
-  position: fixed;
   font-size: 36px;
+  font-style: italic;
+  font-weight: bold;
 }
-header a {
+a {
   text-decoration: none;
 }
-header a:hover {
-  background-color: aquamarine;
-  color: black;
+.menu-items > a:hover {
+  background-color: #454545;
+  color: #f1fffa;
   padding: 2px;
   border: 1px black solid;
+  border-radius: 5px;
+}
+.menu-content {
+  font-size: 20px;
+  display: flex;
+  margin: 15px;
+}
+.menu-items {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 26px;
+  gap: 14px;
+}
+.menu-items > a {
+  color: black;
+  padding: 5px;
+}
+.menu-content > a {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #d5c7bc;
+  color: black;
+}
+.div-box {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-content > a:hover {
+  color: blue;
 }
