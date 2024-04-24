@@ -10,34 +10,32 @@
     <link href="./website/css/general.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Lezioni</h1>
+    <header>
+      <!-- Navbar -->
 
-    <h2>I miei appunti su:</h2>
-    <ul>
-      <li><a title="COS'E' GIT?" href="website/html/git.html">GIT </a></li>
-      <li>
-        <a title="COS'E' MARKDOWN?" href="website/html/markdown.html"
-          >MARKDOWN
-        </a>
-      </li>
-      <li><a title="COS'E' HTML?" href="website/html/html.html"> HTML </a></li>
-      <li><a title="COS'E' CSS?" href="website/html/css.html"> CSS </a></li>
-      <li><a title="COS'E' CSS?" href="website/html/dom.html"> DOM </a></li>
-    </ul>
+      <nav id="navbar">
+        <div class="container">
+          <h1 class="logo"><a href="index.html"> Benvenuti </a></h1>
+          <ul>
+            <li><a class="current" href="index.html"> Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="lessons.html"> Lessons</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <hr />
+    <!-- Section -->
 
-    <h1>Comandi base</h1>
-    <h2>I miei appunti su:</h2>
-    <ul>
-      <li><a href="helpers/GIT_COMMANDS.md"> GIT</a></li>
-      <li><a href="helpers/HTML_TAG.md">HTML</a></li>
-      <li><a href="helpers/CSS_COMMANDS.md">CSS</a></li>
-    </ul>
-    <br />
-    <a href="https://www.google.com">Cerca su Google</a>
-    <div>
-      <a href="website/html/account.html">Clicca qui per registrarti</a>
-    </div>
+    <section id="showcase">
+      <div class="container">
+        <h1>THINK <span class="color-primary"> OUTSIDE </span> THE BOX</h1>
+        <br />
+        <p>CODE - Il progetto che ti aiuta a crescere nel mondo del web</p>
+        <br />
+        <a href="about.html">Scopri di più</a>
+      </div>
+    </section>
   </body>
 </html>
