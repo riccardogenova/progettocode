@@ -67,3 +67,5 @@ font-size: 14px;
    - position: relative: l'elemento viene posizionato relativamente rispetto alla sua posizione originale.
    - position: absolute: l'elemento viene posizionato rispetto al primo genitore che non ha position: static.
    - position: fixed: l'elemento viene posizionato rispetto alla finestra del browser e rimane fisso anche quando si scorre la pagina.
+
+10. **Float**: La proprietà float consente di spostare un elemento a sinistra o a destra all'interno del suo contenitore, consentendo ad altri elementi di avvolgerlo. È spesso usato per creare layout a più colonne.
