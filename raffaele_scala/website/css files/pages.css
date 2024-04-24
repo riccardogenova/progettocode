@@ -65,17 +65,18 @@ a {
   color: black;
 }
 .div-box {
-  height: 90vh;
+  /* height: 90vh;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .menu-content > a:hover {
   color: blue;
 }
 .text {
   font-size: 18px;
+  padding: 10px;
 }
 .text h1,
 .text p {
@@ -84,4 +85,5 @@ a {
 .navigation {
   font-weight: bold;
   font-size: 18px;
+  font-family: sans-serif;
 }
