@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lessons</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Css</h2>
+    <details>
+      <summary>Lezione Css</summary>
+      <p>
+        CSS, o Cascading Style Sheets, è un linguaggio usato per programmare la
+        resa grafica di documenti scritti in un linguaggio di markup, come HTML
+        e XML. Le classi CSS sono usate per specificare attributi grafici come
+        font, dimensione, colore, spaziatura, bordo e posizione degli elementi
+        all'interno di una rappresentazione web. Insieme ad HTML e JavaScript,
+        CSS è uno dei tre pilastri della programmazione front end: regolano
+        rispettivamente il contenuto (HTML), la dinamicità (JavaScript) e
+        l'aspetto visivo (CSS) di una pagina web.
+      </p>
+      <br />
+      <h2>Cosa significa 'cascading' in CSS?</h2>
+      <p>
+        Cascading in CSS significa che i fogli di stile CSS si applicano a
+        cascata: quando un elemento è soggetto a diverse regole, tutte le regole
+        sono valide, ma prevale sempre l'ultima regola, la più specifica. Ad
+        esempio, se gli elementi titolo del sito devono essere ancorati a
+        sinistra (regola generale), ma una regola concorrente stabilisce che il
+        titolo deve essere centrato in quella pagina (regola specifica), il
+        titolo verrà presentato come elemento centrato perché viene applicata
+        l'ultima regola, la più specifica.
+      </p>
+    </details>
+    <br />
+    <h2>CSSOM</h2>
+    <details>
+      <summary>Cos'è CSSOM</summary>
+      <p>
+        CSSOM (CSS Object Model) è una rappresentazione ad oggetti dei fogli di
+        stile CSS all'interno di una pagina web. È simile al DOM (Document
+        Object Model), ma invece di rappresentare la struttura e il contenuto
+        del documento HTML, rappresenta le regole e le proprietà di stile
+        definite nei fogli di stile CSS. Il CSSOM è utilizzato dai browser web
+        per interpretare e applicare le regole di stile ai nodi HTML della
+        pagina. Ogni regola CSS all'interno di un foglio di stile viene
+        rappresentata come un oggetto nel CSSOM. Questi oggetti possono essere
+        manipolati dinamicamente utilizzando JavaScript per modificare lo stile
+        degli elementi HTML sulla pagina. Ad esempio, se hai un selettore CSS
+        che definisce il colore del testo di tutti i paragrafi `
+      </p>
+
+      <p>
+        ` in rosso: ```css p { color: red; } ``` Questa regola sarà
+        rappresentata come un oggetto nel CSSOM. Utilizzando JavaScript, puoi
+        accedere a questo oggetto CSSOM e modificarlo per cambiare il colore del
+        testo dei paragrafi, ad esempio per renderlo blu: ```javascript var
+        paragraphs = document.querySelectorAll('p'); for (var i = 0; i <
+        paragraphs.length; i++) { paragraphs[i].style.color = 'blue'; } ``` In
+        questo modo, il CSSOM consente agli sviluppatori di manipolare
+        dinamicamente lo stile delle pagine web in base alle interazioni degli
+        utenti o ad altri eventi.
+      </p>
+    </details>
+    <br />
+    <h2>DOM</h2>
+    <details>
+      <summary>Cos'è DOM</summary>
+      DOM, acronimo di Document Object Model, è una rappresentazione gerarchica
+      strutturata dei documenti HTML (e di altri documenti XML) utilizzata dai
+      browser web per rappresentare e manipolare il contenuto delle pagine web.
+      In pratica, il DOM è una rappresentazione del documento HTML che può
+      essere manipolata con linguaggi di scripting come JavaScript. Ogni
+      elemento HTML nella pagina è rappresentato come un "nodo" nel DOM, e
+      questi nodi possono essere modificati, aggiunti o rimossi dinamicamente
+      utilizzando JavaScript. Ad esempio, se hai un paragrafo `
+      <p>
+        ` nel tuo documento HTML, questo verrà rappresentato come un nodo nel
+        DOM. Con JavaScript, puoi selezionare questo nodo e cambiare il suo
+        testo, aggiungere attributi o persino rimuoverlo completamente dalla
+        pagina.
+      </p>
+    </details>
+    <br />
+    <h2>Git</h2>
+    <details><summary>Cos'è Git</summary>
+        <p>Git è un programma utilissimo per modificare, risolvere bug e aggiungere funzione nel codice. Permette anche a più persone di lavorare contemporaneamente sullo stesso codice. Tra le sue funzioni possiamo trovare:</p>
+
+        <ol>
+          <li>la creazione di repository: ovvero delle librerie digitali che contengono un singolo progetto (es. codice di un gioco javascript)</li>
+          <li>ogni volta che si modifica un progetto è possibile tenere traccia di tutte le modifiche, cosa è stato modificato e da chi.</li>
+          <li>È possibile vedere tutte le versioni precedenti delle parti modificate, grazie alla funzione snapshot.</li>
+          <li>Possibilità di creare "branch" di codice, ovvero parti del codice principale modificabili senza intaccare il codice principale. Sviluppare una nuova funzionalità isolata dal ramo principale (solitamente chiamato "master")</li>
+        </ol>
+        
+        <p>Quando hai completato il lavoro sulla nuova funzionalità, puoi unire la tua ramificazione al ramo principale con:</p>
+        
+        <pre><code>git checkout master (branch di default, detta anche main)
+        git merge nome_ramificazione / nome_ramificazione</code></pre>
+        
+        <h2>Le cartelle dentro le cartelle, devono essere aperte trascinandole su Visual Studio Code, NON APRIRLE SU GIT. Per aggiungere i file, mettere il link che segue <a href="https://github.com/Flavioleot/progettocode.git">https://github.com/Flavioleot/progettocode.git</a>.</h2>
+        
+        <h2>Ecco una lista di comandi base di GIT divisi per funzione:</h2>
+        
+        <h3>CONFIGURAZIONE</h3>
+        <ul>
+          <li>git config --global user.name "Tuo Nome": Imposta il nome dell'utente.</li>
+          <li>git config --global user.email "tua@email.com": Imposta l'indirizzo email dell'utente.</li>
+          <li>git config --global core.editor "nome_del_tuo_editor": Imposta l'editor di testo preferito.</li>
+        </ul>
+        
+        <h3>CREAZIONE E CLONAZIONE DI UNA REPOSITORY</h3>
+        <ul>
+          <li>git init: Inizializza un nuovo repository Git nella directory corrente.</li>
+          <li>git clone url_repository: Clona un repository Git esistente nella tua directory locale.</li>
+        </ul>
+        
+        <h3>OPERAZIONI SUI FILE</h3>
+        <ul>
+          <li>git add nome_file: Aggiunge un file all'area di staging.</li>
+          <li>git add .: Aggiunge tutti i file modificati all'area di staging.</li>
+          <li>git rm nome_file: Rimuove un file dalla repository e dall'area di staging.</li>
+          <li>git mv vecchio_nome nuovo_nome: Rinomina un file e aggiunge la modifica all'area di staging.</li>
+        </ul>
+        
+        <h3>COMMIT</h3>
+        <ul>
+          <li>git commit -m "Messaggio del commit": Esegue un commit con un messaggio descrittivo.</li>
+          <li>git commit -a -m "Messaggio del commit": Aggiunge automaticamente e committa tutti i file modificati.</li>
+          <li>git commit --amend: Modifica l'ultimo commit.</li>
+          <li>git cherry-pick codicecommit: prendi un commit e lo sposti in un altro.</li>
+        </ul>
+        
+        <h3>COMANDI PER GESTIRE IL REPOSITORY DELLO STATO</h3>
+        <ul>
+          <li>git status: fa vedere quanti file sono stati caricati e quali sono in attesa di caricamento.</li>
+          <li>git log: fa vedere tutti i commit, chi ci ha lavorato e quando.</li>
+          <li>git log --online</li>
+          <li>git log --graph --online --all</li>
+        </ul>
+        
+        <h3>COMANDI PER GESTIRE IL REPOSITORY DEL BRANCHING</h3>
+        <ul>
+          <li>git branch nome_ramo: Crea un nuovo ramo.</li>
+          <li>git branch -d nome_ramo: Cancella il ramo.</li>
+          <li>git checkout nome_ramo: Cambia ramo.</li>
+          <li>git checkout -b nome_ramo: Crea e passa a un nuovo ramo.</li>
+        </details>
+        <br>
+        <h2>HTML</h2>
+        <details><summary>Cos'è HTML</summary>
+            <p>
+                Linguaggio di programmazione base per creare contenuti e organizzare i
+                contenuti web. Acronimo di HYPER TEXT Markup Language. HTML forma lo
+                scheletro per la creazione di un documento digitale, permette di
+                strutturare il testo. Grazie all'utilizzo di tag e attributi è possibile
+                aggiungere:
+              </p>
+          
+              <ul>
+                <li>immagini</li>
+                <li>collegamenti</li>
+                <li>video</li>
+              </ul>
+          
+              <p>
+                ... e molti altri elementi multimediali all'interno di una pagina web.
+                HTML fornisce le informazioni necessarie a un browser web su come
+                visualizzare correttamente il contenuto di una pagina. Molto importanti
+                quando si lavora su HTML sono i <strong>TAG</strong>, che indicano al
+                browser come mostrare ed organizzare il contenuto di una pagina. Per
+                esempio si crea un paragrafo con il tag
+                <code>&lt;p&gt;nomeparagrafo&lt;/p&gt;</code>. Il browser poi legge il
+                codice, interpreta il contenuto della web page in base alle istruzioni
+                fornite. Per aggiungere ogni elemento in un sito serve un tag specifico.
+                HTML viene utilizzato insieme ad altri linguaggi di programmazione e
+                tecnologie web, come CSS per lo stile e JavaScript per l'interattività,
+                per creare pagine web dinamiche e piacevoli da vedere.
+              </p>
+          
+              <p>Ecco una lista dei tag più comuni:</p>
+          
+              <ul>
+                <li>
+                  <code>&lt;html&gt;</code>: Definisce il documento come un documento
+                  HTML.
+                </li>
+                <li>
+                  <code>&lt;head&gt;</code>: Contiene informazioni come il titolo della
+                  pagina, collegamenti a fogli di stile (CSS), script JavaScript e
+                  metadati.
+                </li>
+                <li>
+                  <code>&lt;title&gt;</code>: Specifica il titolo della pagina web che
+                  appare nella barra del titolo del browser.
+                </li>
+                <li>
+                  <code>&lt;body&gt;</code>: Contiene tutto il contenuto visibile della
+                  pagina web, come testo, immagini, video, ecc.
+                </li>
+                <li>
+                  <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>,
+                  <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>,
+                  <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code>: Definiscono i titoli
+                  di diversi livelli di importanza (dall'header più grande, h1, al più
+                  piccolo, h6).
+                </li>
+                <li><code>&lt;p&gt;</code>: Definisce un paragrafo di testo.</li>
+                <li>
+                  <code>&lt;a&gt;</code>: Crea un collegamento ipertestuale ad un'altra
+                  pagina web o risorsa.
+                </li>
+                <li><code>&lt;img&gt;</code>: Incorpora un'immagine nella pagina web.</li>
+                <li><code>&lt;ul&gt;</code>: Definisce una lista non ordinata.</li>
+                <li><code>&lt;ol&gt;</code>: Definisce una lista ordinata.</li>
+                <li>
+                  <code>&lt;li&gt;</code>: Definisce un elemento di lista, da utilizzare
+                  all'interno di <code>&lt;ul&gt;</code> o <code>&lt;ol&gt;</code>.
+                </li>
+                <li>
+                  <code>&lt;div&gt;</code>: Definisce una divisione o una sezione in una
+                  pagina web, spesso utilizzata per raggruppare e stilizzare elementi.
+                </li>
+                <li>
+                  <code>&lt;span&gt;</code>: Simile a <code>&lt;div&gt;</code>, ma
+                  utilizzato per stilizzare piccoli pezzi di testo o contenuto.
+                </li>
+                <li><code>&lt;table&gt;</code>: Definisce una tabella.</li>
+                <li>
+                  <code>&lt;tr&gt;</code>: Definisce una riga all'interno di una tabella.
+                </li>
+                <li>
+                  <code>&lt;td&gt;</code>: Definisce una cella all'interno di una tabella.
+                </li>
+              </ul>
+          
+              <p><code>&lt;br&gt;</code>: Aggiunge una riga di spazio</p>
+              <p><code>&lt;hr&gt;</code>: Aggiunge una linea separatrice</p>
+            </details>
+            <br>
+            <a href="./sito.html">Ritorna alla homepage</a>
+  </body>
+</html>
