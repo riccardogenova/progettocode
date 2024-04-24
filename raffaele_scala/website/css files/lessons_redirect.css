@@ -10,7 +10,7 @@
 .redirect-list:hover {
   color: olive;
 }
-#helpers {
+#lessons {
   background-color: #454545;
   color: #f1fffa;
   padding: 2px;
@@ -21,6 +21,7 @@
   font-weight: bold;
   font-size: 18px;
 }
+
 li {
   border: 1px black solid;
   padding: 5px;
