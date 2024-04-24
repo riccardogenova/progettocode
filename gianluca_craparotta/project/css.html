@@ -10,6 +10,31 @@
         background-color: #f4f4f4;
         color: #333;
         margin: 0;
+        padding: 0px;
+      }
+      nav {
+        border: 1px solid white;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #e0f3e0;
+      }
+      .listrn {
+        display: flex;
+        list-style-type: none;
+      }
+      .listrn > li:not(:last-child) {
+        margin-right: 10px; /* Aggiunge un margine tra le parole, tranne all'ultimo elemento */
+      }
+
+      a {
+        text-decoration: none; /* Rimuove le sottolineature */
+        color: gray; /* Imposta il colore iniziale del testo */
+      }
+      a:active {
+        color: red; /* Cambia il colore del testo quando viene premuto */
+      }
+      #pagd {
         padding: 20px;
       }
       h1 {
@@ -18,8 +43,7 @@
       p {
         line-height: 1.5;
       }
-      ol {
-        list-style-type: decimal;
+      ul {
         padding-left: 20px;
       }
       li {
@@ -28,55 +52,62 @@
     </style>
   </head>
   <body>
-    <h1>Spiegazione del CSS</h1>
-
-    <p>
-      Il CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per
-      definire l'aspetto e il layout degli elementi HTML in una pagina web.
-    </p>
-
-    <h2>Come funziona il CSS:</h2>
-
-    <ol>
-      <li>
-        Selezionare gli elementi: Con il CSS, è possibile selezionare gli
-        elementi HTML nel DOM utilizzando selettori. I selettori possono essere
-        basati sul tipo di elemento, sulla classe, sull'id o su altri attributi
-        degli elementi.
-      </li>
-      <li>
-        Applicare stili agli elementi: Una volta selezionati gli elementi, è
-        possibile applicare loro regole di stile. Queste regole definiscono
-        proprietà come il colore del testo, il tipo di carattere, il margine, il
-        padding, la larghezza, l'altezza e molte altre.
-      </li>
-      <li>
-        Priorità delle regole CSS: Le regole CSS vengono applicate in base alla
-        loro posizione nel foglio di stile e alla loro specificità. Le regole
-        definite più in basso nel foglio di stile o con una specificità maggiore
-        avranno la precedenza su quelle definite più in alto o con una
-        specificità inferiore.
-      </li>
-      <li>
-        Cascata delle regole: La "Cascata" nel CSS si riferisce alla modalità in
-        cui le regole vengono applicate agli elementi. Le regole definite più
-        recentemente o con una specificità maggiore avranno la precedenza su
-        quelle definite precedentemente o con una specificità inferiore.
-      </li>
-      <li>
-        Ereditarietà: Alcune proprietà CSS vengono ereditate dagli elementi
-        genitori ai figli nel DOM. Ad esempio, se imposti il colore del testo
-        sul body, i paragrafi al suo interno erediteranno quel colore, a meno
-        che non venga sovrascritto esplicitamente.
-      </li>
-    </ol>
-    <div>
-      <ul>
-        <a href="css.html"><li>CSS</li></a>
-        <a href="index.html"><li>HTML</li></a>
-        <a href="git.html"><li>GIT</li></a>
-        <a href="markdown.html"><li>MARKDOWN</li></a>
+    <nav>
+      <ul class="listrn">
+        <li><a href="">GIANLUCA CRAPAROTTA</a></li>
       </ul>
+      <ul class="listrn">
+        <li><a href="../project/link_progetti.html">project</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="../index.html">home</a>>
+      <a href="link_progetti.html">progetti</a>>
+      <a href="css.html">css</a>
+    </div>
+    <div id="pagd">
+      <h1>Spiegazione del CSS</h1>
+
+      <p>
+        Il CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per
+        definire l'aspetto e il layout degli elementi HTML in una pagina web.
+      </p>
+
+      <h2>Come funziona il CSS:</h2>
+
+      <ol>
+        <li>
+          Selezionare gli elementi: Con il CSS, è possibile selezionare gli
+          elementi HTML nel DOM utilizzando selettori. I selettori possono
+          essere basati sul tipo di elemento, sulla classe, sull'id o su altri
+          attributi degli elementi.
+        </li>
+        <li>
+          Applicare stili agli elementi: Una volta selezionati gli elementi, è
+          possibile applicare loro regole di stile. Queste regole definiscono
+          proprietà come il colore del testo, il tipo di carattere, il margine,
+          il padding, la larghezza, l'altezza e molte altre.
+        </li>
+        <li>
+          Priorità delle regole CSS: Le regole CSS vengono applicate in base
+          alla loro posizione nel foglio di stile e alla loro specificità. Le
+          regole definite più in basso nel foglio di stile o con una specificità
+          maggiore avranno la precedenza su quelle definite più in alto o con
+          una specificità inferiore.
+        </li>
+        <li>
+          Cascata delle regole: La "Cascata" nel CSS si riferisce alla modalità
+          in cui le regole vengono applicate agli elementi. Le regole definite
+          più recentemente o con una specificità maggiore avranno la precedenza
+          su quelle definite precedentemente o con una specificità inferiore.
+        </li>
+        <li>
+          Ereditarietà: Alcune proprietà CSS vengono ereditate dagli elementi
+          genitori ai figli nel DOM. Ad esempio, se imposti il colore del testo
+          sul body, i paragrafi al suo interno erediteranno quel colore, a meno
+          che non venga sovrascritto esplicitamente.
+        </li>
+      </ol>
     </div>
   </body>
 </html>
