@@ -14,7 +14,7 @@ body {
   right: 40px;
   text-decoration: none;
 }
-a {
+.punti a {
   color: rgb(255, 255, 255);
   margin-right: 50px;
   font-size: large;
@@ -31,7 +31,7 @@ a:hover {
 }
 .sfondo {
   background-image: url("https://www.grillodesign.it/wp-content/uploads/2020/10/estonia.jpg");
-  opacity: 0.3;
+  opacity: 0.1;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -39,4 +39,26 @@ a:hover {
   left: 0;
   z-index: -1;
   background-size: 110%;
+}
+p {
+  font-size: x-large;
+}
+code {
+  font-size: x-large;
+}
+mark {
+  background-color: rgb(184, 213, 106);
+}
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  font-size: x-large;
+}
+button {
+  font-size: larger;
+  width: 100px;
+  height: 50px;
 }
