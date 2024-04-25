@@ -14,10 +14,28 @@ h1 {
 }
 
 a {
-  color: #fff;
+  color: #eee;
   decoration: none;
 }
 
+/* Utility */
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  color: #333;
+  background-color: orange;
+  padding: 15px 15px;
+  border: none;
+}
+
+.btn-light {
+  background: #bbb;
+  color: #333;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
 /* Header */
 
 #navbar {
@@ -54,7 +72,7 @@ a {
   color: orange;
 }
 
-/* Section */
+/* Section 1*/
 
 #showcase .container {
   display: flex;
@@ -78,4 +96,26 @@ a {
 
 .color-primary {
   color: orange;
+}
+
+/* Section 2*/
+
+#showcase-2 .container {
+  display: flex;
+  height: 350px;
+}
+
+#showcase-2 .container .image {
+  background-image: url(https://www.google.com/imgres?q=think%20outside%20the%20box&imgurl=https%3A%2F%2Fbigideas4littlescholars.com%2Fwp-content%2Fuploads%2F2020%2F05%2FThink-Outside-the-Box.png&imgrefurl=https%3A%2F%2Fbigideas4littlescholars.com%2Fthinking-outside-the-box-a-lesson-3rd-8th%2F&docid=HXdqqRi2xt6otM&tbnid=dm1h93FTGgN9yM&vet=12ahUKEwiSg9qd_dyFAxWdwAIHHeTgBGsQM3oFCIQBEAA..i&w=802&h=750&hcb=2&ved=2ahUKEwiSg9qd_dyFAxWdwAIHHeTgBGsQM3oFCIQBEAA)
+    no-repeat center center/cover;
+  flex: 1;
+}
+
+#showcase-2 .container .section-text {
+  display: flex;
+  flex: 1;
+  background-color: #333;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
