@@ -1,16 +1,13 @@
 body,
 html {
-  background-color: rgb(0, 0, 0);
   font-family: Arial, Helvetica, sans-serif;
-
-  height: 120vh;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
   width: auto;
   margin: 1px;
+  color: white;
 }
 
-.container {
-  /* margin-bottom: 40px; */
-}
 .nav {
   display: flex;
   justify-content: space-between;
@@ -48,6 +45,7 @@ html {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
 .menu button {
   align-items: center;
   justify-content: center;
@@ -58,14 +56,34 @@ html {
   font-size: 19px;
   margin-inline-end: -10px;
 }
-
-li {
-  padding: 10px 30px;
+.button {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px 40px;
+  /* margin-left: 10px; */
+  margin-top: 10px;
+  background-color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 21px;
-  border: 2px solid rgb(255, 255, 255);
-  margin-top: 40px;
-  background-color: grey;
+  font-size: 19px;
+  /* border: 2px rgb(255, 255, 255) solid; */
+}
+
+#home,
+#lessons {
+  display: inline-block;
+  margin: 5px;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#home:hover {
+  color: grey;
+  text-shadow: black -1px -1px 2px;
 }
 
 .a:hover {
@@ -88,53 +106,54 @@ li {
   color: rgba(255, 255, 255, 0.384);
 }
 .page {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 300px;
-}
-ul,
-.list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  list-style: none;
-}
-
-.list a {
+  max-width: 850px;
+  margin: 20px auto;
+  border: black solid 2px;
+  padding: 20px;
+  padding-top: 20px;
   text-align: center;
-  text-decoration: none;
-  padding: 0;
-  color: black;
 }
 
-.list a:hover {
+h2,
+.text-1 {
+  font-size: 80px;
+  text-align: center;
   color: rgb(255, 255, 255);
-}
-
-#home,
-#lessons {
-  padding: 0px;
-  color: black;
+  text-decoration: underline;
+  font-weight: 200;
+  /* text-shadow: var(--menu-color) -2px -3px 4px; */
   text-decoration: none;
-  font-size: 21px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-shadow: var(--menu-color) -2px -1px 5px;
+  border: #ffffff solid 1px;
+
+  margin: 40px;
 }
-.button {
-  align-items: center;
-  justify-content: center;
+h3,
+.text-2 {
+  font-size: 40px;
   text-align: center;
-  padding: 5px 40px;
-  margin-left: 10px;
   margin-top: 10px;
-  background-color: grey;
-  text-decoration: none;
-  font-size: 19px;
-  border: 2px rgb(255, 255, 255) solid;
-}
-#home:hover {
   color: rgb(255, 255, 255);
-  text-shadow: black -1px -1px 2px;
+  text-shadow: var(--menu-color) -2px -1px 5px;
+  text-decoration: underline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+  padding-top: 10px;
+}
+
+p {
+  color: white;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: var(--menu-color) -2px -1px 5px;
+  text-decoration: underline;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+  padding-top: 10px;
 }
