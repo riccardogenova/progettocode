@@ -7,10 +7,10 @@ flex-wrap:wrap;
 gap: 2em;
 }
 
-.page > p > a{
+a{
     color: #ffe600;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .color{

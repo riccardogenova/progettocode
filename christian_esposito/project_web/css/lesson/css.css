@@ -33,8 +33,9 @@ h3, h4{
     position: absolute;
 }
 a{
+    color: #ffe600;
     text-decoration: none;
-    color: white;
+    font-size: 1em;
 }
 
 p{

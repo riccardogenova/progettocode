@@ -12,7 +12,11 @@ gap: 2em;
     text-decoration: none;
     font-size: 2em;
 }
-
+a{
+    color: #ffe600;
+    text-decoration: none;
+    font-size: 1em;
+}
 .color{
     border: 2px solid #0b0c10;
     background-color: #ff9500 ;
