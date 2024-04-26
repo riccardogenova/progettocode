@@ -7,15 +7,17 @@ html,
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+a {
+  color: #333;
+  text-decoration: none;
+}
 h1 {
-  color: orange;
+  color: #333;
   font-family: sans-serif;
 }
 
 a {
   color: #eee;
-  decoration: none;
 }
 
 /* Utility */
@@ -67,7 +69,8 @@ a {
   padding-left: 1.5rem;
 }
 
-#navbar ul li a:hover #navbar ul li.current {
+#navbar ul li a:hover,
+#navbar ul li.current {
   background: #555;
   color: orange;
 }
@@ -77,7 +80,7 @@ a {
 #showcase .container {
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 70vh;
   background: url(https://images.unsplash.com/photo-1614292253389-bd2c1f89cd0e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
     no-repeat center center/cover;
   justify-content: center;
@@ -100,22 +103,25 @@ a {
 
 /* Section 2*/
 
+#showcase-2 {
+  display: flex;
+  flex-direction: row;
+}
+
 #showcase-2 .container {
-  display: flex;
-  height: 350px;
+  margin: 20px;
 }
 
-#showcase-2 .container .image {
-  background-image: url(https://www.google.com/imgres?q=think%20outside%20the%20box&imgurl=https%3A%2F%2Fbigideas4littlescholars.com%2Fwp-content%2Fuploads%2F2020%2F05%2FThink-Outside-the-Box.png&imgrefurl=https%3A%2F%2Fbigideas4littlescholars.com%2Fthinking-outside-the-box-a-lesson-3rd-8th%2F&docid=HXdqqRi2xt6otM&tbnid=dm1h93FTGgN9yM&vet=12ahUKEwiSg9qd_dyFAxWdwAIHHeTgBGsQM3oFCIQBEAA..i&w=802&h=750&hcb=2&ved=2ahUKEwiSg9qd_dyFAxWdwAIHHeTgBGsQM3oFCIQBEAA)
-    no-repeat center center/cover;
-  flex: 1;
+#showcase-2 .container * {
+  margin-bottom: 10px;
 }
 
-#showcase-2 .container .section-text {
+#showcase-2 .image {
   display: flex;
-  flex: 1;
-  background-color: #333;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  height: 70vh;
+  width: 100vh;
+  background: url(https://cdn-hhomn.nitrocdn.com/owkBmdjkYWIKArhpTrYLoSVIZUZjkLka/assets/images/optimized/rev-c191e1d/hive.com/wp-content/uploads/2023/01/Blog_12.12.22_RightBrainLeftBrain.png)
+    no-repeat center center/cover;
 }
