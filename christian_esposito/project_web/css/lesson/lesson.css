@@ -19,3 +19,9 @@ gap: 2em;
     background-color: #ff9500 ;
     color: #0b0c10;
 }
+
+.color:hover{
+    border: 2px solid  #ff9500;
+    background-color: #0b0c10 ;
+    color: #ff9500;
+}
