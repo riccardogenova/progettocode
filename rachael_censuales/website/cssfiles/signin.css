@@ -7,9 +7,6 @@ html {
   margin: 1px;
 }
 
-.container {
-  /* margin-bottom: 40px; */
-}
 .nav {
   display: flex;
   justify-content: space-between;
