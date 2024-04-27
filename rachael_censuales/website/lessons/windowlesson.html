@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../cssfiles/content.css" rel="stylesheet" />
-    <title>Window and document pills</title>
+    <title>Javascript</title>
   </head>
   <body>
     <div class="body">
@@ -15,7 +15,7 @@
             <a class="a" href="../helpers/helpers.html"> Helpers </a>
             <a class="a" href="./lessonsmenu.html"> Lessons </a>
             <button>
-              <a class="a" href="#"> <target ="_blank"> Sign in </target> </a>
+              <a class="a" href="../signin.html" target="_blank"> Sign in </a>
             </button>
           </div>
         </nav>
@@ -33,17 +33,118 @@
         <button class="menu button"> <a id="lessons" href="./index.html"> Lessons </a> </button> 
     </div> -->
       <div class="page">
-        <h2>Window</h2>
+        <h2>Javascript</h2>
+        <p></p>
+        <h3>Window</h3>
         <p>
-          Window è l'oggetto principale per l'interazione con il browser. Esso
-          rappresenza una finestra che contiene un documento HTML, appartiene
-          quindi al BOM (browser object mode), che a livello di gerarchia è al
-          di sopra del DOM, motivo per il quale può essere considerato implicito
-          ed è permesso ometterlo nelle chiamate dei suoi metodi e proprietà.
-          Tramite questo oggetto è possibile gestire informazioni derivanti dal
-          browser sia a livello di browser che del suo stato tramite l'oggetto
-          navigator.
+          Window è l'oggetto principale per l'interazione con il browser,
+          rappresenta la finestra che contiene un documento HTML. Fornisce
+          un'interfaccia JavaScript per interagire con la finestra del browser e
+          il documento HTML caricato all'interno di essa, consentendo di gestire
+          e controllare il comportamento della pagina web tramite codice
+          JavaScript: può essere infatti utilizzato per gestire eventi come il
+          caricamento della pagina, il ridimensionamento della finestra, la
+          chiusura della finestra, ecc.. . Inoltre l'oggetto "window" al BOM
+          (browser object mode), che a livello di gerarchia è al di sopra del
+          DOM, motivo per il quale può essere considerato implicito ed è
+          permesso ometterlo nelle chiamate dei suoi metodi e proprietà. Alcuni
+          esempi di comandi window:
         </p>
+
+        <ul>
+          <li>
+            alert(): Mostra un messaggio di avviso all'utente con un testo
+            specificato.
+          </li>
+          <li>
+            confirm(): Visualizza una finestra di dialogo con un messaggio e
+            pulsanti "OK" e "Annulla", consentendo all'utente di confermare o
+            annullare un'azione.
+          </li>
+          <li>
+            prompt(): Visualizza una finestra di dialogo che chiede all'utente
+            di inserire un input testuale.
+          </li>
+          <li>
+            >setTimeout(): Esegue una funzione o un blocco di codice dopo un
+            certo intervallo di tempo specificato, eseguendo un singolo ciclo.
+          </li>
+          <li>
+            setInterval(): Esegue una funzione o un blocco di codice in modo
+            ripetuto ad intervalli regolari di tempo.
+          </li>
+          <li>
+            location: Fornisce informazioni sull'URL della pagina corrente e
+            consente di navigare verso nuove pagine o di ricaricare la pagina
+            corrente.
+          </li>
+          <li>
+            navigator: Fornisce informazioni sul browser dell'utente, come il
+            nome, la versione e il sistema operativo.
+          </li>
+          <li>
+            history: Consente di navigare attraverso la cronologia delle pagine
+            visitate dall'utente all'interno della finestra del browser.
+          </li>
+        </ul>
+
+        <h3>Document</h3>
+        L'oggetto "Document" è un componente fondamentale del DOM, si può
+        definire il principale punto di accesso e manipolazione per il
+        contenuto, lo stile e il comportamento di una pagina web attraverso
+        JavaScript. L'oggetto "Document" rappresenta ogni aspetto del documento
+        HTML caricato nel browser, compresi gli elementi HTML, i loro attributi,
+        il testo e i commenti. Grazie a questo, consente l'accesso e la
+        manipolazione del contenuto della pagina web, permettendo di selezionare
+        specifici elementi HTML e modificarne il testo, gli attributi, lo stile
+        CSS e la struttura del documento stesso. E' possibile anche gestire gli
+        eventi che si verificano nella pagina web, come il clic del mouse o il
+        caricamento della pagina, assegnando funzioni di callback per gestirli.
+        Il Document Object è quindi il fondamento su cui si basa l'interazione
+        dinamica e interattiva all'interno delle pagine web, consentendo di
+        creare esperienze utente ricche e coinvolgenti tramite JavaScript.
+        Esempi di comandi .document:
+        <ul>
+          <li>
+            Selezionare un elemento per ID:
+            <code>document.getElementById('header');</code>
+          </li>
+          <li>
+            Selezionare tutti gli elementi con una determinata classe:
+            <code>document.getElementsByClassName('button');</code>
+          </li>
+          <li>
+            Selezionare il primo elemento che corrisponde al selettore CSS:
+            <code>document.querySelector('p');</code>
+          </li>
+          <li>
+            Selezionare tutti gli elementi che corrispondono al selettore CSS:
+            <code>document.querySelectorAll('p');</code>
+          </li>
+          <li>
+            Ottenere o impostare il testo di un elemento:
+            <code>header.textContent;</code>
+          </li>
+          <li>
+            Ottenere o impostare il valore di un attributo di un elemento:
+            <code>buttons[0].getAttribute('class');</code>
+          </li>
+          <li>
+            Creare un nuovo elemento HTML:
+            <code>document.createElement('div');</code>
+          </li>
+          <li>
+            Aggiungere un elemento al documento:
+            <code>document.body.appendChild(newDiv);</code>
+          </li>
+          <li>
+            Aggiungere un event listener a un elemento:
+            <code
+              >button.addEventListener('click', function() { alert('Hai cliccato
+              il pulsante!'); });</code
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </body>
