@@ -19,4 +19,4 @@
   - La proprietà è l'attributo dell'elemento che vuoi modificare (es. color, font-size, background-color).
   - Il valore è ciò che vuoi assegnare alla proprietà
   ### **Collegare il file CSS al tuo documento HTML:**
-- Una volta che hai scritto le tue regole CSS in un file separato (solitamente con estensione .css), devi collegarlo al tuo documento HTML. Puoi farlo inserendo un elemento < link > nell'elemento < head > del tuo HTML:
+- Una volta che hai scritto le tue regole CSS in un file separato (solitamente con estensione .css), devi collegarlo al tuo documento HTML. Puoi farlo inserendo un elemento < link > nell'elemento < head > del tuo HTML
