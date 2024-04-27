@@ -46,6 +46,7 @@
 - `git checkout -b nome_ramo`: Crea e passa a un nuovo ramo.
 - `git branch -m nuovo_nome`: Rinomina il ramo corrente.
 - `git branch -D nome_del_branch`: Per eliminare un branch senza la conferma
+- `git push origin --delete nome-branch`: Per eliminare un branch su GitHub remoto , tramite vsc
 
 ### Merge e Riunione
 
