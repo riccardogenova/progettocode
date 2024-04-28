@@ -1,20 +1,5 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    
-}
-
-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+.lessons{
+    font-size: 20px;
 }
 
 .ctn-lista {
@@ -43,11 +28,4 @@ header {
 .lista li a:hover {
     background-color: #007bff;
     color: #fff;
-}
-
-.bx {
-    font-size: 24px;
-    padding-left: 170px;
-    position: relative;
-    bottom: 28px;
 }
