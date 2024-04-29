@@ -4,104 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ricerca MARKDOWN</title>
-    <link rel="icon" href="../Favicon/MARKDOWN-32x32.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="../favicons/MARKDOWN-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../style.css" />
   </head>
 
   <body>
-    <a href="../../index.html">HOME</a>
-    <h1>Ricerche</h1>
+    <div class="blurred-background"></div>
+    <header class="header">
+      <a href="../../index.html" class="logo">RAFFAELE SCALA x PROGETTO CODE</a>
+      <input class="menu-btn" id="menu-btn" type="checkbox" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="html_research.html">HTML</a></li>
+        <li>
+          <a href="markdown_research.html">MARKDOWN</a>
+        </li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="../tools/git_research.html">GIT</a></li>
+        <li>
+          <a href="../tools/operating_systems_research.html"
+            >SISTEMI OPERATIVI</a
+          >
+        </li>
+        <li><a href="../tools/vim_research.html">VIM</a></li>
+        <li>
+          <a href="../tools/visual_studio_code_research.html"
+            >VISUAL STUDIO CODE</a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="center-items">
+      <div class="overlay">
+        <h1>Cosa è Markdown?</h1>
 
-    <h2>Linguaggi</h2>
+        <h2>Markdown</h2>
+        <p>
+          è un linguaggio di formattazione leggero che viene utilizzato per
+          scrivere testo formattato per il web. È progettato per essere facile
+          da leggere e scrivere anche in forma di testo semplice, e viene spesso
+          utilizzato per formattare documenti, note, pagine web, messaggi di
+          forum e altro ancora. Con Markdown, è possibile aggiungere
+          formattazione come titoli, elenchi, grassetto, corsivo, link
+          ipertestuali e molto altro ancora utilizzando una sintassi di
+          formattazione semplice e intuitiva.
+        </p>
 
-    <ul>
-      <li><a href="html_research.html">HTML</a></li>
-      <li><a href="markdown_research.html">MARKDOWN</a></li>
-    </ul>
+        <h2>Comandi base di Markdown:</h2>
 
-    <h2>Strumenti</h2>
+        <h3>titoli</h3>
+        <p>
+          Puoi creare titoli utilizzando "<strong>#</strong>", più
+          "<strong>#</strong>" si usano per indicare titoli di livello
+          inferiore:
+        </p>
 
-    <ul>
-      <li><a href="../tools/git_research.html">GIT</a></li>
-      <li>
-        <a href="../tools/operating_systems_research.html">SISTEMI OPERATIVI</a>
-      </li>
-      <li><a href="../tools/vim_research.html">VIM</a></li>
-      <li>
-        <a href="../tools/visual_studio_code_research.html"
-          >VISUAL STUDIO CODE</a
-        >
-      </li>
-    </ul>
+        <h3>Grassetto e Corsivo</h3>
+        <p>
+          Puoi mettere in <strong>**grassetto**</strong> utilizzando "**" e in
+          <em>*corsivo*</em>
+          con "*" .
+        </p>
 
-    <h1>Cosa è Markdown?</h1>
+        <h3>Elenchi</h3>
+        <p>
+          Puoi creare elenchi puntati usando " <strong>-</strong> " o "
+          <strong>+</strong> ".
+        </p>
 
-    <h2>Markdown</h2>
-    <p>
-      è un linguaggio di formattazione leggero che viene utilizzato per scrivere
-      testo formattato per il web. È progettato per essere facile da leggere e
-      scrivere anche in forma di testo semplice, e viene spesso utilizzato per
-      formattare documenti, note, pagine web, messaggi di forum e altro ancora.
-      Con Markdown, è possibile aggiungere formattazione come titoli, elenchi,
-      grassetto, corsivo, link ipertestuali e molto altro ancora utilizzando una
-      sintassi di formattazione semplice e intuitiva.
-    </p>
+        <h3>Link</h3>
+        <p>
+          Puoi creare link utilizzando <strong>[Testo del link](URL)</strong>.
+        </p>
 
-    <h2>Comandi base di Markdown:</h2>
+        <h3>Immagini</h3>
+        <p>
+          Puoi aggiungere immagini utilizzando
+          <strong>![Testo](URL dell'immagine)</strong>.
+        </p>
 
-    <h3>titoli</h3>
-    <p>
-      Puoi creare titoli utilizzando "<strong>#</strong>", più
-      "<strong>#</strong>" si usano per indicare titoli di livello inferiore:
-    </p>
+        <h3>Citazioni</h3>
+        <p>Puoi creare citazioni utilizzando " <strong>></strong> ".</p>
 
-    <h3>Grassetto e Corsivo</h3>
-    <p>
-      Puoi mettere in <strong>**grassetto**</strong> utilizzando "**" e in
-      <em>*corsivo*</em>
-      con "*" .
-    </p>
+        <h3>Linee orizzontali</h3>
+        <p>
+          Puoi aggiungere linee orizzontali utilizzando "<strong>---</strong>" o
+          "<strong>___</strong>" nella riga desiderata.
+        </p>
 
-    <h3>Elenchi</h3>
-    <p>
-      Puoi creare elenchi puntati usando " <strong>-</strong> " o "
-      <strong>+</strong> ".
-    </p>
+        <h3>Codice inline</h3>
+        <p>
+          Puoi inserire codice inline utilizzando backticks (<strong>`</strong>)
+        </p>
 
-    <h3>Link</h3>
-    <p>Puoi creare link utilizzando <strong>[Testo del link](URL)</strong>.</p>
+        <h3>Blocchi di codice</h3>
+        <p>
+          Puoi creare blocchi di codice utilizzando tre backticks (
+          <strong>```</strong> ) prima e dopo il codice. Puoi anche specificare
+          il linguaggio di programmazione dopo il primo set ti backsticks per
+          evidenziare la sintassi.
+        </p>
 
-    <h3>Immagini</h3>
-    <p>
-      Puoi aggiungere immagini utilizzando
-      <strong>![Testo](URL dell'immagine)</strong>.
-    </p>
-
-    <h3>Citazioni</h3>
-    <p>Puoi creare citazioni utilizzando " <strong>></strong> ".</p>
-
-    <h3>Linee orizzontali</h3>
-    <p>
-      Puoi aggiungere linee orizzontali utilizzando "<strong>---</strong>" o
-      "<strong>___</strong>" nella riga desiderata.
-    </p>
-
-    <h3>Codice inline</h3>
-    <p>
-      Puoi inserire codice inline utilizzando backticks (<strong>`</strong>)
-    </p>
-
-    <h3>Blocchi di codice</h3>
-    <p>
-      Puoi creare blocchi di codice utilizzando tre backticks (
-      <strong>```</strong> ) prima e dopo il codice. Puoi anche specificare il
-      linguaggio di programmazione dopo il primo set ti backsticks per
-      evidenziare la sintassi.
-    </p>
-
-    <h3>Tabelle</h3>
-    <p>
-      Puoi creare tabelle utilizzando barre verticali " <strong>|</strong> " e
-      trattini " <strong>-</strong> "
-    </p>
+        <h3>Tabelle</h3>
+        <p>
+          Puoi creare tabelle utilizzando barre verticali " <strong>|</strong> "
+          e trattini " <strong>-</strong> "
+        </p>
+      </div>
+    </div>
   </body>
 </html>

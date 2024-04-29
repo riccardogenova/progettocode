@@ -1,0 +1,156 @@
+body {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(144, 144, 144);
+  background: url(https://static.vecteezy.com/system/resources/previews/022/460/209/non_2x/a-computer-desktop-wallpaper-for-forex-trading-terminal-ai-generative-desktop-background-free-photo.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+.logo {
+  padding-left: 35px;
+  font-size: 20px;
+}
+.header {
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 1px 2px 0 rgb(0, 0, 0, 0.1);
+}
+.boxs {
+  text-align: center;
+}
+.link {
+  margin-right: 50px;
+  font-size: 20px;
+}
+h1 {
+  margin-left: 12px;
+}
+.link > a {
+  color: white;
+  text-decoration: none;
+  justify-content: space-between;
+  gap: 50px;
+}
+a {
+  padding: 10px;
+}
+#titolo {
+  text-align: center;
+  font-size: 50px;
+  align-items: center;
+  color: white;
+}
+ol {
+  font-size: large;
+  font-weight: bold;
+}
+li {
+  font-size: 24px;
+  font-weight: bold;
+}
+h2 {
+  padding-left: 20px;
+}
+ul {
+  font-size: 24px;
+}
+.breadcrumb {
+  display: flex;
+  font-size: 18px;
+  padding-left: 35px;
+}
+.paragrafo2 {
+  font-size: 24px;
+  margin-left: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.paragrafo3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.strutturahtml {
+  width: 400px;
+  margin-left: 14px;
+}
+#aaaaa {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font: 40px;
+}
+#struttura {
+  width: 442px;
+}
+.prova {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  background-color: #1a1a1a;
+  border: 1px solid white;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  border-radius: 18px;
+  padding-left: 110px;
+  padding-right: 110px;
+  gap: 20px;
+}
+.prova > a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgb(176, 176, 176);
+}
+.containers {
+  text-align: center;
+  margin-top: 545px;
+  font-size: 44px;
+  color: rgb(255, 255, 255);
+  font-size: 34px;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+}
+.links {
+  text-align: center;
+}
+.headers {
+  font-size: 20px;
+}
+#headerss {
+  font-size: 24px;
+}
+#prescrizione {
+  font-size: 20px;
+  color: rgb(63, 0, 252);
+}
+#grassetto {
+  font-size: 30px;
+}
+pre {
+  color: blue;
+}
+.box {
+  display: flex;
+  background-color: rgb(170, 171, 168);
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.25);
+}
