@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cos'è CSS?</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="centro">
+      <header>
+        <img src="IMG\css.jpg" alt="CSS" />
+      </header>
+    </div>
+    <main>
+      <p>
+        CSS è un linguaggio di stile utilizzato per definire l'aspetto e la
+        formattazione di un documento HTML. Consente di controllare il layout, i
+        colori, i tipi di carattere e altri aspetti visivi del contenuto web.
+      </p>
+
+      <p>
+        <strong>Struttura di un File CSS:</strong><br />
+        Un file CSS è costituito da un insieme di regole di stile, ognuna delle
+        quali si applica a uno o più elementi HTML. Ogni regola di stile è
+        composta da un selettore e un blocco di dichiarazioni.
+      </p>
+
+      <pre><code>
+selettore {
+  proprietà: valore;
+}
+</code></pre>
+
+      <hr />
+
+      <p>
+        <strong>Selettori CSS:</strong><br />
+        I selettori CSS identificano gli elementi HTML a cui verranno applicati
+        le regole di stile. Possono essere basati su elementi, classi, ID,
+        attributi e altro ancora.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Selettori di elementi:</strong> Si applicano a tutti gli
+          elementi di un determinato tipo (ad esempio, <code>p</code> per i
+          paragrafi).
+        </li>
+        <li>
+          <strong>Selettori di classe:</strong> Si applicano agli elementi che
+          hanno un determinato valore nell'attributo <code>class</code> (ad
+          esempio, <code>.classe</code>).
+        </li>
+        <li>
+          <strong>Selettori di ID:</strong> Si applicano agli elementi che hanno
+          un determinato valore nell'attributo <code>id</code> (ad esempio,
+          <code>#id</code>).
+        </li>
+      </ul>
+
+      <hr />
+
+      <p>
+        <strong>Dichiarazioni CSS:</strong><br />
+        Le dichiarazioni specificano quali attributi di stile devono essere
+        applicati agli elementi selezionati. Ogni dichiarazione è composta da
+        una proprietà e un valore separati da due punti.
+      </p>
+
+      <pre><code>
+selettore { 
+  proprietà: valore;
+}
+</code></pre>
+
+      <hr />
+
+      <p>
+        <strong>Box Model:</strong><br />
+        Il Box Model è un concetto fondamentale in CSS che descrive come gli
+        elementi HTML vengono visualizzati e occupano spazio sullo schermo. È
+        composto da margini, padding, bordi e content area.
+      </p>
+
+      <p>
+        <strong>Selezione di Priorità (Specificità):</strong><br />
+        Quando più regole di stile si applicano a uno stesso elemento, viene
+        utilizzata la selezione di priorità per determinare quale regola deve
+        prevalere. La specificità è una misura di quale regola ha maggiore peso
+        ed è basata sui selettori utilizzati.
+      </p>
+
+      <p>
+        <strong>Media Queries:</strong><br />
+        Le media queries consentono di applicare regole di stile diverse in base
+        alle caratteristiche del dispositivo, come larghezza dello schermo,
+        orientamento e altro ancora. Sono comunemente utilizzate per rendere un
+        sito web reattivo e adattabile a diverse dimensioni e tipi di
+        dispositivi.
+      </p>
+      <h3><strong>CSSOM</strong></h3>
+      <p>
+        Il CSS Object Model (CSSOM) è una rappresentazione in forma di albero
+        delle regole CSS applicate a un documento HTML. Permette agli
+        sviluppatori web di accedere e manipolare dinamicamente le regole CSS
+        tramite JavaScript. Con il CSSOM, è possibile modificare lo stile di un
+        documento web in modo dinamico, aggiungere nuove regole CSS e reagire a
+        eventi come cambiamenti di dimensioni dello schermo. È uno strumento
+        potente per creare pagine web interattive e dinamiche, consentendo agli
+        sviluppatori di controllare il layout e lo stile della pagina in tempo
+        reale.
+      </p>
+    </main>
+    <footer>
+      Ti potrebbe interessare anche:
+      <a href="../../index.html"><strong>Indice</strong></a>
+      <a href="Git.html"><strong>Git</strong></a>
+      <a href="Backend.html"><strong>Backend</strong></a>
+      <a href="Html.html"><strong>Html</strong></a>
+      <a href="Markdown.html"><strong>Markdown</strong></a>
+      <a href="dom.html"><strong>DOM</strong></a>
+    </footer>
+  </body>
+</html>

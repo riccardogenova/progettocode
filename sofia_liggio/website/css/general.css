@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+h1 {
+  color: #333;
+  font-family: sans-serif;
+}
+
+a {
+  color: #eee;
+}
+
+/* Utility */
+.btn {
+  display: inline-block;
+  font-size: 20px;
+  color: #333;
+  background-color: orange;
+  padding: 15px 15px;
+  border: none;
+}
+
+.btn-light {
+  background: #bbb;
+  color: #333;
+}
+
+.btn:hover {
+  background-color: #fff;
+}
+/* Header */
+
+#navbar {
+  background: #333;
+}
+
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .container ul {
+  display: flex;
+  padding-right: 1rem;
+}
+
+#navbar .container ul li {
+  list-style: none;
+}
+
+#navbar .container ul li a {
+  padding: 20px;
+  display: block;
+}
+
+#navbar .container h1 {
+  text-transform: uppercase;
+  padding-left: 1.5rem;
+}
+
+#navbar ul li a:hover,
+#navbar ul li.current {
+  background: #555;
+  color: orange;
+}
+
+/* Section 1*/
+
+#showcase .container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  background: url(https://images.unsplash.com/photo-1614292253389-bd2c1f89cd0e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat center center/cover;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase .container h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+
+#showcase .container p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.color-primary {
+  color: orange;
+}
+
+/* Section 2*/
+
+#showcase-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#showcase-2 .container {
+  margin: 20px;
+}
+
+#showcase-2 .container * {
+  margin-bottom: 10px;
+}
+
+#showcase-2 .image {
+  display: flex;
+  flex-direction: column;
+
+  height: 70vh;
+  width: 100vh;
+  background: url(https://cdn-hhomn.nitrocdn.com/owkBmdjkYWIKArhpTrYLoSVIZUZjkLka/assets/images/optimized/rev-c191e1d/hive.com/wp-content/uploads/2023/01/Blog_12.12.22_RightBrainLeftBrain.png)
+    no-repeat center center/cover;
+}
