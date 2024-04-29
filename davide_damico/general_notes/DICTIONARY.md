@@ -17,3 +17,11 @@
 - ## Oggetto document in js (da cercare)
 
 - ## Oggetto window in js (da cercare)
+
+- ## Parametri var
+
+- ## Parametri let
+
+- ## Parametri const
+
+- ## Parametri function

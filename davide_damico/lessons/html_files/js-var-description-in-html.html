@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Uso della Parola Chiave <code>var</code> in JavaScript</h1>
+
+    <p>
+      La parola chiave <code>var</code> in JavaScript viene utilizzata per
+      dichiarare variabili che hanno uno <strong>scope funzionale</strong> (o
+      globale se dichiarate al di fuori di una funzione). Le variabili
+      dichiarate con <code>var</code> sono soggette a <em>hoisting</em>, il che
+      significa che vengono spostate alla parte superiore del loro contesto di
+      esecuzione (funzione o globale).
+    </p>
+
+    <h2>Esempio di Dichiarazione <code>var</code></h2>
+
+    <p>Ecco un esempio base:</p>
+
+    <pre><code>var messaggio = "Ciao mondo!";
+    console.log(messaggio); // Output: Ciao mondo!
+    </code></pre>
+
+    <h2>Hoisting con <code>var</code></h2>
+
+    <p>
+      L'hoisting fa sì che le variabili dichiarate con <code>var</code> possano
+      essere utilizzate prima della loro effettiva dichiarazione nel codice.
+      Tuttavia, anche se sono accessibili, non hanno ancora un valore assegnato
+      finché la dichiarazione non viene eseguita, quindi il loro valore sarà
+      <code>undefined</code> fino a quel punto.
+    </p>
+
+    <p>Ecco un esempio di come funziona l'hoisting con <code>var</code>:</p>
+
+    <pre><code>console.log(saluto); // Output: undefined
+    var saluto = "Buongiorno!";
+    console.log(saluto); // Output: Buongiorno!
+    </code></pre>
+
+    <h2>Scope di <code>var</code></h2>
+
+    <p>
+      Le variabili dichiarate con <code>var</code> hanno uno scope che è
+      limitato alla funzione entro cui sono dichiarate. Se vengono dichiarate al
+      di fuori di una funzione, appartengono allo scope globale.
+    </p>
+
+    <pre><code>function testVar() {
+    var locale = "Sono locale alla funzione";
+    console.log(locale); // Output: Sono locale alla funzione
+    }
+    testVar();
+    console.log(locale); // Error: locale is not defined
+    </code></pre>
+
+    <p>
+      In questo esempio, la variabile <code>locale</code> è limitata allo scope
+      della funzione <code>testVar()</code> e non è accessibile al di fuori di
+      essa. Ciò dimostra il comportamento dello scope funzionale di
+      <code>var</code>, in contrasto con le variabili <code>let</code> e
+      <code>const</code> che hanno uno scope a blocco.
+    </p>
+
+    <h2>Considerazioni sull'Uso di <code>var</code></h2>
+
+    <p>
+      L'introduzione di <code>let</code> e <code>const</code> in ES6 ha segnato
+      un cambiamento significativo nelle pratiche di dichiarazione delle
+      variabili in JavaScript. Mentre <code>var</code> offre uno scope
+      funzionale o globale, <code>let</code> e <code>const</code> offrono uno
+      scope a blocco, che è più intuitivo e riduce il rischio di errori comuni
+      legati allo scope delle variabili.
+    </p>
+
+    <h3>Problemi Comuni con <code>var</code></h3>
+
+    <ol>
+      <li>
+        <strong>Hoisting Confuso</strong>: Come visto, <code>var</code> è
+        soggetto a hoisting, il che può portare a situazioni in cui una
+        variabile viene utilizzata prima che sia stata effettivamente
+        dichiarata, risultando in valori <code>undefined</code>.
+      </li>
+      <li>
+        <strong>Scope Globale Non Intenzionale</strong>: Se
+        <code>var</code> viene utilizzato al di fuori di una funzione senza una
+        chiara intenzione, può inavvertitamente creare una variabile globale,
+        potenzialmente sovrascrivendo altre variabili globali e introducendo bug
+        difficili da tracciare.
+      </li>
+      <li>
+        <strong>Ridefinizione e Re-declarazione</strong>:
+        <code>var</code> permette la re-declarazione della stessa variabile
+        nello stesso scope senza errori, il che può portare a sovrascritture
+        accidentali o uso improprio.
+      </li>
+    </ol>
+
+    <h3>Vantaggi di <code>let</code> e <code>const</code></h3>
+
+    <ol>
+      <li>
+        <strong>Controllo dello Scope Migliore</strong>: <code>let</code> e
+        <code>const</code> sono limitati al blocco in cui sono definiti, sia
+        esso un ciclo, un blocco condizionale o un blocco di codice delimitato
+        da parentesi graffe. Questo riduce il rischio di effetti collaterali
+        indesiderati e rende il codice più facile da comprendere.
+      </li>
+      <li>
+        <strong>Prevenzione di Re-declarazioni</strong>: In uno stesso blocco,
+        tentare di dichiarare nuovamente la stessa variabile con
+        <code>let</code> o <code>const</code> produrrà un errore, aumentando la
+        sicurezza e aiutando a identificare errori di programmazione.
+      </li>
+      <li>
+        <strong>Costanti Immutabili</strong>: <code>const</code> è
+        particolarmente utile quando si ha bisogno di una variabile il cui
+        valore non dovrebbe cambiare dopo la sua inizializzazione. Questo
+        chiarisce l'intenzione e garantisce che il valore rimanga costante,
+        prevenendo modifiche accidentali.
+      </li>
+    </ol>
+
+    <h3>Esempio Pratico</h3>
+
+    <pre><code>// Problema con `var`
+    function loopVar() {
+    for (var i = 0; i < 5; i++) {
+        setTimeout(function () {
+        console.log(i); // Stampa sempre 5, non i valori da 0 a 4
+        }, 100);
+    }
+    }
+    loopVar();
+
+    // Soluzione con `let`
+    function loopLet() {
+    for (let i = 0; i < 5; i++) {
+        setTimeout(function () {
+        console.log(i); // Stampa i valori da 0 a 4 come atteso
+        }, 100);
+    }
+    }
+    loopLet();
+    </code></pre>
+  </body>
+</html>
