@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="newstyle.css" />
-    <script src="esempio.js"></script>
   </head>
   <body>
-    <button>PREMIMI ORA!</button>
+    <p id="paragrafo">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum voluptas
+      laudantium facere impedit nulla accusamus inventore ullam itaque, eligendi
+      blanditiis nobis nihil dolorem id, error rerum consectetur minus
+      perspiciatis quae!
+    </p>
+    <button onclick="mostraParagrafo()">Mostra</button>
+    <button onclick="nascondiParagrafo()">Nascondi</button>
+
+    <select id="colorisfondo" onchange="changeBackgroundColor()">
+      <option value="white">Bianco</option>
+      <option value="red">Rosso</option>
+      <option value="blue">Blu</option>
+      <option value="green">Verde</option>
+      <option value="yellow">Giallo</option>
+    </select>
   </body>
+  <script src="esempio.js"></script>
 </html>
