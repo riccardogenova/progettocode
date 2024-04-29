@@ -1,4 +1,4 @@
-var HIddenbutton = document.getElementById("hidden");
+var hiddenButton = document.getElementById("hidden");
 hidden.addEventListener("click", function () {
   hidden.style.display = "none";
 });
