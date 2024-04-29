@@ -8,13 +8,13 @@ Si intende dunque una sintassi semplificata usata per aggiungere formattazione a
 
 Alcuni esempi notevoli di linguaggi di markup leggero includono:
 
-**Markdown** : Probabilmente il più noto, usato per documenti, note, e contenuti web.
+**_Markdown_**: Probabilmente il più noto, usato per documenti, note, e contenuti web.
 
-**reStructuredText** : Usato principalmente nella documentazione tecnica, specialmente in progetti Python.
+**_reStructuredText_**: Usato principalmente nella documentazione tecnica, specialmente in progetti Python.
 
-**AsciiDoc** : Simile a reStructuredText ma con più funzionalità, usato per documentazione e libri digitali.
+**_AsciiDoc_**: Simile a reStructuredText ma con più funzionalità, usato per documentazione e libri digitali.
 
-**Textile** : Un altro linguaggio di markup leggero che è popolare in alcuni ambienti di blogging.
+**_Textile_**: Un altro linguaggio di markup leggero che è popolare in alcuni ambienti di blogging.
 
 Questi linguaggi sono progettati per essere facili da scrivere e da leggere, rendendoli ideali per la documentazione, la scrittura su web, e la comunicazione rapida. Sono particolarmente apprezzati nelle comunità di sviluppatori, dove la documentazione può essere scritta direttamente nel codice o vicino ad esso, mantenendo la leggibilità sia del codice che dei commenti e delle istruzioni. Inoltre, strumenti di blogging, piattaforme di documentazione, e altri sistemi di gestione dei contenuti spesso supportano questi formati per facilitare l'editing e la pubblicazione di contenuti testuali.
 

@@ -2,7 +2,7 @@
 
 Git è un sistema di controllo versione distribuito ampiamente utilizzato per il tracciamento delle modifiche apportate ai file in progetti software. Consente agli sviluppatori di collaborare efficacemente su progetti di codice, mantenendo una cronologia completa delle modifiche apportate.
 
-# **Caratteristiche principali:**
+## **Caratteristiche principali:**
 
 **_Controllo versione distribuito_**:
 
@@ -24,7 +24,7 @@ Oltre ai file di codice, Git può memorizzare metadati come descrizioni di commi
 
 Git è progettato per essere efficiente e scalabile, adatto a progetti di qualsiasi dimensione, da piccoli script a grandi basi di codice aziendali.
 
-# **Come funziona Git:**
+## **Come funziona Git:**
 
 **_Repository_**:
 
@@ -46,7 +46,7 @@ Un branch è una linea di sviluppo separata all'interno del repository. Consente
 
 Un repository remoto è una copia del repository archiviata su un server, accessibile a tutti i collaboratori del progetto.
 
-# **Vantaggi di Git:**
+## **Vantaggi di Git:**
 
 **_Migliore collaborazione_**:
 
@@ -61,7 +61,7 @@ Git fornisce un controllo completo sulla cronologia del codice, consentendo di r
 Git supporta diversi flussi di lavoro di sviluppo, come Git Flow e GitHub Flow, adattandosi alle esigenze di diversi team.
 Ampia community: Git vanta una vasta e attiva community di sviluppatori che offrono supporto e risorse.
 
-# **Esempi di utilizzo di Git:**
+## **Esempi di utilizzo di Git:**
 
 **_Sviluppo software_**:
 
