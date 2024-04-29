@@ -1,4 +1,4 @@
-# Cos'è Markdown
+# **Cos'è Markdown**
 
 Markdown è un linguaggio di markup leggero creato con l'obiettivo di essere il più leggibile possibile.
 
@@ -22,19 +22,19 @@ In informatica, **"codice di markup"** si riferisce a qualsiasi linguaggio di ma
 
 Ecco alcuni dei linguaggi di markup più comuni e esempi di come vengono utilizzati:
 
-**HTML (Hypertext Markup Language)** :
+**_HTML (Hypertext Markup Language)_** :
 
 Utilizzato principalmente per creare pagine web e applicazioni. Definisce la struttura di una pagina web e i suoi contenuti.
 
-**XML (eXtensible Markup Language)** :
+**_XML (eXtensible Markup Language)_** :
 
 Progettato per essere sia leggibile che utilizzabile da macchine. È utilizzato per rappresentare dati arbitrari in formati strutturati, come configurazioni, messaggi tra servizi web, e altro.
 
-**Markdown** :
+**_Markdown_** :
 
 Un linguaggio di markup leggero usato per formattare testi in un modo che rimane leggibile anche come testo grezzo, ideale per documenti che devono essere letti sia in formato puro che formattato.
 
-**LaTeX**:
+**_LaTeX_**:
 
 Un linguaggio di markup per la preparazione di documenti scientifici e matematici, che consente un controllo molto dettagliato sulla struttura e sulla presentazione del testo, soprattutto quando si tratta di formule matematiche.
 

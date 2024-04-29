@@ -12,7 +12,7 @@ Ogni sviluppatore possiede una copia completa del repository, consentendo di lav
 
 Git mantiene una cronologia dettagliata di tutte le modifiche apportate ai file, consentendo di ripristinare versioni precedenti o di esaminare l'evoluzione del progetto nel tempo.
 
-**_Ramificazione e merge flessibili_**:
+**_Ramificazione e merge flessibili_** :
 
 Git permette di creare facilmente nuove ramificazioni del codice per sperimentare nuove idee o correggere bug, e di unirle successivamente nel ramo principale.
 
