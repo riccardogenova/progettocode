@@ -29,3 +29,8 @@ Esistono varie categorie di eventi:
 
 - onClick: attivato quando si clicca su un oggetto;
 - onDblClick: attivato con un doppio click;
+
+## Implementazione
+
+Il tag HTML <script> viene utilizzato per definire uno script lato client (JavaScript).
+L'elemento contiene istruzioni script oppure punta a un file di script esterno tramite l'attributo 'src'.
