@@ -80,3 +80,75 @@ const number = 2;
 console.log(number); // Output: 2
 number = 4; // Errore! Impossibile modificare una costante
 ```
+
+## Operatore membro punto "`.`", cos'è?
+
+L'operatore punto in **JavaScript** è un simbolo (".") utilizzato per accedere alle proprietà e ai metodi di un oggetto. Quando viene utilizzato seguito dal nome di una proprietà o di un metodo, permette di **navigare** all'interno della struttura dell'oggetto per ottenere o modificare i suoi valori o per chiamare i suoi metodi.
+
+In pratica, l'operatore punto è usato per specificare la relazione di appartenenza tra un oggetto e i suoi membri. Quando si scrive `oggetto.nomeProprietà`, JavaScript interpreterà ciò come "prendi la proprietà `nomeProprietà` dell'oggetto `oggetto`".
+
+Ecco un esempio molto semplice:
+
+```javascript
+var persona = {
+  nome: "Mario",
+  età: 30,
+};
+
+console.log(persona.nome); // Stampa: "Mario"
+```
+
+Qui, l'operatore punto viene utilizzato per accedere alla proprietà `nome` dell'oggetto `persona`.
+
+In breve, l'operatore punto in JavaScript è un meccanismo essenziale per interagire con gli oggetti e accedere ai loro membri.
+
+## OPP (Object-Oriented Programming)
+
+In JavaScript, l'**OOP** è supportata principalmente attraverso il concetto di prototipi. Nonostante JavaScript non abbia una classica implementazione basata sul concetto di classi come alcuni altri linguaggi orientati agli oggetti (come Java o C++), è comunque possibile implementare il paradigma OOP attraverso prototipi e costruttori di oggetti.
+
+1.  **Costruttori di oggetti**: I costruttori di oggetti sono funzioni che vengono utilizzate per creare nuove istanze di oggetti. Queste funzioni definiscono la struttura di un oggetto e le sue proprietà. Ad esempio:
+
+```javascript
+function Persona(nome, età) {
+  this.nome = nome;
+  this.età = età;
+}
+
+var mario = new Persona("Mario", 30);
+console.log(mario.nome); // Output: "Mario"
+console.log(mario.età); // Output: 30
+```
+
+2. **Prototipi**: In JavaScript, ogni oggetto ha un prototipo che può contenere proprietà e metodi che possono essere condivisi tra tutte le istanze di quell'oggetto. È possibile aggiungere metodi a un prototipo per consentire la condivisione di codice tra tutte le istanze di un oggetto. Ad esempio:
+
+```javascript
+Persona.prototype.saluta = function () {
+  console.log("Ciao, sono " + this.nome);
+};
+
+mario.saluta(); // Output: "Ciao, sono Mario"
+```
+
+3.  **Ereditarietà prototipica**: In JavaScript, l'ereditarietà viene gestita attraverso la catena dei prototipi. Ogni oggetto ha un riferimento al suo prototipo padre, e le proprietà e i metodi di questo prototipo possono essere ereditati dall'oggetto stesso. Ad esempio:
+
+```javascript
+function Studente(nome, età, corso) {
+  Persona.call(this, nome, età);
+  this.corso = corso;
+}
+
+Studente.prototype = Object.create(Persona.prototype);
+Studente.prototype.constructor = Studente;
+
+Studente.prototype.presentati = function () {
+  console.log("Ciao, sono " + this.nome + " e studio " + this.corso);
+};
+
+var luca = new Studente("Luca", 25, "Informatica");
+luca.saluta(); // Output: "Ciao, sono Luca"
+luca.presentati(); // Output: "Ciao, sono Luca e studio Informatica"
+```
+
+In questo esempio, la funzione `Studente` eredita le proprietà e i metodi della funzione `Persona` attraverso il prototipo. La funzione `Object.create()` viene utilizzata per creare un nuovo oggetto il cui prototipo è il prototipo di `Persona`, in modo che la catena di ereditarietà sia stabilita.
+
+In sintesi, l'**OOP** in JavaScript si basa sul concetto di prototipi e costruttori di oggetti per consentire la creazione e l'organizzazione di codice orientato agli oggetti. Sebbene sia diverso dall'**OOP** in altri linguaggi, può essere altrettanto potente e flessibile una volta compreso.
