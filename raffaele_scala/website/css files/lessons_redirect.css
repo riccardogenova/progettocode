@@ -1,0 +1,29 @@
+.helpers-list {
+  gap: 80px;
+  display: flex;
+  list-style: none;
+}
+.redirect-list {
+  color: black;
+  font-size: 26px;
+}
+.redirect-list:hover {
+  color: olive;
+}
+#lessons {
+  background-color: #454545;
+  color: #f1fffa;
+  padding: 2px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+.navigation {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+li {
+  border: 1px black solid;
+  padding: 5px;
+  background-color: #785964;
+}

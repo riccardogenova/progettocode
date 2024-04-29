@@ -13,3 +13,7 @@
 - ## LightHouse (da cercare)
 
 - ## GitKraken (da cercare)
+
+- ## Oggetto document in js (da cercare)
+
+- ## Oggetto window in js (da cercare)

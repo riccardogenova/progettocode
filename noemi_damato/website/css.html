@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/4b/2e/11/4b2e11ae8493a04613781e9277a0efb9.gif"
+    />
+    <link rel="stylesheet" href="./page.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <link
+      href="https://fonts.cdnfonts.com/css/fanfare-ticker"
+      rel="stylesheet"
+    />
+    <div class="container">
+      <ul>
+        <a class="button" href="../index.html">HOME</a>
+        <a class="button" href="./css_cheat_sheet.html">helpers css</a>
+      </ul>
+    </div>
+
+    <div class="testo">
+      <h1 class="titolo">CSS</h1>
+      <h2 class="capitolo">Cascading Style Sheets</h2>
+      <h3>
+        linguaggio di programmazione utilizzato per controllare l'aspetto e la
+        formattazione di documenti HTML e XML, è ciò che rende un sito web bello
+        e attraente agli occhi degli utenti.
+      </h3>
+      <strong class="sottotitolo">Selezionare gli elementi:</strong>
+      <ul>
+        <li>
+          <p>
+            Prima di tutto, devi scegliere quali elementi HTML desideri
+            stilizzare.
+          </p>
+        </li>
+      </ul>
+      <strong class="sottotitolo">Applicare gli stili: </strong>
+      <ul>
+        <li>
+          <p>
+            Una volta che hai selezionato gli elementi, puoi definire come
+            devono apparire. Questo include cose come il colore del testo, il
+            tipo di carattere, lo sfondo, il margine, il padding e molte altre
+            proprietà.
+          </p>
+        </li>
+      </ul>
+      <strong class="sottotitolo">Utilizzare le regole CSS:</strong>
+      <ul>
+        <li>Le regole CSS seguono uno schema ben definito:</li>
+      </ul>
+      <ul>
+        <ul>
+          <li>
+            <p>Il selettore indica gli elementi a cui si applica lo stile.</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>
+              La proprietà è l'attributo dell'elemento che vuoi modificare (es.
+              color, font-size, background-color).
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>Il valore è ciò che vuoi assegnare alla proprietà</li>
+        </ul>
+      </ul>
+      <strong class="sottotitolo"
+        >Collegare il file CSS al tuo documento HTML:</strong
+      >
+      <ul>
+        <li>
+          <p>
+            Una volta che hai scritto le tue regole CSS in un file separato
+            (solitamente con estensione .css), devi collegarlo al tuo documento
+            HTML. Puoi farlo inserendo un elemento "< link >" nell'elemento "<
+            head >" del tuo HTML
+          </p>
+        </li>
+      </ul>
+      <h1 class="titolo">CSSOM</h1>
+      <h2 class="capitolo">CSS Object Model</h2>
+      <h3>
+        come una mappa che descrive come il tuo browser interpreta e applica
+        tutti i tuoi stili CSS.
+      </h3>
+      <ul>
+        <strong class="sottotitolo">Parsing del CSS:</strong>
+
+        <li>
+          <p>
+            Il browser legge il tuo file CSS e analizza tutte le regole e le
+            dichiarazioni CSS presenti.
+          </p>
+        </li>
+        <strong class="sottotitolo">Creazione del CSSOM:</strong>
+        <li>
+          <p>
+            Il browser organizza tutte queste regole CSS in una struttura ad
+            albero, chiamata CSSOM. Ogni elemento nell'albero rappresenta una
+            regola CSS e contiene tutte le informazioni su di essa, come il
+            selettore e le proprietà.
+          </p>
+        </li>
+        <strong class="sottotitolo">Collegamento al DOM:</strong>
+        <li>
+          <p>
+            è collegato al DOM (Document Object Model) della tua pagina web.
+            Questo collegamento permette al browser di applicare i corretti
+            stili CSS agli elementi corrispondenti nella pagina HTML.
+          </p>
+        </li>
+        <strong class="sottotitolo">Rendering della pagina:</strong>
+        <li>
+          <p>
+            Una volta che il browser ha il CSSOM e il DOM, può procedere a
+            combinare queste due rappresentazioni per visualizzare la pagina web
+            nel modo desiderato, rispettando tutti i tuoi stili CSS.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

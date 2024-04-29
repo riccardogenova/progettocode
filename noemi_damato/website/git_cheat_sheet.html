@@ -3,170 +3,206 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://i.pinimg.com/originals/4b/2e/11/4b2e11ae8493a04613781e9277a0efb9.gif"
+    />
     <title>GEAT CHEAT SHEET</title>
+    <link rel="stylesheet" href="./page.css" />
   </head>
   <body>
-    <h1>GEAT CHEAT SHEET</h1>
-    <h3>
-      Un "Git cheat sheet" è un foglio di riferimento rapido che elenca i
-      comandi più comuni e utili di Git insieme a una breve spiegazione di
-      ciascuno
-    </h3>
-    <strong>CREAZIONE</strong>
-    <li>
-      <mark><em>git init:</em> </mark> Inizializza un nuovo repository
-    </li>
-    <h5>AGGIORNAMENTO E SALVATAGGIO</h5>
-    <p>
+    <link
+      href="https://fonts.cdnfonts.com/css/fanfare-ticker"
+      rel="stylesheet"
+    />
+    <div class="container">
+      <ul>
+        <a class="button" href="../index.html">HOME</a>
+        <a class="button" href="./git.html">git</a>
+      </ul>
+    </div>
+    <div class="testo">
+      <h1 class="titolo">GEAT CHEAT SHEET</h1>
+      <h3>
+        Un "Git cheat sheet" è un foglio di riferimento rapido che elenca i
+        comandi più comuni e utili di Git insieme a una breve spiegazione di
+        ciascuno
+      </h3>
+      <strong class="capitolo">CREAZIONE</strong>
       <li>
-        <mark><em>git add nomefile: </em> </mark>Aggiunge un file alla staging
-        area
+        <p>
+          <mark class="sottotitolo"><em>git init:</em> </mark> Inizializza un
+          nuovo repository
+        </p>
       </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git add.:</em> </mark> modo rapido per aggiungere tutti i file
-        alla staging area in una sola volta
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git reset nome del file: </em> </mark>Rimuove il file dalla
-        zona di staging.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git commit -m "messaggio del commit": </em> </mark>crea un
-        nuovo commit nel repository Git, il messaggio descrive le modifiche
-        apportate.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git push origin nome-branch:</em> </mark> Carica i commit nel
-        repository remoto sul branch specificato.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git pull origin nome-branch: </em> </mark>Scarica i
-        cambiamenti dal repository remoto sul branch specificato e li unisce con
-        il tuo repository locale.
-      </li>
-    </p>
-    <strong>VISUALIZZAZIONE DELLO STATO</strong>
-    <p>
-      <li>
-        <mark><em> git status: </em> </mark>Mostra lo stato attuale del
-        repository.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git log:</em> </mark> Visualizza la cronologia dei commit.
-      </li>
-    </p>
-    <strong>BRANCH</strong>
-    <p>
-      <li>
-        <mark><em>git branch:</em> </mark> Visualizza i branch locali.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git branch nome-branch:</em> </mark> Crea un nuovo branch.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git checkout -b nome del branch:</em> </mark> creare un nuovo
-        branch e passare immediatamente a esso
-      </li>
-    </p>
+      <strong class="capitolo">AGGIORNAMENTO E SALVATAGGIO</strong>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git add nomefile: </em> </mark>Aggiunge
+          un file alla staging area
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git add.:</em> </mark> modo rapido per
+          aggiungere tutti i file alla staging area in una sola volta
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git reset nome del file: </em> </mark
+          >Rimuove il file dalla zona di staging.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"
+            ><em>git commit -m "messaggio del commit": </em> </mark
+          >crea un nuovo commit nel repository Git, il messaggio descrive le
+          modifiche apportate.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"
+            ><em>git push origin nome-branch:</em>
+          </mark>
+          Carica i commit nel repository remoto sul branch specificato.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"
+            ><em>git pull origin nome-branch: </em> </mark
+          >Scarica i cambiamenti dal repository remoto sul branch specificato e
+          li unisce con il tuo repository locale.
+        </li>
+      </p>
+      <strong class="capitolo">VISUALIZZAZIONE DELLO STATO</strong>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em> git status: </em> </mark>Mostra lo
+          stato attuale del repository.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git log:</em> </mark> Visualizza la
+          cronologia dei commit.
+        </li>
+      </p>
+      <strong class="capitolo">BRANCH</strong>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git branch:</em> </mark> Visualizza i
+          branch locali.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git branch nome-branch:</em> </mark>
+          Crea un nuovo branch.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"
+            ><em>git checkout -b nome del branch:</em>
+          </mark>
+          creare un nuovo branch e passare immediatamente a esso
+        </li>
+      </p>
 
-    <p>
-      <li>
-        <mark><em>git checkout nome-branch:</em> </mark> Passa a un branch
-        esistente.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git merge nome-branch: </em> </mark>Unisce un branch al branch
-        corrente.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git branch -m vecchio-nome nuovo-nome:</em> </mark> cambiare
-        il nome di un branch in Git
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git checkout:</em> </mark> viene utilizzato per spostarsi tra
-        i branch
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git push nome-branch:</em> </mark> forzare quello che abbiamo
-        in locale in remoto
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git branch -m nome-branch_nuovi: </em> </mark> rinominare un
-        branch
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git branch -d nome branch:</em> </mark> cancellare branch
-      </li>
-    </p>
-    <strong>ANNULLARE</strong>
-    <p>
-      <li>
-        <mark><em>git checkout nomefile:</em> </mark> annullerà le modifiche non
-        ancora committate nel file e lo ripristinerà allo stato dell'ultimo
-        commit
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git origin -- delete:</em> </mark> eliminare branch remoti da
-        terminale
-      </li>
-    </p>
-    <strong> CLONAZIONE</strong>
-    <p>
-      <li>
-        <mark><em> git clone URL repository:</em> </mark> Clona una copia locale
-        di un repository
-      </li>
-    </p>
-    <strong>REMOTI</strong>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git checkout nome-branch:</em> </mark>
+          Passa a un branch esistente.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git merge nome-branch: </em> </mark
+          >Unisce un branch al branch corrente.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"
+            ><em>git branch -m vecchio-nome nuovo-nome:</em>
+          </mark>
+          cambiare il nome di un branch in Git
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git checkout:</em> </mark> viene
+          utilizzato per spostarsi tra i branch
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git push nome-branch:</em> </mark>
+          forzare quello che abbiamo in locale in remoto
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"
+            ><em>git branch -m nome-branch_nuovi: </em>
+          </mark>
+          rinominare un branch
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git branch -d nome branch:</em> </mark>
+          cancellare branch
+        </li>
+      </p>
+      <strong class="capitolo">ANNULLARE</strong>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git checkout nomefile:</em> </mark>
+          annullerà le modifiche non ancora committate nel file e lo
+          ripristinerà allo stato dell'ultimo commit
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git origin -- delete:</em> </mark>
+          eliminare branch remoti da terminale
+        </li>
+      </p>
+      <strong class="capitolo"> CLONAZIONE</strong>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em> git clone URL repository:</em> </mark>
+          Clona una copia locale di un repository
+        </li>
+      </p>
+      <strong class="capitolo">REMOTI</strong>
 
-    <p>
-      <li>
-        <mark><em>git remote:</em> </mark> Mostra l'elenco dei repository remoti
-        collegati.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em> git remote add nome_remoto url_remoto:</em> </mark> Collega
-        un repository remoto.
-      </li>
-    </p>
-    <p>
-      <li>
-        <mark><em>git fetch origin:</em> </mark> per conoscere le ultime
-        informazioni sullo stato del repository remoto senza fondere
-        automaticamente le modifiche in locale
-      </li>
-    </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git remote:</em> </mark> Mostra l'elenco
+          dei repository remoti collegati.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"
+            ><em> git remote add nome_remoto url_remoto:</em>
+          </mark>
+          Collega un repository remoto.
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark class="sottotitolo"><em>git fetch origin:</em> </mark> per
+          conoscere le ultime informazioni sullo stato del repository remoto
+          senza fondere automaticamente le modifiche in locale
+        </li>
+      </p>
+    </div>
   </body>
 </html>

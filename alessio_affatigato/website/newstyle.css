@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+}
+
+#namefont {
+  font-family: math;
+  font-size: x-large;
+}
+
+.navbar {
+  background-color: #188ad6;
+  overflow: hidden;
+}
+
+.navbar-right {
+  float: right;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: system-ui;
+}
+
+#colorwhite {
+  color: white;
+}
+.breadcrumb {
+  display: ruby;
+}
