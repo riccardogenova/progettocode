@@ -34,3 +34,15 @@ Esistono varie categorie di eventi:
 
 Il tag HTML <script> viene utilizzato per definire uno script lato client (JavaScript).
 L'elemento contiene istruzioni script oppure punta a un file di script esterno tramite l'attributo 'src'.
+
+```
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+```
+
+Il tag HTML <noscript> definisce un contenuto alternativo da mostrare agli utenti che hanno disabilitato gli script nel browser o che non supportano gli script:
+
+```
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+```
