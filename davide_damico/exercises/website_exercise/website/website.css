@@ -128,6 +128,48 @@ main {
   border: rgb(116, 30, 30) 1px solid;
 }
 
+.third-raw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 50px;
+}
+
+.third-raw > a {
+  text-decoration: none;
+  color: white;
+  border: white 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.third-raw > a:hover {
+  color: rgb(116, 30, 30);
+  border: rgb(116, 30, 30) 1px solid;
+}
+
+.fourth-raw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 50px;
+}
+
+.fourth-raw > a {
+  text-decoration: none;
+  color: white;
+  border: white 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.fourth-raw > a:hover {
+  color: rgb(116, 30, 30);
+  border: rgb(116, 30, 30) 1px solid;
+}
+
 .default-css {
   color: white;
   line-height: 2.2;

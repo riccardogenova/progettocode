@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Lessons CONST</title>
+    <link rel="stylesheet" href="../website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/82742da272.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><h1>Davide D'Amico</h1></div>
+        <nav class="menu">
+          <ul class="ulmenu">
+            <a href="../website.html">Home</a>
+            <a href="../helpers.html">Helpers</a>
+            <a href="../lessons.html">Lessons</a>
+            <a href="">Sign In<i class="fa-solid fa-right-to-bracket"></i></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <p>HOME</p>
+        <p>></p>
+        <p>LESSONS</p>
+        <p>></p>
+        <p>CONST</p>
+      </div>
+
+      <div class="default-css">
+        <h1>Uso di <code>const</code> in JavaScript</h1>
+
+        <p>
+          In JavaScript, <code>const</code> è una parola chiave che viene
+          utilizzata per dichiarare variabili con un valore che non può essere
+          riassegnato dopo la sua inizializzazione. <code>const</code> sta per
+          "costante", ma ciò non implica che il valore sia immutabile —
+          significa solo che l'identificatore non può essere riassegnato.
+          L'utilizzo di <code>const</code> è particolarmente utile quando vuoi
+          assicurarti che il valore di una variabile non cambi per tutta la
+          durata del programma.
+        </p>
+
+        <h4>Sintassi</h4>
+
+        <pre><code class="language-javascript">
+const NOME_COSTANTE = valore;
+</code></pre>
+
+        <h4>Esempio di Utilizzo</h4>
+
+        <pre><code class="language-javascript">
+const PI = 3.14;
+console.log(PI); // Output: 3.14
+</code></pre>
+
+        <p>
+          In questo esempio, PI è una costante il cui valore è 3.14. Se provi a
+          riassegnare un valore a PI, JavaScript genererà un errore:
+        </p>
+
+        <pre><code class="language-javascript">
+PI = 3.14159; // TypeError: Assignment to constant variable.
+</code></pre>
+
+        <h4><code>const</code> e Oggetti</h4>
+
+        <p>
+          Se il valore di <code>const</code> è un oggetto o un array, gli
+          elementi interni dell'oggetto o dell'array possono essere modificati:
+        </p>
+
+        <pre><code class="language-javascript">
+const myObject = { key: "value" };
+myObject.key = "newValue";
+console.log(myObject.key); // Output: 'newValue'
+</code></pre>
+
+        <p>
+          Anche se <code>myObject</code> è una costante, puoi modificare il
+          valore delle sue proprietà. Tuttavia, non puoi riassegnare
+          <code>myObject</code> a un nuovo oggetto:
+        </p>
+
+        <pre><code class="language-javascript">
+myObject = { newKey: "newValue" }; // TypeError: Assignment to constant variable.
+</code></pre>
+
+        <p>
+          Quando usi <code>const</code> con un array, la stessa regola si
+          applica:
+        </p>
+
+        <pre><code class="language-javascript">
+const myArray = ["apple", "banana"];
+myArray.push("orange");
+console.log(myArray); // Output: ['apple', 'banana', 'orange']
+</code></pre>
+
+        <p>
+          In questo caso, puoi modificare il contenuto di myArray (ad esempio,
+          aggiungendo un elemento), ma non puoi riassegnare myArray a un nuovo
+          array:
+        </p>
+
+        <pre><code class="language-javascript">
+myArray = ["strawberry", "kiwi"]; // TypeError: Assignment to constant variable.
+</code></pre>
+
+        <h4>Conclusione</h4>
+
+        <p>
+          L'utilizzo di <code>const</code> con oggetti e array ti permette di
+          proteggere la variabile di riferimento da riassegnazioni, mentre
+          permette ancora la modifica del contenuto interno. Questo è
+          particolarmente utile in programmi dove l'integrità del riferimento
+          deve essere mantenuta durante tutto il ciclo di vita del programma,
+          prevenendo così errori derivanti da riassegnazioni accidentali.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
