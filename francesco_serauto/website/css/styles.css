@@ -26,9 +26,20 @@ h1 {
   max-width: 2000px;
   height: 50px;
 }
+@media screen and (max-width: 767px) {
+  .headerCODE {
+    padding: 0 10px;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
 }
 .sidebar {
   width: 25%;
@@ -36,10 +47,24 @@ h1 {
   padding: 20px;
   border-radius: 9px;
 }
+
 .Menu:hover {
   padding: 0px 20px;
   background-color: #ccc;
   border-radius: 9px;
+}
+@media screen and (min-width: 767px) {
+  .sidebar .Menu:hover {
+    padding: 0px 20px;
+    background-color: #ccc;
+    border-radius: 9px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 80%;
+  }
 }
 .content {
   flex: 1;
@@ -54,6 +79,12 @@ h1 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .box {
+    padding: 15px;
+    margin-top: 15px;
+  }
 }
 .box-link {
   background-color: rgba(255, 255, 255, 0.35);
@@ -71,21 +102,31 @@ code {
   border-radius: 4px;
 }
 #menu-title {
-  padding: 10px;
   font-size: 15px;
-  font-family: "Segoe UI Emoji";
+  padding: 10px 0;
+  margin-bottom: 20px;
 }
 #box-link-title {
-  padding: 10px;
   font-size: 15px;
-  font-family: "Segoe UI Emoji";
+  padding: 10px 0;
+  margin-bottom: 20px;
 }
-#code-gif {
+.code-gif {
   border-radius: 9px;
   display: flex;
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .code-gif {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .frontback {
+    width: 100%;
+  }
 }
 #frontback {
   border-radius: 9px;
@@ -115,6 +156,7 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+
 a:link {
   text-decoration: none;
   color: #333333;
@@ -142,6 +184,12 @@ footer {
   text-align: right;
   padding: 20px 0;
 }
+@media screen and (max-width: 767px) {
+  footer {
+    text-align: center;
+    padding: 15px 0;
+  }
+}
 footer ul {
   list-style: none;
 }
@@ -151,4 +199,20 @@ footer ul li {
 }
 footer ul li a {
   color: #333333;
+}
+pre code {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  pre code {
+    font-size: 12px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
 }

@@ -104,8 +104,10 @@
           </h2>
           <details>
             <summary>
-              Questa categoria comprende una serie di comandi utilizzati per
-              interagire con un <b>terminale o una shell</b>
+              <p>
+                Questa categoria comprende una serie di comandi utilizzati per
+                interagire con un <b>terminale o una shell</b>
+              </p>
             </summary>
 
             <h3>Gestione dei file e delle directory</h3>
@@ -174,9 +176,11 @@
           </h2>
           <details>
             <summary>
-              Questa categoria comprende una serie di comandi utilizzati per
-              <b>gestire repository Git</b>, tracciare modifiche nel codice
-              sorgente e collaborare con altri sviluppatori.
+              <p>
+                Questa categoria comprende una serie di comandi utilizzati per
+                <b>gestire repository Git</b>, tracciare modifiche nel codice
+                sorgente e collaborare con altri sviluppatori.
+              </p>
             </summary>
 
             <h3>Configurazione</h3>
@@ -316,9 +320,11 @@
           </h2>
           <details>
             <summary>
-              Questa categoria comprende una serie di comandi utilizzati per
-              <b>formattare il testo</b> e la struttura dei documenti
-              utilizzando la sintassi Markdown.
+              <p>
+                Questa categoria comprende una serie di comandi utilizzati per
+                <b>formattare il testo</b> e la struttura dei documenti
+                utilizzando la sintassi Markdown.
+              </p>
             </summary>
             <code>
               <h3>Intestazioni</h3>
@@ -367,13 +373,15 @@
           </h2>
           <details>
             <summary>
-              Questa categoria include una serie di comandi utilizzati per
-              creare e
-              <b
-                >formattare contenuti web utilizzando il linguaggio di markup
-                HTML</b
-              >
-              (Hypertext Markup Language).
+              <p>
+                Questa categoria include una serie di comandi utilizzati per
+                creare e
+                <b
+                  >formattare contenuti web utilizzando il linguaggio di markup
+                  HTML</b
+                >
+                (Hypertext Markup Language).
+              </p>
             </summary>
 
             <code>
@@ -447,151 +455,191 @@
           "
             />
           </h2>
+
           <details>
             <summary>
-              Questa categoria include una serie di comandi utilizzati per
-              <b
-                >stilizzare e formattare contenuti web utilizzando il linguaggio
-                di stile CSS</b
-              >
-              (Cascading Style Sheets).
+              <p>
+                Questa categoria include una serie di comandi utilizzati per
+                <b
+                  >stilizzare e formattare contenuti web utilizzando il
+                  linguaggio di stile CSS</b
+                >
+                (Cascading Style Sheets).
+              </p>
             </summary>
-            <pre><code>
-        /* Commento CSS */
-        
-        /* Selezionare un elemento HTML */
-        <b>h1</b> {
-            /* Stile per gli elementi h1 */
-        }
-        
-        /* Selezionare un elemento con un'ID */
-        <b>#myElement</b> {
-            /* Stile per l'elemento con ID "myElement" */
-        }
-        
-        /* Selezionare un elemento con una classe */
-        <b>.myClass</b> {
-            /* Stile per gli elementi con la classe "myClass" */
-        }
-        
-        /* Selezionare tutti gli elementi */
-        <b>*</b> {
-            /* Stile per tutti gli elementi */
-        }
-        
-        /* Selezionare elementi figlio */
-        <b>div p</b> {
-            /* Stile per i paragrafi all'interno di un div */
-        }
-        
-        /* Selezionare elementi fratelli */
-        <b>p + p</b> {
-            /* Stile per il secondo paragrafo e successivi */
-        }
-        
-        /* Selezionare un elemento al passaggio del mouse */
-        <b>h1:hover</b> {
-            /* Stile per l'elemento h1 al passaggio del mouse */
-        }
-        
-        /* Selezionare gli elementi figli diretti */
-        <b>ul > li</b> {
-            /* Stile per gli elementi li direttamente all'interno di un ul */
-        }
-        
-        /* Selezionare gli elementi con attributi specifici */
-        <b>input[type="text"]</b> {
-            /* Stile per gli input di tipo text */
-        }
-        
-        /* Selezionare gli elementi con attributi iniziati da un certo valore */
-        <b>input[type^="t"]</b> {
-            /* Stile per gli input con attributi type che iniziano con 't' */
-        }
-        
-        /* Selezionare gli elementi con attributi contenenti un certo valore */
-        <b>input[type*="ext"]</b> {
-            /* Stile per gli input con attributi type che contengono 'ext' */
-        }
-        
-        /* Selezionare gli elementi con attributi che finiscono con un certo valore */
-        <b>input[type$="ext"]</b> {
-            /* Stile per gli input con attributi type che finiscono con 'ext' */
-        }
-        
-        /* Stili per il testo */
-        <b>p</b> {
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            color: #333;
-            line-height: 1.5;
-            text-align: center;
-        }
-        
-        /* Stili per i margini e i padding */
-        <b>.box</b> {
-            margin: 20px; /* Margini esterni */
-            padding: 10px; /* Padding interno */
-        }
-        
-        /* Stili per il background */
-        <b>.container</b> {
-            background-color: #f0f0f0; /* Colore di sfondo */
-            background-image: url('image.jpg'); /* Immagine di sfondo */
-            background-size: cover; /* Adatta l'immagine al contenitore */
-            background-repeat: no-repeat; /* Evita la ripetizione dell'immagine */
-        }
-        
-        /* Stili per i bordi */
-        <b>.element</b> {
-            border: 1px solid #999; /* Bordo di 1 pixel, solido e colore grigio */
-            border-radius: 5px; /* Bordi arrotondati */
-        }
-        
-        /* Stili per le dimensioni */
-        <b>.box</b> {
-            width: 300px; /* Larghezza */
-            height: 200px; /* Altezza */
-            max-width: 100%; /* Larghezza massima */
-            min-height: 100px; /* Altezza minima */
-        }
-        
-        /* Stili per il posizionamento */
-        <b>.absolute</b> {
-            position: absolute; /* Posizionamento assoluto */
-            top: 50%; /* Distanza dal top del 50% */
-            left: 50%; /* Distanza dal left del 50% */
-            transform: translate(-50%, -50%); /* Centratura */
-        }
-        
-        /* Stili per la visibilità */
-        <b>.hidden</b> {
-            visibility: hidden; /* Elemento nascosto, ma occupa spazio */
-            display: none; /* Elemento nascosto, non occupa spazio */
-        }
-        
-        /* Stili per l'opacità */
-        <b>.element</b> {
-            opacity: 0.5; /* Opacità del 50% */
-        }
-        
-        /* Stili per l'animazione */
-        <b>.element</b> {
-            animation-name: example; /* Nome dell'animazione */
-            animation-duration: 3s; /* Durata dell'animazione */
-            animation-timing-function: ease; /* Funzione di temporizzazione */
-            animation-delay: 1s; /* Ritardo prima dell'animazione */
-            animation-iteration-count: infinite; /* Numero di ripetizioni */
-            animation-direction: alternate; /* Direzione dell'animazione */
-            animation-fill-mode: forwards; /* Stato finale dell'animazione */
-        }
-        
-        /* @keyframes per definire l'animazione */
-        <b>@keyframes</b> example {
-            from {background-color: red;}
-            to {background-color: yellow;}
-        }
-            </code></pre>
+
+            <h3>Selezionatori:</h3>
+
+            <p><b>Tipo:</b> elemento { }</p>
+            <p><b>ID:</b> #id { }</p>
+            <p><b>Classe:</b> .classe { }</p>
+            <p><b>Attributo:</b> [attributo=valore] { }</p>
+            <p><b>Pseudo-classe:</b> elemento:pseudo-classe { }</p>
+            <p><b>Pseudo-elemento:</b> elemento::pseudo-elemento { }</p>
+            <br />
+            <h3>Proprietà di posizionamento:</h3>
+            <p><b>Posizione:</b> position: valore;</p>
+            <p>
+              <b>Top, Bottom, Left, Right:</b> top: valore;, bottom: valore;,
+              left: valore;, right: valore;
+            </p>
+            <p><b>Z-index:</b> z-index: valore;</p>
+            <p><b>Float:</b> float: valore;</p>
+            <p><b>Chiarezza:</b> clear: valore;</p>
+            <br />
+            <h3>Dimensioni:</h3>
+            <p><b>Larghezza, Altezza:</b> width: valore;, height: valore;</p>
+            <p>
+              <b>Margine:</b> margin: valore;, margin-top: valore;,
+              margin-bottom: valore;, margin-left: valore;, margin-right:
+              valore;
+            </p>
+            <p>
+              <b>Riempimento:</b> padding: valore;, padding-top: valore;,
+              padding-bottom: valore;, padding-left: valore;, padding-right:
+              valore;
+            </p>
+            <p>
+              <b>Immagini di sfondo:</b> background-image: url('percorso');,
+              background-size: valore;, background-repeat: valore;
+            </p>
+            <br />
+            <h3>Tipografia:</h3>
+            <p><b>Carattere:</b> font-family: 'nome-font', sans-serif;</p>
+            <p><b>Dimensione del carattere:</b> font-size: valore;</p>
+            <p>
+              <b>Grassetto, Corsivo:</b> font-weight: valore;, font-style:
+              valore;
+            </p>
+            <p><b>Allineamento del testo:</b> text-align: valore;</p>
+            <p><b>Decorazione del testo:</b> text-decoration: valore;</p>
+            <p><b>Spaziatura delle lettere:</b> letter-spacing: valore;</p>
+            <p><b>Spaziatura delle parole:</b> word-spacing: valore;</p>
+            <p><b>Trasformazione del testo:</b> text-transform: valore;</p>
+            <br />
+            <h3>Colori e sfondi:</h3>
+            <p><b>Colore testo:</b> color: valore;</p>
+            <p><b>Sfondo:</b> background-color: valore;</p>
+            <p><b>Opacità:</b> opacity: valore;</p>
+            <p><b>Box-shadow:</b> box-shadow: valore;</p>
+            <p><b>Bordo:</b> border: valore;, border-radius: valore;</p>
+            <p><b>Outline:</b> outline: valore;</p>
+            <br />
+            <h3>Effetti di transizione e animazione:</h3>
+            <p><b>Transizione:</b> transition: proprietà durata timing-func;</p>
+            <p>
+              <b>Animazione:</b> animation: nome-animazione durata timing-func
+              iterazioni direzione fill-mode;
+            </p>
+            <p><b>Keyframes:</b> @keyframes nome-animazione { }</p>
+            <br />
+            <h3>Altre proprietà utili:</h3>
+            <p><b>Visualizzazione:</b> display: valore;</p>
+            <p><b>Overflow:</b> overflow: valore;</p>
+            <p><b>Cursori:</b> cursor: valore;</p>
+            <p><b>Zona di testo ridimensionabile:</b> resize: valore;</p>
+            <p><b>Visibilità:</b> visibility: valore;</p>
+            <p><b>Contorno del testo:</b> text-stroke: valore;</p>
+            <p><b>Riposizionamento del cursore:</b> caret-color: valore;</p>
+            <br />
+            <h3>Media Query:</h3>
+            <p>@media (condizione) { }</p>
+            <br />
+            <h3>Pseudo-classi utenti:</h3>
+            <p>:hover</p>
+            <p>:active</p>
+            <p>:focus</p>
+            <p>:visited</p>
+            <p>:nth-child(n)</p>
+            <p>:nth-of-type(n)</p>
+            <p>:first-child</p>
+            <p>:last-child</p>
+            <p>:first-of-type</p>
+            <p>:last-of-type</p>
+            <br />
+            <h3>Trasformazioni:</h3>
+            <p><b>Transform:</b> transform: valore;</p>
+            <p><b>Transform-origin:</b> transform-origin: valore;</p>
+            <p><b>Rotate(angle):</b> rotate(angle)</p>
+            <p><b>Scale(valore):</b> scale(valore)</p>
+            <p><b>Translate(valore):</b> translate(valore)</p>
+            <p><b>Skew(valore):</b> skew(valore)</p>
+            <br />
+            <h3>Flexbox:</h3>
+            <p><b>Display:</b> display: flex;</p>
+            <p><b>Flex-direction:</b> flex-direction: valore;</p>
+            <p><b>Justify-content:</b> justify-content: valore;</p>
+            <p><b>Align-items:</b> align-items: valore;</p>
+            <p><b>Flex-wrap:</b> flex-wrap: valore;</p>
+            <p><b>Flex:</b> flex: valore;</p>
+            <br />
+            <h3>Grid:</h3>
+            <p><b>Display:</b> display: grid;</p>
+            <p><b>Grid-template-columns:</b> grid-template-columns: valore;</p>
+            <p><b>Grid-template-rows:</b> grid-template-rows: valore;</p>
+            <p><b>Grid-gap:</b> grid-gap: valore;</p>
+            <p><b>Grid-column:</b> grid-column: valore;</p>
+            <p><b>Grid-row:</b> grid-row: valore;</p>
+            <p><b>Grid-area:</b> grid-area: valore;</p>
+            <p><b>Justify-items:</b> justify-items: valore;</p>
+            <p><b>Align-items:</b> align-items: valore;</p>
+            <p><b>Justify-self:</b> justify-self: valore;</p>
+            <p><b>Align-self:</b> align-self: valore;</p>
+            <br />
+            <h3>Variabili CSS:</h3>
+            <p><b>Dichiarazione:</b> --nome-variabile: valore;</p>
+            <p><b>Utilizzo:</b> var(--nome-variabile)</p>
+            <br />
+            <h3>Box-sizing:</h3>
+            <p>box-sizing: valore;</p>
+            <br />
+            <h3>Filtri CSS:</h3>
+            <p>filter: valore;</p>
+            <br />
+            <h3>Trasformazione 3D:</h3>
+            <p>perspective: valore;</p>
+            <p>transform-style: valore;</p>
+            <p>backface-visibility: valore;</p>
+            <br />
+            <h3>Testo multicolonna:</h3>
+            <p>column-count: valore;</p>
+            <p>column-gap: valore;</p>
+            <p>column-rule: valore;</p>
+            <br />
+            <h3>Maschera di clip:</h3>
+            <p>clip-path: valore;</p>
+            <br />
+            <h3>Conoscenza dello stack z-index:</h3>
+            <p>z-index: valore;</p>
+            <br />
+            <h3>Flusso del documento:</h3>
+            <p>direction: valore;</p>
+            <p>unicode-bidi: valore;</p>
+            <br />
+            <h3>Lista:</h3>
+            <p>list-style-type: valore;</p>
+            <p>list-style-image: url('percorso');</p>
+            <br />
+            <h3>Fluttuazioni delle animazioni:</h3>
+            <p>animation-delay: valore;</p>
+            <p>animation-direction: valore;</p>
+            <p>animation-fill-mode: valore;</p>
+            <p>animation-play-state: valore;</p>
+            <br />
+            <h3>Griglia di confini:</h3>
+            <p>grid-auto-columns: valore;</p>
+            <p>grid-auto-rows: valore;</p>
+            <br />
+            <h3>Trasformazione del colore:</h3>
+            <p>mix-blend-mode: valore;</p>
+            <p>backdrop-filter: valore;</p>
+            <br />
+            <h3>Contenuto dirietro l'elemento:</h3>
+            <p>content: valore;</p>
+            <br />
+            <h3>Contenuto strutturato:</h3>
+            <p>counter-reset: valore;</p>
+            <p>counter-increment: valore;</p>
           </details>
         </div>
         <!--Fine CSS-->

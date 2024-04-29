@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+#namefont {
+  font-family: math;
+  font-size: x-large;
+}
+
+>>>>>>> 9da33c89c382c9942d39ff41759addde8326280a
 .navbar {
   background-color: #188ad6;
   overflow: hidden;
@@ -17,6 +25,7 @@ h1 {
   font-size: xx-large;
   font-family: system-ui;
 }
+<<<<<<< HEAD
 p {
   font-size: x-large;
   font-family: system-ui;
@@ -24,4 +33,12 @@ p {
 
 div {
   color: antiquewhite;
+=======
+
+#colorwhite {
+  color: white;
+}
+.breadcrumb {
+  display: ruby;
+>>>>>>> 9da33c89c382c9942d39ff41759addde8326280a
 }

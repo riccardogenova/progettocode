@@ -1,0 +1,35 @@
+body {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5a04e59e9f07f5503c831361/1617934170156-NP7XSC340V3YRW5QKT5F/fields_GoogleR3a.jpg?format=1500w);
+  background-size: cover;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+}
+.button {
+  background-color: rgb(107, 45, 143);
+  opacity: 0.7;
+  color: rgb(229, 142, 184);
+  font-family: "Fanfare Ticker";
+  font-size: 20px;
+  padding: 2px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #d963cf;
+  color: whitesmoke;
+}
+.home {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-right: 200px;
+  padding: 2px 40px;
+  margin-top: 100px;
+}
