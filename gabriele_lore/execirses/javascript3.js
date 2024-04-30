@@ -1,8 +1,5 @@
-//`2_Modifica lo stile di un elemento tramite JavaScript. Scrivi una funzione in JavaScript che modifica il colore e la dimensione del testo di un paragrafo quando l'utente passa il mouse sopra.`
-var element = document.getElementById("testo");
-element.addEventListener('oninput', change);
-function change() {
-  element.style.color = red;
-  element.style.fontSize = "50px";
-
-}
+//3.Cambia lo sfondo di una pagina. Crea un dropdown con diverse opzioni di colore. Quando un'opzione viene selezionata, cambia il colore di sfondo della pagina usando JavaScript.
+var element = document.getElementById("options");
+element.addEventListener('input', function(){
+    document.body.style.backgroundColor = element.value;
+});
