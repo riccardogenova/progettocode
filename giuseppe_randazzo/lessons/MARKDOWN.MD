@@ -8,13 +8,13 @@ Si intende dunque una sintassi semplificata usata per aggiungere formattazione a
 
 Alcuni esempi notevoli di linguaggi di markup leggero includono:
 
-**_Markdown_**: Probabilmente il più noto, usato per documenti, note, e contenuti web.
+**_Markdown:_** Probabilmente il più noto, usato per documenti, note, e contenuti web.
 
-**_reStructuredText_**: Usato principalmente nella documentazione tecnica, specialmente in progetti Python.
+**_reStructuredText:_** Usato principalmente nella documentazione tecnica, specialmente in progetti Python.
 
-**_AsciiDoc_**: Simile a reStructuredText ma con più funzionalità, usato per documentazione e libri digitali.
+**_AsciiDoc:_** Simile a reStructuredText ma con più funzionalità, usato per documentazione e libri digitali.
 
-**_Textile_**: Un altro linguaggio di markup leggero che è popolare in alcuni ambienti di blogging.
+**_Textile:_** Un altro linguaggio di markup leggero che è popolare in alcuni ambienti di blogging.
 
 Questi linguaggi sono progettati per essere facili da scrivere e da leggere, rendendoli ideali per la documentazione, la scrittura su web, e la comunicazione rapida. Sono particolarmente apprezzati nelle comunità di sviluppatori, dove la documentazione può essere scritta direttamente nel codice o vicino ad esso, mantenendo la leggibilità sia del codice che dei commenti e delle istruzioni. Inoltre, strumenti di blogging, piattaforme di documentazione, e altri sistemi di gestione dei contenuti spesso supportano questi formati per facilitare l'editing e la pubblicazione di contenuti testuali.
 
@@ -22,19 +22,19 @@ In informatica, **"codice di markup"** si riferisce a qualsiasi linguaggio di ma
 
 Ecco alcuni dei linguaggi di markup più comuni e esempi di come vengono utilizzati:
 
-**_HTML (Hypertext Markup Language)_** :
+**_HTML (Hypertext Markup Language):_**
 
 Utilizzato principalmente per creare pagine web e applicazioni. Definisce la struttura di una pagina web e i suoi contenuti.
 
-**_XML (eXtensible Markup Language)_** :
+**_XML (eXtensible Markup Language):_**
 
 Progettato per essere sia leggibile che utilizzabile da macchine. È utilizzato per rappresentare dati arbitrari in formati strutturati, come configurazioni, messaggi tra servizi web, e altro.
 
-**_Markdown_** :
+**_Markdown:_**
 
 Un linguaggio di markup leggero usato per formattare testi in un modo che rimane leggibile anche come testo grezzo, ideale per documenti che devono essere letti sia in formato puro che formattato.
 
-**_LaTeX_**:
+**_LaTeX:_**
 
 Un linguaggio di markup per la preparazione di documenti scientifici e matematici, che consente un controllo molto dettagliato sulla struttura e sulla presentazione del testo, soprattutto quando si tratta di formule matematiche.
 

@@ -3,31 +3,31 @@
 **CSS**, acronimo di **Cascading Style Sheets**, è un linguaggio di markup che definisce l'aspetto visivo di documenti web, come pagine HTML e XML.
 In parole semplici, CSS permette di dare forma e stile ai contenuti web, controllando elementi come:
 
-**_Colori_**:
+**_Colori:_**
 
 definisci i colori di testo, sfondo, link e altri elementi della pagina.
 
-**_Caratteri_**:
+**_Caratteri:_**
 
 scegli i font, le dimensioni e gli stili dei caratteri per il tuo testo.
 
-**_Layout_**:
+**_Layout:_**
 
 posiziona gli elementi sulla pagina, definisci margini, spaziature e organizza il contenuto in modo ordinato e intuitivo.
 
-**_Bordi e sfumature_**:
+**_Bordi e sfumature:_**
 
 aggiungi bordi, cornici e sfumature agli elementi per creare un design più accattivante.
 
-**_Sfondo_**:
+**_Sfondo:_**
 
 imposta immagini di sfondo, colori e motivi per personalizzare l'aspetto della pagina.
 
-**_Visibilità_**:
+**_Visibilità:_**
 
 nascondi o mostra elementi a seconda delle tue esigenze.
 
-**_Media query_**:
+**_Media query:_**
 
 adatta il layout e lo stile del sito web a diversi dispositivi, come smartphone, tablet e schermi desktop.
 
@@ -37,26 +37,32 @@ adatta il layout e lo stile del sito web a diversi dispositivi, come smartphone,
 
 ## **Esistono due modi principali per utilizzare CSS**
 
-**_Fogli di stile esterni_**:
+**_Fogli di stile esterni:_**
 
 il codice CSS viene scritto in un file separato (.css) e collegato alla pagina HTML tramite un tag [< link >].
 Questo metodo è utile per applicare lo stesso stile a più pagine web.
 
-**_CSS inline_**:
+**_CSS inline:_**
 
 il codice CSS viene scritto direttamente all'interno dei tag HTML utilizzando l'attributo style. Questo metodo è utile per applicare stili unici a singoli elementi.
 
 ## **Vantaggi di CSS**
 
-**_Separazione tra contenuto e stile_**:
+**_Separazione tra contenuto e stile:_**
 
 CSS permette di separare il contenuto (HTML) dalla presentazione (CSS), rendendo il codice più organizzato e mantenibile.
 
-**_Riduzione del codice_**: CSS permette di definire stili una sola volta e applicarli a più elementi, riducendo la quantità di codice HTML necessario.
+**_Riduzione del codice:_**
 
-**_Maggiore flessibilità_**: CSS offre una grande flessibilità per personalizzare l'aspetto di un sito web, creando design unici e accattivanti.
+CSS permette di definire stili una sola volta e applicarli a più elementi, riducendo la quantità di codice HTML necessario.
 
-**_Accessibilità_**: CSS può essere utilizzato per migliorare l'accessibilità di un sito web, rendendolo più fruibile da persone con disabilità.
+**_Maggiore flessibilità:_**
+
+CSS offre una grande flessibilità per personalizzare l'aspetto di un sito web, creando design unici e accattivanti.
+
+**_Accessibilità:_**
+
+CSS può essere utilizzato per migliorare l'accessibilità di un sito web, rendendolo più fruibile da persone con disabilità.
 
 ## **Imparare CSS**
 

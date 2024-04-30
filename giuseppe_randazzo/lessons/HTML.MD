@@ -12,11 +12,11 @@ Ad esempio, il tag **"< p >"** viene utilizzato per creare un paragrafo di testo
 
 ## **Esistono due tipi principali di tag**
 
-**_Tag di apertura_**: indicano l'inizio di un elemento.
+**_Tag di apertura:_** indicano l'inizio di un elemento.
 
 Ad esempio, **"< p >"** è un tag di apertura.
 
-**_Tag di chiusura_**: indicano la fine di un elemento.
+**_Tag di chiusura:_** indicano la fine di un elemento.
 
 Ad esempio, **< /p >** è un tag di chiusura.
 
