@@ -108,11 +108,8 @@ showBtn.addEventListener("click", show);
 const addElementWithDelay = document.getElementById("add-element-with-delay");
 const newElement3 = document.createElement("p");
 
+setTimeout(addElementWithDelay2, 5000);
 function addElementWithDelay2() {
-  setTimeout(function () {
-    newElement3.textContent = "Nuovo elemento";
-    addElementWithDelay.before(newElement3);
-  }, 5000);
+  newElement3.textContent = "Nuovo elemento";
+  addElementWithDelay.before(newElement3);
 }
-
-addElementWithDelay.addEventListener("click", addElementWithDelay2);
