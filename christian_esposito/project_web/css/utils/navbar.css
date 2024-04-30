@@ -1,39 +1,55 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
-    background-color:#4a4a4b;
+    align-items: center;
+    background-color: #bbbbbb52;
     min-height: 3vw;
-    /* max-height: 10em; */
 }
 
-header > nav > a{
-    margin-right: 1.5vh;
-    /* margin-top: 3em; */
-    border: 2px solid #ff9500;
-    padding: 5px;
-    border-radius: 10px;
-    color: #ff9500;
+header > div > h2 > a {
     text-decoration: none;
+    color: white;
+    margin-left: 1em;
 }
 
-nav{
-    margin-top: 1.5vh;
+ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
 }
-header > div > h2{
-margin: 0.5em 1em;
 
-}
-h2{
-    color: #ff9500;
-}
-header > div > h2 > a{
-    /* margin-top: 5vh; */
-    color: #ff9500;
+.redirect {
     text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 0.5rem 1rem;
+    position: relative;
 }
 
-.redirect:hover{
-    border: 2px solid #0b0c10;
-    background-color: #ff9500 ;
-    color: #0b0c10;
+.redirect::before,
+.redirect::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: all 1s ease;
+}
+
+.redirect::before {
+    top: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.redirect::after {
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+}
+
+.redirect:hover::before,
+.redirect:hover::after {
+    transform: scaleX(1);
 }
