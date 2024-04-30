@@ -1,12 +1,13 @@
-.page{
-height: 94vh;
-width: 100vw;
-display: flex;
-justify-content: center;
-align-items: center;
+.page {
+    height: 93vh;
+    width: 94vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-h3{
-    color:#ff0000;
-    font-size: 2em;
+h3 {
+    color: #ffbf00;
+    background-color: rgba(255, 255, 255, 0.165);
+    font-size: 3em;
 }
