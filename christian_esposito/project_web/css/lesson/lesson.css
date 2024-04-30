@@ -1,3 +1,14 @@
+.active::before,
+.active::after {
+    transform: scaleX(1);
+    transition: all 1s ease;
+}
+
+.active:hover::before, .active:hover::after{
+    transform: scaleX(0);
+}
+
+
 .page {
     height: 90vh;
     display: flex;
@@ -5,6 +16,18 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2em;
+}
+.breadCrumbs{
+    margin-left: 2em;
+    margin-top:0.5em ;
+    list-style: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.breadCrumbs > ul > li > a{
+    text-decoration: none;
+    color: white;
 }
 
 .argoments{
