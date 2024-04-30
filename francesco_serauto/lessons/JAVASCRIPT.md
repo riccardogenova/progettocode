@@ -141,7 +141,6 @@ In JavaScript, **l'oggetto window rappresenta la finestra del browser.** È l'og
 8. **Orologio:**
    - `window.Date()`
 
-````markdown
 # Programmazione Orientata agli Oggetti in JavaScript
 
 In JavaScript, il paradigma orientato agli oggetti (OOP, Object-Oriented Programming) è un modo di scrivere codice che si concentra sugli "oggetti", che sono entità che rappresentano dati e comportamenti correlati. In questo contesto, "oriented" significa che il linguaggio è strutturato in modo da facilitare la programmazione orientata agli oggetti.
@@ -177,7 +176,6 @@ Gli operatori in JavaScript sono simboli speciali che vengono utilizzati per ese
    ```javascript
    let risultato = 10 + 5; // risultato sarà 15
    ```
-````
 
 2. **Operatori di Assegnazione:** Questi operatori vengono utilizzati per assegnare valori alle variabili.
 
@@ -239,6 +237,145 @@ let count = 5;
 count++; // ora count è 6
 ```
 
+Ecco il testo completamente formattato in markdown:
+
+````markdown
+# Introduzione alle Variabili JavaScript
+
+Le variabili in JavaScript sono contenitori per memorizzare dati. Possono contenere qualsiasi tipo di dato, come numeri, stringhe di testo, oggetti, funzioni e così via.
+
+## Dichiarazione di Variabili
+
+Puoi dichiarare una variabile utilizzando la parola chiave `var`, `let`, o `const`.
+
+- `var`: Definisce una variabile globalmente o localmente ad una funzione senza alcuna restrizione di blocco.
+- `let`: Definisce una variabile con portata di blocco, limitata al blocco, statement, o espressione in cui è stata dichiarata.
+- `const`: Definisce una variabile a cui non può essere assegnato un nuovo valore in seguito.
+
+Esempi di dichiarazione di variabili:
+
+```javascript
+var x = 10;
+let y = "Hello";
+const PI = 3.14;
+```
+````
+
+## Nomi delle Variabili
+
+Quando assegni un nome a una variabile, ci sono alcune regole da seguire:
+
+- Il nome deve iniziare con una lettera, un carattere di sottolineatura (\_) o un dollaro ($).
+- Dopo il primo carattere, puoi usare lettere, cifre, underscore o dollari.
+- I nomi delle variabili sono sensibili alle maiuscole e minuscole.
+- Non puoi usare parole riservate come nomi di variabili.
+
+Esempi di nomi di variabili validi:
+
+```javascript
+let nomeUtente = "Mario";
+let numeroDiTelefono = "123456789";
+let _variabileSegreta = "segreto";
+let $prezzo = 10.99;
 ```
 
+## Convenzioni di Denominazione
+
+È una pratica comune utilizzare una convenzione per i nomi delle variabili per rendere il codice più leggibile. Ad esempio, si può utilizzare il camelCase in cui il primo carattere di ogni parola tranne la prima è in maiuscolo.
+
+Esempio di convenzione di denominazione:
+
+```javascript
+let nomeUtenteCompleto = "Mario Rossi";
+let numeroDiTelefonoPrincipale = "123456789";
 ```
+
+## Conversione di Tipo
+
+La conversione di tipo si riferisce alla trasformazione esplicita di un tipo di dato in un altro tipo di dato. JavaScript può convertire automaticamente i tipi di dati durante le operazioni quando necessario, ma a volte è necessario convertire i tipi manualmente per ottenere il comportamento desiderato.
+
+Esempi di conversione di tipo:
+
+```javascript
+// Conversione di una stringa in un numero
+let stringaNumero = "123";
+let numero = parseInt(stringaNumero);
+
+// Conversione di un numero in una stringa
+let numero2 = 456;
+let stringa = numero2.toString();
+```
+
+## Coercizione
+
+La coercizione è il processo implicito di conversione di un tipo di dato in un altro tipo di dato durante le operazioni. Questo processo può avvenire in situazioni in cui gli operatori o le funzioni richiedono tipi di dati diversi.
+
+Esempi di coercizione:
+
+```javascript
+// Coercizione di stringhe in numeri
+let somma = "10" + 5; // risultato: "105" (stringa)
+let differenza = "10" - 5; // risultato: 5 (numero)
+
+// Coercizione di valori booleani
+let risultato = 10 > 5; // risultato: true (booleano)
+
+// Coercizione di valori non booleani in valori booleani
+let booleano = !!0; // risultato: false
+```
+
+La coercizione può essere implicita, come nei casi sopra, o esplicita, quando si utilizzano operatori come `==` o `===` per confrontare i valori. La coercizione implicite può portare a comportamenti imprevisti, quindi è importante comprendere come funziona per evitare errori nel codice.
+
+````markdown
+### Oggetti in JavaScript:
+
+Un oggetto in JavaScript è una struttura dati che consente di raggruppare valori e funzionalità correlate come proprietà e metodi. Le proprietà di un oggetto sono coppie chiave-valore, dove la chiave è una stringa (o un simbolo a partire da ES6) e il valore può essere qualsiasi tipo di dato JavaScript, incluso un altro oggetto. I metodi di un oggetto sono funzioni associate ad esso.
+
+Ecco un esempio di come definire un oggetto in JavaScript:
+
+```javascript
+// Definizione di un oggetto persona
+let persona = {
+  nome: "Mario",
+  cognome: "Rossi",
+  eta: 30,
+  saluta: function () {
+    return "Ciao, sono " + this.nome + " " + this.cognome + "!";
+  },
+};
+
+// Accesso alle proprietà dell'oggetto
+console.log(persona.nome); // Output: Mario
+console.log(persona.saluta()); // Output: Ciao, sono Mario Rossi!
+```
+````
+
+### Classi in JavaScript
+
+Una classe in JavaScript è un tipo di struttura che consente di creare oggetti che condividono le stesse proprietà e metodi. Dalla versione ES6 di JavaScript, le classi sono state introdotte per rendere più semplice e intuitiva la creazione di oggetti e la definizione di relazioni tra di essi.
+
+Ecco un esempio di come definire una classe in JavaScript:
+
+```javascript
+// Definizione di una classe Persona
+class Persona {
+  constructor(nome, cognome, eta) {
+    this.nome = nome;
+    this.cognome = cognome;
+    this.eta = eta;
+  }
+
+  saluta() {
+    return "Ciao, sono " + this.nome + " " + this.cognome + "!";
+  }
+}
+
+// Creazione di un'istanza della classe Persona
+let mario = new Persona("Mario", "Rossi", 30);
+
+// Accesso alle proprietà e ai metodi dell'istanza
+console.log(mario.nome); // Output: Mario
+console.log(mario.saluta()); // Output: Ciao, sono Mario Rossi!
+```
+
+In questo esempio, `Persona` è una classe che ha tre proprietà (nome, cognome e eta) e un metodo (saluta). L'istruzione `let mario = new Persona("Mario", "Rossi", 30);` crea un'istanza della classe Persona chiamata `mario`, e possiamo accedere alle sue proprietà e ai suoi metodi utilizzando la notazione punto (`mario.nome`, `mario.saluta()`).
