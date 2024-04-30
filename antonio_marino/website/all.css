@@ -1,0 +1,14 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+hr{
+    color: white;
+}
+
+body{
+    background: rgb(20,52,69);
+    background: linear-gradient(90deg, rgba(20,52,69,1) 0%, rgba(20,38,38,1) 35%, rgba(38,97,109,1) 100%);
+}
