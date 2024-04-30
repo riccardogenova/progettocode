@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sito_struttura.css" />
+  </head>
+  <body>
+    <!-- javascript -->
+    
+    <h1>Javascript cos'é?</h1>
+    <p>
+      JavaScript è un linguaggio di programmazione molto diffuso che è
+      principalmente utilizzato per aggiungere interattività e dinamicità alle
+      pagine web. È un linguaggio di scripting leggero e interpretato,
+      utilizzato sia lato client che lato server. È spesso incorporato
+      all'interno di pagine HTML per rendere le pagine web più interattive e
+      dinamiche.
+    </p>
+
+    <h2>cosa fa JavaScript?</h2>
+    <ol>
+      <li>
+        <strong>Interattività sul lato client</strong>: JavaScript può essere
+        utilizzato per gestire gli eventi degli utenti, come clic del mouse,
+        movimenti del mouse, pressioni dei tasti e molto altro ancora. Può
+        interagire con il documento HTML, modificare il contenuto della pagina e
+        lo stile in risposta a queste azioni.
+      </li>
+      <li>
+        <strong>Validazione dei dati</strong>: JavaScript può essere utilizzato
+        per convalidare i dati inseriti dagli utenti nei form online prima di
+        inviarli al server.
+      </li>
+      <li>
+        <strong>Aggiornamento dinamico della pagina</strong>: JavaScript può
+        essere utilizzato per aggiornare parti specifiche della pagina senza
+        dover ricaricare l'intera pagina web. Questo è comunemente visto in
+        applicazioni web dinamiche e a singola pagina (SPA).
+      </li>
+      <li>
+        <strong> Gestione dei cookies</strong>: JavaScript può essere utilizzato
+        per gestire i cookies, che possono memorizzare informazioni sul computer
+        dell'utente per essere recuperate in seguito.
+      </li>
+      <li>
+        <strong>Chiamate asincrone al server (AJAX)</strong>: JavaScript può
+        essere utilizzato per inviare e ricevere dati dal server in modo
+        asincrono, consentendo aggiornamenti delle pagine web senza dover
+        ricaricare l'intera pagina.
+      </li>
+      <li>
+        <strong>Creazione di giochi e applicazioni web</strong>: JavaScript è
+        abbastanza potente da creare giochi e applicazioni web complesse.
+      </li>
+    </ol>
+
+    <div>
+      <h2>Document in JavaScript</h2>
+      <ol>
+        <li>
+          Selezione degli elementi HTML: Puoi utilizzare document per
+          selezionare gli elementi HTML e modificarli. Ad esempio: javascript
+          var header = document.getElementById('header');
+        </li>
+        <li>
+          Modifica del contenuto HTML: Puoi modificare il contenuto HTML di un
+          elemento utilizzando l'oggetto document. Ad esempio: javascript
+          document.getElementById('header').innerHTML = 'Nuovo testo
+          dell\'intestazione';
+        </li>
+        <li>
+          Modifica degli attributi degli elementi: Puoi modificare gli attributi
+          degli elementi HTML. Ad esempio: javascript
+          document.getElementById('myImage').src = 'nuova-immagine.jpg';
+        </li>
+        <li>
+          Creazione di nuovi elementi HTML: Puoi creare nuovi elementi HTML e
+          aggiungerli al documento. Ad esempio: javascript var newDiv =
+          document.createElement('div'); newDiv.textContent = 'Questo è un nuovo
+          div'; document.body.appendChild(newDiv);
+        </li>
+        <li>
+          Manipolazione del CSS: Puoi modificare gli stili CSS degli elementi
+          HTML. Ad esempio: javascript
+          document.getElementById('myElement').style.color = 'red';
+        </li>
+      </ol>
+    </div>
+      <h2>Window in javascript</h2>
+      <p>
+        In JavaScript, window è un oggetto globale che rappresenta la finestra del
+        browser. È l'oggetto radice dell'intero modello di oggetti del browser e
+        fornisce numerosi metodi e proprietà che consentono di interagire con la
+        finestra del browser stessa e con l'ambiente in cui viene eseguito lo
+        script. Ecco alcuni concetti fondamentali relativi all'oggetto window:
+      </p>
+      <ol>
+        <li>. Accesso alle proprietà globali:
+          Puoi accedere a vari oggetti globali tramite window, ad esempio:
+          
+          javascript
+          console.log(window.document); // Equivalente a document
+          console.log(window.navigator); // Equivalente a navigator
+          console.log(window.location); // Equivalente a location
+          console.log(window.alert); // Equivalente a alert</li>
+        <li> Gestione del tempo:
+          window fornisce funzioni per la gestione del tempo come setTimeout() e setInterval():
+          
+          javascript
+          setTimeout(function() {
+              console.log('Questa funzione viene eseguita dopo 1 secondo');
+          }, 1000);</li>
+        <li> Navigazione:
+          Puoi controllare la navigazione della finestra del browser utilizzando oggetti come window.location.
+          javascript
+          window.location.href = "https://www.example.com";</li>
+        <li> Manipolazione della finestra:
+          window permette di aprire nuove finestre o di controllare le proprietà della finestra corrente.
+          
+          javascript
+          var nuovaFinestra = window.open('pagina.html', 'NomeFinestra', 'width=600,height=400')</li>
+        <li>Gestione degli eventi:
+          Puoi ascoltare gli eventi relativi alla finestra.
+          
+          javascript
+          window.addEventListener('resize', function(){
+              console.log('La finestra è stata ridimensionata');
+          });</li>
+        <li>Gestione dei cookies:
+          Puoi utilizzare window per gestire i cookies.
+          
+          javascript
+          document.cookie = "username=John Doe; expires=Thu, 18 Dec 2023 12:00:00 UTC; path=/";</li>
+        <li>Puoi controllare la storia della sessione.
+
+          javascript
+          window.history.back();</li>
+      </ol>
+      <p>In breve, window è un oggetto globale in JavaScript che fornisce accesso e controllo sulla finestra del browser e sull'ambiente in cui lo script viene eseguito, offrendo numerosi metodi e proprietà per interagire con l'ambiente del browser.</p>
+    </div>
+  </body>
+</html>

@@ -17,6 +17,9 @@
 
 - **24.04**
 
+- **29.04**
+  Spiegazione di javascript , riccardo ha parlato di variabili , funzioni , costanti , dom , document , window e ci ha fatto vedere come possono essere usate
+
 # Descrizione day by day , di quello che facciamo durante le lezioni in presenza
 
 - **16.04**
@@ -26,3 +29,4 @@
   Lezione non fatta
 
 - **23.04**
+  Solito daily , spiegazione di Merge Commit , Squash e Rebase.

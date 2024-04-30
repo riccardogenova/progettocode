@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+}
+#menu-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  background-color: purple;
+  height: 50px;
+}
+#name {
+  font-size: 30px;
+  margin: 10px 0;
+}
+#destra-bar {
+  margin: 10px;
+}
+.destra {
+  font-size: 25px;
+  margin: 0 20px;
+}
+
+#due,
+#tre {
+  text-decoration: none;
+}
+
+#percorso {
+  font-size: 20px;
+  display: flex;
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.percorsi {
+  margin: 5px;
+}
