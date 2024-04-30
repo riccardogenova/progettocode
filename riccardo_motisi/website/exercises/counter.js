@@ -1,4 +1,4 @@
-let counter = document.getElementById("counter");
+let counter = document.getElementById("button");
 
 function incrementa() {
   let currentCount = parseInt(counter.textContent);
