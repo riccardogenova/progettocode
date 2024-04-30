@@ -1,4 +1,4 @@
-# **Comandi base di Git**
+# **Comandi base GIT**
 
 Essendoci oltre 150 comandi Git è complicato elencarli tutti. Di seguito i Git più utilizzati e categorizzati in base alle loro funzioni:
 
