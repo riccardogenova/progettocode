@@ -122,3 +122,117 @@ JavaScript può essere utilizzato per gestire gli eventi della pagina web. Gli e
 ## Operatore di accesso a membri
 
 L'operatore di accesso a membri (`.`) viene utilizzato per accedere alle proprietà degli oggetti.
+
+## Operatore di assegnazione
+
+`"..."` = stringa
+
+`...` = valore numerico
+
+`true o false` = tipo buleana
+
+## Operatore di confronto
+
+`==` = uguale a...
+
+`===` = identico a...
+
+`!==` = confronta il tipo
+
+`!=` = confronta il contenuto
+
+`>`, `<`
+
+`>=`, `<=`
+
+## Operatori logici
+
+`||` = or (almeno una deve essere vera)
+
+`&&` = and (entrambe devono essere vere)
+
+## Codizioni di esistenza
+
+(not logico)`!` = contrario della variabile
+
+`!!` = contrario del contrario (restituisce false anche se una stringa è vuota)
+
+`0` in js è falso
+
+---
+
+true + true = 2
+
+true + flase = 1
+
+---
+
+null = tipo nullo
+
+undefined = tipo indefinito
+
+---
+
+numero (+,-,\*,/) "stringa" = NaN (not a number)
+
+## Flowchart
+
+schema di lavoro caratterizato da forme geometriche che indicano un determinato evento. È utilizzato per visualizzare la sequenza di passaggi o decisioni che compongono un processo o un'algoritmo in modo chiaro e intuitivo.
+
+## Costrutti
+
+```javascript
+if(condizione){...}
+else if(condizione2){...}
+else{...}
+```
+
+---
+
+```javascript
+switch (value) {
+  case value:
+    break;
+  case value2:
+    break;
+  case value3:
+    break;
+  default:
+    break;
+}
+```
+
+---
+
+svolge sempre l'operazione la prima volta.
+
+```javascript
+do{
+operazione
+} while()
+```
+
+---
+
+prima verifica la condizione.
+
+```javascript
+while (condizione) {
+  operazione;
+}
+```
+
+## Array
+
+lista di informazioni
+
+```javascript
+const array = ["a", "b", "c"];
+```
+
+`...` = spread operator.
+
+```javascript
+const array = ["a", "b", "c"];
+const array2 = [...array];
+```
