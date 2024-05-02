@@ -6,4 +6,3 @@ function colorati() {
   }
   elem.classList.add('active');
 }
-
