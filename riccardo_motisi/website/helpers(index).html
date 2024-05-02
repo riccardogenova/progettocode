@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riccardo's website</title>
+    <link
+      rel="icon"
+      href="https://cdn.icon-icons.com/icons2/2699/PNG/512/minecraft_logo_icon_168974.png"
+    />
+    <link rel="stylesheet" href="../style(index).css" />
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source
+        src="c:\Users\ricca\Desktop\2-06. Moog City 2.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        document.body.addEventListener("click", function () {
+          var audio = document.querySelector("audio");
+          audio.play();
+
+          document.body.removeEventListener("click", arguments.callee);
+        });
+      });
+    </script>
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet" />
+
+    <div class="container">
+      <ul>
+        <p><a class="button" href="../helpers/git_sheet.html">GIT</a></p>
+        <p><a class="button" href="../helpers/html_tags.html">HTML</a></p>
+        <p><a class="button" href="../helpers/css_sheet.html">CSS</a></p>
+      </ul>
+    </div>
+
+    <div class="img">
+      <img
+        src="c:\Users\ricca\Desktop\0fa5bbb8553c0791940d4aee57b26c0a9255470fda39a3ee5e6b4b0d3255bfef95601890afd80709da39a3ee5e6b4b0d3255bfef95601890afd8070905ccb9558d135c6627fbe265fa4dab9d.png"
+        alt=""
+      />
+    </div>
+    <a href="./index.html"
+      ><img
+        src="https://64.media.tumblr.com/88025a4c5fb08fa35d673be0d6901aa7/tumblr_inline_pmu29x9wnx1wuj82d_250.gif"
+        alt="Home"
+    /></a>
+  </body>
+</html>

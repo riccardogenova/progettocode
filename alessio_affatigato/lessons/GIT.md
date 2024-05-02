@@ -15,6 +15,7 @@ Ecco alcuni comandi essenziali per chi comincia ad utilizzare Git:
 - **git add .** : Aggiunge tutte le modifiche nella directory corrente al "staging area".
 
 - **git commit -m "messaggio"**: Crea un nuovo commit con le modifiche che sono state precedentemente aggiunte al "staging area", con un messaggio descrittivo.
+- **git commit --amend -m "messaggio"** :Cambia il messaggio dell'ultimo commit
 
 - **git status**: Mostra lo stato corrente del repository, inclusi i file modificati, i file nell'area di staging e i file non tracciati.
 

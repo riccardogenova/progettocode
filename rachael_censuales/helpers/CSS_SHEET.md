@@ -46,73 +46,30 @@ Le proprietà di layout e posizionamento sono utilizzate per controllare la disp
 - `float`: Imposta l'allineamento laterale dell'elemento.
 - `clear`: Imposta il comportamento di pulizia delle fluttuazioni.
 
-# Esempi di codici
+## CSS Sheet
 
-- **Colori principali**
-
-body {
-background-color: #f8f9fa;
-color: #333;
-}
-
-- **Link**
-  a {
-  color: #007bff;
-  text-decoration: none;
-  }
-
-a:hover {
-text-decoration: underline;
-}
-
-- **Testo evidenziato**
-  .highlight {
-  background-color: #ffc107;
-  color: #333;
-  } `
-
-- **Dimensione del testo**
-  h1 {
-  font-size: 24px;
-  }
-
-p {
-font-size: 16px;
-}
-
-- **Famiglia di caratteri**
-  body {
-  font-family: Arial, sans-serif;
-  }
-
-- **Grassetto**
-  strong {
-  font-weight: bold;
-  }
-  /_ Menu di navigazione _/
-  .navbar {
-  background-color: #333;
-  padding: 10px 0;
-  }
-
-- **Elementi del menu**
-  .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  }
-
-.navbar li {
-display: inline-block;
-}
-
-- **Link del menu**
-  .navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 15px;
-  }
-
-.navbar a:hover {
-background-color: #555;
-}
+- color: Imposta il colore del testo all'interno di un elemento HTML.
+- background-color: Imposta il colore di sfondo di un elemento HTML.
+- font-family: Specifica il tipo di carattere da utilizzare per il testo all'interno di un elemento HTML.
+- font-size: Imposta la dimensione del testo all'interno di un elemento HTML.
+- letter-spacing: Controlla lo spazio tra le lettere del testo all'interno di un elemento HTML.
+- line-height: Imposta l'altezza della riga all'interno di un elemento HTML.
+- margin: Imposta il margine esterno di un elemento HTML.
+- padding: Imposta lo spazio di riempimento all'interno del bordo di un elemento HTML.
+- border: Imposta il bordo di un elemento HTML.
+- box-shadow: Aggiunge un'ombra al bordo di un elemento HTML.
+- text-align: Allinea il testo all'interno di un elemento HTML (es. "center", "left", "right").
+- width: Imposta la larghezza di un elemento HTML.
+- height: Imposta l'altezza di un elemento HTML.
+- display: Specifica il tipo di visualizzazione di un elemento HTML (es. "block", "inline", "flex").
+- opacity: Imposta la trasparenza di un elemento HTML (da 0 a 1, dove 0 è completamente trasparente e 1 è completamente opaco).
+- text-decoration: Specifica la decorazione del testo (es. "underline", "line-through", "none").
+- font-weight: Imposta lo spessore del carattere del testo (es. "normal", "bold", "lighter", "bolder").
+- text-transform: Trasforma il testo in maiuscolo, minuscolo o in maiuscolo solo per la prima lettera (es. "uppercase", "lowercase", "capitalize").
+- text-overflow: Specifica come il testo deve essere troncato quando supera il limite di larghezza del suo contenitore.
+- overflow: Controlla il comportamento di visualizzazione del contenuto che sfora i limiti del suo contenitore.
+- position: Specifica il metodo di posizionamento di un elemento HTML (es. "static", "relative", "absolute", "fixed").
+- top, right, bottom, left: Imposta la posizione di un elemento HTML rispetto al suo contenitore quando è posizionato in modo relativo o assoluto.
+- z-index: Imposta lo stack order (ordine di impilamento) degli elementi HTML posizionati.
+- float: Allinea un elemento HTML a sinistra o a destra rispetto al suo contenitore e lo fa fluttuare lungo il testo del contenitore.
+- clear: Specifica su quale lato degli elementi non devono essere posizionati gli elementi che fluttuano.

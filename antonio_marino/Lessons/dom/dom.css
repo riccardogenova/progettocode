@@ -1,0 +1,30 @@
+.lessons{
+    font-size: 20px;
+}
+
+main{
+    color: white;
+    padding-left: 55px;
+}
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+main>h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+   
+    margin-right: 5px;
+}

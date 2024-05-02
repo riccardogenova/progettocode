@@ -1,0 +1,32 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: orange;
+}
+
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2 {
+  color: #333;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+#structure {
+  width: 50px;
+}
+
+.table {
+  margin: auto;
+}
+
+.white:visited {
+  color: white;
+  font-weight: bold;
+}
