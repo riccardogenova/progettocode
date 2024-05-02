@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgoldenrod;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

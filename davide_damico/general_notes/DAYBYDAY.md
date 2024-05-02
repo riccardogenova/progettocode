@@ -17,6 +17,12 @@
 
 - **24.04**
 
+- **29.04**
+  Spiegazione di javascript , riccardo ha parlato di variabili , funzioni , costanti , dom , document , window e ci ha fatto vedere come possono essere usate
+
+  - **30.04**
+    Solito daily , riccardo ci ha lasciato in gruppi su discord e ci ha assegnato dei compiti javascript da svolgere
+
 # Descrizione day by day , di quello che facciamo durante le lezioni in presenza
 
 - **16.04**

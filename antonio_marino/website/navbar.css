@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background: rgb(20,52,69);
+    background: linear-gradient(90deg, rgba(20,52,69,1) 0%, rgba(20,38,38,1) 35%, rgba(38,97,109,1) 100%);
+    color: white;
+    padding-top: 20px;
+
+}
+
+.nome{
+    padding-left: 60px;
+}
+
+.lista-nav{
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    gap: 20px;
+    padding-right: 60px;
+    padding-top: 5px;
+}
+
+.lista-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+hr{
+    color: white;
+    
+}
+
+

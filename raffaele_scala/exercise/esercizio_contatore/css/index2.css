@@ -1,0 +1,23 @@
+.div-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  gap: 30px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+#bottone {
+  height: 60px;
+  width: 160px;
+  font-size: 24px;
+}
+#numeri {
+  font-size: 50px;
+}

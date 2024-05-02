@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F5F5F5",
+              secondary: "#FC5185",
+              dark: "#222",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-dark">
+    <!-- NAVBAR -->
+    <nav class="container mx-auto flex justify-between items-center py-4 px-8">
+      <div class="flex justify-center items-center gap-2">
+        <i class="fa-brands fa-squarespace text-primary text-2xl"></i>
+        <a
+          href=""
+          class="text-primary font-bold transition-all duration-300 hover:text-secondary hover:scale-110"
+          >DEVHUB</a
+        >
+      </div>
+      <div class="flex justify-center items-center gap-10">
+        <div
+          class="flex justify-center items-center gap-2 transition-all hover:scale-110 group"
+        >
+          <i
+            class="fa-solid fa-user text-primary transition-all duration-300 group-hover:text-secondary group-hover:animate-bounce"
+          ></i>
+          <a
+            class="font-bold text-primary transition-all duration-300 group-hover:text-secondary"
+            href=""
+            >Portfolio</a
+          >
+        </div>
+
+        <div
+          class="flex justify-center items-center gap-2 transition-all hover:scale-110 group"
+        >
+          <i
+            class="fa-brands fa-github text-primary text-xl transition-all duration-300 group-hover:text-secondary group-hover:animate-bounce"
+          ></i>
+          <a
+            class="font-bold text-primary transition-all duration-300 group-hover:text-secondary"
+            href=""
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!-- SIDEBAR -->
+    <div class="flex">
+      <div class="w-64 bg-dark h-screen py-24 ml-14">
+        <div class="flex justify-center items-center py-4">
+          <a
+            href=""
+            class="w-[70%] py-1 rounded-lg text-center font-medium text-primary transition-all duration-300 hover:text-secondary hover:bg-black"
+            >Home</a
+          >
+        </div>
+        <div class="flex justify-center items-center py-4">
+          <a
+            href=""
+            class="font-medium text-primary transition-all duration-300 hover:text-secondary"
+            >Documenti</a
+          >
+        </div>
+        <div class="flex justify-center items-center py-4">
+          <a
+            href=""
+            class="font-medium text-primary transition-all duration-300 hover:text-secondary"
+            >Sheets</a
+          >
+        </div>
+      </div>
+      <!-- MAIN -->
+      <div class="flex-1 bg-dark h-screen">
+        <div class="flex justify-center mt-24 h-screen">
+          <h1 class="text-primary text-4xl font-medium">Benvenuto alla raccolta di DevHub</h1>
+        </div>
+      </div>
+  </body>
+</html>

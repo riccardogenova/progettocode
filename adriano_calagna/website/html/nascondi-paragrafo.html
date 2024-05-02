@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/progetto.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button id="nascondi" onclick="nascondiPulsante()">
+        Nascondi Paragrafo
+      </button>
+      <button id="mostra" onclick="mostraPulsante()">Mostra Paragrafo</button>
+      <p id="paragrafo">Ciao sono Mario</p>
+      <label for="selezionaColore">Seleziona un colore di sfondo:</label>
+      <select id="selezionaColore" onchange="cambiaColoreSfondo()">
+        <option value="white">Bianco</option>
+        <option value="lightblue">Blu Chiaro</option>
+        <option value="lightgreen">Verde Chiaro</option>
+        <option value="lightpink">Rosa Chiaro</option>
+      </select>
+      <p
+        id="cambiaparagrafo"
+        onclick="cambiaColoreTesto()"
+        style="cursor: pointer; font-size: 40px"
+        ,
+      >
+        questo è un testo
+      </p>
+      <div id="elementoDaNascondere">
+        Clicca qui per nascondere questo elemento.
+      </div>
+
+      <button id="addtext">aggiungo un testo</button>
+      <div id="addparagraph"></div>
+    </div>
+  </body>
+  <script src="../js/nascondi-paragrafo.js"></script>
+</html>

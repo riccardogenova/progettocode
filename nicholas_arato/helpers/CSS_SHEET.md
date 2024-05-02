@@ -1,5 +1,33 @@
 # **CSS CHEAT SHEET**
 
+## Table of Contents
+
+1. [Basic Syntax](#basic-syntax)
+   - 1.1 [Selectors](#selectors)
+   - 1.2 [Comments](#comments)
+2. [Properties and Values](#properties-and-values)
+   - 2.1 [Colors](#colors)
+   - 2.2 [Fonts](#fonts)
+   - 2.3 [Text](#text)
+   - 2.4 [Box Model](#box-model)
+   - 2.5 [Display](#display)
+   - 2.6 [Positioning](#positioning)
+   - 2.7 [Flexbox](#flexbox)
+   - 2.8 [Grid](#grid)
+   - 2.9 [Media Queries](#media-queries)
+3. [Units](#units)
+   - 3.1 [Length](#length)
+   - 3.2 [Colors](#colors-1)
+   - 3.3 [Others](#others)
+4. [Box Model](#box-model-1)
+   - 4.1 [Margin](#margin)
+   - 4.2 [Padding](#padding)
+   - 4.3 [Border](#border)
+5. [Miscellaneous](#miscellaneous)
+   - 5.1 [Transitions](#transitions)
+   - 5.2 [Animations](#animations)
+   - 5.3 [Transform](#transform)
+
 ## Basic Syntax
 
 ### Selectors

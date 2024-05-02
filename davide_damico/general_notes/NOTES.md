@@ -23,3 +23,13 @@ comandi utili in casi problematici
 stash permette di levare i file dal commit e metterle da parte , quindi nel momento in cui la pr viene approvata , aggiorniamo il main , creiamo un nuovo branch e possiamo riprenderci le modifiche messe da parte. Se si usano file nuovi bisogna prima farli entrare nella staging area , con git add
 
 reset torno indietro ad un commit preciso
+
+# 30.04
+
+JS:
+
+nome.textContent , textcontent è una proprietà del nodo
+
+nome.appendChild , appendChild è una funzione che richiamiamo
+
+dentro l'oggetto document troviamo metodi che possiamo richiamare e proprietà che possiamo usare
