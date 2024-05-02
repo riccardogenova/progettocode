@@ -1,50 +1,35 @@
-Quando bisogna scartare tramite il git checkout una modifica fatta ad un file , consigliato chiudere prima il file , perchè VSC potrebbe farti confondere e col file aperto ti lascia le modifiche apportate , ma ti spunterà il pallino come se non avessi salvato
+# 23.04
 
-Comandi git generali:
+è importante sapere come tenere il branch in cui stiamo lavorando aggiornato con le commit nuove che vengono messe nel main.
 
-git add nome.file
+Merge commit= crea un commit in più 'commit di merge'
 
-git commit -m "messaggio da inserire"
+Squash= prende le modifiche , le compatta in un unico commit e lo mette in cima al main
 
-git push
+Rebase= prende le modifiche e le mette in cima ,
 
-git pull link.repository (per pullare dei file da un repository su vsc , attenzione a essere sul branch che si vuole)
+git commit -m , per poter scrivere premere i , per uscire esc:wq
 
-git status
+quando si mette un'a href è bene mettere un path relativo , vuol dire che è sempre bene mettere i ../ etc
 
-git log
+tree folders:
+lessons/papers
+helpers/sheets
+website
+index.html
 
-git checkout nome.del.file (
-Dopo essere tornati indietro a prima della modifica , se vogliamo cancellare il file precedentemente modificato perchè non ci serve più)
+comandi utili in casi problematici
 
-git reset id.unico.del.commit (Per tornare ad una versione precedente del file)
+stash permette di levare i file dal commit e metterle da parte , quindi nel momento in cui la pr viene approvata , aggiorniamo il main , creiamo un nuovo branch e possiamo riprenderci le modifiche messe da parte. Se si usano file nuovi bisogna prima farli entrare nella staging area , con git add
 
-git branch (per capire in che ''tunnel'' siamo)
+reset torno indietro ad un commit preciso
 
-Per cambiare il nome del branch usando il comando: git branch -m "nome nuovo
+# 30.04
 
-git remote add origin URL (per connettere il repository) così che ogni volta che faccio un push , lo farà automaticamente in quel repository ('origin' è un nome creato automaticamente di default , però può essere modificato a proprio piacere)
+JS:
 
-git remote remove origin (per eliminare il collegamento, se si vuole si può riaggiungere tramite il comando precedente)
+nome.textContent , textcontent è una proprietà del nodo
 
-git clone URL.repository (consente di copiare i file di quel repository)
+nome.appendChild , appendChild è una funzione che richiamiamo
 
-git checkout nome.branch (per spostarci su un branch)
-
-git checkout -b nome.branch (per spostarci su un branch non esistente che quindi verrà creato)
-
-git remote add origin URL , ricordiamo che origin è un nome che diamo noi di default , ma possiamo scrivere qualsiasi cosa
-
-git diff nome.del.file.su.git.status (serve a far vedere le differenze che ci sono state fatte dopo una commit)
-
-git branch -m nuovo.nome (serve a rinominare il branch in cui ci troviamo)
-
-git branch -D nome.del.branch (per eliminare un branch)
-
-git fetch --prune (serve ad aggiornare la lista dei branch remoti , rimuovendo quelli che non esistono più sul remote)
-
-git branch -r (serve a mostrare tutti i branch remoti)
-
-git push origin --delete nome.branch (serve a cancellare il branch dal repository remoto)
-
-git reset --hard origin/master (per cancellare ciò che ho in locale su vsc e prendere ciò che ho in remoto sul repo)
+dentro l'oggetto document troviamo metodi che possiamo richiamare e proprietà che possiamo usare

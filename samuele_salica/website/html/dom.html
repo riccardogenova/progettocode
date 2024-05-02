@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lezione sul DOM</title>
+  </head>
+  <body>
+    <h2>Introduzione al DOM (Document Object Model)</h2>
+
+    <p>
+      Il Document Object Model (DOM) è una rappresentazione ad albero di una
+      pagina HTML/XML che permette di modificare dinamicamente il contenuto, la
+      struttura e lo stile di una pagina web. Il DOM è un'interfaccia di
+      programmazione per i documenti HTML e XML. In questa lezione, impareremo i
+      concetti fondamentali del DOM.
+    </p>
+
+    <h3>Cos'è il DOM?</h3>
+
+    <p>
+      Il DOM è una rappresentazione gerarchica degli elementi di una pagina web,
+      che permette agli sviluppatori di accedere, manipolare e aggiornare i
+      contenuti HTML, CSS e JavaScript di una pagina web. Il DOM divide una
+      pagina web in un albero di nodi, dove ogni elemento HTML è rappresentato
+      da un nodo nel DOM.
+    </p>
+
+    <h3>Struttura del DOM</h3>
+
+    <p>
+      Il DOM inizia con un nodo radice che rappresenta l'intera pagina web. Da
+      questo nodo radice si dipartono altri nodi che rappresentano gli elementi
+      HTML all'interno della pagina.
+    </p>
+
+    <p>Ecco un esempio semplice di struttura del DOM:</p>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Titolo della Pagina&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Titolo principale&lt;/h1&gt;
+  &lt;p&gt;Questo è un paragrafo.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Elemento 1&lt;/li&gt;
+    &lt;li&gt;Elemento 2&lt;/li&gt;
+    &lt;li&gt;Elemento 3&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <p>Questa è la rappresentazione del DOM per la pagina HTML di esempio:</p>
+
+    <pre><code>- Document
+  - html
+    - head
+      - title
+        - "Titolo della Pagina"
+    - body
+      - h1
+        - "Titolo principale"
+      - p
+        - "Questo è un paragrafo."
+      - ul
+        - li
+          - "Elemento 1"
+        - li
+          - "Elemento 2"
+        - li
+          - "Elemento 3"
+</code></pre>
+
+    <h3>Manipolazione del DOM con JavaScript</h3>
+
+    <p>
+      JavaScript può essere utilizzato per accedere e manipolare il DOM. Ecco un
+      esempio di come si può utilizzare JavaScript per modificare il contenuto
+      di un elemento nel DOM:
+    </p>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Manipolazione del DOM&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1 id="titolo"&gt;Titolo principale&lt;/h1&gt;
+  &lt;button onclick="cambiaTitolo()"&gt;Cambia titolo&lt;/button&gt;
+
+  &lt;script&gt;
+    function cambiaTitolo() {
+      document.getElementById("titolo").innerHTML = "Nuovo titolo";
+    }
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <p>
+      In questo esempio, quando si fa clic sul pulsante "Cambia titolo", il
+      testo dell'elemento <code>h1</code> con l'id "titolo" viene modificato da
+      "Titolo principale" a "Nuovo titolo".
+    </p>
+
+    <h3>Conclusioni</h3>
+
+    <p>
+      Il Document Object Model (DOM) è un concetto fondamentale nello sviluppo
+      web che permette agli sviluppatori di manipolare dinamicamente il
+      contenuto di una pagina web utilizzando JavaScript. Con una comprensione
+      approfondita del DOM, è possibile creare esperienze web interattive e
+      dinamiche.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+# DOM
+
+Il Document Object Model (DOM) è una rappresentazione gerarchica dei nodi di un documento HTML o XML, utilizzata principalmente per interagire con la struttura e il contenuto di una pagina web attraverso JavaScript. Ecco alcuni punti chiave:
+
+1. Struttura ad Albero: Il DOM organizza il documento come un albero gerarchico di nodi, con il nodo radice che rappresenta l'intero documento e i nodi figlio che rappresentano gli elementi, gli attributi e i testi all'interno del documento.
+2. Accesso e Manipolazione: Gli sviluppatori possono accedere agli elementi del DOM e modificarli dinamicamente utilizzando JavaScript. Ciò consente di aggiungere, rimuovere o modificare elementi, attributi, testo e stili sulla pagina in base alle interazioni degli utenti o ad altri eventi.
+3. Interattività: Il DOM è alla base dell'interattività delle pagine web moderne. Per esempio, gli sviluppatori possono utilizzare il DOM per gestire eventi come clic del mouse, pressione dei tasti, caricamento della pagina e molto altro ancora.
+4. Rendering dei Browser: Ogni browser costruisce il proprio DOM quando analizza il codice HTML di una pagina web. Sebbene ci siano standard per il DOM definiti dal W3C, possono esserci piccole differenze nell'implementazione del DOM tra i browser.
+5. Modifiche Progressive: Le modifiche al DOM possono essere fatte in modo progressivo, cioè è possibile aggiornare parti specifiche della pagina senza dover ricaricare l'intera pagina. Questo è uno dei principali vantaggi dell'interazione con il DOM attraverso JavaScript.
+6. Compatibilità: Gli sviluppatori devono considerare la compatibilità del DOM con i diversi browser e versioni di browser quando scrivono codice JavaScript che interagisce con il DOM. L'utilizzo di librerie come jQuery può semplificare il lavoro mantenendo una buona compatibilità tra i browser.
+
+In poche parole:
+Il Document Object Model (DOM) è una rappresentazione gerarchica e strutturata di un documento HTML o XML, che consente agli sviluppatori di manipolare il contenuto, la struttura e lo stile di una pagina web utilizzando JavaScript. Attraverso il DOM, è possibile accedere agli elementi HTML, modificarne i contenuti, aggiungere nuovi elementi, gestire eventi e interagire dinamicamente con l'utente. In sostanza, il DOM è ciò che consente alla logica di programmazione di interagire con la struttura e il contenuto di una pagina web.

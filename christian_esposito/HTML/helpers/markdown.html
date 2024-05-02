@@ -1,4 +1,77 @@
-<h1 id="questo-un-titolo">Questo è un titolo</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/helpers_css/markdown.css">
+  <link rel="stylesheet" href="../css/utils/navbar.css">
+  <link rel="stylesheet" href="../css/utils/reset_all.css">
+  <link rel="stylesheet" href="../css/utils/bg_img.css">
+  <title>Markdown</title>
+</head>
+<body>
+  
+  <header>
+    <input type="checkbox" id="hamburger"/> 
+             <label class="menuicon" for="hamburger"> 
+                   <span></span> 
+             </label> 
+        <div id="bar"> 
+            <a id="logo" href="../index.html"></a> 
+                 <!--/fine logo-->
+        </div>
+          <nav class="menu-visibility">
+            <ul>
+        
+              <li><a class="submenu" href="#">LEZIONI</a>
+                <ul>
+                  <li>
+                    <a href="./git.html">Lezione GIT</a>
+                  </li>
+                  <li>
+                    <a href="./html.html"> Lezione HTML</a>
+                  </li>
+                  <li>
+                    <a href="./markdown.html"> Lezione MARKDOWN</a>
+                  </li>
+                  <li>
+                    <a href="./dom.html"> Lezione DOM</a>
+                  </li>
+                  <li>
+                    <a href="./css.html"> Lezione CSS</a>
+                  </li>
+                  <li>
+                    <a href="./css_om.html"> Lezione CSS_OM</a>
+                  </li>
+                </ul>
+              </li>
+        
+              <li><a class="submenu" href="#"></a>HELPERS</a>
+                <ul>
+                  <li>
+                    <a href="../helpers/git_command.html">Git command</a>
+                  </li>
+                  <li>
+                    <a href="../helpers/git_flows.html">Git Flows</a>
+                  </li>
+                  <li>
+                    <a href="../helpers/markdown.html">MarkDown</a>
+                  </li>
+                  <li>
+                    <a href="../helpers/tag_html.html">Tag Html</a>
+                  </li>
+                  <li>
+                    <a href="../helpers/css_sheet.html">CSS</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+  </header>
+
+<div class="inbox">
+  
+<h1>Questo è un titolo</h1>
 <p>
   Markdown è popolare perché è facile da imparare e da scrivere, e i suoi
   documenti sono leggibili anche in formato di testo semplice. Quando si
@@ -11,11 +84,11 @@
   elementi puntati e numeri per gli elenchi numerati:
 </p>
 <h3 id="markdown">markdown</h3>
-<ul>
+<ol>
   <li>Elemento 1</li>
   <li>Elemento 2</li>
   <li>Elemento 3</li>
-</ul>
+</ol>
 <h3 id="markdown-numerato">markdown numerato</h3>
 <ol>
   <li>Primo elemento</li>
@@ -36,16 +109,16 @@
 <p>
   Testo in grassetto e corsivo: Puoi rendere il testo in grassetto utilizzando
 </p>
-<ul>
+<ol>
   <li>
     <strong> testo in grassetto </strong> <em> testo in corsivo </em> (togliere
     gli spazi)
-    <ul>
+    <ol>
       <li><strong>testo in grassetto</strong></li>
       <li><em>testo in corsivo</em></li>
-    </ul>
+    </ol>
   </li>
-</ul>
+</ol>
 <h2 id="blocchi-di-codice">blocchi di codice</h2>
 <p>
   Blocchi di codice: Puoi inserire blocchi di codice utilizzando tre backticks
@@ -54,3 +127,7 @@
 <pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">()</span>:</span>
 print(<span class="hljs-string">"Hello, world!"</span>)
 </code></pre>
+
+</div>
+</body>
+</html>

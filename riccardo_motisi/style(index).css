@@ -1,0 +1,36 @@
+body {
+  background-image: url(https://wallpapercave.com/wp/vUYioU8.jpg);
+  background-size: cover;
+  background-size: 100vw 100vh;
+}
+body {
+  color: white;
+  font-family: "Minecraft", sans-serif;
+}
+
+.img {
+  text-align: center;
+}
+.container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button {
+  color: white; /* Colore del testo */
+  font-family: "Minecraft", sans-serif;
+
+  padding: 5px 20px; /* Spazio interno */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-size: 50px;
+  background-color: #33383a; /* Colore di sfondo */
+  opacity: 0.85;
+  overflow: hidden; /* Nasconde gli elementi che sforano */
+}
+
+.container a:hover {
+  background-color: white; /* Colore di sfondo al passaggio del mouse */
+  color: #000000; /* Cambia il colore del testo al passaggio del mouse */
+}
