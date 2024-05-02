@@ -30,3 +30,7 @@
 
 - **23.04**
   Solito daily , spiegazione di Merge Commit , Squash e Rebase.
+
+- **02.05**
+
+  Solito daily e spiegazione di riccardo di const , let , var etc tramite la console del browser. Spiegazione dei vari operatori: operatori di assegnazione, operatori di confronto e operatori logici. Spiegazione del not logico
