@@ -1,6 +1,7 @@
 ## Il ciclo `while` in JavaScript
 
-Il ciclo `while` è un costrutto di flusso di controllo fondamentale in JavaScript che permette di eseguire un blocco di codice in modo ripetuto finché una condizione specificata rimane vera. È utile per iterare su collezioni di dati, eseguire azioni ripetute fino al raggiungimento di una specifica condizione o creare loop personalizzati.
+Il ciclo `while` è un costrutto di flusso di controllo fondamentale in JavaScript che permette di eseguire un blocco di codice in modo ripetuto finché una condizione specificata 
+rimane vera. È utile per iterare su collezioni di dati, eseguire azioni ripetute fino al raggiungimento di una specifica condizione o creare loop personalizzati.
 
 **Sintassi del ciclo `while`:**
 
