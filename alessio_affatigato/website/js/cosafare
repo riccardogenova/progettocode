@@ -1,0 +1,9 @@
+ 
+ 8_Al clic di un elemento, modifica una proprietà CSS di un elemento. 
+9_ In JavaScript (non CSS) cambia il colore di
+sfondo di un elemento quando il mouse passa sopra. 
+10_ cambia l'immagine visualizzata quando l'utente clicca su un bottone.
+11_Al Clic di un bottone, aggiungi un nuovo paragrafo prima di un elemento esistente. 
+14_Mostra o nascondi un elemento ogni volta che si clicca su un bottone.
+15_ Aggiungi un elemento al
+DOM dopo un ritardo di 5 secondi.

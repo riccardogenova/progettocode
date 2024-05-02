@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #6e6d6d;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+button{
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: brown;
+}
+
+#first-text{
+    cursor: pointer;
+    padding: ;
+}
+
+.cssclass{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: black;
+    padding: 10px;
+}
+
+.cssclass2{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: yellow;
+    padding: 10px;
+}
