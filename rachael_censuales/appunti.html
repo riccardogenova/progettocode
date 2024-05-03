@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../cssfiles/content.css" rel="stylesheet" />
+    <link href="../rachael_censuales/website/cssfiles/content.css" rel="stylesheet" />
     <title>Javascript Pills</title>
   </head>
   <body>
@@ -145,12 +145,12 @@
                 <li>   Operatori di identicità:  `===` : confronta sia il contenuto che il tipo   </li> 
 
  <li> Operatore di maggiore e minore tra variabili: `>` , `&lt` , `>=` , `&lt=`  </li> 
- <li> Diverso: `!==` (identicità) - `!=` (solo il contenuto)</li>
- </ul>
+ <li> Diverso: `!==` (identicità) - `!=` (solo il contenuto)</li> </ul>
 
-<strong> Operatori logici: </strong>
 
-<ul> <li>  Or Logico `| |`: controlla almeno una condizione, se almeno una è vera, l'espressione risulta vera, se sono entrambe false, l'espressione risulta falsa. Es. 
+ <ul> Operatori logici:
+
+<li>  Or Logico `| |`: controlla almeno una condizione, se almeno una è vera, l'espressione risulta vera, se sono entrambe false, l'espressione risulta falsa. Es. 
  num1 &lt num2 | | num3 &lt num4  
 
 <li> And Logico `&&`: verifica che entrambe le condizioni siano vere. Es: 5 === 2 && 6>7 FALSE ;  5>2 && 6&lt7 TRUE ; </li>
@@ -166,11 +166,11 @@ true + false = 1 </p>
 </ul>
 <h4> Decisioni </h4>
 
-  <p> <strong>  If:  </strong>
+  <p class="subtitles"> If: 
   <pre> <code class="language-javascript"> if .. else .. 
   if() {
   } else {} 
-  if (num1&ltnum2) { console.log(`Yes!`) } else {console.log (`Oh Shit!`) }  </code>  </pre>
+  if (num1&ltnum2) { console.log(`Yes!`) } else {console.log (`Oh Shit!`) }  </code>  </pre> 
   <p><pre> <code class="language-javascript"> if () { 
   } else IF () {} else {}
   if (num1&ltnum2) { console.log('Yes!') 
@@ -178,9 +178,9 @@ true + false = 1 </p>
   } else { 
   console.log ('Oh Shit!') }
   -- Oh Shit!
-  </code>  </pre> </p>
+  </code>  </pre>
   
-  <p> <strong> Switch case:</strong>
+  <p class="subtitles"> Switch case:
   <p> Se vuoi utilizzare più condizioni e in quali casi (quando succede questo, fai questo, quando succede quest'altro, fai quest'altro, se non è nessuno "default" allora):  
   <pre><code>switch (key:variabile da analizzare) 
   case (valore):
@@ -190,8 +190,8 @@ true + false = 1 </p>
   console.log('due')
   default:
   console.log('oh shit!') 
-  break; </pre> </code>
-  </p>
+  break;</code>
+
 <h4> Cicli: </h4> 
  <p> per eseguire ripetutamente un blocco di codice finché una certa condizione è vera.  </p>
  <p> <pre> <code>
@@ -212,8 +212,7 @@ Se la condizione è falsa si ferma
  let i= 0
  while (1&lt0) {
  console.log(i);
- i=i+1 } </pre> </code> </p>
-               
+ i=i+1 }  </code> 
                 
              
                 <ul> <li>  Gestione delle eccezioni: per gestire situazioni anomale o
@@ -264,8 +263,5 @@ Se la condizione è falsa si ferma
           definite in un modo particolare e assegnate ad una variabile.
         </p>
         <h4>Array</h4> <p> Un 'array' può essere considerata una variabile che può contenere molteplici valori ai quali ci si può riferire attraverso un indice: un numero intero che parte sempre da zero.
-          L'uso degli array evita di definire più variabili e semplifica lo svolgimento di operazioni cicliche su tutti i valori. </p>
-      </div>
-    </div>
-  </body>
-</html>
+          L'uso degli array evita di definire più variabili e semplifica lo svolgimento di operazioni cicliche su tutti i valori. 
+
