@@ -46,3 +46,50 @@ Il tag HTML <noscript> definisce un contenuto alternativo da mostrare agli utent
 ```
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
 ```
+
+## Variabili
+
+Esistono tre tipi di variabili:
+- const per le constanti
+- var e let
+
+## Operatori logici
+
+### OR
+
+Vero se almeno una delle due conidioni è vera
+
+```
+||
+```
+### AND
+
+Vero se le due condizioni sono vere
+
+```
+&&
+```
+### Negato
+
+Nega il risultato di una cosa
+
+```
+!
+```
+
+## Operatori di confronto
+
+- ==: confronta contenuto
+- !=: diverso da
+- ===: confronta contenuto e tipo
+- !==: diverso da contenuto e tipo
+
+## Condizioni di esistenza
+
+!variabile è falsa.
+!!variabile è falsa se il contenuto è vuoto.
+!!0 è false e !!>=1 di vero.
+
+## Variabili costanti
+- NaN
+- Infinity

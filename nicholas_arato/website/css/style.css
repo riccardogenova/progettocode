@@ -1,10 +1,12 @@
-body {
+
+.body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  .element {
-    background-image: url("website\indexbackground.png");
-    background-size: cover;
-  }
+}
+
+.element {
+  background-image: url("indexbackground.png");
+  background-size: cover;
 }
 
 h1 {
