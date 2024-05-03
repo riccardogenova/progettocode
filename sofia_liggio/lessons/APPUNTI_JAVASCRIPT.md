@@ -87,3 +87,38 @@ Alcuni esempi di metodi array immutabili:
 - **concat():** Concatena uno o più array a un array esistente, restituendo un nuovo array
 - **slice():** Restituisce una parte di un array, senza modificarlo
 - **reduce():** Applica una funzione riduttiva a ciascun elemento dell'array, restituendo un singolo valore risultante
+
+## Ritorno di una funzione
+
+Quando diciamo che una funzione "ritorna qualcosa", intendiamo che la funzione produce un valore che può essere utilizzato in seguito nel programma. Questo valore può essere di qualsiasi tipo: numerico, stringa, array, oggetto o persino un'altra funzione.
+
+# Eventi
+
+Gli eventi in JavaScript sono azioni che si verificano durante l'interazione dell'utente con una pagina web o con altri elementi interattivi, come i componenti di un'applicazione web. Questi eventi possono essere causati da azioni come clic del mouse, movimenti del mouse, pressione dei tasti della tastiera, caricamento della pagina, cambiamenti nei campi di input e altro ancora.
+
+Quando un evento si verifica, JavaScript può essere utilizzato per catturare, gestire e rispondere ad esso. Il meccanismo principale per catturare e gestire gli eventi in JavaScript è l'utilizzo di listener degli eventi.
+
+Esempi di eventi comuni includono:
+
+- **Click del mouse:** Si verifica quando l'utente clicca su un elemento della pagina
+- **Mouseover e Mouseout:** Si verificano quando l'utente sposta il cursore sopra o fuori da un elemento
+- **Keydown, Keyup e Keypress:** Si verificano quando l'utente preme o rilascia un tasto della tastiera
+- **Caricamento della pagina:** Si verifica quando la pagina web è completamente caricata nel browser
+- **Submit di un modulo:** Si verifica quando un utente invia un modulo
+- **Focus e Blur:** Si verificano quando un elemento ottiene o perde il focus
+- **Cambio di valore di un campo di input:** Si verifica quando l'utente modifica il valore di un campo di input
+
+## Gestione degli eventi con JavaScript
+
+Per gestire gli eventi in JavaScript, è possibile utilizzare i cosiddetti _event listeners_ o "gestori di eventi". Questi sono metodi che permettono di ascoltare gli eventi su un elemento specifico del DOM e di eseguire una funzione quando l'evento si verifica. Un esempio di come si utilizza un event listener per gestire un click del mouse su un pulsante:
+
+// Seleziona l'elemento del pulsante dal DOM
+const myButton = document.getElementById('myButton');
+
+// Aggiungi un event listener per il click del mouse
+myButton.addEventListener('click', function() {
+// Questa funzione verrà eseguita quando il pulsante viene cliccato
+console.log('Il pulsante è stato cliccato!');
+});
+
+In questo esempio, addEventListener è un metodo che permette di ascoltare gli eventi su un elemento specifico del DOM. Quando il pulsante viene cliccato, la funzione fornita come secondo argomento verrà eseguita. In questo caso, la funzione stampa un messaggio di log sulla console del browser.
