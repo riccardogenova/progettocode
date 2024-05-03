@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutto sugli Array</title>
+  </head>
+  <body>
+    <h1>Cosa è un Array?</h1>
+    <h3>
+      <p>
+        In JavaScript, un array è una struttura dati che contiene una collezione
+        ordinata di elementi. Gli elementi possono essere di qualsiasi tipo di
+        dato, come numeri, stringhe, oggetti, funzioni, ecc. Un array può essere
+        dichiarato e inizializzato in diversi modi, ad esempio:
+      </p>
+      <p>// Dichiarazione e inizializzazione di un array vuoto</p>
+      <p><code>let arrayVuoto = [];</code></p>
+      <br />
+      <p>// Dichiarazione e inizializzazione di un array con elementi</p>
+      <p><code>let numeri = [1, 2, 3, 4, 5];</code></p>
+      <br />
+      <p>// Array di oggetti</p>
+      <p><code>let persone = [</code></p>
+      <p><code>{ nome: 'Mario', cognome: 'Rossi'},</code></p>
+      <p><code>{ nome: 'Luigi', cognome: 'Verdi'}</code></p>
+      <p><code>];</code></p>
+      <p>
+        Gli elementi in un array sono accessibili tramite un indice numerico,
+        dove il primo elemento ha indice 0, il secondo elemento ha indice 1 e
+        così via. Ad esempio:
+      </p>
+      <p><code>console.log(numeri[0]);</code></p>
+      <p>// Output: 1</p>
+      <p><code>console.log(frutta[1]);</code></p>
+      <p>// Output: banana</p>
+      <p><code>console.log(persone[0].nome);</code></p>
+      <p><code>// Output: Mario</code></p>
+      <p>
+        Gli array in JavaScript sono flessibili e possono crescere o ridursi
+        dinamicamente, il che significa che è possibile aggiungere, rimuovere o
+        modificare gli elementi in qualsiasi momento.
+      </p>
+      <br />
+      <h1>Posizione e Lunghezza negli Array</h1>
+      <h3>
+        <ul>
+          <li>
+            Gli elementi dentro un Array hanno una posizione che parte da 0, 1,
+            2, ecc.
+          </li>
+          <li>La lunghezza di un Array parte invece da 1, 2, ecc.</li>
+        </ul>
+        <p>
+          Per accedere all'ultima posizione di un Array (e dunque verificarne la
+          lunghezza) è sufficiente digitare <code>array [array.lenght -1]</code>
+        </p>
+        <p>
+          RICORDA: Un singolo Array può contenere altri Array al suo interno.
+        </p>
+        <br />
+        <h1>I metodi degli Array</h1>
+        <h2>Metodi mutabili</h2>
+        <h3>
+          <p>
+            JavaScript offre molti metodi integrati per manipolare gli array.
+            Ecco alcuni dei metodi più comuni:
+          </p>
+          <ul>
+            <li>
+              <code>push()</code>: Aggiunge uno o più elementi alla fine
+              dell'array e restituisce la nuova lunghezza dell'array
+              <p><code>let numeri = [1, 2, 3];</code></p>
+              <p><code>numeri.push(4);</code></p>
+              <p><code>console.log(numeri);</code>// Output: [1, 2, 3, 4]</p>
+            </li>
+            <li>
+              <code>pop()</code>: Rimuove l'ultimo elemento dall'array e lo
+              restituisce
+              <p><code>let numeri = [1, 2, 3]</code></p>
+              <p><code>let elementoRimosso = numeri.pop();</code></p>
+              <p><code>console.log(elementoRimosso);</code> // Output: 3</p>
+              <p><code>console.log(numeri);</code>// Output: [1, 2]</p>
+            </li>
+            <li>
+              <p>
+                <code>shitft()</code>: Rimuove il primo elemento dall'array e lo
+                restituisce
+              </p>
+              <p><code>let numeri = [1, 2, 3];</code></p>
+              <p><code>console.log(elementoRimosso);</code>// Output: 1</p>
+              <p><code>console.log(numeri);</code>// Output: [2, 3]</p>
+            </li>
+            <li>
+              <p>
+                <code>unshift()</code>: Aggiunge uno o più elementi all'inizio
+                dell'array e restituisce la nuova lunghezza dell'array
+              </p>
+              <p><code>let numeri = [2, 3];</code></p>
+              <p><code>numeri.unshift(0, 1);</code></p>
+              <p><code>console.log(numeri);</code>// Output [0, 1, 2, 3]</p>
+            </li>
+            <li>
+              <p>
+                <code>splice()</code>: Aggiunge, rimuove o sostituisce elementi
+                di un array. Questo emtodo può essere utilizzato per una vasta
+                gamma di operazioni complesse sugli array
+              </p>
+              <p><code>let numeri = [1, 2, 3, 4, 5];</code></p>
+              <p>
+                <code>numeri.splice(2, 1);</code>// Rimuove un elemento a
+                partire dall'indice 2
+              </p>
+              <p><code>console.log(numeri);</code>// Output: [1, 2, 4, 5]</p>
+            </li>
+          </ul>
+          <h2>Metodi Immutabili</h2>
+          <h3>
+            <ul>
+              <li>
+                <p>
+                  <code>slice()</code>: Estrae una parte di un array e
+                  restituisce una copia di quella parte. Non modifica l'array
+                  originale
+                </p>
+              </li>
+              <li>
+                <p>
+                  <code>concat()</code>: Crea un nuovo array combinando uno o
+                  più array esistenti con altri elementi. Non modifica gli array
+                  originali
+                </p>
+              </li>
+              <li>
+                <p>
+                  <code>map()</code>: Crea un nuovo array applicando una
+                  funzione a ciascun elemento dell'array. Non modifica l'array
+                  originale.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <code>filter()</code>: Crea un nuovo array contenente solo gli
+                  elementi che soddisfano una determinata condizione. Non
+                  modifica l'array originale.
+                </p>
+              </li>
+              <li>
+                <p>
+                  <code>reduce()</code>: Applica una funzione ad ogni elemento
+                  dell'array, producendo un singolo valore. Non modifica l'array
+                  originale.
+                </p>
+              </li>
+            </ul>
+          </h3>
+        </h3>
+      </h3>
+    </h3>
+  </body>
+</html>
