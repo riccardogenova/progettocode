@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+<body style="margin: 0; padding: 0; border: 0; ">
+    <header>
+        <nav style="background-color: red; height: 5vh; display: flex; justify-content: end; align-items: center; margin-bottom: 3em;">
+            <div style="display: flex; flex-wrap: nowrap; align-items: center; justify-content: center; gap: 5px; margin-right: 10px;">
+                <p>N Persone Gruppi </p>
+                <select name="posti" id="posti" style="height: 2vh;">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="random">Random</button>
+            </div>
+        </nav>
+    </header>
+
+    <div style="border: blue 2px solid; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            
+        <div >
+            
+            <div>Inserisci Nome e Cognome</div>
+            <input placeholder="Nome Cognome" type="text" id="input_text">
+            <button id="btnInsert" type="reset" disabled>Inserisci</button>
+        </div>
+        <p>partecipanti al gioco</p>
+        <ul id="table" style="background-image: url('https://w0.peakpx.com/wallpaper/709/63/HD-wallpaper-death-note-death-note.jpg');background-repeat: no-repeat;background-size: 100% 100%; padding: 0 ;height: 60vh; list-style: nome; color: white; display: flex; justify-content: center; align-items: start; width: 50vw;flex-direction: column;border: red solid 2px;" id="element">
+            <!-- <img src="https://w0.peakpx.com/wallpaper/709/63/HD-wallpaper-death-note-death-note.jpg"  alt="" width="100%" height="100%"> -->
+        </ul>
+
+    </div>
+
+<ol id="tableGroupe" style="border: red solid 2px; width: 100%; height: 100em; display: flex; justify-content: center; align-items: center; " >
+
+</ol>
+
+    
+</body>
+<script type="text/javascript" src="./random_groupe.js"></script>
+
+</html>
