@@ -1,21 +1,8 @@
-# Javascript
-
 JavaScript è un linguaggio di programmazione multi paradigma orientato agli eventi, utilizzato sia nella programmazione lato client web che lato server (Node.js), siti web e applicazioni web, di effetti dinamici 
 interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso (mouse, tastiera, caricamento della pagina ecc...).
 
-## Elementi
+# Elementi
 
-### Funzioni
-
-Una funzione è un blocco di istruzioni, dotato di una lista di argomenti (eventualmente vuota) e che può avere un nome (anche se non è necessario). Una funzione può restituire un valore tramite l'istruzione return.
-
-Ogni funzione è un'istanza di Function, un tipo di oggetto base. Le funzioni possono essere create e assegnate come ogni altro oggetto:
-
-```
-   var myFunc1 = new Function("alert('Hello')");
-   var myFunc2 = myFunc1;
-   myFunc2();
-```
 ## Eventi
 
 Esistono varie categorie di eventi:
@@ -29,6 +16,10 @@ Esistono varie categorie di eventi:
 
 - onClick: attivato quando si clicca su un oggetto;
 - onDblClick: attivato con un doppio click;
+
+### Propagazione degli eventi
+
+Triggerando un evento si triggerrano anche quelli dei contenitori padri.
 
 ## Implementazione
 
@@ -93,3 +84,21 @@ Nega il risultato di una cosa
 ## Variabili costanti
 - NaN
 - Infinity
+
+# Funzioni
+
+Una funzione è un blocco di istruzioni, dotato di una lista di argomenti (eventualmente vuota) e che può avere un nome (anche se non è necessario). Una funzione può restituire un valore tramite l'istruzione return.
+
+Ogni funzione è un'istanza di Function, un tipo di oggetto base. Le funzioni possono essere create e assegnate come ogni altro oggetto:
+
+```
+   var myFunc1 = new Function("alert('Hello')");
+   var myFunc2 = myFunc1;
+   myFunc2();
+```
+
+## Lista di funzioni
+
+- element.clone(false): clona un nodo senza copiare gli elementi.
+- element.removeListener(event): rimuovi un evento
+- element.preventDefault: usato per prevenire l'effetto di propagazione.
