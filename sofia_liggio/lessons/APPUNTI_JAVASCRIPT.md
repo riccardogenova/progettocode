@@ -76,7 +76,7 @@ Alcuni concetti chiave relativi agli array:
 - **Tipo degli elementi:** Gli array possono contenere elementi di qualsiasi tipo di dato, inclusi numeri, stringhe, oggetti, altri array, booleani e così via. In alcuni linguaggi di programmazione, gli array possono contenere solo elementi dello stesso tipo, ma in linguaggi come JavaScript, gli array possono contenere una miscela di tipi di dati.
 - **Operazioni sugli array:** Gli array supportano varie operazioni comuni, come aggiungere o rimuovere elementi, accedere agli elementi in base all'indice, iterare su tutti gli elementi, ordinare gli elementi e molto altro ancora.
 
-**Metodi array immutabili**:
+# Metodi array immutabili
 
 Gli array supportano molti metodi che possono essere utilizzati per eseguire operazioni su di essi. Alcuni di questi metodi sono considerati "immutabili", il che significa che non modificano direttamente l'array originale, ma restituiscono un nuovo array o un nuovo valore basato sulle operazioni eseguite. Questo è utile quando si desidera mantenere l'integrità dell'array originale.
 
@@ -87,6 +87,17 @@ Alcuni esempi di metodi array immutabili:
 - **concat():** Concatena uno o più array a un array esistente, restituendo un nuovo array
 - **slice():** Restituisce una parte di un array, senza modificarlo
 - **reduce():** Applica una funzione riduttiva a ciascun elemento dell'array, restituendo un singolo valore risultante
+
+# Proprietà e metodi
+
+JavaScript fornisce una serie di proprietà e metodi integrati per lavorare con gli array. Alcuni di questi includono:
+
+- **length:** Proprietà che restituisce il numero di elementi in un array
+- **push():** Metodo che aggiunge uno o più elementi alla fine di un array
+- **pop():** Metodo che rimuove e restituisce l'ultimo elemento di un array
+- **shift():** Metodo che rimuove e restituisce il primo elemento di un array
+- **unshift():** Metodo che aggiunge uno o più elementi all'inizio di un array
+- **splice():** Metodo che consente di aggiungere, rimuovere o sostituire elementi in un array
 
 ## Ritorno di una funzione
 
