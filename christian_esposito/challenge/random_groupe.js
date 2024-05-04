@@ -4,31 +4,17 @@ const optionPlaces = document.getElementById("posti")
 const btnRandom = document.getElementById("random")
 const table = document.getElementById("table")
 const groupeTable = document.getElementById("tableGroupe")
+const btnFilter = document.getElementById("filter")
+const inputDelete = document.getElementById("inputDelete")
 
 const nameArray = []
 const groupeArray2D = []
-
-const numberPlace =  optionPlaces.addEventListener("change", function numberPlace() {
-    console.log("n posti", optionPlaces.value)
-    optionPlaces.value
-})
-
-
-
-
-
-
-console.log("2s", groupeArray2D)
     
-
-
 function addList () {
-console.log(nameArray)
     if(insertInput.value == ""){
         window.alert("Inserire un Testo")
         btnInsert.disabled = true;
     }else if (!nameArray.includes(insertInput.value.toUpperCase()))  {
-        // console.log(nameArray.includes(insertInput.value))
         nameArray.push(insertInput.value.toUpperCase())
         btnInsert.disabled = true;
     }else{
@@ -45,10 +31,7 @@ console.log(nameArray)
             table.append(...list)
 }
 
-
-
-
-const btnDisable = ( )=>{
+const btnDisable = ()=>{
 
     const hasInputValue = insertInput.value.trim() !== '';
     if (hasInputValue) {
@@ -58,52 +41,58 @@ const btnDisable = ( )=>{
       }
 }
 
+const deleteMember = () =>{
+    
+    const del = nameArray.filter(e => { return e !== inputDelete.value.toUpperCase();})
+
+    const filterList = del.map((d) => {
+        const listFilter = document.createElement("li")
+        listFilter.textContent = d
+        return listFilter
+    })
+    inputDelete.value = ""
+    table.textContent = ""
+    table.append(...filterList)
+
+
+}
+
 const randomGroupe = () => {
+    
     const copyGroupe = [...nameArray];
-    const division = [];
-    groupeTable.textContent = "";
     const insertGroupe = [];
+    const division = [];
+    
+    groupeTable.textContent = "";
 
     while (copyGroupe.length > 0) {
-        let numEstratti = Math.min(optionPlaces.value, copyGroupe.length);
+        let numGruppo = Math.min(optionPlaces.value, copyGroupe.length);
         const groupe = [];
-        for (let i = 0; i < numEstratti; i++) {
+        for (let i = 0; i < numGruppo; i++) {
             let numero = Math.floor(Math.random() * copyGroupe.length);
             groupe.push(copyGroupe.splice(numero, 1)[0]);
         }
         division.push(groupe);
     }
 
-    division.forEach((g) => {
-        if (!insertGroupe.includes(JSON.stringify(g))) {
-            const lista = document.createElement("ol");
+    division.map((g) => {
+        if (!insertGroupe.includes(g)) {
+            const list = document.createElement("ol");
 
-            g.forEach((e) => {
+            g.map((e) => {
                 const orderList = document.createElement("li");
                 orderList.textContent = e;
-                lista.appendChild(orderList);
+                list.appendChild(orderList);
             });
 
-            groupeTable.appendChild(lista);
-            insertGroupe.push(JSON.stringify(g));
+            groupeTable.appendChild(list);
+            insertGroupe.push(g);
         }
     });
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 insertInput.addEventListener("input",btnDisable)
 btnInsert.addEventListener("click", addList)
 btnRandom.addEventListener("click",randomGroupe )
+btnFilter.addEventListener("click", deleteMember)
