@@ -4,12 +4,16 @@ const optionPlaces = document.getElementById("posti")
 const btnRandom = document.getElementById("random")
 const table = document.getElementById("table")
 const groupeTable = document.getElementById("tableGroupe")
-const btnFilter = document.getElementById("filter")
+const btnDelete = document.getElementById("filter")
 const inputDelete = document.getElementById("inputDelete")
+const btnSave = document.getElementById("saveData")
 
 const nameArray = []
 const groupeArray2D = []
     
+
+
+
 function addList () {
     if(insertInput.value == ""){
         window.alert("Inserire un Testo")
@@ -29,9 +33,10 @@ function addList () {
             })
             table.textContent = ""
             table.append(...list)
+            btnDisableDelete()        
 }
 
-const btnDisable = ()=>{
+const btnDisableInsert = ()=>{
 
     const hasInputValue = insertInput.value.trim() !== '';
     if (hasInputValue) {
@@ -41,9 +46,20 @@ const btnDisable = ()=>{
       }
 }
 
+
+const btnDisableDelete = () =>{
+    console.log(nameArray.length)
+    if(nameArray.length == 0){
+        btnDelete.disabled = true
+    }else{
+        btnDelete.disabled = false
+    }
+}
+
+
+
 const deleteMember = () =>{
-    
-    const del = nameArray.filter(e => { return e !== inputDelete.value.toUpperCase();})
+    const del = nameArray.filter(e => { return e !== insertInput.value.toUpperCase();})
 
     const filterList = del.map((d) => {
         const listFilter = document.createElement("li")
@@ -52,9 +68,19 @@ const deleteMember = () =>{
     })
     inputDelete.value = ""
     table.textContent = ""
+    console.log("pre slice",nameArray)
+    nameArray.slice(1, nameArray.length)
+    console.log("post slice", nameArray)
+
+    // pop+ while and .slice(0, .lenght) non FUNZIONANO 
+    nameArray.length = 0 // l'unico metodo per eliminare tutti gli elementi dalla lista.......wtf
+    nameArray.push(...del)
     table.append(...filterList)
+    insertInput.value = ""
+    window.alert("ricordati di salvare la nuova lista")
 
-
+    btnDisableDelete()
+    btnDisableInsert()
 }
 
 const randomGroupe = () => {
@@ -91,8 +117,50 @@ const randomGroupe = () => {
     });
 }
 
+const saveList = () =>{
+    const jsonData = JSON.stringify(nameArray);
+    // console.log("pre if",localStorage.getItem("listGroupe").length)
+    if(localStorage.getItem("listGroupe") == null){
+        localStorage.setItem("listGroupe",jsonData )
+        console.log("into if",jsonData )
+        window.alert("lista salvata con successo")
+    }else if (localStorage.getItem("listGroupe") !== null){
+        localStorage.setItem("listGroupe",jsonData )
+        console.log("into if",jsonData )
+        window.alert("Hai sovrascritto la lista di partecipanti")
+    }
+    btnDisableDelete()
+}
 
-insertInput.addEventListener("input",btnDisable)
+
+
+const showListStorage= () =>{
+    const localData = localStorage.getItem("listGroupe");
+    if(localData != null){
+        const stringData = JSON.parse(localData)
+        nameArray.push(...stringData)
+        console.log("arrayName",nameArray)
+        console.log("stringData",stringData)
+        const showData = stringData.map((d) => {
+            const listElement = document.createElement("li")
+            listElement.textContent = d
+            return listElement
+        })
+        table.append(...showData)
+    }
+    btnDisableDelete()
+}
+
+showListStorage()
+btnDisableDelete()
+
+
+
+insertInput.addEventListener("input",btnDisableInsert)
 btnInsert.addEventListener("click", addList)
 btnRandom.addEventListener("click",randomGroupe )
-btnFilter.addEventListener("click", deleteMember)
+btnDelete.addEventListener("click", deleteMember)
+btnSave.addEventListener("click", saveList)
+
+
+
