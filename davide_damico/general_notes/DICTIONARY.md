@@ -25,3 +25,15 @@
 - ## Parametri const
 
 - ## Parametri function
+
+- ## Flow Charts (da cercare)
+
+- ## Switch JS (da cercare)
+
+- ## Do While JS (da cercare)
+
+- ## While JS (da cercare)
+
+- ## Cercare i vari metodi degli array (es: array.push)
+
+- ## Cercare perchè gli array vengono detti puntatori
