@@ -114,6 +114,10 @@ a {
   text-align: center;
 }
 
+ul {
+  text-align: center;
+}
+
 h2,
 .text-1 {
   font-size: 80px;
@@ -144,6 +148,7 @@ h3,
 
 p {
   color: white;
+  font-size: 18px;
 }
 
 h4 {
@@ -152,8 +157,23 @@ h4 {
   margin-top: 10px;
   color: rgb(255, 255, 255);
   text-shadow: var(--menu-color) -2px -1px 5px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 200;
   padding-top: 10px;
 }
+
+/* 
+h5 {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: var(--menu-color) -2px -1px 5px;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 200;
+  padding-top: 10px;
+} */
+
+

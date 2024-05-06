@@ -20,6 +20,9 @@
 - **29.04**
   Spiegazione di javascript , riccardo ha parlato di variabili , funzioni , costanti , dom , document , window e ci ha fatto vedere come possono essere usate
 
+  - **30.04**
+    Solito daily , riccardo ci ha lasciato in gruppi su discord e ci ha assegnato dei compiti javascript da svolgere
+
 # Descrizione day by day , di quello che facciamo durante le lezioni in presenza
 
 - **16.04**
@@ -30,3 +33,7 @@
 
 - **23.04**
   Solito daily , spiegazione di Merge Commit , Squash e Rebase.
+
+- **02.05**
+
+  Solito daily e spiegazione di riccardo di const , let , var etc tramite la console del browser. Spiegazione dei vari operatori: operatori di assegnazione, operatori di confronto e operatori logici. Spiegazione del not logico

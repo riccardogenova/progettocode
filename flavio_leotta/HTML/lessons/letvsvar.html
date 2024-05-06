@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Fino all’introduzione della specifica ES6 i programmatori Javascript erano
+    abituati a dichiarare ogni variabile con la parola chiave var, l’unica
+    allora disponibile. Con ES6 sono però state introdotte due nuove parole
+    chiave, let e const, che comportano alcune differenze di utilizzo. Vediamo
+    dunque più in dettaglio quali sono le caratteristiche di let vs var in
+    Javascript. Scope locale o globale: qual è la differenza? Per prima cosa
+    facciamo chiarezza sul concetto di scope, cioè dove una variabile o una
+    costante possono agire in una certa parte di codice. Proprio lo scope,
+    infatti, è una delle principali differenze tra let e var. Scope locale Lo
+    scope locale si riferisce solamente a un certo blocco, ovvero alle linee
+    comprese tra due parentesi graffe {}. Le costanti e le variabili dichiarate
+    all’interno di un blocco hanno dunque scope locale. Quando utilizziamo le
+    parole chiave const o let per indicare costanti o variabili, queste
+    funzioneranno dunque solamente nel blocco in cui sono dichiarate. Sono
+    invece inaccessibili all’esterno del blocco in questione. Scope globale Una
+    variabile o una costante dichiarate fuori da una funzione e non limitate da
+    parentesi graffe {} in un blocco hanno invece scope globale. Sono quindi
+    accessibili e utilizzabili nello script a livello globale. È bene notare che
+    le variabili dichiarate all’interno di un blocco hanno la precedenza su
+    quelle con scope globale. Come vedremo tra poco, la parola chiave let si può
+    usare proprio per evitare che la variabile locale ne sovrascriva una
+    globale. let vs var in Javascript Come già accennato, prima dell’avvento di
+    ES6 era possibile dichiarare le variabili solamente tramite la parola chiave
+    var. ES6 ha introdotto le nuove parole chiave const e let per dichiarare
+    costanti e variabili. La parola chiave const, come è facile intuire, si
+    utilizza per dichiarare una costante, ovvero una variabile che non si può
+    riassegnare. Il suo scope è limitato al blocco in cui è dichiarata. Vediamo
+    ora più nel dettaglio le differenze specifiche nelle parole chiave per le
+    varianti, cioè let vs var in Javascript. La parola chiave let La parola
+    chiave let è utilizzata per dichiarare variabili legate al blocco entro il
+    quale compare. Dichiarare una variabile con let limita dunque lo scope a
+    quello specifico blocco. Ciò significa anche che non andrà a sovrascrivere
+    variabili globali e non sarà accessibile tramite l’oggetto window. Se
+    cerchiamo di richiamare una variabile indicata con let al di fuori del
+    blocco in cui si trova riceveremo a console un messaggio di Reference error.
+    Le variabili dichiarate con let, inoltre, non si possono ri-dichiarare
+    all’interno dello stesso scope, ma solamente in blocchi differenti. La
+    parola chiave var Una variabile dichiarata attraverso la parola chiave var
+    non è limitata al blocco, ma può essere utilizzata all’interno della
+    funzione in cui si trova. La variabile ha quindi uno scope di funzione. In
+    questo caso, la variabile può essere richiamata al di fuori del blocco in
+    cui è dichiarata in quanto non è limitata allo scope di blocco. Ha inoltre
+    scope globale, essendo accessibile tramite l’oggetto window. A differenza
+    della variabile let, la variabile var può essere ri-dichiarata all’interno
+    dello stesso scope. In questo caso il primo valore sarà semplicemente
+    rimpiazzato. Hoisting di let vs var in Javascript Per hoisting si intende in
+    comportamento di Javascript che permetteva di utilizzare variabili prima che
+    fossero dichiarate. Questo è vero per le variabili indicate con la parola
+    chiave var, che sono accessibili già in cima al blocco di codice in cui si
+    trovano, anche se in realtà saranno poi dichiarate soltanto più in basso.
+    Ciò non si applica però alle variabili indicate con la parola chiave let.
+    Queste non sono infatti inizializzate prima della dichiarazione vera a
+    propria, e cercare di utilizzarle prima della linea di codice in cui
+    compaiono risulterà in un Reference error. Sommario delle differenze tra let
+    vs var in Javascript In conclusione, esistono quattro principali differenze
+    nel dichiarare le variabili con let vs var in Javascript, ovvero: Lo scope:
+    mentre la parola chiave let crea una variabile il cui scope è legato al
+    blocco in cui è dichiarata, la parola chiave var crea una variabile con
+    scope di funzione; La ri-dichiarazione di una variabile non è possibile
+    all’interno dello stesso scope utilizzando la parola chiave let, che
+    creerebbe altrimenti un Reference error a console. Con la parola chiave var,
+    invece, si ha più flessibilità ed è possibile ri-dichiarare la variabile
+    senza problemi; Hoisting: le variabili let non si possono utilizzare prima
+    della linea in cui sono dichiarate, mentre le variabili var sono
+    inizializzate già all’inizio del blocco in cui compaiono; Proprietà globali:
+    se la variabile var è utilizzata al di fuori di una funzione crea una
+    variabile globale accessibile tramite l’oggetto window, cosa che non avviene
+    con la variabile let.
+  </body>
+</html>
