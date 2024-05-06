@@ -33,8 +33,9 @@ function groupCalculator() {
   return Math.ceil(arrayLenght / selectedValue);
 }
 function onClickButtonGen() {
-  //   nodeDivGroup.innerHTML = "";
+  nodeDivGroup.innerHTML = "";
   const groupNumber = groupCalculator();
+  let studentListGroupCopy = [...studentListGroup];
   const selectedValue = nodeSelect.value;
   let i = 0;
   while (i < groupNumber) {
@@ -42,16 +43,27 @@ function onClickButtonGen() {
     newNodeUl.textContent = "Gruppo " + (i + 1);
     nodeDivGroup.appendChild(newNodeUl);
     let j = 0;
-    while (j < selectedValue) {
-      let randomNumber = Math.floor(Math.random() * studentListGroup.length);
-      const randomStudent = studentListGroup[randomNumber];
+    while (j < selectedValue && studentListGroupCopy.length > 0) {
+      let randomNumber = Math.floor(
+        Math.random() * studentListGroupCopy.length
+      );
+      const randomStudent = studentListGroupCopy[randomNumber];
       const randomLi = document.getElementById(randomStudent);
-      nodeList.removeChild(randomLi);
-      newNodeUl.appendChild(randomLi);
-      studentListGroup.splice(randomNumber, 1);
+      const copiedLi = randomLi.cloneNode(true);
+      newNodeUl.appendChild(copiedLi);
+      studentListGroupCopy.splice(randomNumber, 1);
       j++;
     }
     i++;
+  }
+}
+function onEnterPress(event) {
+  if (
+    event.key === "Enter" &&
+    nodeInput.value !== "" &&
+    !studentList.includes(nodeInput.value.toLowerCase())
+  ) {
+    onClickButtonAdd();
   }
 }
 
@@ -60,3 +72,5 @@ nodeButtonAdd.addEventListener("click", onClickButtonAdd);
 nodeInput.addEventListener("input", onChangeInput);
 
 nodeButtonGen.addEventListener("click", onClickButtonGen);
+
+nodeInput.addEventListener("keypress", onEnterPress);
