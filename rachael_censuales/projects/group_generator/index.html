@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Group Generator</title>
   </head>
   <body>
-    <input type="text" placeholder="Add Text" id="input" />
-    <button id="addButton" disabled>Aggiungi</button>
-    <ol id="list"></ol>
-    <select id="menu">
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-    </select>
-    <button id="nodeRandomButton">Generate</button>
-    <div id="groups"></div>
+    <div class="container">
+      <div class="left-column">
+        <input type="text" placeholder="Add Text" id="input" />
+        <button id="addButton" disabled>Aggiungi</button>
+        <ol id="list"></ol>
+      </div>
+      <hr id="line" />
+      <div class="right-column">
+        <select id="menu">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button id="nodeRandomButton">Generate</button>
+        <div id="groups"></div>
+      </div>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
