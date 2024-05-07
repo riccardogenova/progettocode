@@ -50,6 +50,11 @@ In JavaScript, ci sono diversi tipi di dati fondamentali che vengono utilizzati 
   _let variabileNonInizializzata;_
 
 - **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco che non può essere modificato
+=======
+- **Undefined:** Indica che una variabile è stata dichiarata ma non inizializzata
+  _let variabileNonInizializzata;_
+
+- **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco
   _const chiave = Symbol('descrizione');_ <br/>
 
 # If...else

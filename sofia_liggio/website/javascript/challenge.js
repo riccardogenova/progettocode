@@ -1,4 +1,5 @@
 /*
+=======
 var lista = document.getElementById("list");
 var bottone = document.getElementById("button");
 var casella = document.getElementById("name");
@@ -82,3 +83,4 @@ document
   .addEventListener("click", generateGroups);
 
 getElementById;
+=======
