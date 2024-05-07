@@ -668,6 +668,231 @@ console.log(mario.saluta()); // Output: Ciao, sono Mario Rossi!
             notazione punto (<code>mario.nome</code>,
             <code>mario.saluta()</code>).
           </p>
+
+          <h2>
+            String
+            <img
+              src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif"
+              width="15px"
+            />
+          </h2>
+          <p>Metodi Comuni per Lavorare con le Stringhe in JavaScript</p>
+          <ol>
+            <li>
+              <strong>length:</strong> Restituisce la lunghezza della stringa.
+              <pre><code class="language-javascript">const str = "Hello";
+      console.log(str.length); // Output: 5</code></pre>
+            </li>
+            <li>
+              <strong>charAt(index):</strong> Restituisce il carattere nella
+              posizione specificata dall'indice.
+              <pre><code class="language-javascript">const str = "Hello";
+      console.log(str.charAt(0)); // Output: "H"</code></pre>
+            </li>
+            <li>
+              <strong>concat(str1, str2, ...):</strong> Concatena due o più
+              stringhe.
+              <pre><code class="language-javascript">const str1 = "Hello";
+      const str2 = " World";
+      console.log(str1.concat(str2)); // Output: "Hello World"</code></pre>
+            </li>
+            <li>
+              <strong>toUpperCase()</strong> e
+              <strong>toLowerCase():</strong> Trasforma una stringa in maiuscolo
+              o minuscolo.
+              <pre><code class="language-javascript">const str = "Hello";
+      console.log(str.toUpperCase()); // Output: "HELLO"
+      console.log(str.toLowerCase()); // Output: "hello"</code></pre>
+            </li>
+            <li>
+              <strong>indexOf(substr)</strong> e
+              <strong>lastIndexOf(substr):</strong> Restituiscono l'indice della
+              prima/ultima occorrenza della sottostringa specificata.
+              <pre><code class="language-javascript">const str = "Hello World";
+      console.log(str.indexOf("o")); // Output: 4
+      console.log(str.lastIndexOf("o")); // Output: 7</code></pre>
+            </li>
+          </ol>
+
+          <h2>
+            Operatori
+            <img
+              src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif"
+              width="15px"
+            />
+          </h2>
+          <p>
+            Gli "operatori" sono simboli o parole chiave utilizzati in
+            programmazione o nella logica per eseguire operazioni su uno o più
+            valori. Possono essere usati in vari contesti, come matematica,
+            informatica, logica e linguaggi di programmazione.
+          </p>
+          <p>
+            In informatica, gli operatori sono utilizzati per eseguire
+            operazioni come l'addizione, la sottrazione, la moltiplicazione, la
+            divisione e molto altro ancora. Ad esempio, l'operatore "+" viene
+            utilizzato per l'addizione, "-" per la sottrazione, "*" per la
+            moltiplicazione e "/" per la divisione.
+          </p>
+          <p>
+            Gli "operatori logici" sono specificamente utilizzati nella logica e
+            nella programmazione per eseguire operazioni logiche su valori
+            booleani (vero o falso). Questi operatori sono utilizzati per
+            combinare condizioni logiche e valutare l'espressione risultante
+            come vero o falso.
+          </p>
+          <p>Ecco alcuni degli operatori logici più comuni:</p>
+          <ol>
+            <li>
+              <strong>AND (&&):</strong> Restituisce vero solo se entrambe le
+              condizioni sono vere.
+            </li>
+            <li>
+              <strong>OR (||):</strong> Restituisce vero se almeno una delle
+              condizioni è vera.
+            </li>
+            <li>
+              <strong>NOT (!):</strong> Inverte il valore di verità di una
+              condizione, quindi se la condizione è vera, NOT restituisce falso
+              e viceversa.
+            </li>
+          </ol>
+          <p>
+            Ad esempio, se abbiamo due condizioni A e B, possiamo combinare
+            queste condizioni con gli operatori logici come segue:
+          </p>
+          <ul>
+            <li>
+              A && B (A e B devono entrambe essere vere per avere un risultato
+              vero)
+            </li>
+            <li>A || B (A o B deve essere vera per avere un risultato vero)</li>
+            <li>!A (A non deve essere vera per avere un risultato vero)</li>
+          </ul>
+          <p>
+            Questi operatori sono fondamentali per controllare il flusso di
+            esecuzione in programmi informatici e per valutare condizioni
+            complesse.
+          </p>
+
+          <h2>
+            Statement
+            <img
+              src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif"
+              width="15px"
+            />
+          </h2>
+          <ol>
+            <li>
+              <strong>If-Else Statement:</strong> L'istruzione
+              <code>if-else</code> è utilizzata per eseguire un blocco di codice
+              se una condizione specificata è vera, altrimenti verrà eseguito un
+              altro blocco di codice. Ecco un esempio:
+              <pre><code class="language-javascript">let x = 10;
+    
+    if (x > 5) {
+        console.log("x è maggiore di 5");
+    } else {
+        console.log("x non è maggiore di 5");
+    }</code></pre>
+            </li>
+            <li>
+              <strong>For Loop:</strong> Il ciclo <code>for</code> viene
+              utilizzato per eseguire un blocco di codice più volte. Viene
+              spesso utilizzato quando il numero di iterazioni è noto. Ecco un
+              esempio:
+              <pre><code class="language-javascript">for (let i = 0; i < 5; i++) {
+        console.log("Iterazione " + i);
+    }</code></pre>
+            </li>
+            <li>
+              <strong>While Loop:</strong> Il ciclo <code>while</code> viene
+              utilizzato per eseguire un blocco di codice fintanto che una
+              condizione specificata è vera. Può essere utilizzato quando il
+              numero di iterazioni non è noto a priori. Ecco un esempio:
+              <pre><code class="language-javascript">let i = 0;
+    while (i < 5) {
+        console.log("Iterazione " + i);
+        i++;
+    }</code></pre>
+            </li>
+          </ol>
+          <p>
+            Questi sono i blocchi di costruzione fondamentali che possono essere
+            combinati e utilizzati in modi più complessi per creare algoritmi e
+            logica più sofisticati nei tuoi programmi JavaScript. Fammi sapere
+            se hai bisogno di ulteriori chiarimenti o esempi specifici!
+          </p>
+
+          <h2>
+            Array
+            <img
+              src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif"
+              width="15px"
+            />
+          </h2>
+          <p>
+            Gli array sono una struttura di dati fondamentale in programmazione,
+            utilizzata per memorizzare una collezione ordinata di elementi dello
+            stesso tipo. Gli array possono contenere elementi di qualsiasi tipo
+            di dati, come numeri, stringhe, oggetti e così via. Ogni elemento in
+            un array occupa una posizione specifica, chiamata indice.
+          </p>
+          <p>
+            I metodi degli array sono funzioni predefinite che possono essere
+            utilizzate per eseguire operazioni comuni sugli array. Ecco alcuni
+            dei metodi più comuni utilizzati con gli array:
+          </p>
+          <ol>
+            <li>
+              <strong>push():</strong> Aggiunge uno o più elementi alla fine
+              dell'array e restituisce la nuova lunghezza dell'array.
+              <pre><code class="language-javascript">const array = [1, 2, 3];
+array.push(4);
+// Ora array è [1, 2, 3, 4]</code></pre>
+            </li>
+            <li>
+              <strong>pop():</strong> Rimuove l'ultimo elemento dall'array e lo
+              restituisce.
+              <pre><code class="language-javascript">const array = [1, 2, 3];
+const removedElement = array.pop();
+// Ora array è [1, 2] e removedElement è 3</code></pre>
+            </li>
+            <li>
+              <strong>shift():</strong> Rimuove il primo elemento dall'array e
+              lo restituisce.
+              <pre><code class="language-javascript">const array = [1, 2, 3];
+const removedElement = array.shift();
+// Ora array è [2, 3] e removedElement è 1</code></pre>
+            </li>
+            <li>
+              <strong>unshift():</strong> Aggiunge uno o più elementi all'inizio
+              dell'array e restituisce la nuova lunghezza dell'array.
+              <pre><code class="language-javascript">const array = [2, 3];
+array.unshift(1);
+// Ora array è [1, 2, 3]</code></pre>
+            </li>
+            <li>
+              <strong>concat():</strong> Combina due o più array.
+              <pre><code class="language-javascript">const array1 = [1, 2];
+const array2 = [3, 4];
+const newArray = array1.concat(array2);
+// newArray sarà [1, 2, 3, 4]</code></pre>
+            </li>
+            <li>
+              <strong>slice():</strong> Restituisce una parte dell'array
+              selezionata dal punto di inizio al punto di fine (senza includere
+              il punto di fine).
+              <pre><code class="language-javascript">const array = [1, 2, 3, 4, 5];
+const slicedArray = array.slice(1, 3);
+// slicedArray sarà [2, 3]</code></pre>
+            </li>
+          </ol>
+          <p>
+            Ci sono molti altri metodi disponibili per manipolare e lavorare con
+            gli array, ma questi sono alcuni dei più comuni e utilizzati
+            frequentemente.
+          </p>
         </div>
       </div>
     </div>
