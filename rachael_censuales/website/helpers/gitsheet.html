@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../cssfiles/content.css" rel="stylesheet" />
+    <title>Git CheatSheet</title>
+  </head>
+  <body>
+    <div class="body">
+      <header class="container">
+        <nav class="nav">
+          <a class="logo" href="https://github.com/Cenael">Rachael Censuales</a>
+          <div class="menu">
+            <a class="a" href="./helpersmenu.html"> Helpers </a>
+            <a class="a" href="../lessons/lessonsmenu.html"> Lessons </a>
+            <button>
+              <a class="a" href="../signin.html" target="_blank"> Sign in </a>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <div class="content"></div>
+
+      <div id="home"><a class="a" href="../../index.html"> Home </a></div>
+      &lt-
+      <div id="lessons">
+        <a class="a" href="./helpersmenu.html"> Helpers </a> &lt-
+      </div>
+
+      <div class="page">
+        <h2>Comandi Git</h2>
+
+        <h3>Comandi iniziali</h3>
+        <ul>
+          <li>
+            <code>git init</code>: Inizializza un nuovo repository Git nella
+            directory corrente.
+          </li>
+          <li>
+            <code>git clone [URL]</code>: Clona un repository Git esistente
+            dalla sua URL remota sulla tua macchina locale.
+          </li>
+          <li>
+            <code>git remote add origin [URL]</code>: Collega il repository
+            remoto a quello locale.
+          </li>
+          <li>
+            <code>git remote -v</code>: Mostra i repository remoti collegati e
+            le rispettive URL.
+          </li>
+          <li>
+            <code>git add [file]</code>: Aggiunge un file al tuo "staging area",
+            preparandolo per essere committato.
+          </li>
+          <li>
+            <code>git commit -m [messaggio]</code>: Committa le modifiche
+            presenti nel tuo staging area con un messaggio di commit
+            descrittivo.
+          </li>
+          <li>
+            <code>git status</code>: Mostra lo stato attuale del tuo repository
+            Git, inclusi i file modificati, i file nel staging area e altro.
+          </li>
+          <li>
+            <code>git diff</code>: Mostra le differenze tra il working directory
+            e l'area di staging.
+          </li>
+          <li>
+            <code>git reset [file]</code>: Rimuove un file dallo staging area,
+            mantenendo le modifiche nel working directory.
+          </li>
+          <li>
+            <code>git rm [file]</code>: Rimuove un file dal repository Git.
+          </li>
+        </ul>
+
+        <h3>Gestione dei rami</h3>
+        <ul>
+          <li>
+            <code>git branch</code>: Visualizza l'elenco dei rami nel
+            repository.
+          </li>
+          <li>
+            <code>git checkout [branch]</code>: Passa a un altro ramo del
+            repository.
+          </li>
+          <li>
+            <code>git checkout -b [nome_branch]</code>: Crea un nuovo ramo e
+            passa ad esso in un'unica operazione.
+          </li>
+          <li>
+            <code>git merge [branch]</code>: Unisce un altro ramo al ramo
+            attuale.
+          </li>
+          <li>
+            <code>git branch -d [branch]</code>: Elimina un ramo locale dopo
+            averlo unito al ramo principale.
+          </li>
+          <li>
+            <code>git branch -m [nuovo_nome]</code>: Rinomina il ramo attuale.
+          </li>
+        </ul>
+
+        <h3>Gestione dei tag e della cronologia dei commit</h3>
+        <ul>
+          <li>
+            <code>git tag [tagname]</code>: Crea un nuovo tag per un commit
+            specifico.
+          </li>
+          <li>
+            <code>git log</code>: Controlli la lista dei commit in ordine
+            cronologico.
+          </li>
+        </ul>
+
+        <h3>Operazioni avanzate</h3>
+        <ul>
+          <li>
+            <code>git revert [commit]</code>: Annulla un commit specifico,
+            creando un nuovo commit che annulla le modifiche introdotte da
+            quello specifico.
+          </li>
+          <li>
+            <code>git cherry-pick [commit]</code>: Applica le modifiche
+            introdotte da un commit specifico su un altro ramo.
+          </li>
+          <li>
+            <code>git rebase [branch]</code>: Riapplica i commit del ramo
+            corrente sopra il ramo specificato, spesso utilizzato per mantenere
+            una storia dei commit più pulita.
+          </li>
+          <li>
+            <code>git bisect</code>: Utilizzato per il debugging, aiuta a
+            identificare il commit che ha introdotto un bug.
+          </li>
+        </ul>
+
+        <h3>Operazioni di sincronizzazione con il repository remoto</h3>
+        <ul>
+          <li>
+            <code>git push origin main</code>: Carica i tuoi commit locali sul
+            repository remoto.
+          </li>
+          <li>
+            <code>git pull origin main</code>: Aggiorna il tuo repository locale
+            con le modifiche dal repository remoto.
+          </li>
+          <li>
+            <code>git fetch</code>: Recupera i dati dal repository remoto senza
+            unire i cambiamenti nel tuo repository locale.
+          </li>
+        </ul>
+
+        <h3>Altri comandi utili</h3>
+        <ul>
+          <li>
+            <code>git stash</code>: Nasconde le modifiche locali
+            temporaneamente, permettendo di lavorare su un'altra parte del
+            codice.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

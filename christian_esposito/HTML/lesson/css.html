@@ -1,72 +1,157 @@
-<h1>CSS Cascading Style Sheets</h1>
-<p>È fondamentalmente, un linguaggio che viene utilizzato per definire l&#39;aspetto e la presentazione delle pagine
-    web.</p>
-<p>Immagina l&#39;HTML come lo scheletro di una pagina web, che definisce i contenuti e la loro struttura.
-    Il CSS invece è come la pelle e i vestiti di questo scheletro: si occupa di renderlo bello e personalizzato
-    stabilendo cose come i font, i colori, il layout e tanto altro.</p>
-<h2>Alcuni dei vantaggi dell&#39;utilizzo del CSS:</h2>
-<h3>Separazione dei contenuti dalla presentazione:</h3>
-<ul>
-    <li>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/lesson_css/css_style.css">
+  <link rel="stylesheet" href="../css/utils/navbar.css">
+  <link rel="stylesheet" href="../css/utils/reset_all.css">
+  <link rel="stylesheet" href="../css/utils/bg_img.css">
+  <title>CSS cos'è</title>
+</head>
+
+<body>
+
+  <header>
+    <input type="checkbox" id="hamburger" />
+    <label class="menuicon" for="hamburger">
+      <span></span>
+    </label>
+    <div id="bar">
+      <a id="logo" href="../index.html"></a>
+      <!--/fine logo-->
+    </div>
+    <nav class="menu-visibility">
+      <ul>
+
+        <li><a class="submenu" href="#">LEZIONI</a>
+          <ul>
+            <li>
+              <a href="./git.html">Lezione GIT</a>
+            </li>
+            <li>
+              <a href="./html.html"> Lezione HTML</a>
+            </li>
+            <li>
+              <a href="./markdown.html"> Lezione MARKDOWN</a>
+            </li>
+            <li>
+              <a href="./dom.html"> Lezione DOM</a>
+            </li>
+            <li>
+              <a href="./css.html"> Lezione CSS</a>
+            </li>
+            <li>
+              <a href="./css_om.html"> Lezione CSS_OM</a>
+            </li>
+          </ul>
+        </li>
+
+        <li><a class="submenu" href="#"></a>HELPERS</a>
+          <ul>
+            <li>
+              <a href="../helpers/git_command.html">Git command</a>
+            </li>
+            <li>
+              <a href="../helpers/git_flows.html">Git Flows</a>
+            </li>
+            <li>
+              <a href="../helpers/markdown.html">MarkDown</a>
+            </li>
+            <li>
+              <a href="../helpers/tag_html.html">Tag Html</a>
+            </li>
+            <li>
+              <a href="../helpers/css_sheet.html">CSS</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="css_style">
+    <h1>CSS Cascading Style Sheets</h1>
+    <p>È fondamentalmente, un linguaggio che viene utilizzato per definire l&#39;aspetto e la presentazione delle pagine
+      web.</p>
+    <p>Immagina l&#39;HTML come lo scheletro di una pagina web, che definisce i contenuti e la loro struttura.
+      Il CSS invece è come la pelle e i vestiti di questo scheletro: si occupa di renderlo bello e personalizzato
+      stabilendo cose come i font, i colori, il layout e tanto altro.</p>
+    <br>
+
+    <h2>Alcuni dei vantaggi dell&#39;utilizzo del CSS:</h2>
+    <h3 style="margin-left: 2.4em;">Separazione dei contenuti dalla presentazione:</h3>
+    <ul>
+      <li>
         <p>Questo permette di modificare l&#39;aspetto di un sito web senza dover cambiare il suo contenuto, rendendo il
-            codice più pulito e facile da mantenere.</p>
-    </li>
-    <li>
+          codice più pulito e facile da mantenere.</p>
+      </li>
+      <li>
         <p>Riuso del codice: Le stesse regole CSS possono essere applicate a più elementi di una pagina web o a pagine
-            web diverse, evitando così di ripetere lo stesso codice più volte.</p>
-    </li>
-    <li>
+          web diverse, evitando così di ripetere lo stesso codice più volte.</p>
+      </li>
+      <li>
         <p>Maggiore controllo sull&#39;aspetto del sito web: Con il CSS si ha un alto grado di personalizzazione su come
-            appare un sito web, permettendo di creare esperienze utente più accattivanti.</p>
-    </li>
-</ul>
-<h2>classi e id</h2>
-<p> L&#39;HTML definisce la struttura e il contenuto di una pagina web, mentre il CSS viene utilizzato per applicare
-    stili e &quot;agganciare&quot; quegli elementi. </p>
-<p> Tuttavia, esistono dei modi per identificare e puntare a tag specifici utilizzando degli attributi all&#39;interno
-    dell&#39;HTML che poi il CSS può sfruttare per lo styling. Ecco i due metodi più comuni:</p>
-<ul>
-    <li>
-        <p>id: L&#39;attributo id assegna un identificatore univoco a un elemento HTML. Questo ID può poi essere usato
-            nel CSS per puntare a quell&#39;elemento specifico e applicare degli stili. Un elemento può avere un solo
-            id.
+          appare un sito web, permettendo di creare esperienze utente più accattivanti.</p>
+      </li>
+    </ul>
+    <br>
+    <h2>classi e id</h2>
+    <div style="margin-left: 1.5em;">
+    <p> L&#39;HTML definisce la struttura e il contenuto di una pagina web, mentre il CSS viene utilizzato per applicare
+      stili e &quot;agganciare&quot; quegli elementi. </p>
+    <p> Tuttavia, esistono dei modi per identificare e puntare a tag specifici utilizzando degli attributi
+      all&#39;interno
+      dell&#39;HTML che poi il CSS può sfruttare per lo styling. Ecco i due metodi più comuni:</p>
+    </div>
+    <br>
+    <ul>
+      <li>
+        <p><span>id</span>: L&#39;attributo id assegna un identificatore univoco a un elemento HTML. Questo ID può poi
+          essere usato
+          nel CSS per puntare a quell&#39;elemento specifico e applicare degli stili. Un elemento può avere un solo
+          id.
         </p>
-    </li>
+        <code style="margin-left: 30px;">
+          &lt;h1 id="titolo-principale"&gtQuesto è il titolo principale&lt;/h1&gt
+          <br>
+            <br>
+          &lt;style&gt
+          <br>
+          #titolo-principale { <br>
+          color: rgb(0, 0, 0);<br>
+          font-size: 2em;<br>
+          }
+        <br>
+          &lt;/style&gt
+        </code>
+      </li>
+      <br>
+      <br>
 
-    <code>
-&lt;h1 id="titolo-principale"&gtQuesto è il titolo principale&lt;/h1&gt
-<br>
-<br>
-&lt;style&gt
-<br>
-  #titolo-principale { <br>
-    color: rgb(0, 0, 0);<br>
-    font-size: 2em;<br>
-  }
-  <br>
-&lt;/style&gt
-</code>
-
-    <br>
-    <br>
-
-    <li>
+      <li>
         <span>class</span>: L'attributo <span>class</span> permette di
         assegnare una o <span>pi</span>ù classi a un elemento HTML. Le classi possono essere
         utilizzate per puntare a <span>pi</span>ù elementi che condividono la stessa classe. A
         differenza dell' <span>id</span>, un elemento può avere <span>pi</span>ù classi.
         <br>
         <code>
-    <br>
-&lt;p class="importante"&gtQuesto è un testo importante&lt;/p&gt <br>
-&lt;p class="importante"&gtAnche questo è un testo importante&lt;/p&gt <br>
-<br>
+          <br>
+          &lt;p class="importante"&gtQuesto è un testo importante&lt;/p&gt <br>
+          &lt;p class="importante"&gtAnche questo è un testo importante&lt;/p&gt <br>
+          <br>
 
-&lt;style&gt<br>
-  .importante {<br>
-    font-weight: bold;<br>
-  }<br>
-&lt;/style&gt<br>
-</code>
+            &lt;style&gt<br>
+            .importante {<br>
+            font-weight: bold;<br>
+            }<br>
+            &lt;/style&gt<br>
+        </code>
 
-</li>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

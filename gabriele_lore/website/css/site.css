@@ -1,0 +1,69 @@
+navbar {
+  background-color: blue;
+  padding: 30px 1vw;
+  align-items: center;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bodycontent {
+  width: 100vw;
+}
+
+.nome {
+  color: white;
+  font-size: larger;
+  text-decoration: underline;
+  font-weight: 200;
+  font-family: "Bentinck Regular";
+}
+.nav-item {
+  color: white;
+  font-family: "Bentinck Regular";
+}
+@font-face {
+  font-family: Bentinck Regular;
+  src: url("./res/Bentinck-Regular.woff2");
+}
+p,
+ul,
+h2,
+h1 {
+  color: black;
+  font-family: "Bentinck Regular";
+  text-align: justify;
+  margin: 4vw;
+}
+code {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
+li {
+  color: black;
+  font-family: "Bentinck Regular";
+  list-style-position: inside;
+}
+.footertext {
+  font-size: small;
+  color: black;
+  text-align: center;
+  font-family: "Bentinck Regular";
+}
+body {
+  margin: 0;
+}
+footer {
+  width: 100vw;
+}
+.directory-item {
+  color: black;
+  font-size: small;
+  font-family: "Bentinck Regular";
+  margin: 5px;
+}
+.directory {
+  display: flex;
+  align-items: flex-start; 
+}

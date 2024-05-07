@@ -1,3 +1,5 @@
+![alt](https://i.ibb.co/VQDxhSp/HTML.png)
+
 # HTML
 
 La storia di **HTML**, o **HyperText Markup Language**, risale agli inizi degli anni '90. È stato sviluppato da Tim Berners-Lee mentre lavorava al CERN (Organizzazione europea per la ricerca nucleare) come uno dei componenti fondamentali del World Wide Web. Berners-Lee voleva creare un modo per collegare documenti ipertestuali tra loro tramite collegamenti ipertestuali, rendendo più semplice per gli utenti navigare tra le informazioni online.

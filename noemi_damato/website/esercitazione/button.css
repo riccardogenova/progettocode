@@ -1,0 +1,16 @@
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+div {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+.button1 {
+  float: right;
+}
+.button2 {
+  float: left;
+}

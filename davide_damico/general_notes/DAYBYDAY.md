@@ -13,7 +13,19 @@
   Nuovo ragazzo (Marco), solito daily dove spieghiamo cosa abbiamo fatto , le attività bloccanti etc. Sistemazione dei file , rinominazioni cartelle e file
 
 - **19.04**
-  Solita daily e ci ha lasciato in gruppi dicendo di fare uno sheet che spiega CSS
+  Solita daily e ci ha lasciato in gruppi dicendo di fare un file MD che spiega CSS , DOM , CSSOM e poi fare la loro versione HTML. Fare un file CSS SHEET
+
+- **24.04**
+
+- **29.04**
+  Spiegazione di javascript , riccardo ha parlato di variabili , funzioni , costanti , dom , document , window e ci ha fatto vedere come possono essere usate
+
+- **30.04**
+  Solito daily , riccardo ci ha lasciato in gruppi su discord e ci ha assegnato dei compiti javascript da svolgere
+
+- **03.05**
+
+  Solito daily , riccardo ci ha lasciato da finire la discovery su javascript , lo sheet , la descrizione e i vari metodi e cose che abbiamo scoperto il giorno precedentemente grazie anche al mentimeter fatto , ci ha lasciato da fare una pagina html che permetta di aggiungere una persona a una lista e dopo poter scegliere in quanti gruppi suddividere tutte le persone che abbiamo aggiunto , facendo uso di javascript
 
 # Descrizione day by day , di quello che facciamo durante le lezioni in presenza
 
@@ -22,3 +34,10 @@
 
 - **18.04**
   Lezione non fatta
+
+- **23.04**
+  Solito daily , spiegazione di Merge Commit , Squash e Rebase.
+
+- **02.05**
+
+  Solito daily e spiegazione di riccardo di const , let , var etc tramite la console del browser. Spiegazione dei vari operatori: operatori di assegnazione, operatori di confronto e operatori logici. Spiegazione del not logico

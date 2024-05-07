@@ -1,50 +1,162 @@
-Quando bisogna scartare tramite il git checkout una modifica fatta ad un file , consigliato chiudere prima il file , perchè VSC potrebbe farti confondere e col file aperto ti lascia le modifiche apportate , ma ti spunterà il pallino come se non avessi salvato
+# 23.04
 
-Comandi git generali:
+è importante sapere come tenere il branch in cui stiamo lavorando aggiornato con le commit nuove che vengono messe nel main.
 
-git add nome.file
+Merge commit= crea un commit in più 'commit di merge'
 
-git commit -m "messaggio da inserire"
+Squash= prende le modifiche , le compatta in un unico commit e lo mette in cima al main
 
-git push
+Rebase= prende le modifiche e le mette in cima ,
 
-git pull link.repository (per pullare dei file da un repository su vsc , attenzione a essere sul branch che si vuole)
+git commit -m , per poter scrivere premere i , per uscire esc:wq
 
-git status
+quando si mette un'a href è bene mettere un path relativo , vuol dire che è sempre bene mettere i ../ etc
 
-git log
+tree folders:
+lessons/papers
+helpers/sheets
+website
+index.html
 
-git checkout nome.del.file (
-Dopo essere tornati indietro a prima della modifica , se vogliamo cancellare il file precedentemente modificato perchè non ci serve più)
+comandi utili in casi problematici
 
-git reset id.unico.del.commit (Per tornare ad una versione precedente del file)
+stash permette di levare i file dal commit e metterle da parte , quindi nel momento in cui la pr viene approvata , aggiorniamo il main , creiamo un nuovo branch e possiamo riprenderci le modifiche messe da parte. Se si usano file nuovi bisogna prima farli entrare nella staging area , con git add
 
-git branch (per capire in che ''tunnel'' siamo)
+reset torno indietro ad un commit preciso
 
-Per cambiare il nome del branch usando il comando: git branch -m "nome nuovo
+# 30.04
 
-git remote add origin URL (per connettere il repository) così che ogni volta che faccio un push , lo farà automaticamente in quel repository ('origin' è un nome creato automaticamente di default , però può essere modificato a proprio piacere)
+JS:
 
-git remote remove origin (per eliminare il collegamento, se si vuole si può riaggiungere tramite il comando precedente)
+nome.textContent , textcontent è una proprietà del nodo
 
-git clone URL.repository (consente di copiare i file di quel repository)
+nome.appendChild , appendChild è una funzione che richiamiamo
 
-git checkout nome.branch (per spostarci su un branch)
+dentro l'oggetto document troviamo metodi che possiamo richiamare e proprietà che possiamo usare
 
-git checkout -b nome.branch (per spostarci su un branch non esistente che quindi verrà creato)
+# 02.05
 
-git remote add origin URL , ricordiamo che origin è un nome che diamo noi di default , ma possiamo scrivere qualsiasi cosa
+è buona norma quando si fa un confronto tra due valori usare === o !== e non == o !=.
+Operatori logici: ||
 
-git diff nome.del.file.su.git.status (serve a far vedere le differenze che ci sono state fatte dopo una commit)
+(5 > 2 && 6 > 7) || 1 < 2 , mettendo le parentesi tonde da priorità al primo confronto
 
-git branch -m nuovo.nome (serve a rinominare il branch in cui ci troviamo)
+Not logico:
+const vero = true
 
-git branch -D nome.del.branch (per eliminare un branch)
+!vero (il punto esclamativo restituirà il suo contrario , in questo caso restituisce false)
 
-git fetch --prune (serve ad aggiornare la lista dei branch remoti , rimuovendo quelli che non esistono più sul remote)
+const test = "test"
 
-git branch -r (serve a mostrare tutti i branch remoti)
+!test (la variabile test ha un suo contenuto , quindi lui restituirà false perchè il contrario è che non ha un contenuto)
 
-git push origin --delete nome.branch (serve a cancellare il branch dal repository remoto)
+!!test (resituirà vero , !! è il contrario del contrario)
 
-git reset --hard origin/master (per cancellare ciò che ho in locale su vsc e prendere ciò che ho in remoto sul repo)
+let sofia = ""
+
+!!sofia (restituirà true perchè il contenuto della variabile di sofia non esiste , perciò con un solo ! restituirà false)
+
+const num = 0
+
+!!num (restituirà false , lo 0 in javascript è false)
+
+const num1 = 1
+
+!!num1 (restituirà true , i numeri da 1 in poi sono true)
+
+let value = null
+
+!!value (restituirà false)
+
+value = undefined
+
+!!value (restituirà false)
+
+!value (restituirà true)
+
+17 / "ciao" (restituirà in console NaN , not a number perchè non può dividere un numero per una stringa)
+
+17 / 0 (restituirà in console infinito)
+
+Arrey:
+
+const array = ['a','b','c']
+gli array partono da 0 , quindi 'a' partirà dal numero 0 , 'b' partirà dal numero 1 e 'c' partirà dal numero 2
+
+const value = 'sofia'
+
+array.length
+3
+
+array[array.length - 1]
+'c'
+
+array[2]
+'c'
+
+const array2 = ['a','b','c',['sofia','davide']]
+
+per accedere all'array dentro l'array e prendere 'davide'
+
+array2[3] [1]
+
+const temp = array2[3]
+
+temp[1]
+'davide'
+
+const array3 = ['sofia', 'davide']
+
+array.push['giorgio']
+
+array3
+['sofia', 'davide', 'giorgio']
+
+const studentiBocciati = ['christian', 'andrea']
+
+const studentiBocciatiDiNuovo = [...studentiBocciati]
+
+[cercare a cosa servono i '...'(chiamato spread operator) nel momento in cui diamo il valore di quella variabile/costante]
+
+## Mentimeter , argomenti da cercare:
+
+possibili domande da colloquio tra l'altro:
+
+concetto di funzione di ordine superiore
+
+arrow function
+const nome = (=>)
+
+undefined e null sono sempre intercambiabili? no perchè
+
+javascript è un linguaggio tipizzato dinamicamente? si perchè
+
+js può essere utilizzato per scrivere applicazioni server-side con node.js? si perchè
+
+il metodo arrey.map non modifica l'array originale? si perchè
+
+js supporta la programmazione orientata agli oggetti? si perchè
+
+metodo oggetto classList
+
+element.getAttribute() (prendere gli href di un elemento)
+
+element.setAttribute
+
+highOderFunction
+
+evento js che viene scatenato quando si fa un submit di un form
+
+come si può prevenire l'azione predefinita di un evento in js?
+
+oggetto evento e tutte le funzioni che stanno dentro di esso?
+
+quale proprietà si utilizza per ottenere o impostare l'html interno di un elemento?
+
+ricerca su innerHTML
+
+quale metodo viene utilizzato per aggiungere un nuovo attributo o modificare il valore di un attributo esistente su un elemento?
+
+come si può clonare un nodo in javascript senza clonare i suoi event listeners? come si può clonare con gli eventi listeners?
+
+come si può verificare se un elemento ha una classe specifica in javascript? hasClass

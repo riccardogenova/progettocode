@@ -1,5 +1,14 @@
 # **MARDOWN SYNTAX CHEAT SHEET**
 
+## Table of Contents
+
+1. [Headers](#headers)
+2. [Text formatting](#text-formatting)
+3. [Lists](#lists)
+4. [Quotes](#quotes)
+5. [Horizontal lines](#horizontal-lines)
+6. [Embedding](#embedding)
+
 ## Headers
 
 ```markdown
@@ -18,7 +27,7 @@
 
 ## Text formatting
 
-````markdown
+```markdown
 _italic_ or _italic_
 **bold** or **bold**
 `inline code`
@@ -26,7 +35,7 @@ _italic_ or _italic_
 \*literal asterisks\*
 [^1]: Footnote
 ~~strikethrough~~
-````
+```
 
 ## Lists
 

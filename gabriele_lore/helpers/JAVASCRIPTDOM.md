@@ -1,0 +1,15 @@
+- Window
+- - `alert()`: per mostrare avvisi
+- - `location`: per accedere all'indirizzo web corrente
+
+- Document
+- - Accedere agli elementi
+- - - `document.getElementByID(id)`: ottieni un elemento dal suo id.
+- - - `document.getElementsByTagName(tagelemento)`: ottieni elemento/i che sono del tag specificato.
+- - - `document.getElementsByClassName(classe)`: Ottieni elemento/i appartenenti ad una classe.
+- - Accedere al contenuto di un elemento
+- - - `element.innerHTML`: Quello che c'è tra i tag di apertura e chiusura.
+- - Accedere ad un'attributo di un elemento
+- - - `element.**attribute**`.
+- - Accedere allo stile di un elemento
+- - - `element.style.**property**`.

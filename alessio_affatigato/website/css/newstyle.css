@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+}
+
+<<<<<<< HEAD
+=======
+#namefont {
+  font-family: math;
+  font-size: x-large;
+}
+
+>>>>>>> 9da33c89c382c9942d39ff41759addde8326280a
+.navbar {
+  background-color: #188ad6;
+  overflow: hidden;
+}
+
+.navbar-right {
+  float: right;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: system-ui;
+}
+<<<<<<< HEAD:alessio_affatigato/website/newstyle.css
+<<<<<<< HEAD
+p {
+=======
+p,
+ul,
+ol {
+>>>>>>> 29bd12daa1abbc2d7dad5086344bece02b6856e6:alessio_affatigato/website/css/newstyle.css
+  font-size: x-large;
+  font-family: system-ui;
+}
+
+div {
+  color: antiquewhite;
+<<<<<<< HEAD:alessio_affatigato/website/newstyle.css
+=======
+=======
+}
+>>>>>>> 29bd12daa1abbc2d7dad5086344bece02b6856e6:alessio_affatigato/website/css/newstyle.css
+
+#colorwhite {
+  color: white;
+}
+.breadcrumb {
+  display: ruby;
+>>>>>>> 9da33c89c382c9942d39ff41759addde8326280a
+}

@@ -1,2 +1,0 @@
-#titolo
-Il git è un sistema di controllo versione distribuito. Questo significa che aiuta i programmatori e gli sviluppatori a tenere traccia e gestire le modifiche al codice sorgente di un progetto software.

@@ -1,5 +1,24 @@
 # **GIT CHEAT SHEET**
 
+## Table of Contents
+
+1. [Foundational Commands](#foundational-commands)
+   - 1.1 [Getting Started](#getting-started)
+   - 1.2 [User Configuration](#user-configuration)
+2. [Working with Files](#working-with-files)
+   - 2.1 [File Management](#file-management)
+   - 2.2 [Committing Changes](#committing-changes)
+3. [Navigating the Repository](#navigating-the-repository)
+   - 3.1 [Repository Insights](#repository-insights)
+   - 3.2 [Branching and Merging](#branching-and-merging)
+   - 3.3 [Integrating Changes](#integrating-changes)
+4. [Remote Collaboration](#remote-collaboration)
+   - 4.1 [Connecting with Remotes](#connecting-with-remotes)
+   - 4.2 [Synchronizing Changes](#synchronizing-changes)
+5. [Advanced Operations](#advanced-operations)
+   - 5.1 [Conflict Resolution](#conflict-resolution)
+   - 5.2 [Workflow Optimization](#workflow-optimization)
+
 ## Foundational Commands
 
 ### Getting Started

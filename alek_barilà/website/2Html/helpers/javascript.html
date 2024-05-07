@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript-H</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-text"><h1>Alek Barilà</h1></div>
+      <div class="right-text">
+        <a href="../helpers.html"><strong>HELPERS</strong></a>
+        <a href="../lessons.html"><strong>LESSONS</strong></a>
+        <a href="../signin.html"><strong>SIGNIN</strong></a>
+      </div>
+    </header>
+    <div class="left-text">
+      <a href="../../../index.html"><strong>Home</strong></a>
+      >
+      <a href="../helpers.html"><strong>Helpers</strong></a>
+      >
+      <a href="javascript.html"><strong>Javascript</strong></a>
+    </div>
+    <div class="testata">
+      <h1>JAVASCRIPT</h1>
+    </div>
+    <div class="main">
+      <h1>Comand</h1>
+
+      <ol>
+        <li>
+          querySelector e querySelectorAll: Per selezionare elementi HTML
+          utilizzando selettori CSS.
+          <ul>
+            <li>
+              var elemento = document.querySelector('.classe'); // Seleziona il
+              primo elemento con la classe 'classe'
+            </li>
+            <li>
+              var elementi = document.querySelectorAll('p'); // Seleziona tutti
+              gli elementi &lt;p&gt;
+            </li>
+          </ul>
+        </li>
+        <li>
+          addEventListener: Per aggiungere gestori di eventi a elementi HTML.
+          <ul>
+            <li>
+              elemento.addEventListener('click', function() { // Azioni da
+              eseguire quando l'elemento viene cliccato });
+            </li>
+            <li>-click: Si verifica quando un elemento viene cliccato.</li>
+            <li>
+              -mouseover: Si verifica quando il cursore del mouse si sposta
+              sopra un elemento.
+            </li>
+            <li>
+              -mouseout: Si verifica quando il cursore del mouse esce da un
+              elemento.
+            </li>
+            <li>
+              -keydown: Si verifica quando viene premuto un tasto sulla tastiera
+              mentre l'elemento ha lo stato di focus.
+            </li>
+            <li>
+              -keyup: Si verifica quando un tasto precedentemente premuto sulla
+              tastiera viene rilasciato.
+            </li>
+            <li>-submit: Si verifica quando viene inviato un modulo.</li>
+            <li>
+              -change: Si verifica quando il valore di un elemento di input,
+              come un campo di testo o un menu a discesa, cambia.
+            </li>
+            <li>
+              -focus: Si verifica quando un elemento ottiene lo stato di focus.
+            </li>
+            <li>
+              -blur: Si verifica quando un elemento perde lo stato di focus.
+            </li>
+          </ul>
+        </li>
+        <li>
+          getElementById: Per selezionare un elemento HTML utilizzando il suo
+          ID.
+          <ul>
+            <li>var elemento = document.getElementById('id');</li>
+          </ul>
+        </li>
+        <li>
+          return: Utilizzato nelle funzioni per restituire un valore specifico
+          quando la funzione viene chiamata
+          <ul>
+            <li>function somma(a, b) { return a + b; }</li>
+            <li>
+              var risultato = somma(3, 4); // La funzione restituisce 7
+              console.log(risultato); // Output: 7
+            </li>
+          </ul>
+        </li>
+        <li>
+          length: Quante lettere è composta la parola prima
+          <ul>
+            <li>
+              var stringa = "Ciao"; console.log(stringa.length); // Output: 4
+            </li>
+          </ul>
+        </li>
+        <li>
+          classList.add viene utilizzato per aggiungere una classe a un elemento
+          HTML, mentre classList.remove serve per rimuovere una classe da un
+          elemento HTML.
+        </li>
+        <ul>
+          <li>
+            Esempio:<br />
+            function aggiungiClasse() { <br />
+            var paragrafo = document.getElementById("paragrafo");<br />
+            paragrafo.classList.add("highlight");<br />
+
+            function rimuoviClasse() {<br />
+            var paragrafo = document.getElementById("paragrafo");<br />
+            paragrafo.classList.remove("highlight");<br />
+            }
+          </li>
+        </ul>
+        <li>
+          parseInt è una funzione in JavaScript che converte una stringa in un
+          numero intero.
+        </li>
+        <ul>
+          <li>
+            Esempio:<br />
+            var numeroStringa = "123";<br />
+            var numeroIntero =parseInt(numeroStringa); // numeroIntero sarà 123
+          </li>
+        </ul>
+      </ol>
+    </div>
+    <footer>
+      <p>&copy; 2024 Alek</p>
+    </footer>
+  </body>
+</html>

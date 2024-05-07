@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosa è CSS?</title>
+    <link rel="icon" href="../favicons/CSS-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <div class="blurred-background"></div>
+    <header class="header">
+      <a href="../../index.html" class="logo">RAFFAELE SCALA x PROGETTO CODE</a>
+      <input class="menu-btn" id="menu-btn" type="checkbox" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="html_research.html">HTML</a></li>
+        <li>
+          <a href="markdown_research.html">MARKDOWN</a>
+        </li>
+        <li><a href="css.html">CSS</a></li>
+        <li><a href="../tools/git_research.html">GIT</a></li>
+        <li>
+          <a href="../tools/operating_systems_research.html"
+            >SISTEMI OPERATIVI</a
+          >
+        </li>
+        <li><a href="../tools/vim_research.html">VIM</a></li>
+        <li>
+          <a href="../tools/visual_studio_code_research.html"
+            >VISUAL STUDIO CODE</a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="center-items">
+      <div class="overlay">
+        <h1>Cosa è CSS?</h1>
+        <p>
+          Acronimo di <em>Cascading Style Sheets</em>, è un linguaggio di stile
+          utilizzato per definire l'aspetto e il layout di un documento
+          <strong>HTML</strong>. In poche parole, mentre l'HTML si occupa di
+          definire la struttura e il contenuto di una pagina web, il CSS si
+          occupa di definire come tale contenuto deve essere presentato.
+        </p>
+
+        <hr />
+
+        <h2>Ecco alcune funzionalità:</h2>
+        <ol>
+          <li>
+            <strong>Selezionare gli elementi</strong>: Il CSS consente di
+            selezionare gli elementi HTML ai quali si desidera applicare uno
+            stile. Questa selezione può essere fatta utilizzando gli elementi
+            HTML stessi (come tag, classi o ID) o le loro relazioni gerarchiche
+            con altri elementi.
+          </li>
+
+          <li>
+            <strong>Definire gli stili</strong>: Una volta selezionati gli
+            elementi, è possibile definire gli stili che si desidera applicare.
+            Gli stili includono cose come il colore del testo, il tipo di
+            carattere, il padding, il margine, la dimensione e il posizionamento
+            degli elementi sulla pagina.
+          </li>
+
+          <li>
+            <strong>Applicare gli stili</strong>: Una volta definiti gli stili,
+            vengono applicati agli elementi selezionati. Questo avviene
+            attraverso il collegamento del file CSS al documento HTML o
+            incorporando direttamente il CSS nel documento HTML stesso.
+          </li>
+
+          <li>
+            <strong>Cascata</strong>: Il termine "_cascata_" si riferisce al
+            modo in cui vengono gestiti i conflitti di stile. Se più regole CSS
+            si applicano allo stesso elemento, il browser seguirà un certo
+            ordine di priorità per determinare quale regola utilizzare. Questo
+            ordine è influenzato dalla specificità delle regole, dall'ordine in
+            cui sono dichiarate e dalla presenza di eventuali stili inline
+            direttamente negli elementi HTML.
+          </li>
+        </ol>
+
+        <hr />
+
+        <p>
+          In sintesi, il CSS è fondamentale per controllare l'aspetto e il
+          layout di una pagina web e consente di separare la struttura del
+          contenuto dalla sua presentazione visuale, migliorando la flessibilità
+          e la manutenibilità dei siti web.
+        </p>
+
+        <h1>Come si utilizza?</h1>
+        <ol>
+          <li>
+            <strong>Creare un file CSS</strong>: Innanzitutto, crea un nuovo
+            file di testo e salvalo con estensione ".css". Questo sarà il tuo
+            file CSS, dove scriverai tutte le regole di stile.
+          </li>
+
+          <li>
+            <strong>Collegare il file CSS al tuo documento HTML</strong>:
+            All'interno della sezione <code>&lt;head&gt;</code> del tuo
+            documento HTML, aggiungi un tag <code>&lt;link&gt;</code> per
+            collegare il file CSS. Il tag <code>&lt;link&gt;</code> ha tre
+            attributi principali: <strong>rel</strong>, che specifica il tipo di
+            relazione tra il documento corrente e il file collegato,
+            <strong>type</strong>, che specifica il tipo MIME del documento
+            collegato (generalmente text/css per i file CSS) e
+            <strong>href</strong>, che specifica l'URL del file CSS.
+          </li>
+
+          <li>
+            <strong>Scrivere le regole di stile nel file CSS</strong>: Ora puoi
+            iniziare a scrivere le regole di stile nel tuo file CSS. Ogni regola
+            di stile è composta da un <strong>selettore</strong> e da una serie
+            di dichiarazioni. Il selettore indica a quali elementi HTML si
+            applicheranno le dichiarazioni di stile. Le dichiarazioni di stile
+            specificano gli attributi che si desidera modificare e i relativi
+            valori. Ad esempio, se volessi rendere tutti i paragrafi di colore
+            rosso, il tuo file CSS potrebbe contenere:
+            <pre><code>p {
+  color: red;
+}
+</code></pre>
+          </li>
+
+          <li>
+            <strong>Salva e ricarica la pagina</strong>: Salva entrambi i file
+            (HTML e CSS) e ricarica la tua pagina nel browser. Ora dovresti
+            vedere i cambiamenti di stile riflessi nel tuo sito web.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
