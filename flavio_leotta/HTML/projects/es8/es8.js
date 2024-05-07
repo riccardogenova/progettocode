@@ -1,4 +1,3 @@
-<button onclick="sostituisciElemento()">Sostituisci Elemento</button>;
 function sostituisciElemento() {
   // Creiamo un nuovo elemento
   var nuovoElemento = document.createElement('h2');
