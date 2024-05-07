@@ -49,8 +49,7 @@ In JavaScript, ci sono diversi tipi di dati fondamentali che vengono utilizzati 
 - **Undefined:** Indica che una variabile è stata dichiarata ma non le è stato assegnato un valore, quindi è vuota
   _let variabileNonInizializzata;_
 
-- **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco che non può essere modificato
-=======
+- # **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco che non può essere modificato
 - **Undefined:** Indica che una variabile è stata dichiarata ma non inizializzata
   _let variabileNonInizializzata;_
 
@@ -138,3 +137,44 @@ console.log('Il pulsante è stato cliccato!');
 });
 
 In questo esempio, addEventListener è un metodo che permette di ascoltare gli eventi su un elemento specifico del DOM. Quando il pulsante viene cliccato, la funzione fornita come secondo argomento verrà eseguita. In questo caso, la funzione stampa un messaggio di log sulla console del browser.
+
+# SCOP LOCALE VS SCOP GLOGABLE
+
+Lo "scopo locale" si riferisce agli obiettivi, alle azioni o alle finalità di un'entità specifica, come un'azienda, un'organizzazione o un individuo, limitati a un contesto specifico, come un progetto, un dipartimento o una comunità locale. È focalizzato sulle attività e sugli obiettivi immediati all'interno di un ambito ristretto.
+
+Lo "scopo globale", d'altra parte, riguarda gli obiettivi, le aspirazioni o le finalità che hanno un impatto su una scala più ampia, che possono coinvolgere una vasta gamma di interessi, comunità o ambiti geografici. Può trattare questioni di portata internazionale, come la sostenibilità ambientale, la pace mondiale, la riduzione della povertà o altri obiettivi che hanno un impatto su scala globale.
+
+# VARIABILI MUTABILI E IMMUTABILI
+
+Le "variabili mutabili" e "immutabili" sono concetti comuni nella programmazione, particolarmente in linguaggi di programmazione che supportano il paradigma di programmazione funzionale o che gestiscono dati in modo più rigoroso.
+
+1. **Variabili mutabili:**
+   Queste sono variabili il cui valore può essere modificato dopo essere stato assegnato.
+   In molti linguaggi di programmazione orientati agli oggetti, come Python o Java, gli oggetti sono spesso considerati mutabili perché è possibile modificare i loro attributi dopo che sono stati creati.
+   Possono comportare rischi in determinati contesti, specialmente in programmi complessi dove il cambiamento di stato può causare effetti collaterali difficili da gestire.
+
+2. **Variabili immutabili:**
+   Queste sono variabili il cui valore non può essere modificato una volta che sono stati assegnati.
+   Nei linguaggi funzionali come Haskell o in alcuni concetti di programmazione orientata agli oggetti, si preferisce l'uso di strutture dati immutabili per garantire la sicurezza e la prevedibilità del codice.
+   Ad esempio, in Python, le tuple sono strutture dati immutabili, mentre le liste sono mutabili. Una volta creata una tupla, non è possibile modificarne i valori.
+   Sono spesso preferite in situazioni dove è importante garantire la stabilità e prevedibilità del codice, poiché evitano effetti collaterali indesiderati. Offrono una maggiore flessibilità, ma richiedono una maggiore attenzione per gestire le modifiche di stato in modo appropriato.
+
+# MAP, FILTER E REDUCE
+
+Map, filter e reduce sono tre funzioni molto utili e potenti presenti in molti linguaggi di programmazione, in particolare nei linguaggi orientati alla programmazione funzionale come Python, JavaScript e molti altri. Come funzionano:
+
+**Map:**
+Prende una funzione e un iterabile (come una lista) come input e applica la funzione a ciascun elemento dell'iterabile, restituendo un nuovo iterabile con i risultati.
+
+**Filter:**
+Prende una funzione di predicato e un iterabile come input e restituisce un iterabile contenente solo gli elementi dell'input per i quali il predicato è vero.
+
+**Reduce:**
+Prende una funzione binaria (che prende due argomenti) e un iterabile come input. Riduce l'iterabile ad un unico valore applicando la funzione ripetutamente ai suoi elementi.
+
+# CLASSI E OGGETTI
+
+Sono concetti fondamentali utilizzati per organizzare e strutturare il codice.
+
+Gli oggetti sono strutture dati che contengono una raccolta di coppie chiave-valore, dove ogni chiave è una stringa univoca e ogni valore può essere di qualsiasi tipo, inclusi altri oggetti, funzioni e array. Sono dinamici, il che significa che è possibile aggiungere o rimuovere proprietà in qualsiasi momento.
+Le classi sono uno strumento per creare oggetti con la stessa struttura e comportamento. È una sorta di schema o modello da cui è possibile creare istanze di oggetti specifici. Le classi possono anche estendere altre classi, consentendo la creazione di gerarchie di classi e l'ereditarietà di proprietà e metodi.

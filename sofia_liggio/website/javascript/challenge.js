@@ -83,4 +83,3 @@ document
   .addEventListener("click", generateGroups);
 
 getElementById;
-=======
