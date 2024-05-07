@@ -11,9 +11,11 @@ Gli array sono utilizzati per vari scopi, come:
 - **Implementazione di strutture di dati complesse**: Come pile (stacks), code (queues) e altre strutture che beneficiano di accesso sequenziale.
 - **Gestione di risorse**: Possono essere utilizzati per gestire gruppi di risorse simili, come file aperti o connessioni di rete.
 
-## Metodi principali degli array
+# Metodi Principali degli Array in JavaScript
 
-Ecco alcuni dei metodi più comuni utilizzati con gli array in JavaScript, con esempi pratici:
+## Metodi Array Mutabili
+
+Questi metodi modificano direttamente l'array su cui vengono chiamati:
 
 - `push()`: Aggiunge un elemento alla fine dell'array.
 
@@ -47,20 +49,24 @@ Ecco alcuni dei metodi più comuni utilizzati con gli array in JavaScript, con e
   console.log(numeri); // Output: [1, 2, 3]
   ```
 
-- `slice()`: Restituisce una copia di una parte dell'array.
-
-  ```javascript
-  let numeri = [1, 2, 3, 4, 5];
-  let parte = numeri.slice(1, 3);
-  console.log(parte); // Output: [2, 3]
-  ```
-
 - `splice()`: Cambia il contenuto di un array eliminando o sostituendo elementi esistenti e/o aggiungendo nuovi elementi.
 
   ```javascript
   let numeri = [1, 2, 4, 5];
   numeri.splice(2, 0, 3);
   console.log(numeri); // Output: [1, 2, 3, 4, 5]
+  ```
+
+## Metodi Array Immutabili
+
+Questi metodi non modificano l'array originale ma creano una nuova copia:
+
+- `slice()`: Restituisce una copia di una parte dell'array.
+
+  ```javascript
+  let numeri = [1, 2, 3, 4, 5];
+  let parte = numeri.slice(1, 3);
+  console.log(parte); // Output: [2, 3]
   ```
 
 - `forEach()`: Esegue una funzione data su ogni elemento dell'array.
@@ -95,6 +101,88 @@ Ecco alcuni dei metodi più comuni utilizzati con gli array in JavaScript, con e
   let somma = numeri.reduce((acc, num) => acc + num, 0);
   console.log(somma); // Output: 15
   ```
+
+### Esempio Pratico Combinando Metodi Mutabili e Immutabili
+
+Consideriamo un caso in cui vogliamo calcolare la media dei voti di una classe, ma solo per gli studenti che hanno superato l'esame (voto >= 6).
+
+```javascript
+let voti = [5, 8, 9, 3, 7, 6];
+
+// Filtriamo i voti per considerare solo quelli >= 6 usando `filter()`, un metodo immutabile.
+let votiSuperati = voti.filter((voto) => voto >= 6);
+
+// Usiamo `reduce()` per calcolare la somma dei voti superati.
+let sommaVotiSuperati = votiSuperati.reduce((acc, voto) => acc + voto, 0);
+
+// Calcoliamo la media dei voti superati.
+let mediaVotiSuperati = sommaVotiSuperati / votiSuperati.length;
+
+console.log(mediaVotiSuperati); // Output: 7.5
+```
+
+Questo esempio mostra come `filter()` e `reduce()` possono essere combinati efficacemente. Entrambi i metodi sono immutabili, il che è vantaggioso per mantenere l'integrità dei dati specialmente in applicazioni più grandi o complesse.
+
+Qui sotto trovi un file Markdown che spiega come usare le classi e i costruttori in JavaScript, perfetto per tutorial, documentazioni o note di studio.
+
+# Uso delle Classi e del Costruttore in JavaScript
+
+Le classi in JavaScript sono un modo per organizzare e strutturare il codice, specialmente quando si lavora con oggetti complessi e interazioni tra di essi. Introdotte in ES6, le classi in JavaScript offrono una sintassi più chiara e semplice per creare oggetti e gestire l'ereditarietà.
+
+## Definizione di una Classe
+
+Una classe in JavaScript si definisce usando la parola chiave `class`. Una classe può includere un costruttore, metodi per impostare o recuperare dati, e altro ancora.
+
+### Sintassi Base
+
+Ecco la sintassi base per definire una classe:
+
+```javascript
+class NomeClasse {
+  constructor(parametro1, parametro2) {
+    this.parametro1 = parametro1;
+    this.parametro2 = parametro2;
+  }
+
+  metodo1() {
+    console.log(this.parametro1);
+  }
+}
+```
+
+## Il Costruttore
+
+Il costruttore è un metodo speciale di una classe. Viene chiamato automaticamente quando si crea un nuovo oggetto da quella classe. Il costruttore è spesso utilizzato per inizializzare le proprietà dell'oggetto.
+
+### Esempio di Costruttore
+
+```javascript
+class Persona {
+  constructor(nome, eta) {
+    this.nome = nome;
+    this.eta = eta;
+  }
+
+  presentati() {
+    console.log(`Ciao, mi chiamo ${this.nome} e ho ${this.eta} anni.`);
+  }
+}
+```
+
+## Creazione di un Oggetto da una Classe
+
+Per creare un oggetto da una classe, si utilizza la parola chiave `new` seguita dal nome della classe e dai parametri richiesti dal costruttore.
+
+### Esempio di Creazione di un Oggetto
+
+```javascript
+let persona1 = new Persona("Mario", 30);
+persona1.presentati(); // Output: Ciao, mi chiamo Mario e ho 30 anni.
+```
+
+## Conclusioni
+
+Le classi in JavaScript forniscono un modo potente e intuitivo per organizzare il codice. Utilizzando costruttori, metodi e la parola chiave `new`, è possibile creare strutture complesse in modo efficiente e leggibile. Queste funzionalità rendono JavaScript ancora più potente e adatto alla programmazione orientata agli oggetti.
 
 ### Spread Operator (...)
 
