@@ -46,10 +46,10 @@ In JavaScript, ci sono diversi tipi di dati fondamentali che vengono utilizzati 
 - **Null:** Rappresenta l'assenza intenzionale di qualsiasi valore o oggetto.La variabile esiste ma non contiene alcun valore definito
   _let variabileNull = null;_
 
-- **Undefined:** Indica che una variabile è stata dichiarata ma non inizializzata
+- **Undefined:** Indica che una variabile è stata dichiarata ma non le è stato assegnato un valore, quindi è vuota
   _let variabileNonInizializzata;_
 
-- **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco
+- **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco che non può essere modificato
   _const chiave = Symbol('descrizione');_ <br/>
 
 # If...else
