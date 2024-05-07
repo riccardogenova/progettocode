@@ -20,8 +20,12 @@
 - **29.04**
   Spiegazione di javascript , riccardo ha parlato di variabili , funzioni , costanti , dom , document , window e ci ha fatto vedere come possono essere usate
 
-  - **30.04**
-    Solito daily , riccardo ci ha lasciato in gruppi su discord e ci ha assegnato dei compiti javascript da svolgere
+- **30.04**
+  Solito daily , riccardo ci ha lasciato in gruppi su discord e ci ha assegnato dei compiti javascript da svolgere
+
+- **03.05**
+
+  Solito daily , riccardo ci ha lasciato da finire la discovery su javascript , lo sheet , la descrizione e i vari metodi e cose che abbiamo scoperto il giorno precedentemente grazie anche al mentimeter fatto , ci ha lasciato da fare una pagina html che permetta di aggiungere una persona a una lista e dopo poter scegliere in quanti gruppi suddividere tutte le persone che abbiamo aggiunto , facendo uso di javascript
 
 # Descrizione day by day , di quello che facciamo durante le lezioni in presenza
 

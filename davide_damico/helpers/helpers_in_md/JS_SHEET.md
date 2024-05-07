@@ -101,7 +101,7 @@ Questi metodi non modificano l'array originale ma creano una nuova copia:
   let somma = numeri.reduce((acc, num) => acc + num, 0);
   console.log(somma); // Output: 15
   ```
-
+  
 ### Esempio Pratico Combinando Metodi Mutabili e Immutabili
 
 Consideriamo un caso in cui vogliamo calcolare la media dei voti di una classe, ma solo per gli studenti che hanno superato l'esame (voto >= 6).
@@ -189,11 +189,7 @@ Le classi in JavaScript forniscono un modo potente e intuitivo per organizzare i
 Lo **spread operator** `...` viene utilizzato per espandere gli elementi di un array (o di un altro iterabile) in situazioni dove vengono attesi più argomenti (in chiamate di funzione) o più elementi (in array literali). È particolarmente utile per clonare array, unire più array insieme, passare elementi ad una funzione come argomenti separati, e molto altro, semplificando operazioni che altrimenti richiederebbero l'uso di metodi più verbosi come `concat()`.
 
 ```javascript
-let parte1 = [
-  1,
-
-  2, 3,
-];
+let parte1 = [1, 2, 3];
 let parte2 = [4, 5, 6];
 let combinato = [...parte1, ...parte2];
 console.log(combinato); // Output: [1, 2, 3, 4, 5, 6]
@@ -203,12 +199,303 @@ console.log(combinato); // Output: [1, 2, 3, 4, 5, 6]
 
 In molti linguaggi di programmazione, specialmente quelli di basso livello come C, gli array sono essenzialmente puntatori. Questo perché l'array stesso è effettivamente un blocco di memoria, e il nome dell'array rappresenta l'indirizzo di memoria del primo elemento. Quando accedi a un elemento dell'array, calcoli l'indirizzo di quel particolare elemento basandoti sul suo indice, facendo uso dell'aritmetica dei puntatori. Anche in linguaggi di alto livello come JavaScript, gli array non contengono direttamente i loro elementi, ma puntano a un blocco di memoria dove questi elementi sono conservati. Questo spiega perché gli array sono spesso descritti come "puntatori".
 
-Ecco un file Markdown che include esempi pratici per diversi tipi di eventi JavaScript, spiegando brevemente cosa fanno e mostrando come potrebbero essere utilizzati in codice:
+# Gestione di Elementi DOM in JavaScript
 
-````markdown
+## Metodi e Proprietà Comuni
+
+- `getElementById()`: Seleziona un elemento tramite il suo ID.
+
+  ```javascript
+  let box = document.getElementById("myBox");
+  console.log(box); // Output: [elemento DOM]
+  ```
+
+- `querySelector()`: Restituisce il primo elemento che corrisponde al gruppo specificato di selettori.
+
+  ```javascript
+  let primoLink = document.querySelector("a");
+  console.log(primoLink); // Output: [elemento DOM]
+  ```
+
+- `querySelectorAll()`: Restituisce tutti gli elementi nel documento che corrispondono a un specificato gruppo di selettori.
+
+  ```javascript
+  let tuttiILink = document.querySelectorAll("a");
+  console.log(tuttiILink); // Output: [NodeList]
+  ```
+
+- `addEventListener()`: Imposta una funzione da eseguire quando l'evento specificato viene inviato all'elemento.
+
+  ```javascript
+  document.getElementById("myBtn").addEventListener("click", function () {
+    alert("Pulsante cliccato!");
+  });
+  ```
+
+- `removeEventListener()`: Rimuove un gestore di eventi che è stato allegato con `addEventListener()`.
+
+  ```javascript
+  function myFunction() {
+    alert("Pulsante cliccato!");
+  }
+
+  document.getElementById("myBtn").addEventListener("click", myFunction);
+  document.getElementById("myBtn").removeEventListener("click", myFunction);
+  ```
+
+## Manipolazione di Classi CSS
+
+- **classList**: Proprietà che ritorna un oggetto DOMTokenList rappresentante le classi dell'elemento.
+
+  - `add()`: Aggiunge una classe all'elemento.
+
+    ```javascript
+    document.getElementById("myElement").classList.add("myClass");
+    ```
+
+  - `remove()`: Rimuove una classe dall'elemento.
+
+    ```javascript
+    document.getElementById("myElement").classList.remove("myClass");
+    ```
+
+  - `toggle()`: Aggiunge o rimuove una classe, dipendendo dalla sua presenza.
+
+    ```javascript
+    document.getElementById("myElement").classList.toggle("myClass");
+    ```
+
+  - `contains()`: Restituisce `true` se l'elemento ha quella classe, altrimenti `false`.
+    ```javascript
+    console.log(
+      document.getElementById("myElement").classList.contains("myClass")
+    ); // Output: true o false
+    ```
+
+## Gestione di Attributi
+
+- `getAttribute()`: Ottiene il valore di un attributo dell'elemento.
+
+  ```javascript
+  let valore = document.getElementById("myLink").getAttribute("href");
+  console.log(valore); // Output: [valore dell'attributo href]
+  ```
+
+- `setAttribute()`: Imposta o aggiorna il valore di un attributo.
+
+  ```javascript
+  document
+    .getElementById("myLink")
+    .setAttribute("href", "https://www.example.com");
+  ```
+
+- `removeAttribute()`: Rimuove un attributo dall'elemento.
+  ```javascript
+  document.getElementById("myElement").removeAttribute("disabled");
+  ```
+
+## Manipolazione del Contenuto
+
+- **innerHTML**: Proprietà che consente di ottenere o impostare il markup HTML di un elemento.
+
+  ```javascript
+  document.getElementById("myDiv").innerHTML =
+    "<strong>Testo in grassetto!</strong>";
+  ```
+
+- **textContent**: Proprietà che consente di ottenere o impostare il testo contenuto in un elemento, escludendo qualsiasi markup HTML.
+  ```javascript
+  document.getElementById("myDiv").textContent = "Solo testo, senza markup!";
+  ```
+
+## Clonazione e Rimozione di Elementi
+
+- `cloneNode()`: Clona un elemento e, se specificato con `true`, clona anche tutti i suoi figli.
+
+  ```javascript
+  let original = document.getElementById("originalDiv");
+  let clone = original.cloneNode(true);
+  document.body.appendChild(clone);
+  ```
+
+- `removeChild()`: Rimuove un figlio dall'elemento specificato.
+  ```javascript
+  let parent = document.getElementById("parentDiv");
+  let child = document.getElementById("childDiv");
+  parent.removeChild(child);
+  ```
+
+## Navigazione tra i Nodi
+
+- **childNodes**: Proprietà che ritorna una NodeList degli elementi figli di un nodo.
+
+  ```javascript
+  let children = document.getElementById("myElement").childNodes;
+  console.log(children); // Output: NodeList
+  ```
+
+- **parentNode**: Proprietà che ritorna il nodo genitore di un elemento.
+
+  ```javascript
+  let parent = document.getElementById("myChild").parentNode;
+  console.log(parent); // Output: [elemento genitore]
+  ```
+
+- **nextSibling**: Proprietà che ritorna il prossimo fratello di un nodo.
+
+  ```javascript
+  let next = document.getElementById("myElement").nextSibling;
+  console.log(next); // Output: [prossimo elemento fratello]
+  ```
+
+- **previousSibling**: Proprietà che ritorna il fratello precedente di un nodo.
+  ```javascript
+  let prev = document.getElementById("myElement").previousSibling;
+  console.log(prev); // Output: [elemento fratello precedente]
+  ```
+
+## Altri Metodi Utili
+
+- `hasAttribute()`: Verifica se un elemento ha un attributo specificato.
+
+  ```javascript
+  console.log(document.getElementById("myElement").hasAttribute("src")); // Output: true o false
+  ```
+
+- `createElement()`: Crea un nuovo elemento DOM.
+
+  ```javascript
+  let nuovoDiv = document.createElement("div");
+  document.body.appendChild(nuovoDiv);
+  ```
+
+- `createTextNode()`: Crea un nuovo nodo di testo.
+
+  ```javascript
+  let testo = document.createTextNode("Ciao mondo!");
+  document.body.appendChild(testo);
+  ```
+
+  Ecco le aggiunte formattate in Markdown per i comandi `switch`, `do...while`, e `while` in JavaScript, con esempi pratici. Dovresti inserire queste sezioni nel posto appropriato nel tuo schema esistente. I titoli aiuteranno a suddividere chiaramente le sezioni.
+
+Ecco le aggiunte per i comandi `if` e `if...else` in JavaScript, complete di esempi pratici. Inseriscile nel tuo schema esistente nel contesto appropriato delle strutture condizionali.
+
+## If
+
+L'istruzione `if` è usata per eseguire un blocco di codice solo se una condizione specificata è vera.
+
+### Esempio di Codice:
+
+```javascript
+let age = 18;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+}
+```
+
+Questo esempio controlla se l'età è maggiore o uguale a 18 e, in caso affermativo, stampa un messaggio.
+
+## If Else
+
+L'istruzione `if...else` è usata per eseguire un blocco di codice se una condizione è vera e un altro blocco se la condizione è falsa.
+
+### Esempio di Codice:
+
+```javascript
+let score = 75;
+
+if (score >= 50) {
+  console.log("You passed the exam.");
+} else {
+  console.log("You failed the exam.");
+}
+```
+
+Questo esempio valuta il punteggio di un esame; se il punteggio è 50 o superiore, stampa un messaggio di superamento, altrimenti stampa un messaggio di insuccesso.
+
+## Switch
+
+Il comando `switch` è utilizzato per eseguire differenti azioni basate su differenti condizioni.
+
+### Esempio di Codice:
+
+```javascript
+let fruit = "apple";
+
+switch (fruit) {
+  case "banana":
+    console.log("Banana is good!");
+    break;
+  case "apple":
+    console.log("Apple is tasty!");
+    break;
+  default:
+    console.log("Unknown fruit");
+}
+```
+
+Questo esempio controlla il valore di `fruit` e stampa un messaggio differente a seconda del frutto specificato.
+
+## While
+
+Il ciclo `while` esegue un blocco di codice finché una condizione specificata è vera.
+
+### Esempio di Codice:
+
+```javascript
+let number = 0;
+
+while (number < 5) {
+  console.log(number);
+  number++;
+}
+```
+
+Questo esempio stampa i numeri da 0 a 4.
+
+## Do While
+
+Il ciclo `do...while` è simile al ciclo `while`, ma garantisce che il blocco di codice venga eseguito almeno una volta.
+
+### Esempio di Codice:
+
+```javascript
+let count = 0;
+
+do {
+  console.log(count);
+  count++;
+} while (count < 5);
+```
+
+Questo esempio stampa i numeri da 0 a 4, assicurando che il ciclo venga eseguito almeno una volta anche se la condizione iniziale è falsa.
+
 # Eventi JavaScript
 
 JavaScript offre una vasta gamma di eventi per gestire le interazioni degli utenti e altre attività nel browser. Qui di seguito sono riportati alcuni degli eventi più comuni, suddivisi per categoria, con esempi pratici di utilizzo.
+
+## Eventi
+
+- `addEventListener()`: Aggiunge un listener di eventi che reagisce a specifici tipi di eventi, come `click`, `mouseover`, ecc.
+
+  ```javascript
+  document.getElementById("myBtn").addEventListener("click", function () {
+    alert("Cliccato!");
+  });
+  ```
+
+- `removeEventListener()`: Rimuove un listener di eventi precedentemente aggiunto con `addEventListener()`.
+
+  ```javascript
+  function handleClick() {
+    alert("Cliccato!");
+  }
+
+  let btn = document.getElementById("myBtn");
+  btn.addEventListener("click", handleClick);
+  btn.removeEventListener("click", handleClick);
+  ```
 
 ## Eventi del Mouse
 
@@ -221,7 +508,6 @@ document.getElementById("myButton").addEventListener("click", function () {
   console.log("Button clicked!");
 });
 ```
-````
 
 ### `dblclick`
 
