@@ -165,12 +165,75 @@ Map, filter e reduce sono tre funzioni molto utili e potenti presenti in molti l
 
 **Map:**
 Prende una funzione e un iterabile (come una lista) come input e applica la funzione a ciascun elemento dell'iterabile, restituendo un nuovo iterabile con i risultati.
+Il metodo map() è un metodo degli array che viene utilizzato per trasformare ogni elemento dell'array in un nuovo elemento, applicando una funzione a ciascun elemento e creando un nuovo array con i risultati delle trasformazioni.
+
+La sintassi di base del metodo map() è la seguente:
+const newArray = array.map(callback(currentValue[, index[, array]]))
+Dove:
+
+- callback è una funzione che verrà chiamata per ogni elemento dell'array
+- currentValue è il valore corrente dell'elemento dell'array che viene elaborato
+- index (opzionale) è l'indice corrente dell'elemento nell'array
+- array (opzionale) è l'array su cui è stato chiamato il metodo map
+  La funzione di callback riceve tre argomenti:
+
+1. currentValue: il valore corrente dell'elemento dell'array
+2. index: (opzionale) l'indice corrente dell'elemento nell'array
+3. array: (opzionale) l'array su cui è stato chiamato il metodo map
+   La funzione di callback deve restituire il nuovo valore per l'elemento, che verrà quindi incluso nel nuovo array risultante.
+
+Ecco un esempio di come utilizzare il metodo map() per raddoppiare ogni elemento di un array:
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(number => number \* 2);
+
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+
+In questo esempio, la funzione di callback number => number \* 2 viene chiamata per ogni elemento dell'array numbers. Raddoppia il valore di ogni elemento e restituisce il nuovo valore, che viene incluso nel nuovo array doubledNumbers. Alla fine, doubledNumbers contiene tutti gli elementi di numbers raddoppiati.
 
 **Filter:**
 Prende una funzione di predicato e un iterabile come input e restituisce un iterabile contenente solo gli elementi dell'input per i quali il predicato è vero.
+Il metodo filter() è un metodo degli array che viene utilizzato per filtrare gli elementi di un array in base a una determinata condizione, restituendo un nuovo array contenente solo gli elementi che soddisfano tale condizione. La sintassi di base del metodo filter() è la seguente:
+
+ES.: const newArray = array.filter(callback(element[, index[, array]])[, thisArg])
+Dove:
+
+- callback è una funzione che verrà chiamata per ogni elemento dell'array
+- element è l'elemento corrente che viene elaborato dall'array
+- index (opzionale) è l'indice corrente dell'elemento nell'array
+- array (opzionale) è l'array su cui è stato chiamato il metodo filter
+- thisArg (opzionale) è il valore da utilizzare come this quando si esegue la funzione callback
+  La funzione callback deve restituire true per includere l'elemento nell'array filtrato, altrimenti deve restituire false
+
+  Ecco un esempio di come utilizzare il metodo filter() per filtrare solo i numeri pari da un array:
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const evenNumbers = numbers.filter(number => number % 2 === 0);
+
+console.log(evenNumbers); // Output: [2, 4, 6, 8, 10]
+In questo esempio, la funzione di callback number => number % 2 === 0 viene chiamata per ogni elemento dell'array numbers. Restituisce true solo per gli elementi che sono divisibili per 2, cioè i numeri pari. Gli elementi che soddisfano questa condizione vengono quindi inclusi nell'array evenNumbers.
 
 **Reduce:**
 Prende una funzione binaria (che prende due argomenti) e un iterabile come input. Riduce l'iterabile ad un unico valore applicando la funzione ripetutamente ai suoi elementi.
+Il metodo reduce() è un metodo degli array in JavaScript che esegue una funzione di riduzione su ciascun elemento dell'array, restituendo un singolo valore risultante. Può essere utilizzato per eseguire diverse operazioni di aggregazione, come la somma di tutti gli elementi dell'array, la concatenazione di stringhe, la ricerca del valore massimo o minimo, e così via.
+
+La sintassi di base del metodo reduce() è la seguente:
+const result = array.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
+Dove:
+
+- callback è una funzione che verrà chiamata per ogni elemento dell'array
+- accumulator è il valore accumulato fino a quel momento
+- currentValue è il valore corrente dell'elemento dell'array che viene elaborato
+- index (opzionale) è l'indice corrente dell'elemento nell'array
+- array (opzionale) è l'array su cui è stato chiamato il metodo reduce
+- initialValue (opzionale) è il valore iniziale dell'accumulatore. Se non viene fornito, il primo elemento dell'array sarà usato come valore iniziale e la funzione di callback inizierà ad essere eseguita dal secondo elemento.
+  La funzione di callback deve restituire il valore che diventerà il nuovo valore di accumulator. Questo valore verrà passato alla funzione di callback come primo argomento nella successiva iterazione.
+
+Ecco un esempio di come utilizzare il metodo reduce() per calcolare la somma di tutti gli elementi di un array:
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log(sum); // Output: 15
+
+In questo esempio, la funzione di callback (accumulator, currentValue) => accumulator + currentValue viene chiamata per ogni elemento dell'array. Aggiunge il valore corrente al valore accumulato fino a quel momento. Il valore iniziale dell'accumulatore è 0, quindi il calcolo della somma inizia da 0. Alla fine, il risultato della somma di tutti gli elementi viene restituito.
 
 # CLASSI E OGGETTI
 
