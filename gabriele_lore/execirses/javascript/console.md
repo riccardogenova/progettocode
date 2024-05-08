@@ -9,7 +9,7 @@ const triplearray = numbers.map(triple)
 ```
 const numbers = [1, 2, 3, 4, 5, 6 , 7 , 23];
 function onFilter(ele) {
-    return ele>3;
+    return ele>3 && ele % 2 != 0;
 }
 const array = numbers.filter(onFilter)
 ```
@@ -34,7 +34,7 @@ function Sum(count,ele) {
 const sum = numbers.reduce(Sum, 0)
 ```
 
-
+```
 const people = [
 { name: 'Alice', age: 25 },
 { name: 'Bob', age: 17 },
