@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If ed Else su Javascript</title>
+  </head>
+  <body>
+    <h1>If ed Else su Javascript</h1>
+    <h3>
+      <p>
+        In JavaScript, if e else sono costrutti condizionali utilizzati per
+        eseguire blocchi di codice in base al risultato di una condizione
+        booleana. Questi costrutti permettono di eseguire determinate istruzioni
+        solo se una condizione specificata è vera (true), altrimenti è possibile
+        eseguire un altro blocco di istruzioni quando la condizione è falsa
+        (false).
+      </p>
+      <p>Ecco come funzionano:</p>
+      <ol>
+        <li>
+          if: L'istruzione if viene utilizzata per eseguire un blocco di codice
+          solo se la condizione specificata è vera. Se la condizione è falsa, il
+          blocco di codice all'interno dell'if non viene eseguito.
+          <p><code>var x = 10;</code></p>
+          <p><code>if (x > 5) {</code></p>
+          <p><code>console.log("x è maggiore di 5");</code></p>
+          <p><code>}</code></p>
+        </li>
+        <li>
+          else: L'istruzione else viene utilizzata insieme all'if per eseguire
+          un blocco di codice alternativo se la condizione dell'if è falsa.
+          <p><code>var y = 3;</code></p>
+          <p><code>if (y > 5) {</code></p>
+          <p><code>console.log("y è maggiore di 5");</code></p>
+          <p><code>} else {</code></p>
+          <p><code>console.log("y non è maggiore di 5");</code></p>
+          <p><code>}</code></p>
+        </li>
+        <li>
+          else if: È possibile utilizzare l'istruzione else if per gestire più
+          condizioni alternative.
+          <p><code>var z = 7;</code></p>
+          <p><code>if (z > 10) {</code></p>
+          <p><code>console.log("z è maggiore di 10);</code></p>
+          <p><code>} else if (z >5) {</code></p>
+          <p><code>console.log("z è maggiore di 5 ma non di 10");</code></p>
+          <p><code>} else {</code></p>
+          <p><code>console.log("z non è maggiore di 5");</code></p>
+          <p><code>}</code></p>
+        </li>
+      </ol>
+      <p>
+        In questo esempio, il codice esegue la prima istruzione console.log
+        perché la condizione dell'if è vera (z è maggiore di 5 ma non di 10). Se
+        la condizione dell'if fosse stata falsa, l'istruzione else if successiva
+        sarebbe stata verificata e, se anche quella fosse stata falsa, il blocco
+        else finale sarebbe stato eseguito.
+      </p>
+    </h3>
+  </body>
+</html>
