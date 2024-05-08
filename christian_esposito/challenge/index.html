@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>SHUFFLE GAME</h2>
+            <div>
+                <h3>N Persone Gruppi </h3>
+                <select name="posti" id="posti" style="height: 2vh;">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button id="random">Random</button>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div id="main">
+
+        <div>
+            <h3>Inserisci Nome e Cognome</h3>
+            <input placeholder="Nome Cognome" type="text" id="input_text">
+            <button id="btnInsert" type="reset" disabled>Inserisci</button><button id="filter">Elimina</button>
+        </div>
+        <h3>partecipanti al gioco</h3> <button id="saveData">Salva Lista</button>
+        <ul id="table" id="element">
+        </ul>
+
+    </div>
+
+    <p>BUON GAME</p>
+    <div id="tableGroupe">
+
+    </div>
+
+
+</body>
+<script type="text/javascript" src="./random_groupe.js"></script>
+
+</html>

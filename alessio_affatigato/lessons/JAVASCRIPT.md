@@ -32,6 +32,32 @@ var nome = "Mario";
 
 ---
 
+- ### Classi
+  Le classi sono un modo per definire modelli per gli oggetti. Ti permettono di creare oggetti con le stesse proprietà e metodi.
+
+```
+class Persona {
+  constructor(nome, cognome) {
+    this.nome = nome;
+    this.cognome = cognome;
+  }
+
+  saluta() {
+    console.log(`Ciao, sono ${this.nome} ${this.cognome}`);
+  }
+}
+```
+
+Per creare un nuovo oggetto utilizzando questa classe, puoi fare quanto segue:
+
+```
+let persona1 = new Persona("Mario", "Rossi");
+persona1.saluta(); // Stampa: Ciao, sono Mario Rossi
+
+```
+
+---
+
 - ### Funzioni
 
 Le funzioni in JavaScript sono blocchi di codice progettati per eseguire una particolare attività. Una funzione può essere definita una volta e richiamata molteplici volte. Può ricevere input tramite parametri e può restituire un valore.
@@ -276,4 +302,32 @@ let numeri = [1, 2, 3, 4];
 let elementoRimosso = numeri.pop();
 console.log(elementoRimosso); // Output: 4
 console.log(numeri); // Output: [1, 2, 3]
+```
+
+**Reduce**: Questo metodo esegue una funzione di riduzione su ciascun elemento dell'array, producendo un singolo valore di output. La funzione di riduzione prende quattro argomenti: un accumulatore, un elemento corrente, l'indice corrente, e l'array su cui è chiamato. Puoi utilizzare reduce per eseguire operazioni come somma, calcolo di un valore massimo o minimo, concatenazione di stringhe.
+
+```
+var array = [1, 2, 3, 4, 5];
+var somma = array.reduce(function(acc, cur) {
+    return acc + cur;
+}, 0); // somma diventa 15
+```
+
+**Filter**: Questo metodo crea un nuovo array contenente solo gli elementi che superano un certo test definito da una funzione callback. La funzione di callback deve restituire true per gli elementi che si desidera mantenere, altrimenti restituirà false.
+
+```
+var array = [1, 2, 3, 4, 5];
+var numeriPari = array.filter(function(elemento) {
+    return elemento % 2 === 0;
+}); // numeriPari diventa [2, 4]
+```
+
+**Map**: Questo metodo crea un nuovo array applicando una funzione a ciascun elemento dell'array su cui è chiamato. La funzione di callback viene chiamata con tre argomenti: l'elemento corrente, l'indice corrente, e l'array su cui è chiamato.
+
+```
+var array = [1, 2, 3, 4, 5];
+var raddoppiati = array.map(function(elemento) {
+    return elemento * 2;
+}); // raddoppiati diventa [2, 4, 6, 8, 10]
+
 ```

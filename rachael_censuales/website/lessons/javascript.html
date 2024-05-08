@@ -42,7 +42,7 @@
           una pagina, interagendo direttamente con gli attributi degli elementi,
           lo stile, gli eventi e soprattutto comunicando con il Web Server.
         </p>
-        <strong> Gestione degli Eventi</strong>
+        <h4> Gestione degli Eventi</h4>
         <p>
           Per gestire gli eventi HTML in modo organizzato e riutilizzabile, è
           consigliabile definire le funzioni di gestione degli eventi in una
@@ -78,7 +78,7 @@
           </li>
         </ul>
 
-        <strong> Statements</strong>
+        <h4> Statements</h4>
         <p>
           JavaScript è un linguaggio Case Sensitive (distingue minuscole e
           maiuscole), e si può definire come un insieme di istruzioni
@@ -136,23 +136,90 @@
             <b> Costrutti:</b> strutture o elementi sintattici del linguaggio
             che consentono di eseguire determinate azioni o compiti nel codice.
             Tipi di costrutti:
-            <ol>
-              <li>
-                Istruzioni di controllo del flusso: consentono di controllare
+           
+                <h4> Istruzioni di controllo del flusso</h4> <p> Consentono di controllare
                 l'esecuzione del programma in base a condizioni specifiche (if,
-                else, switch).
-              </li>
-              <li>
-                Cicli: per eseguire ripetutamente un blocco di codice finché una
-                certa condizione è vera. (for, while, do-while).
-              </li>
-              <li>
-                Gestione delle eccezioni: per gestire situazioni anomale o
-                errori durante l'esecuzione del programma (try, catch, finally).
-              </li>
-            </ol>
-          </li>
-        </ul>
+                else, switch).</p>
+                <ul> <li>  Operatori di confronto: `==` confronta due variabili (uguale a) </li> 
+ 
+                <li>   Operatori di identicità:  `===` : confronta sia il contenuto che il tipo   </li> 
+
+ <li> Operatore di maggiore e minore tra variabili: `>` , `&lt` , `>=` , `&lt=`  </li> 
+ <li> Diverso: `!==` (identicità) - `!=` (solo il contenuto)</li>
+ </ul>
+
+<strong> Operatori logici: </strong>
+
+<ul> <li>  Or Logico `| |`: controlla almeno una condizione, se almeno una è vera, l'espressione risulta vera, se sono entrambe false, l'espressione risulta falsa. Es. 
+ num1 &lt num2 | | num3 &lt num4  
+
+<li> And Logico `&&`: verifica che entrambe le condizioni siano vere. Es: 5 === 2 && 6>7 FALSE ;  5>2 && 6&lt7 TRUE ; </li>
+ 
+
+ <li>  Not logico: inverte un valore booleano.  
+!nomevariabile ci da il contrario;
+!!nomevariabile contrario del contrario(condizione di esistenza); </li>
+<p> La condizione di esistenza di una stringa vuota è falsa perché non c'è un valore dentro, anche 0 non esiste; >0 sempre true
+Con la condizione di esistenza si verifica che il contenuto di una variabile sia presente. 
+true + true = 2
+true + false = 1 </p> 
+</ul>
+<h4> Decisioni </h4>
+
+  <p> <strong>  If:  </strong>
+  <pre> <code class="language-javascript"> if .. else .. 
+  if() {
+  } else {} 
+  if (num1&ltnum2) { console.log(`Yes!`) } else {console.log (`Oh Shit!`) }  </code>  </pre>
+  <p><pre> <code class="language-javascript"> if () { 
+  } else IF () {} else {}
+  if (num1&ltnum2) { console.log('Yes!') 
+  } else if (num1===0) { console.log('è zero!') 
+  } else { 
+  console.log ('Oh Shit!') }
+  -- Oh Shit!
+  </code>  </pre> </p>
+  
+  <p> <strong> Switch case:</strong>
+  <p> Se vuoi utilizzare più condizioni e in quali casi (quando succede questo, fai questo, quando succede quest'altro, fai quest'altro, se non è nessuno "default" allora):  
+  <pre><code>switch (key:variabile da analizzare) 
+  case (valore):
+  console.log ('valore')
+  break; -> permette di chiudere/uscire dagli altri casi
+  case 2 
+  console.log('due')
+  default:
+  console.log('oh shit!') 
+  break; </pre> </code>
+  </p>
+<h4> Cicli: </h4> 
+ <p> per eseguire ripetutamente un blocco di codice finché una certa condizione è vera.  </p>
+ <p> <pre> <code>
+ do while: (fai questo finché la condizione è vera)
+ do { let i = 0;
+ console.log(i);
+  i= i +1;
+ } while (i &lt; 10);```
+                  
+ let i=1 ;
+ do{ 
+ console.log(i);
+i= i+1 }
+while (i&lt1);```
+Se la condizione è falsa si ferma
+                  
+                  
+ let i= 0
+ while (1&lt0) {
+ console.log(i);
+ i=i+1 } </pre> </code> </p>
+               
+                
+             
+                <ul> <li>  Gestione delle eccezioni: per gestire situazioni anomale o
+                errori durante l'esecuzione del programma (try, catch, finally).  </li> </ul>
+              
+         
         <h3>Oggetti, proprietà, metodi</h3>
         <p>
           Javascript è un linguaggio di programmazione a oggetti, ciò consente
@@ -194,9 +261,10 @@
         </ul>
         <p>
           Anche le funzioni saranno degli oggetti, per questo potranno essere
-          definite in un modo particolare e assegnare ad una variabile.
+          definite in un modo particolare e assegnate ad una variabile.
         </p>
-        <p></p>
+        <h4>Array</h4> <p> Un 'array' può essere considerata una variabile che può contenere molteplici valori ai quali ci si può riferire attraverso un indice: un numero intero che parte sempre da zero.
+          L'uso degli array evita di definire più variabili e semplifica lo svolgimento di operazioni cicliche su tutti i valori. </p>
       </div>
     </div>
   </body>
