@@ -1,0 +1,61 @@
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  background-color: rgb(196, 196, 196);
+}
+.left-column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+}
+.right-column {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid black;
+}
+#line {
+  height: 100vh;
+}
+button {
+  background-color: rgba(107, 223, 136, 0.89);
+  border: 1px solid black;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+input {
+  padding: 8px;
+  width: 500px;
+  height: 10px;
+  font-size: 16px;
+  border: black solid 1px;
+}
+
+button:disabled {
+  background-color: rgb(148, 148, 148);
+  cursor: a;
+}
+#menu {
+  font-size: 16px;
+  height: 30px;
+  width: 60px;
+  border: black solid 1px;
+}
+#groups {
+  font-size: 17px;
+  margin-top: 30px;
+}
+#list {
+  font-size: 17px;
+  margin-top: 40px;
+}
+ul {
+  background-color: rgba(116, 228, 144, 0.89);
+  border: ridge rgba(0, 0, 0, 0.651) 1px;
+  border-radius: 10px;
+}
