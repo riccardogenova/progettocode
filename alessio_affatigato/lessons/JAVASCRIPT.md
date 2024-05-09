@@ -33,7 +33,7 @@ var nome = "Mario";
 ---
 
 - ### Classi
-  Le classi sono un modo per definire modelli per gli oggetti. Ti permettono di creare oggetti con le stesse proprietà e metodi.
+  Le classi sono un modo per definire modelli per gli oggetti. Ti permettono di creare oggetti con le stesse proprietà e metodi. Le classi sono un tipo di funzione che serve a creare gli oggetti.
 
 ```
 class Persona {
@@ -126,7 +126,7 @@ In questo esempio, abbiamo creato un oggetto chiamato persona con tre proprietà
 
 ### Accesso alle Proprietà di un Oggetto
 
-Le proprietà di un oggetto possono essere accessibili utilizzando la notazione punto . o la notazione delle parentesi quadre [].
+Le proprietà di un oggetto possono essere accessibili utilizzando la notazione punto . o la notazione delle parentesi quadre, nel caso degli array [].
 
 ```
 console.log(persona.nome);   // Output: Mario
@@ -313,7 +313,8 @@ var somma = array.reduce(function(acc, cur) {
 }, 0); // somma diventa 15
 ```
 
-**Filter**: Questo metodo crea un nuovo array contenente solo gli elementi che superano un certo test definito da una funzione callback. La funzione di callback deve restituire true per gli elementi che si desidera mantenere, altrimenti restituirà false.
+**Filter**: Questo metodo crea un nuovo array contenente solo gli elementi che superano un certo test definito da una funzione callback.
+È per rimuovere un elemento . Vuole come parametro una (funzione), la funzione che passa deve ritornare un buleano, passa (el, index, array)
 
 ```
 var array = [1, 2, 3, 4, 5];
@@ -322,7 +323,7 @@ var numeriPari = array.filter(function(elemento) {
 }); // numeriPari diventa [2, 4]
 ```
 
-**Map**: Questo metodo crea un nuovo array applicando una funzione a ciascun elemento dell'array su cui è chiamato. La funzione di callback viene chiamata con tre argomenti: l'elemento corrente, l'indice corrente, e l'array su cui è chiamato.
+**Map**: Questo metodo crea un nuovo array applicando una funzione a ciascun elemento dell'array su cui è chiamato. È per trovare un elemento. La funzione di callback viene chiamata con tre argomenti: l'elemento corrente, l'indice corrente, e l'array su cui è chiamato.
 
 ```
 var array = [1, 2, 3, 4, 5];
