@@ -69,4 +69,4 @@ nodeInput.addEventListener("input", onChangeInput);
 
 nodeButtonGen.addEventListener("click", onClickButtonGen);
 
-nodeInput.addEventListener("keypress", onEnterPress);
+nodeInput.addEventListener("keypress", onPressEnter);
