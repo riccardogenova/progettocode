@@ -1,4 +1,6 @@
+//Cambia lo sfondo di una pagina con un dropdown
 function changecolours() {
-  var dropdown = document.getElementById("dropdown").value;
-  document.body.style.backgroundColor = dropdown;
+  var dropdown = document.getElementById("dropdown");
+  document.body.style.backgroundColor = dropdown.value;
 }
+dropdown.addEventListener("change", changecolours);

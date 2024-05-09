@@ -41,3 +41,7 @@
 - **02.05**
 
   Solito daily e spiegazione di riccardo di const , let , var etc tramite la console del browser. Spiegazione dei vari operatori: operatori di assegnazione, operatori di confronto e operatori logici. Spiegazione del not logico
+
+- **07.05**
+
+Spiegazione di come organizzarci quando creiamo un progetto , dobbiamo fare un esercizio o qualsiasi cosa che dobbiamo programmare. Quali domande farci per capire cosa dobbiamo fare. ''La UI rappresenta solo un modo dei dati che abbiamo nella nostra business logic''.
