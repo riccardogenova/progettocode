@@ -102,3 +102,102 @@ Ogni funzione è un'istanza di Function, un tipo di oggetto base. Le funzioni po
 - element.clone(false): clona un nodo senza copiare gli elementi.
 - element.removeListener(event): rimuovi un evento
 - element.preventDefault: usato per prevenire l'effetto di propagazione.
+
+# Classi
+
+Le classi JavaScript sono dei tipi di dato definiti dall'utente, possiedono proprietà e metodi e vengono utilizzate per creare componenti riutilizzabili.
+
+Creazione di una classe in javascript:
+
+```
+class <nome>
+{
+   constructor()
+   {
+
+   }
+}
+```
+
+Ogni variabile proprietà viene creata automaticamente se dichiarata.
+
+Il metodo constructor viene chiamato ogni qualvolta che si inizializza un oggetto.
+
+Per inizializzare un oggetto:
+
+```
+<nome> <nome_oggetto> = new <nome>();
+```
+
+Per accedere alle propietà e metodi dell'oggetto si usa il punto.
+
+Esempio d'uso:
+
+```
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+const person1 = new Person('John', 30);
+person1.greet();
+```
+
+## Metodi statici
+
+I metodi statici sono metodi associati alla classe, ma non a nessun oggetto particolare. Per creare un metodo statico, si utilizza la parola chiave static prima del nome del metodo. 
+
+```
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+
+  static generateName() {
+    const names = ['John', 'Jane', 'Bob'];
+    const index = Math.floor(Math.random() * names.length);
+    return names[index];
+  }
+}
+
+const name = Person.generateName();
+console.log(name);
+```
+
+## Ereditarietà delle classi
+
+L'ereditarietà della classe è un modo per estendere la funzionalità di una classe creando una nuova classe che eredita da un altra classe originale. La nuova classe eredita tutti i metodi e le proprietà della originale e può anche avere metodi e proprietà aggiuntivi propri. Per creare una classe che eredita da un'altra classe, si utilizza la parola chiave extends.
+
+```
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
+
+class Student extends Person {
+  constructor(name, age, grade) {
+    super(name, age);
+    this.grade = grade;
+  }
+}
+
+const student1 = new Student('John', 30, 'A');
+console.log(student1);
+```
