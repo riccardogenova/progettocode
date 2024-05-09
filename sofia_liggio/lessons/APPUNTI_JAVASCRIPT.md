@@ -240,4 +240,156 @@ In questo esempio, la funzione di callback (accumulator, currentValue) => accumu
 Sono concetti fondamentali utilizzati per organizzare e strutturare il codice.
 
 Gli oggetti sono strutture dati che contengono una raccolta di coppie chiave-valore, dove ogni chiave è una stringa univoca e ogni valore può essere di qualsiasi tipo, inclusi altri oggetti, funzioni e array. Sono dinamici, il che significa che è possibile aggiungere o rimuovere proprietà in qualsiasi momento.
+
 Le classi sono uno strumento per creare oggetti con la stessa struttura e comportamento. È una sorta di schema o modello da cui è possibile creare istanze di oggetti specifici. Le classi possono anche estendere altre classi, consentendo la creazione di gerarchie di classi e l'ereditarietà di proprietà e metodi.
+
+# OOP
+
+L'_Object-Oriented Programming_ (Programmazione Orientata agli Oggetti) è un paradigma di programmazione che si basa sul concetto di "oggetti", che possono contenere dati sotto forma di attributi e codice sotto forma di metodi.
+
+Gli oggetti sono istanze di classi. Una classe è una struttura che definisce gli attributi e i metodi comuni a tutti gli oggetti di quel tipo.
+
+Le principali caratteristiche della programmazione orientata agli oggetti includono l'incapsulamento, l'ereditarietà e il polimorfismo:
+
+1. **Incapsulamento:** È il concetto di racchiudere dati e i metodi che operano su di essi all'interno di una singola unità, ovvero l'oggetto. Questo permette di nascondere i dettagli di implementazione e di proteggere i dati sensibili, consentendo solo l'accesso attraverso metodi definiti
+2. **Ereditarietà:** Consente a una classe di ereditare attributi e metodi da un'altra classe. Questo favorisce il riutilizzo del codice e permette di creare gerarchie di classi in cui le classi figlie ereditano le caratteristiche delle classi genitore.
+3. **Polimorfismo:** È la capacità di oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi. In altre parole, è la capacità di un metodo di comportarsi in modo diverso in base al tipo di oggetto su cui è chiamato.
+
+# EXTENDS
+
+Questa parola chiave è utilizzata nella programmazione orientata agli oggetti per indicare l'ereditarietà tra classi. In molti linguaggi di programmazione, extends viene utilizzato per creare una sottoclasse (o classe figlia) che eredita attributi e metodi da una superclasse (o classe genitore). Ad esempio:
+class Animal {
+void sound() {
+System.out.println("Some sound");
+}
+}
+
+class Dog extends Animal {
+void sound() {
+System.out.println("Woof");
+}
+}
+
+public class Main {
+public static void main(String[] args) {
+Dog myDog = new Dog();
+myDog.sound(); // Output: Woof
+}
+}
+
+La classe Dog estende la classe Animal utilizzando extends. Questo significa che Dog eredita il metodo sound() dalla classe Animal. Tuttavia, Dog definisce una sua implementazione specifica del metodo sound(), sovrascrivendo quello della classe Animal.
+
+# EREDITARIETA' DELLE CLASSI
+
+È un concetto fondamentale nella programmazione orientata agli oggetti (OOP). Consiste nella creazione di una nuova classe (nota come sottoclasse o classe derivata) basata su una classe esistente (nota come superclasse o classe base). La sottoclasse eredita gli attributi e i metodi della superclasse e può anche aggiungere nuovi attributi e metodi o sovrascrivere quelli esistenti. Caratteristiche:
+
+- **Riutilizzo del codice:** L'ereditarietà permette di riutilizzare il codice esistente. Una sottoclasse può ereditare tutti gli attributi e i metodi della superclasse, risparmiando tempo e sforzo nella scrittura del codice
+- **Creazione di gerarchie di classi:** Con l'ereditarietà, è possibile creare gerarchie di classi, in cui le classi figlie ereditano caratteristiche da classi genitore. Questo consente di organizzare e strutturare il codice in modo gerarchico e modulare
+- **Estensione e specializzazione:** Le sottoclassi possono estendere o specializzare il comportamento della superclasse. Possono aggiungere nuovi attributi e metodi, sovrascrivere i metodi esistenti per fornire un comportamento personalizzato o aggiungere funzionalità specifiche
+- **Polimorfismo:** L'ereditarietà supporta il polimorfismo, che consente agli oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi. Questo offre flessibilità nell'utilizzo degli oggetti e favorisce la modularità del codice
+
+Ad esempio:
+// Superclasse
+class Vehicle {
+void drive() {
+System.out.println("Driving...");
+}
+}
+
+// Sottoclasse
+class Car extends Vehicle {
+void honk() {
+System.out.println("Honk honk!");
+}
+}
+
+public class Main {
+public static void main(String[] args) {
+Car myCar = new Car();
+myCar.drive(); // Ereditato dalla superclasse Vehicle
+myCar.honk(); // Metodo specifico della sottoclasse Car
+}
+}
+
+In questo esempio, la classe Car estende la classe Vehicle, ereditando il metodo drive(). Inoltre, la classe Car ha un metodo aggiuntivo honk().
+
+#
+
+Il simbolo # viene utilizzato per definire le variabili private all'interno di classi o oggetti. Ad esempio:
+
+class MyClass {
+#privateVariable = 10;
+
+    getPrivateVariable() {
+        return this.#privateVariable;
+    }
+
+    setPrivateVariable(newValue) {
+        this.#privateVariable = newValue;
+    }
+
+}
+
+const myObject = new MyClass();
+console.log(myObject.getPrivateVariable()); // Output: 10
+
+myObject.setPrivateVariable(20);
+console.log(myObject.getPrivateVariable()); // Output: 20
+
+console.log(myObject.#privateVariable); // Errore: SyntaxError: Private field '#privateVariable' must be declared in an enclosing class
+
+#privateVariable è una variabile privata definita all'interno della classe MyClass. Questo significa che può essere acceduta e modificata solo all'interno di metodi della stessa classe e non è accessibile dall'esterno dell'oggetto istanziato. Quando si tenta di accedere direttamente alla variabile privata dall'esterno della classe, verrà generato un errore di sintassi.
+
+# POLYFILL
+
+Termine usato nello sviluppo software per riferirsi a un pezzo di codice (tipicamente JavaScript) che fornisce una funzionalità che manca in alcune versioni dei browser o di altri ambienti di esecuzione.
+
+Il termine deriva da "poly" (molti) e "fill" (riempire). Un polyfill riempie il vuoto tra ciò che un ambiente di esecuzione non supporta nativamente e ciò di cui hai bisogno per far funzionare il tuo codice.
+
+Consiste in una libreria JavaScript che implementa le nuove funzionalità del linguaggio o dell'API in modo da renderle disponibili anche in ambienti che non le supportano nativamente. Questo può essere particolarmente utile quando si sviluppano applicazioni web che devono funzionare su una vasta gamma di browser e versioni.
+
+# TOGGLE
+
+In ambito informatico, "toggle" è un termine utilizzato per riferirsi a una funzione o un meccanismo che alterna lo stato di un'entità da un valore a un altro. Può essere utilizzato in vari contesti, come interfacce utente, applicazioni, script, etc.
+
+Per esempio, nel contesto delle interfacce utente, "toggle" può riferirsi a un pulsante o un'interruttore che cambia lo stato di una funzionalità o di un elemento tra attivo e non attivo, visibile e non visibile, aperto e chiuso, etc.
+
+# INCAPSULAMENTO
+
+L'incapsulamento è uno dei concetti fondamentali della programmazione orientata agli oggetti (OOP) che si basa sul nascondere i dettagli di implementazione interni di un oggetto e permettendo l'accesso solo attraverso metodi pubblici o interfacce definite dall'oggetto stesso. In altre parole, l'incapsulamento protegge gli attributi di un oggetto, permettendo loro di essere modificati solo tramite metodi specifici.
+
+Ci sono diversi motivi per utilizzare l'incapsulamento:
+
+Protezione dei dati: L'incapsulamento impedisce l'accesso diretto agli attributi di un oggetto da parte di codice esterno. Questo previene la modifica accidentale o non autorizzata dei dati.
+Riduzione della dipendenza: Nascondendo i dettagli di implementazione interni di un oggetto, si riduce la dipendenza del codice esterno da tali dettagli. Questo permette di modificare l'implementazione interna di un oggetto senza influenzare il codice esterno che lo utilizza.
+Promozione della modularità: L'incapsulamento permette di raggruppare dati e operazioni correlate in un singolo oggetto, favorendo la modularità e facilitando la comprensione e la manutenzione del codice.
+Fornitura di interfacce coerenti: L'incapsulamento permette di definire interfacce coerenti e consistenti per gli oggetti, rendendo più facile l'utilizzo e la comprensione del codice da parte di altri sviluppatori.
+Ecco un esempio di come potrebbe essere implementato l'incapsulamento in Java utilizzando classi e metodi:
+
+public class Person {
+private String name;
+private int age;
+
+    // Metodi getter e setter per accedere agli attributi in modo controllato
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int newAge) {
+        if (newAge >= 0) {
+            this.age = newAge;
+        }
+    }
+
+}
+
+In questo esempio, gli attributi name e age della classe Person sono dichiarati come privati, rendendoli accessibili solo all'interno della classe stessa. I metodi getter e setter sono utilizzati per fornire un'interfaccia controllata per accedere e modificare gli attributi, permettendo così l'incapsulamento dei dati.
