@@ -18,16 +18,12 @@ function onClickButtonAdd() {
   nodeButtonAdd.disabled = true;
 }
 function onChangeInput() {
-  if (
-    nodeInput.value !== "" &&
-    !studentList.includes(nodeInput.value.toLowerCase())
-  ) {
-    nodeButtonAdd.disabled = false;
-  } else {
-    nodeButtonAdd.disabled = true;
-  }
+  const isInputEmpty = nodeInput.value === "";
+  const isAlreadyInList = studentList.includes(nodeInput.value.toLowerCase());
+  if (!isInputEmpty && !isAlreadyInList) nodeButtonAdd.disabled = false;
+  else nodeButtonAdd.disabled = true;
 }
-function groupCalculator() {
+function getNumOfGroup() {
   const selectedValue = nodeSelect.value;
   const arrayLenght = studentList.length;
   return Math.ceil(arrayLenght / selectedValue);
@@ -57,7 +53,7 @@ function onClickButtonGen() {
     i++;
   }
 }
-function onEnterPress(event) {
+function onPressEnter(event) {
   if (
     event.key === "Enter" &&
     nodeInput.value !== "" &&
