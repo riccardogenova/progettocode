@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordinatore di Gruppi</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      #container {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #output {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h2>Ordinatore di Gruppi</h2>
+      <label for="name">Inserisci un nome:</label><br />
+      <input type="text" id="name" />
+      <button onclick="addName()">Aggiungi</button><br />
+      <ul id="namesList"></ul>
+      <label for="groupSize">Dimensione del gruppo:</label>
+      <input type="number" id="groupSize" min="1" value="1" /><br />
+      <button onclick="orderNames()">Ordina</button>
+      <ul id="output"></ul>
+    </div>
+
+    <script>
+      var names = [];
+
+      function addName() {
+        var nameInput = document.getElementById("name").value.trim();
+
+        if (nameInput === "") {
+          alert("Inserisci un nome valido.");
+          return;
+        }
+
+        names.push(nameInput);
+        updateNamesList();
+        document.getElementById("name").value = "";
+      }
+
+      function updateNamesList() {
+        var namesList = document.getElementById("namesList");
+        namesList.innerHTML = "";
+        names.forEach(function (name) {
+          var listItem = document.createElement("li");
+          listItem.textContent = name;
+          namesList.appendChild(listItem);
+        });
+      }
+
+      function orderNames() {
+        var groupSize = parseInt(document.getElementById("groupSize").value);
+
+        if (names.length === 0) {
+          alert("Inserisci almeno un nome.");
+          return;
+        }
+
+        var shuffledNames = names.slice().sort(() => Math.random() - 0.5);
+        var groupedNames = [];
+        while (shuffledNames.length > 0) {
+          groupedNames.push(shuffledNames.splice(0, groupSize));
+        }
+
+        var output = document.getElementById("output");
+        output.innerHTML = "";
+
+        groupedNames.forEach(function (group, index) {
+          var groupItem = document.createElement("li");
+          groupItem.textContent =
+            "Gruppo " + (index + 1) + ": " + group.join(", ");
+          output.appendChild(groupItem);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [1, 2, 3, 4, 5];
+
+      function onmap(n) {
+        return n * 2;
+      }
+      numbers.map(onmap);
+
+      function onmap(n) {
+        return n % 2 === 0;
+      }
+      const number = [1, 2, 3, 4, 5, 6, 7, 23];
+
+      function filter(n) {
+        if (n > 3) {
+          return n % 2 !== 0;
+        }
+      }
+
+      number.filter(filter);
+
+      function find(n) {
+        return n < 18;
+      }
+
+      number.find(find);
+
+      const numberss = [1, 2, 3, 4, 5, 5, 200, 23];
+
+      function somma(acc, n) {
+        return (acc = acc + n);
+      }
+
+      numbers.reduce(somma);
+
+      const people = [
+        { name: "Alice", age: 25 },
+        { name: "Bob", age: 17 },
+        { name: "Charlie", age: 20 },
+      ];
+
+      function trova(p) {
+        if (p.age > 18 && p.age < 24) {
+          return true;
+        }
+      }
+      console.log(people.findIndex(trova));
+    </script>
+  </body>
+</html>

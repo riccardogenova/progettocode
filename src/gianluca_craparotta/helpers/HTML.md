@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # Comandi di base HTML
 
 HTML (HyperText Markup Language) è il linguaggio standard utilizzato per creare e strutturare le pagine web. In questo documento, vedremo i comandi di base di HTML utilizzati per creare contenuti web.

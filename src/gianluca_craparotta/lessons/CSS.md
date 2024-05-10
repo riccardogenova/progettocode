@@ -1,5 +1,3 @@
-<!-- @format -->
-
 Il CSS (Cascading Style Sheets) è un linguaggio di stile utilizzato per definire l'aspetto e il layout degli elementi HTML in una pagina web.
 
 ### Come funziona il CSS:
