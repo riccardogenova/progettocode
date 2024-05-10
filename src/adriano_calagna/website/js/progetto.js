@@ -1,7 +1,7 @@
-var bottone = document.getElementById("bottone");
-bottone.addEventListener("click", function () {
-  console.log("ciao");
-  bottone.style.display = "none";
-});
+/** @format */
 
-var 
+var bottone = document.getElementById('bottone');
+bottone.addEventListener('click', function () {
+  console.log('ciao');
+  bottone.style.display = 'none';
+});
