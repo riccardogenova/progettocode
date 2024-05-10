@@ -160,3 +160,42 @@ quale metodo viene utilizzato per aggiungere un nuovo attributo o modificare il 
 come si può clonare un nodo in javascript senza clonare i suoi event listeners? come si può clonare con gli eventi listeners?
 
 come si può verificare se un elemento ha una classe specifica in javascript? hasClass
+
+# 07.05
+
+# Manipolazione di un array:
+
+const students = ["nome1","nome2","nome3","nome4","nome5","nome6"]
+let groupBy = 0;
+const studentsGrouped = [
+["nome1","nome2","nome3"]
+["nome4","nome5","nome6"]
+]
+
+function addStudentsToList(studentName) {
+students.push(studentName)
+}
+
+function randomStudent() {
+const random = Math.random();
+return random - 0.5;
+}
+
+function generateGroups() {
+const copyStudents = [...students];
+copyStudents.sort(randomStudent) <!-- il punto sort come parametro vuole una funzione -->
+for (let i = 0; i < copyStudents.length; i ++) {
+const newArrey = copyStudents.splice(0, groupBy)
+studentsGrouped.push(newArrey)
+}
+}
+
+function selectGroupBy(selectedGroupBy) {
+groupBy = selectedGroupBy
+}
+
+Metodi mutabili degli arrey (cercare):
+
+modificare l'arrey di partenza
+
+Metodi inmutabili degli arrey (cercare):
