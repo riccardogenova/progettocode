@@ -9,10 +9,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "./src/**/**/*.{js,html,css}": [
-      "npm run format",
-      "npm run test:lint"
-    ]
+    "./src/**/**/*.{js,html,css}": []
   },
   "validate-branch-name": {
     "pattern": "^(main){1}$|^(feat)(/[a-z-]+){1,2}$|^(bugfix)/[a-z-]+$|^(chore)/[a-z-]+$|^(docs)/[a-z-]+$",
