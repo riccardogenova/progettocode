@@ -1,0 +1,98 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIT SHEET</title>
+    <link rel="stylesheet" href="./../css files/pages.css" />
+  </head>
+  <body>
+    <header class="menu">
+      <div class="menu-logo">RAFFAELE SCALA</div>
+      <div class="menu-content">
+        <div class="menu-items">
+          <a href="./helpers_redirect.html">HELPERS</a>
+          <a href="./../lessons/lessons_redirect.html">LESSONS</a>
+        </div>
+        <a href="">SIGN IN</a>
+      </div>
+    </header>
+    <div class="div-box">
+      <div class="navigation">
+        <a href="./../../index.html">HOME</a>> <a href="./helpers_redirect.html">HELPERS</a>>
+        <a href="./git_cheat_sheet.html">GIT SHEET</a>
+      </div>
+      <div class="text">
+        <h1>Configuration</h1>
+        <pre><code>git config</code>: Configura le impostazioni di Git, come il nome utente, l'email, ecc.</pre>
+        <pre><code>git config --global user.name "Tuo Nome"</code>: Imposta il nome dell'utente.</pre>
+        <pre><code>git config --global user.email "tua@email.com"</code>: Imposta l'indirizzo email dell'utente.</pre>
+
+        <h1>Creation and Cloning of a Repository</h1>
+        <pre><code>git init</code>: Crea un nuovo repository Git nella directory corrente.</pre>
+        <pre><code>git clone &lt;url&gt;</code>: Clona un repository Git esistente nella directory corrente.</pre>
+
+        <h1>Files operations</h1>
+        <pre><code>git add &lt;file&gt;</code>: Aggiunge un file al prossimo commit.</pre>
+        <pre><code>git add .</code>: Aggiunge tutti i file al prossimo commit.</pre>
+        <pre><code>git rm &lt;file&gt;</code>: Rimuove un file dal repository e dall'indice.</pre>
+        <pre><code>git mv &lt;file_originale&gt; &lt;file_rinominato&gt;</code>: Rinomina o sposta un file nel repository.</pre>
+        <pre><code>git reset</code>: Annulla le modifiche locali nel repository.</pre>
+
+        <h1>Commit</h1>
+        <pre><code>git commit -m "&lt;messaggio&gt;"</code>: Registra le modifiche nel repository con un messaggio descrittivo.</pre>
+        <pre><code>git commit -a -m "Messaggio del commit"</code>: Aggiunge automaticamente e committa tutti i file modificati.</pre>
+        <pre><code>git commit --amend</code>: Modifica l'ultimo commit.</pre>
+        <pre><code>git reset codice del commit</code>: Passa a una versione di commit a scelta.</pre>
+        <pre><code>git show &lt;commit&gt;</code>: Visualizza informazioni dettagliate su un commit specifico.</pre>
+
+        <h1>Repository status</h1>
+        <pre><code>git status</code>: Mostra lo stato dei file nel repository.</pre>
+        <pre><code>git log</code>: Visualizza la cronologia dei commit.</pre>
+        <pre><code>git log --oneline</code>: Mostra la cronologia dei commit in formato breve.</pre>
+        <pre><code>git log --graph --oneline --all</code>: Mostra una visualizzazione grafica dei rami e dei commit.</pre>
+
+        <h1>Branching</h1>
+        <pre><code>git branch</code>: Visualizza, crea o elimina rami.</pre>
+        <pre><code>git branch &lt;nome del ramo&gt;</code>: Crea un nuovo ramo.</pre>
+        <pre><code>git branch -m &lt;nome del ramo&gt;</code>: Cambia nome al ramo.</pre>
+        <pre><code>git checkout &lt;branch&gt;</code>: Cambia ramo o recupera file dalla commit storiche.</pre>
+        <pre><code>git checkout -b &lt;nome del branch&gt;</code>: per creare e spostarti direttamente su quel branch.</pre>
+        <pre><code>git branch -d "seguito dal nome del branch che desideri eliminare"</code>: Elimina il branch che hai nominato. Se utilizzi "-D" (Maiuscolo) forzi l'eliminazione.</pre>
+        <pre><code>git cherry-pick &lt;ID commit&gt;</code>: Applica le modifiche di un singolo commit al ramo in cui siamo.</pre>
+
+        <h1>Merge and Rebase</h1>
+        <pre><code>git merge &lt;branch&gt;</code>: Unisce un altro ramo al ramo corrente.</pre>
+        <pre><code>git rebase</code>: Ricostruisce la cronologia del ramo corrente riapplicando i commit su un'altra base.</pre>
+
+        <h1>Remote Controls</h1>
+        <pre><code>git remote add &lt;name&gt; &lt;url&gt;</code>: Aggiunge un repository remoto con un nome specificato.</pre>
+        <pre><code>git remote -v</code>: Visualizza i repository remoti collegati.</pre>
+        <pre><code>git remote rm &lt;name&gt;</code>: Rimuove un repository remoto collegato al repository locale.</pre>
+        <pre><code>git remote</code>: Mostra l'elenco dei repository remoti collegati.</pre>
+        <pre><code>git push &lt;nome remoto&gt; &lt;nome ramo&gt;</code>: Carica i commit locali sul repository remoto.</pre>
+        <pre><code>git pull &lt;nome remoto&gt; &lt;nome ramo&gt;</code>: Aggiorna il repository locale con le modifiche del repository remoto.</pre>
+        <pre><code>git push origin --delete &lt;nome del branch remoto&gt;</code>: Se vuoi eliminare il branch remoto.</pre>
+
+        <h1>Conflict Resolution</h1>
+        <pre><code>git diff nome_branch1..nome_branch2</code>: Mostra le differenze tra due rami.</pre>
+        <pre><code>git mergetool</code>: Avvia un tool di merge per risolvere conflitti.</pre>
+        <pre><code>git reset nome-del-file</code>: Rimuove il file dalla zona di staging.</pre>
+        <pre><code>git reset --hard HASH-del-commit</code>: Resetta il repo al commit specificato eliminando quelli successivi.</pre>
+        <pre><code>git bisect</code>: Per individuare un file che ha introdotto un bug.</pre>
+
+        <h1>Others</h1>
+        <pre><code>git stash</code>: Nasconde le modifiche non commesse temporaneamente.</pre>
+        <pre><code>git tag &lt;nome del tag&gt;</code>: Crea un tag per segnare un momento importante.</pre>
+        <pre><code>git tag</code>: Gestisce i tag annotati per marcare punti importanti nella storia del repository.</pre>
+        <pre><code>git diff</code>: Mostra le differenze tra le modifiche non commesse e lo stato attuale dei file nel repository.</pre>
+        <pre><code>git fetch</code>: Recupera i commit, i rami e le modifiche dal repository remoto senza unire automaticamente nulla nel ramo locale.</pre>
+        <pre><code>git submodule</code>: Gestisce i repository incorporati all'interno di un altro repository Git.</pre>
+        <pre><code>git blame &lt;file&gt;</code>: Mostra chi ha modificato ogni riga di un file e in quale commit.</pre>
+        <pre><code>git grep &lt;pattern&gt;</code>: Cerca un testo nei file del repository.</pre>
+      </div>
+    </div>
+  </body>
+</html>

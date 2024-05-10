@@ -1,0 +1,38 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "header-max-length": [2, "always", 100],
+    "type-enum": [2, "always", ["chore", "docs", "feat", "fix", "refactor"]],
+    "scope-case": [2, "always", "lower-case"],
+    "scope-enum": [
+      2,
+      "always",
+      [
+        "adriano_calagna",
+        "alessio_affatigato",
+        "alessio_barila",
+        "andrea_marchese",
+        "antonio_marino",
+        "christian_esposito",
+        "davide_damico",
+        "flavio_leotta",
+        "francesco_serauto",
+        "gabriele_lo_re",
+        "gianluca_craparotta",
+        "giovanni_larosa",
+        "giuseppe_randazzo",
+        "giuseppe_savelli",
+        "maintainer",
+        "marco_speciale",
+        "michelangelo_candela",
+        "noemi_damato",
+        "rachele_consuelo",
+        "raffaele_scala",
+        "riccardo_motisi",
+        "samuele_salica",
+        "sofia_liggio",
+        "valerio_colibro"
+      ]
+    ]
+  }
+}

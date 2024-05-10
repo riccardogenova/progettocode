@@ -1,0 +1,15 @@
+/** @format */
+
+.red {
+  color: rgb(192, 35, 35);
+}
+span {
+  cursor: pointer;
+}
+.boom {
+  color: rgb(0, 255, 76);
+  font-size: 30px;
+}
+body {
+  transition: background-color 5s;
+}

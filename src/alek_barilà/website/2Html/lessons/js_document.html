@@ -1,0 +1,89 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Document</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-text"><h1>Alek Barilà</h1></div>
+      <div class="right-text">
+        <a href="../helpers.html"><strong>HELPERS</strong></a>
+        <a href="../lessons.html"><strong>LESSONS</strong></a>
+        <a href="../signin.html"><strong>SIGNIN</strong></a>
+      </div>
+    </header>
+    <div class="left-text">
+      <a href="../../../index.html"><strong>Home</strong></a>
+      >
+      <a href="../lessons.html"><strong>Lessons</strong></a>
+      >
+      <a href="./js_document.html"><strong>JS-Document</strong></a>
+    </div>
+    <div class="testata">
+      <h1>Oggetto Document in JavaScript</h1>
+    </div>
+    <div class="main">
+      <p>
+        L'oggetto <code>document</code> è un oggetto centrale nel modello ad oggetti del browser in JavaScript.
+        Rappresenta l'intero documento HTML attualmente caricato nel browser e fornisce metodi per manipolarlo
+        dinamicamente. Ecco alcuni concetti fondamentali relativi all'oggetto <code>document</code>:
+      </p>
+
+      <ol>
+        <li>
+          <strong>Accesso agli elementi:</strong> L'oggetto <code>document</code> fornisce diversi metodi per
+          selezionare e manipolare gli elementi HTML all'interno del documento. I più comuni sono
+          <code>getElementById</code>, <code>getElementsByClassName</code>, <code>getElementsByTagName</code>,
+          <code>querySelector</code>, e <code>querySelectorAll</code>.
+        </li>
+        <li>
+          <strong>Manipolazione del contenuto:</strong> Puoi utilizzare <code>document</code> per modificare il
+          contenuto del documento, sia testo che struttura HTML. Ad esempio, puoi modificare il testo di un elemento con
+          <code>innerText</code> o <code>innerHTML</code>, aggiungere nuovi elementi con <code>createElement</code> e
+          <code>appendChild</code>, o rimuovere elementi con <code>removeChild</code>.
+        </li>
+        <li>
+          <strong>Eventi:</strong> <code>document</code> gestisce gli eventi che si verificano nel contesto del
+          documento, come il caricamento della pagina (<code>DOMContentLoaded</code>), il clic del mouse, la pressione
+          dei tasti, ecc. Puoi aggiungere gestori di eventi utilizzando il metodo <code>addEventListener</code>.
+        </li>
+        <li>
+          <strong>Navigazione:</strong> Puoi utilizzare <code>document</code> per navigare tra gli elementi del
+          documento e le loro relazioni gerarchiche, come gli elementi figlio, i nodi fratelli, il padre di un elemento,
+          ecc.
+        </li>
+        <li>
+          <strong>Proprietà e metodi globali:</strong>
+          <code>document</code> contiene anche molte proprietà e metodi globali, ad esempio
+          <code>document.title</code> per accedere al titolo del documento, <code>document.URL</code> per ottenere l'URL
+          della pagina, <code>document.write</code> per scrivere direttamente nel documento, ecc.
+        </li>
+        <li>
+          <strong>Formulare:</strong> <code>document</code> fornisce metodi per accedere e manipolare i dati nei form,
+          ad esempio <code>document.forms</code> per accedere a tutti i form nella pagina, e
+          <code>document.getElementById('form_id').elements</code> per accedere ai campi di un determinato form.
+        </li>
+        <li>
+          <strong>Attributi globali:</strong> <code>document</code> include attributi globali come
+          <code>document.documentElement</code>, che restituisce l'elemento radice del documento (tipicamente
+          <code>&lt;html&gt;</code>), e <code>document.body</code>, che restituisce l'elemento
+          <code>&lt;body&gt;</code> del documento.
+        </li>
+      </ol>
+
+      <p>
+        L'oggetto <code>document</code> è uno strumento potente per manipolare dinamicamente la struttura e il contenuto
+        di una pagina web utilizzando JavaScript. Tuttavia, è importante utilizzarlo con cautela per evitare problemi di
+        accessibilità e prestazioni .
+      </p>
+    </div>
+    <footer>
+      <p>&copy; 2024 Alek</p>
+    </footer>
+  </body>
+</html>

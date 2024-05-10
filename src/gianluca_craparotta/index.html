@@ -1,0 +1,84 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        border: 1px solid white;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #e0f3e0;
+      }
+      .listrn {
+        display: flex;
+        list-style-type: none;
+      }
+      .listrn > li:not(:last-child) {
+        margin-right: 10px; /* Aggiunge un margine tra le parole, tranne all'ultimo elemento */
+      }
+
+      a {
+        text-decoration: none; /* Rimuove le sottolineature */
+        color: gray; /* Imposta il colore iniziale del testo */
+      }
+      a:active {
+        color: red; /* Cambia il colore del testo quando viene premuto */
+      }
+      #pagd {
+        padding: 20px;
+      }
+      h1 {
+        color: #007bff;
+      }
+      p {
+        line-height: 1.5;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="listrn">
+        <li><a href="">GIANLUCA CRAPAROTTA</a></li>
+      </ul>
+      <ul class="listrn">
+        <li><a href="project/link_progetti.html">project</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="index.html">home</a>
+    </div>
+    <div id="pagd">
+      <h1>Titolo</h1>
+      <p>prova prima pagina html</p>
+      <ul>
+        <a href="project/css.html"><li>CSS</li></a>
+        <a href="/giovanni_larosa/"><li>HTML</li></a>
+        <a href="project/git.html"><li>GIT</li></a>
+        <a href="project/markdown.html"><li>MARKDOWN</li></a>
+      </ul>
+    </div>
+  </body>
+</html>

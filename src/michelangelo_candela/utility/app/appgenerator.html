@@ -1,0 +1,51 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generatore</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/stvVHvV/code-1.png" />
+
+    <link rel="stylesheet" href="../app/style.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <div class="sfondo">
+      <div class="container-flex">
+        <div class="container">
+          <h1>Aggiungi Studenti</h1>
+          <div class="inputbox">
+            <input type="text" id="textInputStudents" placeholder="Nome Studente" required /><i
+              id="userIcon"
+              class="fa fa-user"
+            ></i>
+          </div>
+
+          <button class="btn" id="btnAddStudents" disabled>Aggiungi</button>
+          <button class="btn" id="btnResetStudents">Reset Lista</button>
+
+          <h1>Lista Studenti</h1>
+          <ol id="listStudents"></ol>
+        </div>
+        <div class="container">
+          <h1>Genera Gruppi</h1>
+          <label for="groupSize">Seleziona la grandezza del gruppo:</label>
+          <select id="groupSize">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <button class="btn" id="btnGenerateGroups">Genera</button>
+          <ul id="groupedStudents"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="../app/script.js"></script>
+  </body>
+</html>

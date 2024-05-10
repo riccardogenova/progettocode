@@ -1,0 +1,228 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Helpers GIT</title>
+    <link rel="stylesheet" href="../website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/82742da272.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><h1>Davide D'Amico</h1></div>
+        <nav class="menu">
+          <ul class="ulmenu">
+            <a href="../website.html">Home</a>
+            <a href="../helpers.html">Helpers</a>
+            <a href="../lessons.html">Lessons</a>
+            <a href="">Sign In<i class="fa-solid fa-right-to-bracket"></i></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <p>HOME</p>
+        <p>></p>
+        <p>HELPERS</p>
+        <p>></p>
+        <p>GIT</p>
+      </div>
+
+      <div class="default-css">
+        <h1>Git Cheat Sheet</h1>
+
+        <h2>Comandi di Base</h2>
+
+        <h3>Configurazione</h3>
+        <ul>
+          <li><code>git config --global user.name "Tuo Nome"</code>: Imposta il nome dell'utente.</li>
+          <li><code>git config --global user.email "tua@email.com"</code>: Imposta l'indirizzo email dell'utente.</li>
+          <li>
+            <code>git config --global core.editor "nome_del_tuo_editor"</code>: Imposta l'editor di testo preferito.
+          </li>
+        </ul>
+
+        <h3>Creazione e Clonazione di Repository</h3>
+        <ul>
+          <li><code>git init</code>: Inizializza un nuovo repository Git nella directory corrente.</li>
+          <li><code>git clone url_repository</code>: Clona un repository Git esistente nella tua directory locale.</li>
+        </ul>
+
+        <h3>Operazioni sui File</h3>
+        <ul>
+          <li><code>git add nome_file</code>: Aggiunge un file all'area di staging.</li>
+          <li><code>git add .</code>: Aggiunge tutti i file modificati all'area di staging.</li>
+          <li><code>git rm nome_file</code>: Rimuove un file dalla repository e dall'area di staging.</li>
+          <li>
+            <code>git mv vecchio_nome nuovo_nome</code>: Rinomina un file e aggiunge la modifica all'area di staging.
+          </li>
+          <li><code>git checkout -- nome_file</code>: Ripristina il file al suo ultimo stato committato.</li>
+        </ul>
+
+        <h3>Commit</h3>
+        <ul>
+          <li><code>git commit -m "Messaggio del commit"</code>: Esegue un commit con un messaggio descrittivo.</li>
+          <li>
+            <code>git commit -a -m "Messaggio del commit"</code>: Aggiunge automaticamente e committa tutti i file
+            modificati.
+          </li>
+          <li><code>git commit --amend</code>: Modifica l'ultimo commit.</li>
+        </ul>
+
+        <h2>Gestione del Repository</h2>
+
+        <h3>Stato</h3>
+        <ul>
+          <li><code>git status</code>: Mostra lo stato del repository.</li>
+          <li><code>git log</code>: Mostra la cronologia dei commit.</li>
+          <li><code>git log --oneline</code>: Mostra la cronologia dei commit in formato breve.</li>
+          <li>
+            <code>git log --graph --oneline --all</code>: Mostra una visualizzazione grafica dei rami e dei commit.
+          </li>
+        </ul>
+
+        <h3>Branching</h3>
+        <ul>
+          <li><code>git branch</code>: Mostra l'elenco dei rami presenti.</li>
+          <li><code>git branch nome_ramo</code>: Crea un nuovo ramo.</li>
+          <li><code>git branch -d nome_ramo</code>: Cancella il ramo.</li>
+          <li><code>git branch --contains &lt;commit&gt;</code>: Elenca tutti i rami che includono un certo commit.</li>
+          <li><code>git checkout nome_ramo</code>: Cambia ramo.</li>
+          <li><code>git checkout -b nome_ramo</code>: Crea e passa a un nuovo ramo.</li>
+          <li><code>git branch -m nuovo_nome</code>: Rinomina il ramo corrente.</li>
+          <li><code>git branch -D nome_del_branch</code>: Per eliminare un branch senza la conferma.</li>
+        </ul>
+
+        <h3>Merge e Riunione</h3>
+        <ul>
+          <li><code>git merge nome_ramo</code>: Esegue il merge di un ramo nel ramo corrente.</li>
+          <li>
+            <code>git merge --squash nome_branch</code>: Combina tutte le modifiche di <code>nome_branch</code> in un
+            singolo commit in staging, senza committare.
+          </li>
+          <li><code>git rebase nome_ramo</code>: Riunisce il ramo corrente con un altro ramo.</li>
+        </ul>
+
+        <h3>Remoti</h3>
+        <ul>
+          <li><code>git remote</code>: Mostra l'elenco dei repository remoti collegati.</li>
+          <li><code>git push nome_remoto nome_ramo</code>: Carica un ramo su un repository remoto.</li>
+          <li><code>git pull nome_remoto nome_ramo</code>: Scarica e fonde un ramo da un repository remoto.</li>
+          <li><code>git remote rename origin nuovo-nome</code>: Rinomina il repo da origin a nuovo-nome.</li>
+          <li>
+            <code>git remote remove origin</code>: Per eliminare il collegamento, se si vuole si può riaggiungere
+            tramite il comando precedente.
+          </li>
+          <li>
+            <code>git remote add origin URL</code>: Per connettere il repository così che ogni volta che si fa un push,
+            lo farà automaticamente in quel repository.
+          </li>
+          <li>
+            <code>git fetch --prune</code>: Serve ad aggiornare la lista dei branch remoti, rimuovendo quelli che non
+            esistono più sul remote.
+          </li>
+        </ul>
+
+        <h3>Altro</h3>
+        <ul>
+          <li><code>git clone url_repository</code>: Clona un repository Git esistente nella tua directory locale.</li>
+          <li><code>git fetch</code>: Recupera i riferimenti dai repository remoti senza effettuare il merge.</li>
+          <li><code>git diff</code>: Mostra le modifiche tra l'area di staging e l'ultimo commit.</li>
+          <li><code>git stash</code>: Mette da parte temporaneamente le modifiche non commesse.</li>
+          <li>
+            <code>git stash push</code>: Salva le modifiche correnti in uno stash e ripulisci il working directory.
+          </li>
+          <li><code>git stash save "messaggio"</code>: Salva lo stash con un messaggio.</li>
+          <li><code>git stash list</code>: Mostra l'elenco di tutti gli stash salvati.</li>
+          <li><code>git stash show</code>: Mostra un sommario delle modifiche nel più recente stash.</li>
+          <li><code>git stash apply</code>: Riapplica le modifiche salvate nello stash più recente.</li>
+          <li>
+            <code>git stash pop</code>: Applica le modifiche dello stash più recente e lo rimuove dall'elenco degli
+            stash.
+          </li>
+          <li><code>git stash drop</code>: Elimina lo stash specificato dall'elenco degli stash.</li>
+          <li><code>git stash clear</code>: Rimuove tutti gli stash salvati.</li>
+          <li>
+            <code>git stash branch nome_ramo</code>: Crea un nuovo ramo e applica lo stash più recente a quel ramo.
+          </li>
+          <li><code>git tag nome_tag hash.commit</code>: Crea un tag per un commit specifico.</li>
+          <li>
+            <code>git blame nome_file</code>: Mostra chi ha fatto quali modifiche e quando, in ciascuna riga di un file.
+          </li>
+          <li>
+            <code>git checkout nome_del_file</code>: Dopo essere tornati indietro a prima della modifica, se vogliamo
+            cancellare il file precedentemente modificato perché non ci serve più.
+          </li>
+        </ul>
+
+        <h2>Risoluzione dei Conflitti</h2>
+        <ul>
+          <li><code>git diff nome_branch1..nome_branch2</code>: Mostra le differenze tra due rami.</li>
+          <li><code>git mergetool</code>: Avvia un tool di merge per risolvere conflitti.</li>
+          <li><code>git reset nome_del_file</code>: Rimuove il file dalla zona di staging.</li>
+          <li>
+            <code>git reset --hard HASH_del_commit</code>: Resetta il repo al commit specificato eliminando quelli
+            successivi.
+          </li>
+          <li><code>git reset id_unico_del_commit</code>: Per tornare ad una versione precedente del file.</li>
+          <li>
+            <code>git reset --hard origin/master</code>: Per cancellare ciò che ho in locale su VSC e prendere ciò che
+            ho in remoto sul repo.
+          </li>
+          <li>
+            <code>git reset --hard HEAD</code>: Per ripristinare il tuo repository Git allo stato dell'ultimo commit,
+            annullando tutte le modifiche non committate.
+          </li>
+        </ul>
+
+        <h2>Sviluppo Distribuito</h2>
+        <ul>
+          <li><code>git remote -v</code>: Visualizza gli URL dei repository remoti collegati.</li>
+          <li><code>git fetch origin</code>: Recupera i cambiamenti dal repository remoto origin.</li>
+          <li><code>git push origin nome_ramo</code>: Carica un ramo nel repository remoto origin.</li>
+          <li>
+            <code>git pull origin nome_ramo</code>: Tira i cambiamenti dal repository remoto origin e fonde con il ramo
+            corrente.
+          </li>
+          <li>
+            <code>git push origin --delete nome_branch</code>: Serve a cancellare il branch dal repository remoto.
+          </li>
+          <li><code>git branch -r</code>: Serve a mostrare tutti i branch remoti.</li>
+        </ul>
+
+        <h2>Applicazione di Singoli Commit</h2>
+        <ul>
+          <li>
+            <code>git cherry-pick commit_hash</code>: Applica le modifiche del commit specificato al ramo corrente.
+          </li>
+          <li>
+            <code>git cherry-pick --edit commit_hash</code>: Applica il commit specificato ma consente di modificare il
+            messaggio del commit prima di finalizzare l'operazione.
+          </li>
+          <li>
+            <code>git cherry-pick --no-commit commit_hash</code>: Applica le modifiche del commit specificato al ramo
+            corrente senza creare un nuovo commit.
+          </li>
+          <li>
+            <code>git cherry-pick --signoff commit_hash</code>: Applica il commit specificato aggiungendo una riga
+            'Signed-off-by' con il tuo nome e indirizzo email, come configurato in Git.
+          </li>
+          <li><code>git cherry-pick --continue</code>: Continua un cherry-pick dopo aver risolto i conflitti.</li>
+          <li><code>git cherry-pick --abort</code>: Annulla un'operazione di cherry-pick in corso.</li>
+          <li>
+            <code>git cherry-pick --skip</code>: Salta il commit corrente durante un cherry-pick, utile se il commit è
+            già stato applicato o non è necessario.
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

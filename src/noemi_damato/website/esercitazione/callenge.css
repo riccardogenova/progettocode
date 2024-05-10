@@ -1,0 +1,8 @@
+/** @format */
+
+.contenitore {
+  display: flex;
+  flex-direction: row;
+  align-items: right;
+  justify-content: right;
+}

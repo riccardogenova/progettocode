@@ -1,8 +1,0 @@
-- `# Titolo` per un'intestazione di primo livello
-- `## Titolo` per un'intestazione di secondo livello
-- `*testo in corsivo*` per testo in corsivo
-- `**testo in grassetto**` per testo in grassetto
-- `- Elemento 1` per un elemento di elenco non ordinato
-- `1. Elemento 1` per un elemento di elenco ordinato
-- `[testo del link](URL)` per creare un link
-- `![testo alternativo](URL dell'immagine)` per inserire un'immagine

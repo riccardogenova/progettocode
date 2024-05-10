@@ -1,0 +1,567 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheat Sheet - CODE</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/6528/6528597.png" />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Inizio Header -->
+    <div class="headerCODE">
+      <a href="../../index.html"><i class="fa fa-code"></i> CODE</a>
+      <a href="https://github.com/Mx444" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    </div>
+    <!-- Fine Header -->
+    <!--Inizio Container-->
+    <div class="container">
+      <!--Inizio sidebar-->
+      <div class="sidebar">
+        <p id="menu-title"><b>💻 Progetto CODE</b></p>
+        <li class="Menu">
+          <i class="fa fa-home"></i>
+          <a class="list-home" href="../../index.html"> Home</a>
+        </li>
+        <li class="Menu">
+          <i class="fa fa-folder"></i>
+          <a href="./docs.html"> Documenti</a>
+        </li>
+        <li class="Menu">
+          <i class="fa fa-code"></i>
+          <a href="./sheet.html"> Cheat Sheet</a>
+        </li>
+        <li class="Menu">
+          <i class="fa fa-book"></i>
+          <a href="./vocabulary.html"> Vocabolario</a>
+        </li>
+        <p id="menu-title"><b>🌐 GitHub</b></p>
+        <li class="Menu">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/Mx444/progetto-code" target="_blank">Mx444/progetto-code</a>
+        </li>
+        <li class="Menu">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/Mx444/progettocode-v2" target="_blank">Mx444/progettocode-v2</a>
+        </li>
+        <li class="Menu">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/riccardogenova/progettocode-v2" target="_blank">riccardogenova/progettocode-v2</a>
+        </li>
+      </div>
+      <!--Fine sidebar-->
+      <!--Inizio Content-->
+      <div class="content">
+        <!--Inizio CheatSheet-->
+        <h1>Cheat Sheet</h1>
+        <p>
+          <b>Benvenuto nella sezione delle cheat sheet!</b> Qui troverai un prezioso assortimento di fogli di
+          riferimento, pronti a semplificare il tuo lavoro o studio. <b>Le cheat sheet sono come mappe</b> dettagliate
+          che ti guidano attraverso complessi territori di conoscenza,
+          <b>offrendoti un rapido accesso alle informazioni essenziali</b>. Che tu debba ricordare la sintassi di un
+          linguaggio di programmazione, i comandi di un framework o le migliori pratiche di progettazione,
+          <b>queste cheat sheet sono qui per darti una mano</b>. Sia che tu sia alle prime armi nel campo dello sviluppo
+          o un veterano esperto, troverai in queste risorse un prezioso alleato per massimizzare la tua produttività e
+          la tua efficienza. Preparati a esplorare e a scoprire tutto ciò di cui hai bisogno,
+          <b>tutto a portata di mano!</b>
+        </p>
+        <img
+          id="gpull"
+          src="https://user-images.githubusercontent.com/74038190/219923809-b86dc415-a0c2-4a38-bc88-ad6cf06395a8.gif"
+        />
+        <!--Inizio CheatSheet-->
+        <!--Inizio Terminale-->
+        <div class="box">
+          <h2>
+            Terminale
+            <img
+              src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif"
+              width="20px
+            "
+            />
+          </h2>
+          <details>
+            <summary>
+              <p>
+                Questa categoria comprende una serie di comandi utilizzati per interagire con un
+                <b>terminale o una shell</b>
+              </p>
+            </summary>
+
+            <h3>Gestione dei file e delle directory</h3>
+
+            <code>
+              - <b>ls</b>: Elencare i file e le directory in una directory.<br />
+              - <b>cd</b>: Cambiare la directory corrente.<br />
+              - <b>mkdir</b>: Creare una nuova directory.<br />
+              - <b>touch</b>: Creare un nuovo file vuoto o aggiornare i timestamp di un file esistente.<br />
+              - <b>cp</b>: Copiare file e directory.<br />
+              - <b>mv</b>: Spostare o rinominare file e directory.<br />
+              - <b>rm</b>: Rimuovere file e directory.<br />
+              - <b>chmod</b>: Modificare i permessi dei file.<br />
+              - <b>chown</b>: Modificare il proprietario e il gruppo di un file.<br />
+              <h3>Visualizzazione e modifica dei file</h3>
+              - <b>cat</b>: Visualizzare il contenuto di un file.<br />
+              - <b>less</b> o <b>more</b>: Visualizzare il contenuto di un file uno schermo alla volta.<br />
+              - <b>nano</b> o <b>vim</b>: Editor di testo a riga di comando.<br />
+              - <b>head</b>: Visualizzare le prime righe di un file.<br />
+              - <b>tail</b>: Visualizzare le ultime righe di un file.<br />
+              <h3>Gestione dei processi</h3>
+              - <b>ps</b>: Visualizzare i processi in esecuzione. <br />
+              - <b>kill</b>: Terminare un processo.<br />
+              - <b>top</b> o <b>htop</b>: Visualizzare i processi in tempo reale e le risorse di sistema.<br />
+              - <b>bg</b>: Mettere un processo in esecuzione in background.<br />
+              - <b>fg</b>: Riportare un processo in esecuzione in foreground.<br />
+              <h3>Gestione del sistema e delle risorse</h3>
+              - <b>uname</b>: Mostrare informazioni sul sistema.<br />
+              - <b>df</b>: Mostrare lo spazio su disco disponibile.<br />
+              - <b>du</b>: Mostrare lo spazio utilizzato dalle directory.<br />
+              - <b>free</b>: Mostrare la memoria libera e utilizzata.<br />
+              - <b>uptime</b>: Mostrare il tempo di attività del sistema e la media di carico.<br />
+              <h3>Rete e connessioni</h3>
+              - <b>ifconfig</b> o <b>ip</b>: Mostrare e configurare le interfacce di rete.<br />
+              - <b>ping</b>: Testare la connettività di rete.<br />
+              - <b>netstat</b>: Tabelle di routing e le statistiche delle interfacce.<br />
+              - <b>ssh</b>: Connessione remota a un altro sistema.<br />
+              - <b>scp</b>: Copiare file tramite SSH.<br />
+              <h3>Compressione e archiviazione</h3>
+              - <b>tar</b>: Creare, visualizzare o estrarre file archivio .tar.<br />
+              - <b>gzip</b> o <b>gunzip</b>: Comprimere o decomprimere file .gz.<br />
+              - <b>zip</b> o <b>unzip</b>: Creare, visualizzare o estrarre file archivio .zip.<br />
+            </code>
+          </details>
+        </div>
+        <!--Fine Terminale-->
+        <!--Inizio GIT-->
+        <div class="box">
+          <h2>
+            GIT
+            <img
+              src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif"
+              width="20px
+          "
+            />
+          </h2>
+          <details>
+            <summary>
+              <p>
+                Questa categoria comprende una serie di comandi utilizzati per
+                <b>gestire repository Git</b>, tracciare modifiche nel codice sorgente e collaborare con altri
+                sviluppatori.
+              </p>
+            </summary>
+
+            <h3>Configurazione</h3>
+
+            <code
+              >- <b>git config</b>: Impostare le configurazioni di Git come nome utente, email, alias, ecc.<br />
+              - <b>git config --global user.name "Nome"</b>: Impostare il nome utente a livello globale.<br />
+              - <b>git config --global user.email "email@example.com"</b>: Impostare l'email utente a livello
+              globale.<br />
+              - <b>git config --global core.editor "editor"</b>: Impostare l'editor predefinito per i messaggi di
+              commit.<br />
+              - <b>git config --global alias.alias-name "git-command"</b>: Creare alias per comandi Git frequentemente
+              utilizzati.<br />
+              - <b>git remote add origin repository_URL</b>: Viene utilizzato per aggiungere un "remote" al repository
+              Git locale.<br />
+              - <b>git remote remove origin</b>: rimuovere il repository remoto.<br />
+              - <b>git config --globalcredential.helperstore</b>: Memorizzare le credenziali<br />
+              <h3>Inizializzazione e clonazione</h3>
+              - <b>git init</b>: Inizializzare un nuovo repository Git nella directory corrente.<br />
+              - <b>git clone url</b>: Clonare un repository Git esistente.<br />
+              <h3>Gestione dei cambiamenti</h3>
+              - <b>git add file</b>: Aggiunge file al staging area.<br />
+              - <b>git add .</b>: Aggiunge tutti i file modificati nella directory corrente allo staging area.<br />
+              - <b>git add -p</b>: Aggiunge in modo interattivo solo alcune parti di un file allo staging area.<br />
+              - <b>git commit -m "messaggio"</b>: Committa i cambiamenti nello staging area nel repository.<br />
+              - <b>git commit --amend</b>: Modifica l'ultimo commit.<br />
+              - <b>git status</b>: Mostra lo stato dei file nel repository.<br />
+              - <b>git diff</b>: Mostra le differenze tra il working directory e lo staging area.<br />
+              - <b>git diff --cached</b>: Mostra le differenze tra lo staging area e l'ultimo commit.<br />
+              - <b>git checkout -- file</b>: Annulla le modifiche non commesse a un file nel working directory.<br />
+              - <b>git log -p file</b>: Mostra la history dei commit per un file specifico.<br />
+              - <b>git mv file_originale file_destinazione</b>: Sposta o rinomina un file e gestisce le modifiche in
+              Git.<br />
+              - <b>git rm file</b>: Rimuove un file dal repository Git e lo elimina dalla directory di lavoro.<br />
+              - <b>git restore file</b>: Ripristina file dallo staging area o dal commit precedente.<br />
+              - <b>git --hard hash</b>: Sposta il ramo e l'HEAD al commit specifico.<br />
+              - <b>git checkout [file]</b>: Cambia il ramo o recupera un file dallo stato precedente.<br />
+              - <b>git stash</b>: Mette da parte le modifiche non commesse.<br />
+              - <b>git stash apply</b>: Riapplica le modifiche messe da parte.<br />
+              - <b>git stash list</b>: Elenca le modifiche messe da parte.<br />
+              - <b>git cherry-pick</b>: Applica un singolo commit da un ramo a un altro.<br />
+              - <b>git log--follow file</b>: Visualizza la cronologia dei commit di un file,anche se è stato
+              rinominato.<br />
+              <h3>Branching e merging</h3>
+              - <b>git branch</b>: Elencare, creare o eliminare branch.<br />
+              - <b>git branch nome_branch</b>: Creare un nuovo branch con il nome specificato.<br />
+              - <b>git branch -d branch</b>: Eliminare un branch locale.<br />
+              - <b>git push origin --delete branch</b>: Eliminare un branch remoto.<br />
+              - <b>git branch -m old-branch new-branch</b>: Rinominare un branch.<br />
+              - <b>git checkout branch</b>: Passare tra branch o ripristinare file dalla history.<br />
+              - <b>git checkout -b new-branch</b>: Creare un nuovo branch e passarci immediatamente.<br />
+              - <b>git merge branch</b>: Unire i cambiamenti di un branch in un altro.<br />
+              - <b>git merge --abort</b>: Annullare un merge in corso e ripristinare lo stato precedente.<br />
+              - <b>git rebase branch</b>: Riapplicare i commit di un branch su un altro.<br />
+              - <b>git branch -a</b>: Elenca tutti i rami disponibili, inclusi quelli remoti.<br />
+              - <b>git merge--squash branch</b>: Fonde i cambiamenti da un ramo in un nuovo commit.<br />
+              - <b>git branch --contains commit</b>: Elenca i rami che contengono il commit specificato.<br />
+              <h3>Sincronizzazione con il repository remoto</h3>
+              - <b>git fetch</b>: Recuperare i commit dal repository remoto senza integrarli.<br />
+              - <b>git pull</b>: Estrarre e integrare i cambiamenti dal repository remoto nella branch corrente.<br />
+              - <b>git push</b>: Caricare i commit locali sul repository remoto.<br />
+              - <b>git push -f</b>:Forza i commit locali sul repository remoto ignorando eventuali conflitti.<br />
+              <h3>Ricerca e visualizzazione della history</h3>
+              - <b>git log</b>: Visualizzare la history dei commit.<br />
+              - <b>git show commit</b>: Visualizzare i dettagli di un commit specifico.<br />
+              - <b>git blame file</b>: Visualizzare l'ultimo commit che ha modificato ciascuna linea di un file.<br />
+              - <b>git grep testo</b>: Cercare testo nei file del repository.<br />
+              - <b>git diff</b>: Mostra lo stato attuale dell'area di lavoro e lo stato degli ultimi commit.<br />
+              - <b>git log --oneline</b>:Commit in una forma compatta.<br />
+              - <b>git tag[nome_tag][commit]</b>: Aggiunge un tag a un determinato commit.<br />
+              <h3>Gestione dei conflitti</h3>
+              - <b>git status</b>: Mostrare lo stato del repository, inclusi eventuali conflitti.<br />
+              - <b>git merge branch</b>: Unire i cambiamenti di un branch in un altro e risolvere i conflitti.<br />
+              - <b>git mergetool</b>: Utilizzare uno strumento grafico per risolvere i conflitti di merge.<br />
+              <h3>Altro</h3>
+              - <b>git stash</b>: Nascondere le modifiche non commesse per utilizzarle in seguito.<br />
+              - <b>git tag nome</b>: Etichettare un commit con un nome significativo.<br />
+              - <b>git remote -v</b>: Mostrare i repository remoti configurati.<br />
+              - <b>git fetch --all</b>: Recuperare tutti i riferimenti dal repository remoto.<br
+            /></code>
+          </details>
+        </div>
+        <!--Fine GIT-->
+        <!--Inizio Markdown-->
+        <div class="box">
+          <h2>
+            Markdown
+            <img
+              src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif"
+              width="20px
+          "
+            />
+          </h2>
+          <details>
+            <summary>
+              <p>
+                Questa categoria comprende una serie di comandi utilizzati per
+                <b>formattare il testo</b> e la struttura dei documenti utilizzando la sintassi Markdown.
+              </p>
+            </summary>
+            <code>
+              <h3>Intestazioni</h3>
+              # Intestazione 1<br />
+              ## Intestazione 2<br />
+              ### Intestazione 3<br />
+
+              <h3>Formattazione del testo</h3>
+              - <b>Grassetto</b>: <code>**testo in grassetto**</code><br />
+              - <i>Corsivo</i>: <code>*testo in corsivo*</code><br />
+              - <strike>Barrato</strike>: <code>~~testo barrato~~</code><br />
+              - <code>Codice</code>: Utilizzare backtick (\`) per racchiudere il testo come
+              <code>\`codice\`</code>.<br />
+
+              <h3>Liste</h3>
+              - <b>Elenco puntato</b>: <code>* Elemento 1</code><br />
+              - <b>Elenco numerato</b>: <code>1. Elemento 1</code><br />
+
+              <h3>Link e immagini</h3>
+              - <b>Link</b>: <code>[Testo del link](URL)</code><br />
+              - <b>Immagine</b>: <code>![Testo alternativo](URL dell'immagine)</code><br />
+
+              <h3>Citazioni e blocchi di codice</h3>
+              - <b>Citazioni</b>: <code>> Questa è una citazione.</code><br />
+              - <b>Blocchi di codice</b>: Utilizzare tre backtick (\`\`\`) per creare blocchi di codice.<br />
+
+              <h3>Tabelle</h3>
+              | Header 1 | Header 2 |<br />
+              | -------- | -------- |<br />
+              | Cella 1 | Cella 2 |<br />
+              | Cella 3 | Cella 4 |<br />
+            </code>
+          </details>
+        </div>
+        <!--Fine Markdown-->
+        <!--Inizio HTML-->
+        <div class="box">
+          <h2>
+            HTML
+            <img
+              src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif"
+              width="20px"
+            />
+          </h2>
+          <details>
+            <summary>
+              <p>
+                Questa categoria include una serie di comandi utilizzati per creare e
+                <b>formattare contenuti web utilizzando il linguaggio di markup HTML</b>
+                (Hypertext Markup Language).
+              </p>
+            </summary>
+
+            <code>
+              <h3>Testo</h3>
+              - <b>p</b>: Paragrafo<br />
+              - <b>h1</b> to <b>h6</b>: Intestazioni di diversi livelli<br />
+              - <b>em</b>: Testo in corsivo<br />
+              - <b>strong</b>: Testo in grassetto<br />
+              - <b>u</b>: Testo sottolineato<br />
+              - <b>span</b>: Per gruppi di elementi inline <br />
+
+              <h3>Liste</h3>
+              - <b>ul</b>: Lista non ordinata<br />
+              - <b>ol</b>: Lista ordinata<br />
+              - <b>li</b>: Elemento di lista<br />
+
+              <h3>Link e Immagini</h3>
+              - <b>a</b>: Link ipertestuale<br />
+              - <b>img</b>: Immagine<br />
+              - <b>figure</b>: Contenitore per immagini e altre media<br />
+              - <b>figcaption</b>: Didascalia per elementi <b>figure</b><br />
+
+              <h3>Tabelle</h3>
+              - <b>table</b>: Tabella<br />
+              - <b>tr</b>: Riga di tabella<br />
+              - <b>td</b>: Cella di dati<br />
+              - <b>th</b>: Intestazione di colonna o riga<br />
+
+              <h3>Form</h3>
+              - <b>form</b>: Formulario<br />
+              - <b>input</b>: Campo di input<br />
+              - <b>textarea</b>: Area di testo multi-linea<br />
+              - <b>button</b>: Pulsante<br />
+              - <b>label</b>: Etichetta per un campo di input<br />
+              - <b>select</b>: Menu a tendina<br />
+              - <b>option</b>: Opzione in un menu a tendina<br />
+
+              <h3>Struttura</h3>
+              - <b>div</b>: Contenitore generico<br />
+              - <b>section</b>: Sezione<br />
+              - <b>header</b>: Intestazione<br />
+              - <b>footer</b>: Piè di pagina<br />
+              - <b>nav</b>: Navigazione<br />
+              - <b>article</b>: Contenuto autonomo, come post di blog o articoli<br />
+
+              <h3>Multimedia</h3>
+              - <b>video</b>: Video<br />
+              - <b>audio</b>: Audio<br />
+              - <b>source</b>: Fornisce media alternativi per <b>video</b> e <b>audio</b> <br />
+
+              <h3>Altro</h3>
+              - <b>meta</b>: Metadati del documento<br />
+              - <b>style</b>: Stile CSS direttamente nella pagina<br />
+              - <b>script</b>: Script JavaScript<br />
+              - <b>iframe</b>: Frame incorporato<br />
+              - <b>canvas</b>: Area per disegnare grafica dinamica tramite script<br />
+            </code>
+          </details>
+        </div>
+        <!--Fine HTML-->
+        <!--Inizio CSS-->
+        <div class="box">
+          <h2>
+            CSS
+            <img
+              src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif"
+              width="20px
+          "
+            />
+          </h2>
+
+          <details>
+            <summary>
+              <p>
+                Questa categoria include una serie di comandi utilizzati per
+                <b>stilizzare e formattare contenuti web utilizzando il linguaggio di stile CSS</b>
+                (Cascading Style Sheets).
+              </p>
+            </summary>
+
+            <h3>Selezionatori:</h3>
+
+            <p><b>Tipo:</b> elemento { }</p>
+            <p><b>ID:</b> #id { }</p>
+            <p><b>Classe:</b> .classe { }</p>
+            <p><b>Attributo:</b> [attributo=valore] { }</p>
+            <p><b>Pseudo-classe:</b> elemento:pseudo-classe { }</p>
+            <p><b>Pseudo-elemento:</b> elemento::pseudo-elemento { }</p>
+            <br />
+            <h3>Proprietà di posizionamento:</h3>
+            <p><b>Posizione:</b> position: valore;</p>
+            <p><b>Top, Bottom, Left, Right:</b> top: valore;, bottom: valore;, left: valore;, right: valore;</p>
+            <p><b>Z-index:</b> z-index: valore;</p>
+            <p><b>Float:</b> float: valore;</p>
+            <p><b>Chiarezza:</b> clear: valore;</p>
+            <br />
+            <h3>Dimensioni:</h3>
+            <p><b>Larghezza, Altezza:</b> width: valore;, height: valore;</p>
+            <p>
+              <b>Margine:</b> margin: valore;, margin-top: valore;, margin-bottom: valore;, margin-left: valore;,
+              margin-right: valore;
+            </p>
+            <p>
+              <b>Riempimento:</b> padding: valore;, padding-top: valore;, padding-bottom: valore;, padding-left:
+              valore;, padding-right: valore;
+            </p>
+            <p>
+              <b>Immagini di sfondo:</b> background-image: url('percorso');, background-size: valore;,
+              background-repeat: valore;
+            </p>
+            <br />
+            <h3>Tipografia:</h3>
+            <p><b>Carattere:</b> font-family: 'nome-font', sans-serif;</p>
+            <p><b>Dimensione del carattere:</b> font-size: valore;</p>
+            <p><b>Grassetto, Corsivo:</b> font-weight: valore;, font-style: valore;</p>
+            <p><b>Allineamento del testo:</b> text-align: valore;</p>
+            <p><b>Decorazione del testo:</b> text-decoration: valore;</p>
+            <p><b>Spaziatura delle lettere:</b> letter-spacing: valore;</p>
+            <p><b>Spaziatura delle parole:</b> word-spacing: valore;</p>
+            <p><b>Trasformazione del testo:</b> text-transform: valore;</p>
+            <br />
+            <h3>Colori e sfondi:</h3>
+            <p><b>Colore testo:</b> color: valore;</p>
+            <p><b>Sfondo:</b> background-color: valore;</p>
+            <p><b>Opacità:</b> opacity: valore;</p>
+            <p><b>Box-shadow:</b> box-shadow: valore;</p>
+            <p><b>Bordo:</b> border: valore;, border-radius: valore;</p>
+            <p><b>Outline:</b> outline: valore;</p>
+            <br />
+            <h3>Effetti di transizione e animazione:</h3>
+            <p><b>Transizione:</b> transition: proprietà durata timing-func;</p>
+            <p><b>Animazione:</b> animation: nome-animazione durata timing-func iterazioni direzione fill-mode;</p>
+            <p><b>Keyframes:</b> @keyframes nome-animazione { }</p>
+            <br />
+            <h3>Altre proprietà utili:</h3>
+            <p><b>Visualizzazione:</b> display: valore;</p>
+            <p><b>Overflow:</b> overflow: valore;</p>
+            <p><b>Cursori:</b> cursor: valore;</p>
+            <p><b>Zona di testo ridimensionabile:</b> resize: valore;</p>
+            <p><b>Visibilità:</b> visibility: valore;</p>
+            <p><b>Contorno del testo:</b> text-stroke: valore;</p>
+            <p><b>Riposizionamento del cursore:</b> caret-color: valore;</p>
+            <br />
+            <h3>Media Query:</h3>
+            <p>@media (condizione) { }</p>
+            <br />
+            <h3>Pseudo-classi utenti:</h3>
+            <p>:hover</p>
+            <p>:active</p>
+            <p>:focus</p>
+            <p>:visited</p>
+            <p>:nth-child(n)</p>
+            <p>:nth-of-type(n)</p>
+            <p>:first-child</p>
+            <p>:last-child</p>
+            <p>:first-of-type</p>
+            <p>:last-of-type</p>
+            <br />
+            <h3>Trasformazioni:</h3>
+            <p><b>Transform:</b> transform: valore;</p>
+            <p><b>Transform-origin:</b> transform-origin: valore;</p>
+            <p><b>Rotate(angle):</b> rotate(angle)</p>
+            <p><b>Scale(valore):</b> scale(valore)</p>
+            <p><b>Translate(valore):</b> translate(valore)</p>
+            <p><b>Skew(valore):</b> skew(valore)</p>
+            <br />
+            <h3>Flexbox:</h3>
+            <p><b>Display:</b> display: flex;</p>
+            <p><b>Flex-direction:</b> flex-direction: valore;</p>
+            <p><b>Justify-content:</b> justify-content: valore;</p>
+            <p><b>Align-items:</b> align-items: valore;</p>
+            <p><b>Flex-wrap:</b> flex-wrap: valore;</p>
+            <p><b>Flex:</b> flex: valore;</p>
+            <br />
+            <h3>Grid:</h3>
+            <p><b>Display:</b> display: grid;</p>
+            <p><b>Grid-template-columns:</b> grid-template-columns: valore;</p>
+            <p><b>Grid-template-rows:</b> grid-template-rows: valore;</p>
+            <p><b>Grid-gap:</b> grid-gap: valore;</p>
+            <p><b>Grid-column:</b> grid-column: valore;</p>
+            <p><b>Grid-row:</b> grid-row: valore;</p>
+            <p><b>Grid-area:</b> grid-area: valore;</p>
+            <p><b>Justify-items:</b> justify-items: valore;</p>
+            <p><b>Align-items:</b> align-items: valore;</p>
+            <p><b>Justify-self:</b> justify-self: valore;</p>
+            <p><b>Align-self:</b> align-self: valore;</p>
+            <br />
+            <h3>Variabili CSS:</h3>
+            <p><b>Dichiarazione:</b> --nome-variabile: valore;</p>
+            <p><b>Utilizzo:</b> var(--nome-variabile)</p>
+            <br />
+            <h3>Box-sizing:</h3>
+            <p>box-sizing: valore;</p>
+            <br />
+            <h3>Filtri CSS:</h3>
+            <p>filter: valore;</p>
+            <br />
+            <h3>Trasformazione 3D:</h3>
+            <p>perspective: valore;</p>
+            <p>transform-style: valore;</p>
+            <p>backface-visibility: valore;</p>
+            <br />
+            <h3>Testo multicolonna:</h3>
+            <p>column-count: valore;</p>
+            <p>column-gap: valore;</p>
+            <p>column-rule: valore;</p>
+            <br />
+            <h3>Maschera di clip:</h3>
+            <p>clip-path: valore;</p>
+            <br />
+            <h3>Conoscenza dello stack z-index:</h3>
+            <p>z-index: valore;</p>
+            <br />
+            <h3>Flusso del documento:</h3>
+            <p>direction: valore;</p>
+            <p>unicode-bidi: valore;</p>
+            <br />
+            <h3>Lista:</h3>
+            <p>list-style-type: valore;</p>
+            <p>list-style-image: url('percorso');</p>
+            <br />
+            <h3>Fluttuazioni delle animazioni:</h3>
+            <p>animation-delay: valore;</p>
+            <p>animation-direction: valore;</p>
+            <p>animation-fill-mode: valore;</p>
+            <p>animation-play-state: valore;</p>
+            <br />
+            <h3>Griglia di confini:</h3>
+            <p>grid-auto-columns: valore;</p>
+            <p>grid-auto-rows: valore;</p>
+            <br />
+            <h3>Trasformazione del colore:</h3>
+            <p>mix-blend-mode: valore;</p>
+            <p>backdrop-filter: valore;</p>
+            <br />
+            <h3>Contenuto dirietro l'elemento:</h3>
+            <p>content: valore;</p>
+            <br />
+            <h3>Contenuto strutturato:</h3>
+            <p>counter-reset: valore;</p>
+            <p>counter-increment: valore;</p>
+          </details>
+        </div>
+        <!--Fine CSS-->
+        <!--Fine Content-->
+      </div>
+      <!--Fine Container-->
+    </div>
+    <!--Inizio Footer-->
+    <footer>
+      <ul>
+        <li>
+          <a href="https://progettocode.it/" target="_blank">© Progetto CODE - 2024 </a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-arrow-up"></i></a>
+        </li>
+        <li><a href="#"></a></li>
+      </ul>
+    </footer>
+    <!--Fine Footer-->
+  </body>
+</html>

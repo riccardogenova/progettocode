@@ -1,0 +1,50 @@
+/** @format */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #bcabae;
+}
+.center-line {
+  height: 100vh;
+}
+.container {
+  display: flex;
+}
+.left-column {
+  flex: 1;
+  padding: 10px;
+}
+.right-column {
+  flex: 1;
+  padding: 10px;
+}
+button {
+  height: 32px;
+  font-size: 24px;
+  cursor: pointer;
+}
+button:disabled {
+  height: 32px;
+  font-size: 24px;
+  cursor: not-allowed;
+}
+
+input {
+  height: 28px;
+  font-size: 22px;
+}
+select {
+  height: 32px;
+  font-size: 24px;
+  margin: 0;
+}
+ol,
+li {
+  font-size: 24px;
+  margin-top: 6px;
+}
+ul {
+  font-size: 24px;
+  background-color: #2d2e2e;
+  color: white;
+}

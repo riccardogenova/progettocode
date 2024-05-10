@@ -1,0 +1,58 @@
+/** @format */
+
+body {
+  background-color: rgb(228, 226, 226);
+}
+.bar {
+  height: 50px;
+  background-color: #4e4b4b;
+  display: flex;
+}
+
+.punti {
+  position: absolute;
+  font-variant: normal;
+  line-height: 50px;
+  right: 40px;
+  text-decoration: none;
+}
+.punti a {
+  color: rgb(255, 255, 255);
+  margin-right: 50px;
+  font-size: large;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+}
+.bar p {
+  font-size: larger;
+  line-height: 15px;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+}
+.sfondo {
+  background-image: url('https://www.grillodesign.it/wp-content/uploads/2020/10/estonia.jpg');
+  opacity: 0.3;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 110%;
+}
+
+.my-link a {
+  text-decoration: none;
+  list-style-type: none;
+  font-size: larger;
+  color: black;
+  font-size: larger;
+}
+.my-link a:hover {
+  color: red;
+  text-decoration: none;
+  font-size: large;
+  list-style-type: none;
+}

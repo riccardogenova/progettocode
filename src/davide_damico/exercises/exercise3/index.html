@@ -1,0 +1,53 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container" onclick="addElement()">
+        <p id="color-text" onclick="changeColor()">Testo che cambia colore al click</p>
+        <p id="hide-text" onclick="hideText()">Testo che si nasconde al click</p>
+        <p id="change-text" onclick="changeText()">Testo da cambiare</p>
+        <p id="add-class" onclick="addClass()">Testo a cui viene aggiunta una classe css</p>
+        <p id="deleted-element">Elemento da eliminare tramite il button</p>
+        <p id="replaced-element">Elemento da sostituire con nuovo elemento</p>
+      </div>
+
+      <div class="container2">
+        <button onclick="removeElement()">Rimuovi elemento</button>
+        <button onclick="replaceElement()">Cambia elemento con nuovo elemento</button>
+      </div>
+      <div class="container1-2">
+        <p id="add-style">Clicca per modificare il css del testo sottostante</p>
+        <p id="style-element">Testo a cui viene modificato il css</p>
+        <p id="change-background">Passa il mouse per cambiare background</p>
+      </div>
+      <div class="container1-3">
+        <img src="../../personal_stuff/images_html_final_model_page/sito-web-1-a.webp" alt="image" id="img" />
+      </div>
+      <div class="container3">
+        <button onclick="changeImg()">Cambia image</button>
+        <button id="add-p">Aggiungi un 'p' prima del button</button>
+      </div>
+      <div class="container4">
+        <div class="p-box">
+          <p id="toggle-text">Appari / Sparisci</p>
+        </div>
+        <div class="btn-box">
+          <button id="show-btn">Mostra</button>
+          <button id="hide-btn">Nascondi</button>
+        </div>
+      </div>
+      <div class="container5">
+        <button id="add-element-with-delay">Aggiungi elemento con delay 5 sec</button>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts.js"></script>
+</html>

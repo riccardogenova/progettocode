@@ -1,0 +1,40 @@
+/** @format */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4a4a4b;
+  min-height: 3vw;
+  /* max-height: 10em; */
+}
+
+header > nav > a {
+  margin-right: 1.5vh;
+  /* margin-top: 3em; */
+  border: 2px solid #ff9500;
+  padding: 5px;
+  border-radius: 10px;
+  color: #ff9500;
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 1.5vh;
+}
+header > div > h2 {
+  margin: 0.5em 1em;
+}
+h2 {
+  color: #ff9500;
+}
+header > div > h2 > a {
+  /* margin-top: 5vh; */
+  color: #ff9500;
+  text-decoration: none;
+}
+
+.redirect:hover {
+  border: 2px solid #0b0c10;
+  background-color: #ff9500;
+  color: #0b0c10;
+}

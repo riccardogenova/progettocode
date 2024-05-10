@@ -1,0 +1,14 @@
+/** @format */
+
+body {
+  background-color: darkcyan;
+}
+
+main {
+  text-align: center;
+  padding-top: 100px;
+}
+
+main h2 {
+  font-size: 80px;
+}

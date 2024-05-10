@@ -1,0 +1,169 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lezione su JavaScript in HTML</title>
+  </head>
+  <body>
+    <h1>Introduzione a JavaScript in HTML</h1>
+
+    <p>
+      JavaScript è un linguaggio di scripting ampiamente utilizzato per aggiungere interattività e dinamicità alle
+      pagine web. In questa lezione, esploreremo i concetti fondamentali di JavaScript in HTML.
+    </p>
+
+    <h2>1. Che cos'è JavaScript?</h2>
+
+    <p>
+      JavaScript è un linguaggio di programmazione interpretato comunemente utilizzato per aggiungere funzionalità
+      dinamiche e interattive alle pagine web. È un linguaggio di scripting del lato client, il che significa che il
+      codice JavaScript viene eseguito sul computer dell'utente, nel suo browser web.
+    </p>
+
+    <h2>2. Incorporare JavaScript in HTML</h2>
+
+    <p>
+      È possibile incorporare JavaScript direttamente all'interno di un documento HTML utilizzando il tag
+      <code>&lt;script&gt;</code>.
+    </p>
+
+    <h3>Esempio:</h3>
+
+    ```html
+    <script>
+      // Codice JavaScript qui
+      alert('Ciao, mondo!');
+    </script>
+    ```
+
+    <h2>3. Variabili e tipi di dati</h2>
+
+    <p>
+      In JavaScript, è possibile dichiarare variabili utilizzando le parole chiave <code>var</code>, <code>let</code> o
+      <code>const</code>.
+    </p>
+
+    <h3>Esempio:</h3>
+
+    ```html
+    <script>
+      // Dichiarazione di una variabile
+      var nome = 'Mario';
+
+      // Dichiarazione di una costante
+      const PI = 3.14;
+
+      // Dichiarazione di una variabile let
+      let eta = 30;
+    </script>
+    ```
+
+    <p>I tipi di dati in JavaScript includono stringhe, numeri, booleani, array, oggetti, null e undefined.</p>
+
+    <h2>4. Operazioni aritmetiche e operatori</h2>
+
+    <p>
+      JavaScript supporta le operazioni aritmetiche di base come addizione, sottrazione, moltiplicazione e divisione.
+    </p>
+
+    <h3>Esempio:</h3>
+
+    ```html
+    <script>
+      var x = 10;
+      var y = 5;
+      var somma = x + y; // 15
+      var differenza = x - y; // 5
+      var prodotto = x * y; // 50
+      var divisione = x / y; // 2
+    </script>
+    ```
+
+    <p>
+      Gli operatori di confronto come <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>,
+      <code>&gt;=</code>, <code>&lt;=</code> vengono utilizzati per confrontare valori.
+    </p>
+
+    <h3>Esempio:</h3>
+
+    ```html
+    <script>
+      var a = 5;
+      var b = 10;
+
+      if (a < b) {
+        alert('a è minore di b');
+      } else {
+        alert('b è minore di a');
+      }
+    </script>
+    ```
+
+    <h2>5. Funzioni</h2>
+
+    <p>
+      Le funzioni in JavaScript sono blocchi di codice riutilizzabili. Possono accettare argomenti e restituire valori.
+    </p>
+
+    <h3>Esempio:</h3>
+
+    ```html
+    <script>
+      // Definizione di una funzione
+      function saluta(nome) {
+        alert('Ciao, ' + nome + '!');
+      }
+
+      // Chiamata alla funzione
+      saluta('Mario');
+    </script>
+    ```
+
+    <h2>6. Eventi</h2>
+
+    <p>
+      Gli eventi sono azioni che si verificano nel browser, come il clic del mouse o il caricamento di una pagina. È
+      possibile gestire gli eventi utilizzando JavaScript.
+    </p>
+
+    <h3>Esempio:</h3>
+
+    ```html
+    <button onclick="saluta()">Clicca qui</button>
+
+    <script>
+      // Funzione che gestisce l'evento click
+      function saluta() {
+        alert('Ciao, mondo!');
+      }
+    </script>
+    ```
+
+    <h2>7. DOM (Document Object Model)</h2>
+
+    <p>
+      Il DOM rappresenta la struttura della pagina web e consente a JavaScript di accedere e modificare gli elementi
+      HTML.
+    </p>
+
+    <h3>Esempio:</h3>
+
+    ```html
+    <p id="demo">Questo è un paragrafo.</p>
+
+    <script>
+      // Modifica del contenuto di un elemento HTML utilizzando il DOM
+      document.getElementById('demo').innerHTML = 'Questo è un nuovo testo.';
+    </script>
+    ```
+
+    <p>
+      Questi sono solo alcuni dei concetti fondamentali di JavaScript in HTML. JavaScript è un linguaggio potente e
+      flessibile che offre molte altre funzionalità per rendere le tue pagine web interattive e dinamiche. Continua a
+      esplorare e praticare per acquisire familiarità con questo linguaggio!
+    </p>
+  </body>
+</html>

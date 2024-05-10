@@ -1,0 +1,28 @@
+/** @format */
+
+h1 {
+  text-align: center;
+  color: rgb(50, 14, 181);
+}
+.sfondo {
+  background-image: url('https://blog.underc0de.org/wp-content/uploads/2020/09/CSS3-scaled.jpg');
+  opacity: 0.1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 100%;
+}
+p {
+  font-size: large;
+}
+ul {
+  font-size: large;
+}
+.punti {
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+}
