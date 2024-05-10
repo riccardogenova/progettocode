@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<!-- @format -->
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -36,33 +38,33 @@
       var names = [];
 
       function addName() {
-        var nameInput = document.getElementById("name").value.trim();
+        var nameInput = document.getElementById('name').value.trim();
 
-        if (nameInput === "") {
-          alert("Inserisci un nome valido.");
+        if (nameInput === '') {
+          alert('Inserisci un nome valido.');
           return;
         }
 
         names.push(nameInput);
         updateNamesList();
-        document.getElementById("name").value = "";
+        document.getElementById('name').value = '';
       }
 
       function updateNamesList() {
-        var namesList = document.getElementById("namesList");
-        namesList.innerHTML = "";
+        var namesList = document.getElementById('namesList');
+        namesList.innerHTML = '';
         names.forEach(function (name) {
-          var listItem = document.createElement("li");
+          var listItem = document.createElement('li');
           listItem.textContent = name;
           namesList.appendChild(listItem);
         });
       }
 
       function orderNames() {
-        var groupSize = parseInt(document.getElementById("groupSize").value);
+        var groupSize = parseInt(document.getElementById('groupSize').value);
 
         if (names.length === 0) {
-          alert("Inserisci almeno un nome.");
+          alert('Inserisci almeno un nome.');
           return;
         }
 
@@ -72,13 +74,12 @@
           groupedNames.push(shuffledNames.splice(0, groupSize));
         }
 
-        var output = document.getElementById("output");
-        output.innerHTML = "";
+        var output = document.getElementById('output');
+        output.innerHTML = '';
 
         groupedNames.forEach(function (group, index) {
-          var groupItem = document.createElement("li");
-          groupItem.textContent =
-            "Gruppo " + (index + 1) + ": " + group.join(", ");
+          var groupItem = document.createElement('li');
+          groupItem.textContent = 'Gruppo ' + (index + 1) + ': ' + group.join(', ');
           output.appendChild(groupItem);
         });
       }

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # HTML (HyperText Markup Language)
 
 HTML è il linguaggio di markup standard utilizzato per creare e strutturare contenuti su pagine web. È uno dei pilastri fondamentali del web insieme a CSS (Cascading Style Sheets) e JavaScript. HTML fornisce una serie di elementi o tag che consentono agli sviluppatori web di definire la struttura e il contenuto di una pagina web.

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 Il CSSOM (CSS Object Model) è una rappresentazione gerarchica delle regole CSS applicate a un documento HTML nel DOM (Document Object Model).
 
 ### Come funziona il CSSOM:

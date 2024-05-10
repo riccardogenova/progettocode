@@ -1,3 +1,5 @@
-document.getElementById("btn").addEventListener("click", function () {
-  this.style.display = "none";
+/** @format */
+
+document.getElementById('btn').addEventListener('click', function () {
+  this.style.display = 'none';
 });
