@@ -3,6 +3,10 @@
 //Esercizio 1
 
 const toggleText = document.getElementById('toggle-text');
+const hideButton = document.getElementById('hide');
+const showButton = document.getElementById('show');
+hideButton.addEventListener('click', hide);
+showButton.addEventListener('click', show);
 
 function hide() {
   toggleText.style.display = 'none';
