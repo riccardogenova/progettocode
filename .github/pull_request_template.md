@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ## Descrizione
 
 _Includi un riassunto delle modifiche e delle problematiche risolte_
@@ -19,7 +21,7 @@ _Indica se ci sono aspetti di cui essere a conoscenza o su cui hai bisogno di un
 - [ ] Firefox
 - [ ] Brave
 - [ ] Edge
-- [ ] Opera 
+- [ ] Opera
 
 ## Come testare - include un elenco di cose da testare
 
