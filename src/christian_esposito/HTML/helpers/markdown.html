@@ -1,133 +1,125 @@
-<!DOCTYPE html>
+<!-- @format -->
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/helpers_css/markdown.css">
-  <link rel="stylesheet" href="../css/utils/navbar.css">
-  <link rel="stylesheet" href="../css/utils/reset_all.css">
-  <link rel="stylesheet" href="../css/utils/bg_img.css">
-  <title>Markdown</title>
-</head>
-<body>
-  
-  <header>
-    <input type="checkbox" id="hamburger"/> 
-             <label class="menuicon" for="hamburger"> 
-                   <span></span> 
-             </label> 
-        <div id="bar"> 
-            <a id="logo" href="../index.html"></a> 
-                 <!--/fine logo-->
-        </div>
-          <nav class="menu-visibility">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/helpers_css/markdown.css" />
+    <link rel="stylesheet" href="../css/utils/navbar.css" />
+    <link rel="stylesheet" href="../css/utils/reset_all.css" />
+    <link rel="stylesheet" href="../css/utils/bg_img.css" />
+    <title>Markdown</title>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="hamburger" />
+      <label class="menuicon" for="hamburger">
+        <span></span>
+      </label>
+      <div id="bar">
+        <a id="logo" href="../index.html"></a>
+        <!--/fine logo-->
+      </div>
+      <nav class="menu-visibility">
+        <ul>
+          <li>
+            <a class="submenu" href="#">LEZIONI</a>
             <ul>
-        
-              <li><a class="submenu" href="#">LEZIONI</a>
-                <ul>
-                  <li>
-                    <a href="./git.html">Lezione GIT</a>
-                  </li>
-                  <li>
-                    <a href="./html.html"> Lezione HTML</a>
-                  </li>
-                  <li>
-                    <a href="./markdown.html"> Lezione MARKDOWN</a>
-                  </li>
-                  <li>
-                    <a href="./dom.html"> Lezione DOM</a>
-                  </li>
-                  <li>
-                    <a href="./css.html"> Lezione CSS</a>
-                  </li>
-                  <li>
-                    <a href="./css_om.html"> Lezione CSS_OM</a>
-                  </li>
-                </ul>
+              <li>
+                <a href="./git.html">Lezione GIT</a>
               </li>
-        
-              <li><a class="submenu" href="#"></a>HELPERS</a>
-                <ul>
-                  <li>
-                    <a href="../helpers/git_command.html">Git command</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/git_flows.html">Git Flows</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/markdown.html">MarkDown</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/tag_html.html">Tag Html</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/css_sheet.html">CSS</a>
-                  </li>
-                </ul>
+              <li>
+                <a href="./html.html"> Lezione HTML</a>
+              </li>
+              <li>
+                <a href="./markdown.html"> Lezione MARKDOWN</a>
+              </li>
+              <li>
+                <a href="./dom.html"> Lezione DOM</a>
+              </li>
+              <li>
+                <a href="./css.html"> Lezione CSS</a>
+              </li>
+              <li>
+                <a href="./css_om.html"> Lezione CSS_OM</a>
               </li>
             </ul>
-          </nav>
-  </header>
+          </li>
 
-<div class="inbox">
-  
-<h1>Questo è un titolo</h1>
-<p>
-  Markdown è popolare perché è facile da imparare e da scrivere, e i suoi
-  documenti sono leggibili anche in formato di testo semplice. Quando si
-  utilizza Markdown, è possibile concentrarsi sul contenuto del testo anziché
-  sulla formattazione complessa, il che lo rende ideale per la scrittura rapida
-  e la collaborazione online.
-</p>
-<p>
-  Elenchi: Puoi creare elenchi puntati o numerati utilizzando *, - o + per gli
-  elementi puntati e numeri per gli elenchi numerati:
-</p>
-<h3 id="markdown">markdown</h3>
-<ol>
-  <li>Elemento 1</li>
-  <li>Elemento 2</li>
-  <li>Elemento 3</li>
-</ol>
-<h3 id="markdown-numerato">markdown numerato</h3>
-<ol>
-  <li>Primo elemento</li>
-  <li>Secondo elemento</li>
-  <li>Terzo elemento</li>
-</ol>
-<h2 id="link">LINK</h2>
-<p>
-  Link: Puoi inserire collegamenti ipertestuali utilizzando la sintassi
-  <a href="URL">testo del link</a>
-</p>
-<h2 id="immagini">IMMAGINI</h2>
-<p>
-  Immagini: Per inserire un&#39;immagine, puoi utilizzare la sintassi
-  <img src="URL_dell&#39;immagine" alt="testo alternativo" />:
-</p>
-<h2 id="grassetto-corsivo">GRASSETTO CORSIVO</h2>
-<p>
-  Testo in grassetto e corsivo: Puoi rendere il testo in grassetto utilizzando
-</p>
-<ol>
-  <li>
-    <strong> testo in grassetto </strong> <em> testo in corsivo </em> (togliere
-    gli spazi)
-    <ol>
-      <li><strong>testo in grassetto</strong></li>
-      <li><em>testo in corsivo</em></li>
-    </ol>
-  </li>
-</ol>
-<h2 id="blocchi-di-codice">blocchi di codice</h2>
-<p>
-  Blocchi di codice: Puoi inserire blocchi di codice utilizzando tre backticks
-  (```) prima e dopo il codice:
-</p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">()</span>:</span>
+          <li>
+            <a class="submenu" href="#">HELPERS</a>
+            <ul>
+              <li>
+                <a href="../helpers/git_command.html">Git command</a>
+              </li>
+              <li>
+                <a href="../helpers/git_flows.html">Git Flows</a>
+              </li>
+              <li>
+                <a href="../helpers/markdown.html">MarkDown</a>
+              </li>
+              <li>
+                <a href="../helpers/tag_html.html">Tag Html</a>
+              </li>
+              <li>
+                <a href="../helpers/css_sheet.html">CSS</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="inbox">
+      <h1>Questo è un titolo</h1>
+      <p>
+        Markdown è popolare perché è facile da imparare e da scrivere, e i suoi documenti sono leggibili anche in
+        formato di testo semplice. Quando si utilizza Markdown, è possibile concentrarsi sul contenuto del testo anziché
+        sulla formattazione complessa, il che lo rende ideale per la scrittura rapida e la collaborazione online.
+      </p>
+      <p>
+        Elenchi: Puoi creare elenchi puntati o numerati utilizzando *, - o + per gli elementi puntati e numeri per gli
+        elenchi numerati:
+      </p>
+      <h3 id="markdown">markdown</h3>
+      <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ol>
+      <h3 id="markdown-numerato">markdown numerato</h3>
+      <ol>
+        <li>Primo elemento</li>
+        <li>Secondo elemento</li>
+        <li>Terzo elemento</li>
+      </ol>
+      <h2 id="link">LINK</h2>
+      <p>
+        Link: Puoi inserire collegamenti ipertestuali utilizzando la sintassi
+        <a href="URL">testo del link</a>
+      </p>
+      <h2 id="immagini">IMMAGINI</h2>
+      <p>
+        Immagini: Per inserire un&#39;immagine, puoi utilizzare la sintassi
+        <img src="URL_dell&#39;immagine" alt="testo alternativo" />:
+      </p>
+      <h2 id="grassetto-corsivo">GRASSETTO CORSIVO</h2>
+      <p>Testo in grassetto e corsivo: Puoi rendere il testo in grassetto utilizzando</p>
+      <ol>
+        <li>
+          <strong> testo in grassetto </strong> <em> testo in corsivo </em> (togliere gli spazi)
+          <ol>
+            <li><strong>testo in grassetto</strong></li>
+            <li><em>testo in corsivo</em></li>
+          </ol>
+        </li>
+      </ol>
+      <h2 id="blocchi-di-codice">blocchi di codice</h2>
+      <p>Blocchi di codice: Puoi inserire blocchi di codice utilizzando tre backticks (```) prima e dopo il codice:</p>
+      <pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_world</span><span class="hljs-params">()</span>:</span>
 print(<span class="hljs-string">"Hello, world!"</span>)
 </code></pre>
-
-</div>
-</body>
+    </div>
+  </body>
 </html>
