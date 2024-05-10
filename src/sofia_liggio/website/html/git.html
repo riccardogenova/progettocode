@@ -1,8 +1,8 @@
 <!-- @format -->
 
-<!-- <!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-  <head >
+  <head>
     <link href="../css/general.css" rel="stylesheet" />
     <link href="../css/git.css" rel="stylesheet" />
 
@@ -15,27 +15,19 @@
     <h2>Guida a GIT</h2>
 
     <p>
-      Git è un sistema di controllo versione distribuito utilizzato
-      principalmente nello sviluppo software per gestire le modifiche al codice
-      sorgente durante il processo di sviluppo di un progetto.
+      Git è un sistema di controllo versione distribuito utilizzato principalmente nello sviluppo software per gestire
+      le modifiche al codice sorgente durante il processo di sviluppo di un progetto.
       <br />
-      È stato creato da Linus Torvalds nel 2005 per gestire lo sviluppo del
-      kernel Linux, ma è diventato uno strumento essenziale per molti altri
-      progetti software. <br />
+      È stato creato da Linus Torvalds nel 2005 per gestire lo sviluppo del kernel Linux, ma è diventato uno strumento
+      essenziale per molti altri progetti software. <br />
       Tiene traccia dei cambiamenti apportati ai file all'interno di un
-      <em>repository</em>, consentendo agli sviluppatori di collaborare
-      efficacemente, tenere traccia delle versioni del codice, risolvere i
-      conflitti e tornare a versioni precedenti del software se necessario.
+      <em>repository</em>, consentendo agli sviluppatori di collaborare efficacemente, tenere traccia delle versioni del
+      codice, risolvere i conflitti e tornare a versioni precedenti del software se necessario.
       <br />
-      Git è noto per la sua velocità, la sua flessibilità e la sua capacità di
-      gestire progetti di qualsiasi dimensione, da piccoli progetti personali a
-      grandi progetti open source e aziendali.
+      Git è noto per la sua velocità, la sua flessibilità e la sua capacità di gestire progetti di qualsiasi dimensione,
+      da piccoli progetti personali a grandi progetti open source e aziendali.
       <br />
-      <img
-        src="https://logowik.com/content/uploads/images/git6963.jpg"
-        width="100px"
-        height="70px"
-      />
+      <img src="https://logowik.com/content/uploads/images/git6963.jpg" width="100px" height="70px" />
     </p>
 
     <hr />
@@ -43,70 +35,67 @@
     <h2>Come funziona</h2>
 
     <p>
-      Funziona in modo distribuito, il che significa che ogni sviluppatore che
-      lavora su un progetto ha una copia completa dell'intero repository sul
-      proprio computer locale. <br />
-      Questo offre diversi vantaggi, inclusa la possibilità di lavorare in modo
-      indipendente senza dover essere costantemente connessi a un server
-      centrale. <br />
-      Git offre un modo robusto e flessibile per gestire il controllo delle
-      versioni del codice, facilitando la collaborazione e consentendo agli
-      sviluppatori di tenere traccia delle modifiche nel tempo.
+      Funziona in modo distribuito, il che significa che ogni sviluppatore che lavora su un progetto ha una copia
+      completa dell'intero repository sul proprio computer locale. <br />
+      Questo offre diversi vantaggi, inclusa la possibilità di lavorare in modo indipendente senza dover essere
+      costantemente connessi a un server centrale. <br />
+      Git offre un modo robusto e flessibile per gestire il controllo delle versioni del codice, facilitando la
+      collaborazione e consentendo agli sviluppatori di tenere traccia delle modifiche nel tempo.
     </p>
     <hr />
 
     <h2>A cosa serve</h2>
 
     <p>
-      Serve principalmente come sistema di controllo versione per gestire le
-      modifiche al codice sorgente durante lo sviluppo del software.
+      Serve principalmente come sistema di controllo versione per gestire le modifiche al codice sorgente durante lo
+      sviluppo del software.
     </p>
     <p>Alcuni dei principali utilizzi e benefici di Git:</p>
 
     <ul>
       <li>
         <p>
-          <strong>Controllo delle versioni</strong>: tiene traccia di tutte le
-          modifiche apportate ai file nel repository nel tempo, consentendo agli
-          sviluppatori di vedere chi ha fatto cosa e quando.
-        
-        <br />
-        Questo offre una cronologia completa delle modifiche e semplifica il
-        ripristino delle versioni precedenti del codice se necessario.
-      </li></p>
+          <strong>Controllo delle versioni</strong>: tiene traccia di tutte le modifiche apportate ai file nel
+          repository nel tempo, consentendo agli sviluppatori di vedere chi ha fatto cosa e quando.
+
+          <br />
+          Questo offre una cronologia completa delle modifiche e semplifica il ripristino delle versioni precedenti del
+          codice se necessario.
+        </p>
+      </li>
       <li>
-        <p><strong>Collaborazione</strong>: facilita la collaborazione tra team di
-        sviluppo distribuiti. Più sviluppatori possono lavorare
-        contemporaneamente sullo stesso progetto, modificando file e combinando
-        le loro modifiche in modo ordinato utilizzando il sistema di branching e
-        merging.
-      </li></p>
+        <p>
+          <strong>Collaborazione</strong>: facilita la collaborazione tra team di sviluppo distribuiti. Più sviluppatori
+          possono lavorare contemporaneamente sullo stesso progetto, modificando file e combinando le loro modifiche in
+          modo ordinato utilizzando il sistema di branching e merging.
+        </p>
+      </li>
       <li>
-        <p><strong>Branching e Merging</strong>: consente agli sviluppatori di
-        creare rami separati del repository, chiamati <em>"branch"</em>, che
-        consentono di sviluppare nuove funzionalità o risolvere problemi senza
-        influenzare il codice principale. Successivamente, è possibile unire
-        <em>("merge")</em> i rami in modo sicuro e coerente.
-      </li></p>
+        <p>
+          <strong>Branching e Merging</strong>: consente agli sviluppatori di creare rami separati del repository,
+          chiamati <em>"branch"</em>, che consentono di sviluppare nuove funzionalità o risolvere problemi senza
+          influenzare il codice principale. Successivamente, è possibile unire <em>("merge")</em> i rami in modo sicuro
+          e coerente.
+        </p>
+      </li>
       <li>
-       <p> <strong>Tracciamento delle modifiche</strong>: fornisce un dettagliato
-        tracciamento delle modifiche, consentendo agli sviluppatori di vedere
-        esattamente cosa è stato cambiato, quando e da chi. Questo è utile per
-        identificare rapidamente il momento in cui è stata introdotta una
-        determinata funzionalità o un bug.
-      </li></p>
+        <p>
+          <strong>Tracciamento delle modifiche</strong>: fornisce un dettagliato tracciamento delle modifiche,
+          consentendo agli sviluppatori di vedere esattamente cosa è stato cambiato, quando e da chi. Questo è utile per
+          identificare rapidamente il momento in cui è stata introdotta una determinata funzionalità o un bug.
+        </p>
+      </li>
       <li>
-       <p> <strong>Backup</strong>: utilizzando repository Git su server remoti, è
-        possibile avere un backup completo del codice sorgente del progetto.
-        Questo offre una maggiore sicurezza e affidabilità rispetto a semplici
-        copie dei file.
-      </li></p>
+        <p>
+          <strong>Backup</strong>: utilizzando repository Git su server remoti, è possibile avere un backup completo del
+          codice sorgente del progetto. Questo offre una maggiore sicurezza e affidabilità rispetto a semplici copie dei
+          file.
+        </p>
+      </li>
       <li>
-        <strong>Flusso di lavoro flessibile</strong>: è altamente flessibile e
-        può essere adattato a una vasta gamma di flussi di lavoro di sviluppo.
-        Che si tratti di sviluppo agile, continuous integration, o qualsiasi
-        altro approccio, può essere configurato per supportare le esigenze
-        specifiche del team.
+        <strong>Flusso di lavoro flessibile</strong>: è altamente flessibile e può essere adattato a una vasta gamma di
+        flussi di lavoro di sviluppo. Che si tratti di sviluppo agile, continuous integration, o qualsiasi altro
+        approccio, può essere configurato per supportare le esigenze specifiche del team.
       </li>
     </ul>
 
@@ -114,58 +103,55 @@
 
     <h2>Cosa c'è da sapere su GITHUB</h2>
 
-    <p>
-      GitHub funziona come una piattaforma collaborativa per lo sviluppo
-      software. Come funziona:
-    </p>
+    <p>GitHub funziona come una piattaforma collaborativa per lo sviluppo software. Come funziona:</p>
     <ul>
       <li>
-       <p> <strong> Creazione di un repository: </strong> gli sviluppatori iniziano
-        creando un repository su GitHub. Un <em>repository</em> è un deposito
-        digitale in cui viene archiviato il codice sorgente del progetto. I
-        repository possono essere pubblici (accessibili a tutti) o privati
-        (accessibili solo agli utenti autorizzati).
-      </li></p>
+        <p>
+          <strong> Creazione di un repository: </strong> gli sviluppatori iniziano creando un repository su GitHub. Un
+          <em>repository</em> è un deposito digitale in cui viene archiviato il codice sorgente del progetto. I
+          repository possono essere pubblici (accessibili a tutti) o privati (accessibili solo agli utenti autorizzati).
+        </p>
+      </li>
       <li>
-       <p> <strong> Clonare il repository: </strong> una volta creato un
-        repository, gli sviluppatori possono clonarlo sul proprio computer
-        locale utilizzando Git. Clonare un repository significa creare una copia
-        locale del codice sorgente sul proprio computer, consentendo agli
-        sviluppatori di lavorare sul progetto offline e apportare modifiche.
-      </li></p>
+        <p>
+          <strong> Clonare il repository: </strong> una volta creato un repository, gli sviluppatori possono clonarlo
+          sul proprio computer locale utilizzando Git. Clonare un repository significa creare una copia locale del
+          codice sorgente sul proprio computer, consentendo agli sviluppatori di lavorare sul progetto offline e
+          apportare modifiche.
+        </p>
+      </li>
       <li>
-       <p> <strong> Lavorare sul codice: </strong> gli sviluppatori possono
-        apportare modifiche al codice sorgente utilizzando il proprio editor di
-        codice preferito. Dopo aver apportato le modifiche, possono eseguire il
-        commit delle modifiche utilizzando Git. Il <em>commit</em> è
-        un'operazione che salva le modifiche apportate al codice sorgente
-        all'interno del repository locale.
-      </li></p>
+        <p>
+          <strong> Lavorare sul codice: </strong> gli sviluppatori possono apportare modifiche al codice sorgente
+          utilizzando il proprio editor di codice preferito. Dopo aver apportato le modifiche, possono eseguire il
+          commit delle modifiche utilizzando Git. Il <em>commit</em> è un'operazione che salva le modifiche apportate al
+          codice sorgente all'interno del repository locale.
+        </p>
+      </li>
       <li>
-       <p> <strong> Push delle modifiche: </strong> dopo aver eseguito il commit
-        delle modifiche, gli sviluppatori possono inviare le modifiche al
-        repository remoto su GitHub utilizzando il comando <em>git push</em>. In
-        questo modo, le modifiche vengono aggiornate nel repository remoto su
-        GitHub e rese disponibili agli altri collaboratori.
-      </li></p>
+        <p>
+          <strong> Push delle modifiche: </strong> dopo aver eseguito il commit delle modifiche, gli sviluppatori
+          possono inviare le modifiche al repository remoto su GitHub utilizzando il comando <em>git push</em>. In
+          questo modo, le modifiche vengono aggiornate nel repository remoto su GitHub e rese disponibili agli altri
+          collaboratori.
+        </p>
+      </li>
       <li>
-       <p> <strong> Pull request: </strong> se un collaboratore desidera integrare
-        le proprie modifiche nel repository principale, può aprire una
-        <em>pull request</em>. Una pull request è una richiesta per incorporare
-        le modifiche apportate in un branch del repository in un altro branch,
-        come ad esempio dal branch di sviluppo al branch principale (solitamente
-        chiamato <em>master</em>). Le pull request consentono agli altri
-        collaboratori di esaminare le modifiche, commentare il codice e
-        discutere eventuali problemi prima di integrare le modifiche nel branch
-        principale.
-      </li></p>
+        <p>
+          <strong> Pull request: </strong> se un collaboratore desidera integrare le proprie modifiche nel repository
+          principale, può aprire una <em>pull request</em>. Una pull request è una richiesta per incorporare le
+          modifiche apportate in un branch del repository in un altro branch, come ad esempio dal branch di sviluppo al
+          branch principale (solitamente chiamato <em>master</em>). Le pull request consentono agli altri collaboratori
+          di esaminare le modifiche, commentare il codice e discutere eventuali problemi prima di integrare le modifiche
+          nel branch principale.
+        </p>
+      </li>
       <li>
-        <strong> Gestione delle issue: </strong> GitHub offre anche strumenti
-        per la gestione delle issue, che consentono agli sviluppatori di
-        tracciare bug, suggerimenti e altre attività correlate al progetto. Gli
-        utenti possono aprire nuove issue, assegnarle a persone specifiche,
-        commentare su di esse e tenerle traccia fino alla loro risoluzione.
+        <strong> Gestione delle issue: </strong> GitHub offre anche strumenti per la gestione delle issue, che
+        consentono agli sviluppatori di tracciare bug, suggerimenti e altre attività correlate al progetto. Gli utenti
+        possono aprire nuove issue, assegnarle a persone specifiche, commentare su di esse e tenerle traccia fino alla
+        loro risoluzione.
       </li>
     </ul>
   </body>
-</html> -->
+</html>

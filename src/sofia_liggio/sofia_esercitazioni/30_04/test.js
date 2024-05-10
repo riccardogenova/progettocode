@@ -11,22 +11,22 @@ function cambiaColore() {
 
 //  NASCONDI UN ELEMENTO QUANDO VIENE CLICCATO //
 
-function nascondiBottone() {
-  paragrafo.style.visibility = 'hidden';
-}
+//  function nascondiBottone() {
+//   paragrafo.style.visibility = 'hidden';
+// }
 
 //  MOSTRA UN ELEMENTO QUANDO VIENE CLICCATO //
 
-function mostraBottone() {
-  paragrafo.style.visibility = 'visible';
-}
+// function mostraBottone() {
+//   paragrafo.style.visibility = 'visible';
+// }
 
 //  AL CLIC, AGGIUNGI UN NUOVO PARAGRAFO AL DIV ESISTENTE //
 const paragrafoNuovo = document.getElementById('nuovo');
 
-function aggiungiParagrafo() {
-  paragrafoNuovo.textContent = 'Questo è un nuovo paragrafo';
-}
+// function aggiungiParagrafo() {
+//   paragrafoNuovo.textContent = 'Questo è un nuovo paragrafo';
+// }
 
 // AL CLIC, CAMBIA IL TESTO DI UN ELEMENTO SPECIFICO //
 const bottone = document.getElementById('bottoneTesto');
