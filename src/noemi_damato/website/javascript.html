@@ -1,0 +1,390 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://i.pinimg.com/originals/4b/2e/11/4b2e11ae8493a04613781e9277a0efb9.gif" />
+    <link rel="stylesheet" href="./page.css" />
+    <title>javascript</title>
+  </head>
+  <body>
+    <link href="https://fonts.cdnfonts.com/css/fanfare-ticker" rel="stylesheet" />
+    <div class="container">
+      <a class="button" href="../index.html">HOME</a>
+    </div>
+    <div class="testo">
+      <h1 class="titolo">JAVASCRIPT</h1>
+      <h2 class="capitolo">
+        un linguaggio di programmazione usato principalmente per rendere le pagine web interattive. Puo' manipolare il
+        contenuto HTML e CSS,
+      </h2>
+
+      <p>
+        <strong class="capitolo">Variabili: </strong>
+        Usate per memorizzare dati temporanei.
+      </p>
+
+      <p>
+        <strong class="capitolo">Funzioni: </strong>
+        Blocchi di codice riutilizzabili che eseguono una specifica azione.
+      </p>
+
+      <p>
+        <strong class="capitolo">Condizioni: </strong>
+
+        Strutture di controllo come if, else if, else per eseguire azioni in base a condizioni.
+      </p>
+
+      <p>
+        <strong class="capitolo">Cicli: </strong>
+
+        Strutture di controllo come for, while per eseguire ripetutamente blocchi di codice.
+      </p>
+
+      <p>
+        <strong class="capitolo">Oggetti: </strong>
+        Raccolte di dati e funzioni correlate.
+      </p>
+
+      <p>
+        <strong class="capitolo">Eventi: </strong>
+
+        Interazioni utente come clic, hover, e inserimento di testo che attivano azioni nel codice.
+      </p>
+
+      <p>
+        <strong class="capitolo">Manipolazione del DOM: </strong>
+
+        Modifica del contenuto, della struttura e dello stile degli elementi HTML e CSS sulla pagina.
+      </p>
+
+      <p>
+        <strong class="capitolo">Chiamate AJAX: </strong>
+
+        Comunicazione asincrona con il server per ottenere o inviare dati senza ricaricare la pagina.
+      </p>
+      ---------------------------------------------------------------
+      <h3>
+        <u><mark>window</mark></u> e <u><mark>document</mark></u> sono oggetti fondamentali che forniscono accesso a
+        funzionalita' cruciali nell'ambiente del browser :
+      </h3>
+
+      <h4 class="sottotitolo">window:</h4>
+      Rappresenta la finestra del browser. E' l'oggetto globale in JavaScript e contiene molte proprieta' e metodi
+      utili.
+      <ul>
+        <p>
+          <li><strong class="capitolo">window.alert():</strong> mostra un messaggio di avviso,</li>
+          <li><strong class="capitolo">window.location:</strong>fornisce informazioni sull'URL della pagina.</li>
+          <li>
+            <strong class="capitolo">tolowindow.setTimeout():</strong>imposta un timer che esegue una funzione dopo un
+            certo intervallo di tempo.
+          </li>
+        </p>
+      </ul>
+
+      <h4 class="sottotitolo">document:</h4>
+
+      Rappresenta il documento HTML corrente caricato nel browser. Fornisce metodi per accedere agli elementi HTML e
+      manipolarli dinamicamente.
+      <ul>
+        <p>
+          <li>
+            <strong class="capitolo">document.getElementById():</strong>
+            recupera un elemento HTML tramite il suo ID.
+          </li>
+          <li>
+            <strong class="capitolo">document.querySelector():</strong>
+            seleziona il primo elemento corrispondente a un selettore CSS.
+          </li>
+          <li>
+            <strong class="capitolo">document.createElement():</strong>
+            crea un nuovo elemento HTML.
+          </li>
+        </p>
+      </ul>
+      ---------------------------------------------------------------
+
+      <h3 class="sottotitolo">addEventListener:</h3>
+
+      E' un metodo utilizzato in JavaScript per associare una funzione, nota come "gestore degli eventi", e' una tecnica
+      fondamentale per rendere le pagine web interattive e per gestire le interazioni utente.
+
+      <p><u>La sintassi di base e' la seguente:</u></p>
+
+      <ul>
+        <li>
+          <strong class="capitolo">element:</strong>
+          <p>L'elemento HTML a cui si desidera associare l'evento.</p>
+        </li>
+        <li>
+          <strong class="capitolo">event:</strong>
+          <p>l nome dell'evento su cui si desidera che la funzione venga eseguita</p>
+        </li>
+        <li>
+          <strong class="capitolo">function</strong>
+          <p>La funzione da eseguire quando si verifica l'evento.</p>
+        </li>
+      </ul>
+
+      -------------------------------------------------------------------
+      <h3>
+        Gli operatori in JavaScript possono essere divisi in tre categorie principali: confronto, logici e condizionali.
+      </h3>
+
+      <h4 class="sottotitolo">Operatori di confronto:</h4>
+      <p>
+        Gli operatori di confronto in JavaScript sono utilizzati per confrontare due valori e restituire un valore
+        booleano (true o false) che indica se la relazione tra i valori e' vera o falsa. Questi operatori di confronto
+        sono ampiamente utilizzati per creare condizioni e istruzioni di controllo del flusso nei programmi JavaScript.
+      </p>
+
+      <u>Alcuni degli operatori di confronto piu' comuni:</u>
+      <p>
+        <li>
+          <mark>Uguaglianza (==):</mark>
+          Verifica se due valori sono uguali.
+        </li>
+        <li>
+          <mark>Uguaglianza stretta (===):</mark>Simile all'operatore di uguaglianza, ma verifica anche se i tipi dei
+          valori sono gli stessi.
+        </li>
+        <li>
+          <mark>Non uguale (!=):</mark>Verifica se due valori non sono uguali. Questo operatore esegue una conversione
+          di tipo debole prima del confronto.
+        </li>
+        <li>
+          <mark>Maggiore di (>), Minore di (`<`), Maggiore o uguale a (`>=`), Minore o uguale a (`<=`): </mark>Questi
+          operatori confrontano due valori numerici per determinare se il primo valore è maggiore, minore, maggiore o
+          uguale, o minore o uguale al secondo valore.
+        </li>
+      </p>
+
+      <strong class="sottotitolo">Operatori logici:</strong>
+      Gli operatori logici sono utilizzati per eseguire operazioni logiche su valori booleani e restituire un risultato
+      booleano.Gli operatori logici sono ampiamente utilizzati per creare espressioni condizionali e controllare il
+      flusso del programma in base a determinate condizioni.
+
+      <p>
+        <u>Ecco gli operatori logici principali:</u>
+
+        <li>
+          <mark>AND logico (&&): </mark>Restituisce true se entrambi gli operandi sono true, altrimenti restituisce
+          false.
+        </li>
+        <li>
+          <mark>OR logico (||): </mark>Restituisce true se almeno uno degli operandi è true, altrimenti restituisce
+          false.
+        </li>
+        <li>
+          <mark>NOT logico (!):</mark>Restituisce il valore opposto dell'operando booleano. Se l'operando è true,
+          restituisce false; se l'operando è false, restituisce true.
+        </li>
+      </p>
+      <p>
+        <strong class="sottotitolo">Operatori condizionali:</strong> Gli operatori condizionali sono utilizzati per
+        scrivere codice più conciso e chiaro quando si devono gestire condizioni semplici e prendere decisioni basate su
+        valori booleani o di verità.
+      </p>
+      <p>
+        <li>
+          <mark>Operatore ternario (condizione ? espressione1 : espressione2):</mark>è un'abbreviazione di un'istruzione
+          <u>if-else</u>. Se la condizione è vera, restituisce espressione1; altrimenti, restituisce espressione2.
+          <ul>
+            l'istruzione if viene utilizzata per eseguire un blocco di codice se una determinata condizione è vera.
+            L'istruzione else permette di eseguire un blocco di codice diverso se la condizione dell'if è falsa.
+          </ul>
+        </li>
+      </p>
+      <p>
+        <li>
+          <mark>Nullish coalescing operator (??): </mark>Restituisce il valore a destra se il valore a sinistra è null o
+          undefined; altrimenti, restituisce il valore a sinistra.
+          <ul>
+            In JavaScript,
+            <u>null, undefined,</u>
+            e
+            <u>NaN</u>
+            sono tutti valori speciali utilizzati per rappresentare diversi tipi di situazioni o stati.
+            <ul>
+              <li class="capitolo">null:</li>
+            </ul>
+            valore primitivo che rappresenta l'assenza di valore, utilizzato per indicare l'assenza di un oggetto o per
+            azzerare una variabile di riferimento.
+            <ul>
+              <li class="capitolo">undefined:</li>
+            </ul>
+            indica che una variabile è stata dichiarata ma non inizializzata o non ha un valore assegnato. utilizzato di
+            solito come valore di default assegnato automaticamente a una variabile non inizializzata.
+            <ul>
+              <li class="capitolo">NaN (Not a Number):</li>
+            </ul>
+            valore speciale, viene restituito quando si tenta di eseguire operazioni matematiche non valide,.
+          </ul>
+        </li>
+      </p>
+      ---------------------------------------------------------------
+
+      <h3 class="sottotitolo">addEventListener</h3>
+      in JavaScript è un metodo utilizzato per associare un gestore degli eventi a un elemento HTML. Questo metodo
+      consente di definire una funzione che verrà eseguita quando si verifica un determinato evento su quell'elemento.
+      <em>es:</em> const myButton = document.getElementById('myButton'); myButton.addEventListener('click', function() {
+      console.log('Il pulsante è stato cliccato!'); }); ---------------------------------------------------------------
+
+      <h3 class="sottotitolo">array</h3>
+      In JavaScript, è una struttura dati che consente di memorizzare più valori in una singola variabile. Gli array
+      possono contenere elementi di qualsiasi tipo di dato, inclusi numeri, stringhe, oggetti e anche altri array. Gli
+      array in JavaScript supportano <u>metodi mutabili</u> e <u>immutabili</u> per manipolare i dati.
+      <p>
+        <li>
+          <strong class="capitolo">Metodi mutabili:</strong> modificano direttamente l'array originale.
+
+          <ol>
+            <li>
+              <mark> push():</mark> Aggiunge uno o più elementi alla fine dell'array e restituisce la nuova lunghezza
+              dell'array. Modifica direttamente l'array originale.
+            </li>
+
+            <li>
+              <mark> pop():</mark> Rimuove l'ultimo elemento dall'array e lo restituisce. Modifica direttamente l'array
+              originale.
+            </li>
+
+            <li>
+              <mark> splice(): </mark>Aggiunge o rimuove elementi dall'array modificando direttamente l'array originale.
+            </li>
+          </ol>
+        </li>
+        <li>
+          <strong class="capitolo">Metodi immutabili:</strong>
+          consentono di manipolare i dati senza modificare direttamente l'array originale.
+          <ol>
+            <p>
+              <li><mark>map():</mark></li>
+              Questo metodo non modifica l'array originale, ma restituisce un nuovo array con i risultati delle chiamate
+              alla funzione applicata a ciascun elemento dell'array. Restituisce un array `return`
+            </p>
+
+            <ul>
+              <u>Sintassi:</u>
+            </ul>
+            <ul>
+              <li>elemento: L'elemento corrente che sta per essere trasformato.</li>
+            </ul>
+            <ul>
+              <li>index: L'indice dell'elemento corrente nell'array.</li>
+            </ul>
+            <ul>
+              <li>array: L'array a cui appartiene l'elemento corrente</li>
+            </ul>
+            <li>
+              <mark> filter():</mark>Questo metodo prende un array e restituisce un nuovo array contenente solo gli
+              elementi che soddisfano una determinata condizione definita da una funzione di filtro.
+              <ul>
+                <u>Sintassi:</u>
+              </ul>
+              <ul>
+                <li>
+                  callback: È una funzione che viene chiamata per ogni elemento dell'array. Deve restituire true per
+                  mantenere l'elemento nell'array risultante o false per eliminarlo.
+                </li>
+              </ul>
+              <ul>
+                <li>element: L'elemento corrente dell'array che viene processato dalla funzione di callback.</li>
+              </ul>
+              <ul>
+                <li>index (opzionale): L'indice dell'elemento corrente all'interno dell'array.</li>
+              </ul>
+              <ul>
+                <li>array (opzionale): L'array su cui è stato chiamato il metodo filter().</li>
+              </ul>
+            </li>
+            <li>
+              <mark> reduce():</mark> È un metodo che riduce un array di valori ad un unico valore, applicando una
+              funzione di riduzione che accumula i risultati iterando su ogni elemento dell'array.
+            </li>
+            <ul>
+              <u>Sintassi:</u>
+            </ul>
+            <ul>
+              <li>
+                callback: È la funzione di riduzione che viene chiamata per ogni elemento dell'array. Riceve quattro
+                argomenti:
+              </li>
+            </ul>
+            <ul>
+              <li>
+                accumulator: Il valore accumulato dopo l'esecuzione di tutte le chiamate precedenti alla funzione di
+                callback o il valore iniziale, se fornito.
+              </li>
+            </ul>
+            <ul>
+              <li>currentValue: L'elemento corrente dell'array che viene processato dalla funzione di callback.</li>
+            </ul>
+            <ul>
+              <li>index (opzionale): L'indice dell'elemento corrente all'interno dell'array.</li>
+            </ul>
+            <ul>
+              <li>array (opzionale): L'array su cui è stato chiamato il metodo reduce().</li>
+            </ul>
+
+            <ul>
+              <li>
+                initialValue (opzionale): Un valore iniziale per l'accumulatore. Se non viene fornito, il valore
+                iniziale sarà il primo elemento dell'array e la riduzione inizierà dall'elemento successivo.
+              </li>
+            </ul>
+
+            <li>
+              <mark> find():</mark>Trova il primo elemento in un array che soddisfa una determinata condizione definita
+              da una funzione di ricerca. Restituisce il primo elemento trovato oppure undefined se nessun elemento
+              soddisfa la condizione.
+            </li>
+            <ul>
+              <u>Sintassi:</u>
+            </ul>
+            <ul>
+              <li>callback: L'elemento corrente dell'array che viene processato dalla funzione di ricerca.</li>
+            </ul>
+            <ul>
+              <li>index (opzionale): L'indice dell'elemento corrente all'interno dell'array.</li>
+            </ul>
+            <ul>
+              <li>array (opzionale): L'array su cui è stato chiamato il metodo find().</li>
+            </ul>
+            <ul>
+              <li>thisArg (opzionale): Un valore da passare come this quando viene eseguita la funzione di ricerca.</li>
+            </ul>
+          </ol>
+        </li>
+      </p>
+      -------------------------------------------------------------------
+
+      <h3 class="sottotitolo">classi</h3>
+      in JavaScript sono come modelli per creare oggetti con proprietà e comportamenti simili. Usi la parola chiave
+      `class` per dichiarare una classe, e all'interno puoi definire un costruttore `constructor` per inizializzare le
+      proprietà dell'oggetto e metodi per definire il suo comportamento. Le istanze di una classe sono create usando la
+      parola chiave `new`.
+
+      <ul>
+        <strong class="capitolo">Costruttore:</strong>
+        Il costruttore è utile per garantire che ogni istanza della classe sia inizializzata correttamente quando viene
+        creata.
+
+        <p>ex: class Persona { constructor(nome, età) { this.nome = nome; this.età = età; } }</p>
+        <p>
+          Nell'esempio sopra, constructor è il costruttore della classe Persona. Prende due parametri (`nome` e `età`),
+          quando si crea un'istanza della classe il costruttore viene automaticamente chiamato con i parametri forniti e
+          le proprietà dell'oggetto vengono inizializzate di conseguenza
+        </p>
+      </ul>
+      -------------------------------------------------------------------
+      <strong class="sottotitolo">Metodi:</strong>
+      sono funzioni associate a oggetti. Possono essere definiti all'interno di una classe o direttamente su un oggetto.
+      Possono accettare parametri e possono accedere alle proprietà dell'oggetto usando `this`. Sono utilizzati per
+      definire il comportamento degli oggetti e per eseguire operazioni su di essi.
+    </div>
+  </body>
+</html>

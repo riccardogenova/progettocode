@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- esercizio 1 
+    1_Nascondi e mostra elementi. Usa JavaScript per nascondere un paragrafo con un contenuto a caso, quando si clicca su un bottone e mostrarlo quando si clicca su un altro.
+    -->
+    <div class="exercise1" style="display: flex; width: 15em; height: 5em">
+      <button class="show" onclick="showCube()">show</button>
+      <p id="cube" style="width: 3em; height: 3em; background: red"></p>
+      <button class="hidden" onclick="hiddenCube()">hidden</button>
+    </div>
+
+    <!-- esercizio 2 
+    2_Modifica lo stile di un elemento tramite JavaScript.
+    Scrivi una funzione in JavaScript che modifica il colore e la dimensione del testo 
+    di un paragrafo quando l'utente passa il mouse sopra.
+    -->
+
+    <br />
+    <hr />
+
+    <div class="exercise2">
+      <p id="text" onmouseleave="modifieText()">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum
+      </p>
+    </div>
+
+    <br />
+    <hr />
+
+    <!-- ESERCIZIO 3
+    3.Cambia lo sfondo di una pagina. 
+    Crea un dropdown con diverse opzioni di colore. 
+    Quando un'opzione viene selezionata, cambia il colore di sfondo della pagina usando JavaScript.
+    -->
+
+    <div class="exercise3">
+      <label for="color">Choose a color background:</label>
+
+      <select id="color_bg" name="bg_color" onchange="getValue()">
+        <option value="white">Bianco</option>
+        <option value="red">Rosso</option>
+        <option value="blue">Blu</option>
+      </select>
+    </div>
+  </body>
+  <script type="text/javascript" src="./index.js"></script>
+</html>

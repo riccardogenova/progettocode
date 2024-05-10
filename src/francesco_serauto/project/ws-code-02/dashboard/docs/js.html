@@ -1,0 +1,757 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODE</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/stvVHvV/code-1.png" />
+    <link rel="stylesheet" href="../../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    <div class="sfondo">
+      <header>
+        <div class="logo">
+          <a href="../../../../index.html"><i class="fa fa-code"></i> CODE</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../docs/docs.html">Documenti</a></li>
+            <li><a href="../sheet/sheet.html">Cheat Sheet</a></li>
+            <li><a href="../vocabulary/vocab.html">Vocabolario</a></li>
+            <li><a href="../exercises/exercises.html">Esercizi</a></li>
+
+            <li>
+              <a href="../login_form/login.html"><i class="fa fa-user"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="containerdocs">
+        <div class="sidebar">
+          <h3><i class="fa fa-folder"></i> DOCS</h3>
+          <div class="desc">
+            <p>
+              Benvenuto alla sezione dedicata ai documenti! Qui troverai un vasto assortimento di risorse preziose per
+              arricchire il tuo apprendimento sia nel campo del front-end che del back-end. Potrai esplorare guide
+              dettagliate, documentazioni tecniche, tutorial passo-passo e molto altro ancora .
+            </p>
+          </div>
+          <h3>LESSONS</h3>
+          <div class="lessons">
+            <a href="./markdown.html"><i class="fa fa-book"></i> MARKDOWN</a>
+            <a href="./git.html"><i class="fa fa-book"></i> GIT</a>
+            <a href="./html.html"><i class="fa fa-book"></i> HTML</a>
+            <a href="./css.html"><i class="fa fa-book"></i> CSS</a>
+            <a href="./dom.html"><i class="fa fa-book"></i> DOM & CSSOM</a>
+            <a href="./ip.html"><i class="fa fa-book"></i> IP, DNS & API</a>
+            <a href="./js.html"><i class="fa fa-book"></i> JAVASCRIPT</a>
+          </div>
+        </div>
+
+        <div class="boxdocs">
+          <p>dashboard / docs / js</p>
+
+          <h2>
+            Javascript
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+
+          <p>
+            <b
+              >La categoria 'JavaScript Essentials' offre una panoramica fondamentale delle caratteristiche chiave del
+              linguaggio JavaScript</b
+            >, dalle basi della sintassi e della struttura del codice alla gestione degli eventi e alle interazioni con
+            il DOM (Document Object Model). Questa categoria è progettata per aiutare i principianti a ottenere una
+            solida comprensione dei concetti fondamentali di JavaScript e per fornire ai programmatori più esperti un
+            rinfresco sui concetti di base. Attraverso esempi pratici e spiegazioni dettagliate, gli studenti avranno
+            l'opportunità di acquisire competenze essenziali per la creazione di applicazioni web dinamiche e
+            interattive utilizzando JavaScript.
+          </p>
+
+          <h2>
+            document
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+
+          <p>
+            Il comando
+            <b>document in JavaScript è un oggetto che rappresenta l'intero documento HTML</b>
+            caricato nella finestra del browser. Questo oggetto
+            <b>fornisce metodi per manipolare il documento HTML e accedere ai suoi elementi.</b>
+          </p>
+
+          <h3>Selezione degli elementi:</h3>
+          <ol>
+            <li>
+              <strong>getElementById():</strong> Restituisce un riferimento all'elemento con l'ID specificato.
+              <pre><code>var element = document.getElementById("myId");</code></pre>
+            </li>
+            <li>
+              <strong>getElementsByClassName():</strong> Restituisce una collezione di tutti gli elementi con la classe
+              specificata.
+              <pre><code>var elements = document.getElementsByClassName("myClass");</code></pre>
+            </li>
+            <li>
+              <strong>getElementsByTagName():</strong> Restituisce una collezione di tutti gli elementi con il nome del
+              tag specificato.
+              <pre><code>var elements = document.getElementsByTagName("div");</code></pre>
+            </li>
+            <li>
+              <strong>querySelector():</strong> Restituisce il primo elemento che corrisponde al selettore CSS
+              specificato.
+              <pre><code>var element = document.querySelector("#myId .myClass");</code></pre>
+            </li>
+            <li>
+              <strong>querySelectorAll():</strong> Restituisce una NodeList di tutti gli elementi che corrispondono al
+              selettore CSS specificato.
+              <pre><code>var elements = document.querySelectorAll("div.myClass");</code></pre>
+            </li>
+          </ol>
+
+          <h3>Manipolazione del contenuto:</h3>
+          <ol start="6">
+            <li>
+              <strong>innerHTML:</strong> Proprietà che rappresenta il contenuto HTML di un elemento.
+              <pre><code>element.innerHTML = "&lt;p&gt;Nuovo contenuto&lt;/p&gt;";</code></pre>
+            </li>
+            <li>
+              <strong>textContent:</strong> Proprietà che rappresenta il testo di un elemento e dei suoi discendenti.
+              <pre><code>element.textContent = "Testo aggiornato";</code></pre>
+            </li>
+          </ol>
+
+          <h3>Modifica degli stili:</h3>
+          <ol start="8">
+            <li>
+              <strong>style:</strong> Proprietà che consente di modificare gli stili CSS di un elemento.
+              <pre><code>element.style.color = "red";</code></pre>
+            </li>
+          </ol>
+
+          <h3>Gestione degli eventi:</h3>
+          <ol start="9">
+            <li>
+              <strong>addEventListener():</strong> Aggiunge un gestore di eventi a un elemento per un determinato tipo
+              di evento.
+              <pre><code>element.addEventListener("click", function() {
+  console.log("Elemento cliccato");
+  });</code></pre>
+            </li>
+          </ol>
+
+          <h3>Manipolazione della struttura del documento:</h3>
+          <ol start="10">
+            <li>
+              <strong>createElement():</strong> Crea un nuovo elemento HTML specificato dalla stringa.
+              <pre><code>var newElement = document.createElement("div");</code></pre>
+            </li>
+            <li>
+              <strong>appendChild():</strong> Aggiunge un nuovo nodo alla fine della lista dei figli di un elemento.
+              <pre><code>parentElement.appendChild(newElement);</code></pre>
+            </li>
+            <li>
+              <strong>removeChild():</strong> Rimuove un nodo figlio dall'albero DOM.
+              <pre><code>parentElement.removeChild(childElement);</code></pre>
+            </li>
+          </ol>
+
+          <h2>
+            window
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+
+          In JavaScript,
+          <b>l'oggetto window rappresenta la finestra del browser.</b> È l'oggetto globale e contiene variabili,
+          funzioni e altri oggetti che sono disponibili globalmente all'interno del contesto di esecuzione JavaScript di
+          una pagina web.
+
+          <h3>Gestione della finestra del browser:</h3>
+          <ol>
+            <li>
+              <strong>Apertura e chiusura della finestra:</strong>
+              <ul>
+                <li><code>window.open()</code></li>
+                <li><code>window.close()</code></li>
+                <li><code>window.closed</code></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Dimensionamento e posizionamento della finestra:</strong>
+              <ul>
+                <li><code>window.resizeTo()</code></li>
+                <li><code>window.moveTo()</code></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Scrolling:</strong>
+              <ul>
+                <li><code>window.scrollBy()</code></li>
+                <li><code>window.scrollTo()</code></li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3>Gestione della navigazione:</h3>
+          <ol start="4">
+            <li>
+              <strong>URL e pagine:</strong>
+              <ul>
+                <li><code>window.location</code></li>
+                <li><code>window.location.href</code></li>
+                <li><code>window.location.reload()</code></li>
+                <li><code>window.location.replace()</code></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Storia della sessione:</strong>
+              <ul>
+                <li><code>window.history</code></li>
+                <li><code>window.history.back()</code></li>
+                <li><code>window.history.forward()</code></li>
+                <li><code>window.history.go()</code></li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3>Gestione degli eventi:</h3>
+          <ol start="6">
+            <li>
+              <strong>Eventi della finestra:</strong>
+              <ul>
+                <li><code>window.onload</code></li>
+                <li><code>window.onresize</code></li>
+                <li><code>window.onbeforeunload</code></li>
+              </ul>
+            </li>
+          </ol>
+
+          <h3>Timer e temporizzazione:</h3>
+          <ol start="7">
+            <li>
+              <strong>Timer:</strong>
+              <ul>
+                <li><code>window.setTimeout()</code></li>
+                <li><code>window.setInterval()</code></li>
+                <li><code>window.clearTimeout()</code></li>
+                <li><code>window.clearInterval()</code></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Orologio:</strong>
+              <ul>
+                <li><code>window.Date()</code></li>
+              </ul>
+            </li>
+          </ol>
+
+          <h2>
+            Programmazione Orientata agli Oggetti in JavaScript
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+          <p>
+            In JavaScript, il paradigma orientato agli oggetti (OOP, Object-Oriented Programming) è un modo di scrivere
+            codice che si concentra sugli "oggetti", che sono entità che rappresentano dati e comportamenti correlati.
+            In questo contesto, "oriented" significa che il linguaggio è strutturato in modo da facilitare la
+            programmazione orientata agli oggetti.
+          </p>
+
+          <ol>
+            <li>
+              <strong>Oggetti:</strong> Gli oggetti sono entità che incapsulano dati (conosciuti come "proprietà") e
+              comportamenti (conosciuti come "metodi"). Ad esempio, un oggetto "Auto" potrebbe avere proprietà come
+              "marca", "modello" e "anno", insieme a metodi come "avvia()" e "ferma()".
+            </li>
+
+            <li>
+              <strong>Classi:</strong> In JavaScript, il concetto di classi è stato introdotto nelle versioni più
+              recenti del linguaggio (ECMAScript 6 e successivi). Una classe è un modello per creare oggetti. Ad
+              esempio, potresti avere una classe "Auto" che definisce la struttura generale di un'auto, e poi puoi
+              creare molteplici istanze di questa classe con dati specifici per ciascuna auto.
+            </li>
+
+            <li>
+              <strong>Ereditarietà:</strong> In JavaScript, è possibile creare gerarchie di classi dove una classe
+              (chiamata "figlio" o "sottoclasse") può ereditare proprietà e metodi da un'altra classe (chiamata
+              "genitore" o "superclasse"). Questo permette di evitare la duplicazione del codice e di organizzare le
+              classi in modo gerarchico basato sulle loro relazioni.
+            </li>
+
+            <li>
+              <strong>Incapsulamento:</strong> L'incapsulamento è il concetto di nascondere i dettagli interni di un
+              oggetto e consentire l'accesso solo tramite un'interfaccia pubblica. In JavaScript, questo può essere
+              raggiunto utilizzando la proprietà di visibilità come <code>public</code>, <code>private</code>, e
+              <code>protected</code>. Tuttavia, JavaScript non offre un supporto nativo per queste parole chiave, ma è
+              possibile ottenere un incapsulamento simile tramite tecniche di programmazione come i "closures"
+              (chiusure) e i "modules" (moduli).
+            </li>
+
+            <li>
+              <strong>Polimorfismo:</strong> Il polimorfismo è il concetto per cui oggetti di diverse classi possono
+              essere trattati allo stesso modo. In JavaScript, questo è spesso raggiunto grazie alla flessibilità del
+              linguaggio, in cui una funzione può essere utilizzata per oggetti di diversi tipi senza la necessità di
+              conoscere il tipo specifico in anticipo.
+            </li>
+
+            <li>
+              <strong>Prototipi:</strong> Prima dell'introduzione delle classi in JavaScript, il linguaggio usava un
+              modello basato su prototipi per l'ereditarietà. Ogni oggetto ha un prototipo dal quale eredita proprietà e
+              metodi. Questo approccio è ancora presente in JavaScript ed è utilizzato anche in combinazione con le
+              classi.
+            </li>
+          </ol>
+
+          <p>
+            In sintesi, la programmazione orientata agli oggetti in JavaScript si basa sull'uso di oggetti, classi,
+            ereditarietà, incapsulamento, polimorfismo e prototipi per organizzare e strutturare il codice in modo
+            efficace, facilitando la creazione e la gestione di grandi e complessi sistemi software.
+          </p>
+
+          <h2>
+            Operatori in JavaScript
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+
+          <p>
+            Gli operatori in JavaScript sono simboli speciali che vengono utilizzati per eseguire operazioni su
+            variabili e valori. Possono essere usati per eseguire calcoli matematici, confrontare valori, assegnare
+            valori alle variabili e altro ancora. Ecco una spiegazione dei principali tipi di operatori in JavaScript:
+          </p>
+
+          <ol>
+            <li>
+              <strong>Operatori Aritmetici:</strong> Questi operatori vengono utilizzati per eseguire operazioni
+              matematiche su numeri.
+              <ul>
+                <li><code>+</code> (addizione)</li>
+                <li><code>-</code> (sottrazione)</li>
+                <li><code>*</code> (moltiplicazione)</li>
+                <li><code>/</code> (divisione)</li>
+                <li><code>%</code> (resto della divisione)</li>
+              </ul>
+              Esempio:
+              <pre><code>let risultato = 10 + 5; // risultato sarà 15</code></pre>
+            </li>
+
+            <li>
+              <strong>Operatori di Assegnazione:</strong> Questi operatori vengono utilizzati per assegnare valori alle
+              variabili.
+              <ul>
+                <li><code>=</code> (assegnazione)</li>
+                <li><code>+=</code> (assegnazione con addizione)</li>
+                <li><code>-=</code> (assegnazione con sottrazione)</li>
+                <li><code>*=</code> (assegnazione con moltiplicazione)</li>
+                <li><code>/=</code> (assegnazione con divisione)</li>
+              </ul>
+              Esempio:
+              <pre><code>let x = 10;
+x += 5; // ora x è 15</code></pre>
+            </li>
+
+            <li>
+              <strong>Operatori di Confronto:</strong> Questi operatori vengono utilizzati per confrontare due valori e
+              restituire un valore booleano (<code>true</code> o <code>false</code>).
+              <ul>
+                <li><code>==</code> (uguaglianza)</li>
+                <li><code>!=</code> (diversità)</li>
+                <li><code>===</code> (uguaglianza stretta, controlla anche il tipo)</li>
+                <li><code>!==</code> (diversità stretta, controlla anche il tipo)</li>
+                <li><code>&gt;</code> (maggiore di)</li>
+                <li><code>&lt;</code> (minore di)</li>
+                <li><code>&gt;=</code> (maggiore o uguale a)</li>
+                <li><code>&lt;=</code> (minore o uguale a)</li>
+              </ul>
+              Esempio:
+              <pre><code>let a = 10;
+let b = 5;
+console.log(a &gt; b); // restituirà true</code></pre>
+            </li>
+
+            <li>
+              <strong>Operatori Logici:</strong> Questi operatori vengono utilizzati per eseguire operazioni logiche su
+              valori booleani e restituire un valore booleano.
+              <ul>
+                <li><code>&amp;&amp;</code> (AND logico)</li>
+                <li><code>||</code> (OR logico)</li>
+                <li><code>!</code> (NOT logico)</li>
+              </ul>
+              Esempio:
+              <pre><code>let x = 10;
+let y = 5;
+console.log(x &gt; 5 &amp;&amp; y &lt; 10); // restituirà true</code></pre>
+            </li>
+
+            <li>
+              <strong>Operatori di Incremento e Decremento:</strong> Questi operatori vengono utilizzati per aumentare o
+              diminuire il valore di una variabile di 1.
+              <ul>
+                <li><code>++</code> (incremento)</li>
+                <li><code>--</code> (decremento)</li>
+              </ul>
+              Esempio:
+              <pre><code>let count = 5;
+count++; // ora count è 6</code></pre>
+            </li>
+          </ol>
+
+          <h2>
+            Introduzione alle Variabili JavaScript
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+          <p>
+            Le variabili in JavaScript sono contenitori per memorizzare dati. Possono contenere qualsiasi tipo di dato,
+            come numeri, stringhe di testo, oggetti, funzioni e così via.
+          </p>
+
+          <h3>Dichiarazione di Variabili</h3>
+          <p>
+            Puoi dichiarare una variabile utilizzando la parola chiave
+            <code>var</code>, <code>let</code>, o <code>const</code>.
+          </p>
+          <ul>
+            <li>
+              <code>var</code>: Definisce una variabile globalmente o localmente ad una funzione senza alcuna
+              restrizione di blocco.
+            </li>
+            <li>
+              <code>let</code>: Definisce una variabile con portata di blocco, limitata al blocco, statement, o
+              espressione in cui è stata dichiarata.
+            </li>
+            <li>
+              <code>const</code>: Definisce una variabile a cui non può essere assegnato un nuovo valore in seguito.
+            </li>
+          </ul>
+          <p>Esempi di dichiarazione di variabili:</p>
+          <pre><code>var x = 10;
+let y = "Hello";
+const PI = 3.14;
+</code></pre>
+
+          <h3>Nomi delle Variabili</h3>
+          <p>Quando assegni un nome a una variabile, ci sono alcune regole da seguire:</p>
+          <ul>
+            <li>
+              Il nome deve iniziare con una lettera, un carattere di sottolineatura (<code>_</code>) o un dollaro
+              (<code>$</code>).
+            </li>
+            <li>Dopo il primo carattere, puoi usare lettere, cifre, underscore o dollari.</li>
+            <li>I nomi delle variabili sono sensibili alle maiuscole e minuscole.</li>
+            <li>Non puoi usare parole riservate come nomi di variabili.</li>
+          </ul>
+          <p>Esempi di nomi di variabili validi:</p>
+          <pre><code>let nomeUtente = "Mario";
+let numeroDiTelefono = "123456789";
+let _variabileSegreta = "segreto";
+let $prezzo = 10.99;
+</code></pre>
+
+          <h3>Convenzioni di Denominazione</h3>
+          <p>
+            È una pratica comune utilizzare una convenzione per i nomi delle variabili per rendere il codice più
+            leggibile. Ad esempio, si può utilizzare il camelCase in cui il primo carattere di ogni parola tranne la
+            prima è in maiuscolo.
+          </p>
+          <p>Esempio di convenzione di denominazione:</p>
+          <pre><code>let nomeUtenteCompleto = "Mario Rossi";
+let numeroDiTelefonoPrincipale = "123456789";
+</code></pre>
+
+          <h2>
+            Conversione di Tipo
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+          <p>
+            La conversione di tipo si riferisce alla trasformazione esplicita di un tipo di dato in un altro tipo di
+            dato. JavaScript può convertire automaticamente i tipi di dati durante le operazioni quando necessario, ma a
+            volte è necessario convertire i tipi manualmente per ottenere il comportamento desiderato.
+          </p>
+          <p>Esempi di conversione di tipo:</p>
+          <pre><code>// Conversione di una stringa in un numero
+let stringaNumero = "123";
+let numero = parseInt(stringaNumero);
+
+// Conversione di un numero in una stringa
+let numero2 = 456;
+let stringa = numero2.toString();
+</code></pre>
+
+          <h2>Coercizione</h2>
+          <p>
+            La coercizione è il processo implicito di conversione di un tipo di dato in un altro tipo di dato durante le
+            operazioni. Questo processo può avvenire in situazioni in cui gli operatori o le funzioni richiedono tipi di
+            dati diversi.
+          </p>
+          <p>Esempi di coercizione:</p>
+          <pre><code>// Coercizione di stringhe in numeri
+let somma = "10" + 5; // risultato: "105" (stringa)
+let differenza = "10" - 5; // risultato: 5 (numero)
+
+// Coercizione di valori booleani
+let risultato = 10 > 5; // risultato: true (booleano)
+
+// Coercizione di valori non booleani in valori booleani
+let booleano = !!0; // risultato: false
+</code></pre>
+
+          <p>
+            La coercizione può essere implicita, come nei casi sopra, o esplicita, quando si utilizzano operatori come
+            <code>==</code> o <code>===</code> per confrontare i valori. La coercizione implicite può portare a
+            comportamenti imprevisti, quindi è importante comprendere come funziona per evitare errori nel codice.
+          </p>
+
+          <h2>
+            JavaScript: Oggetti e Classi
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+
+          <h2>Oggetti in JavaScript:</h2>
+          <p>
+            Un oggetto in JavaScript è una struttura dati che consente di raggruppare valori e funzionalità correlate
+            come proprietà e metodi. Le proprietà di un oggetto sono coppie chiave-valore, dove la chiave è una stringa
+            (o un simbolo a partire da ES6) e il valore può essere qualsiasi tipo di dato JavaScript, incluso un altro
+            oggetto. I metodi di un oggetto sono funzioni associate ad esso.
+          </p>
+
+          <p>Ecco un esempio di come definire un oggetto in JavaScript:</p>
+
+          <pre><code>// Definizione di un oggetto persona
+let persona = {
+    nome: "Mario",
+    cognome: "Rossi",
+    eta: 30,
+    saluta: function() {
+        return "Ciao, sono " + this.nome + " " + this.cognome + "!";
+    }
+};
+
+// Accesso alle proprietà dell'oggetto
+console.log(persona.nome); // Output: Mario
+console.log(persona.saluta()); // Output: Ciao, sono Mario Rossi!
+</code></pre>
+
+          <h2>Classi in JavaScript:</h2>
+          <p>
+            Una classe in JavaScript è un tipo di struttura che consente di creare oggetti che condividono le stesse
+            proprietà e metodi. Dalla versione ES6 di JavaScript, le classi sono state introdotte per rendere più
+            semplice e intuitiva la creazione di oggetti e la definizione di relazioni tra di essi.
+          </p>
+
+          <p>Ecco un esempio di come definire una classe in JavaScript:</p>
+
+          <pre><code>// Definizione di una classe Persona
+class Persona {
+    constructor(nome, cognome, eta) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.eta = eta;
+    }
+
+    saluta() {
+        return "Ciao, sono " + this.nome + " " + this.cognome + "!";
+    }
+}
+
+// Creazione di un'istanza della classe Persona
+let mario = new Persona("Mario", "Rossi", 30);
+
+// Accesso alle proprietà e ai metodi dell'istanza
+console.log(mario.nome); // Output: Mario
+console.log(mario.saluta()); // Output: Ciao, sono Mario Rossi!
+</code></pre>
+
+          <p>
+            In questo esempio, <code>Persona</code> è una classe che ha tre proprietà (nome, cognome e eta) e un metodo
+            (saluta). L'istruzione <code>let mario = new Persona("Mario", "Rossi", 30);</code> crea un'istanza della
+            classe Persona chiamata <code>mario</code>, e possiamo accedere alle sue proprietà e ai suoi metodi
+            utilizzando la notazione punto (<code>mario.nome</code>, <code>mario.saluta()</code>).
+          </p>
+
+          <h2>
+            String
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+          <p>Metodi Comuni per Lavorare con le Stringhe in JavaScript</p>
+          <ol>
+            <li>
+              <strong>length:</strong> Restituisce la lunghezza della stringa.
+              <pre><code class="language-javascript">const str = "Hello";
+      console.log(str.length); // Output: 5</code></pre>
+            </li>
+            <li>
+              <strong>charAt(index):</strong> Restituisce il carattere nella posizione specificata dall'indice.
+              <pre><code class="language-javascript">const str = "Hello";
+      console.log(str.charAt(0)); // Output: "H"</code></pre>
+            </li>
+            <li>
+              <strong>concat(str1, str2, ...):</strong> Concatena due o più stringhe.
+              <pre><code class="language-javascript">const str1 = "Hello";
+      const str2 = " World";
+      console.log(str1.concat(str2)); // Output: "Hello World"</code></pre>
+            </li>
+            <li>
+              <strong>toUpperCase()</strong> e <strong>toLowerCase():</strong> Trasforma una stringa in maiuscolo o
+              minuscolo.
+              <pre><code class="language-javascript">const str = "Hello";
+      console.log(str.toUpperCase()); // Output: "HELLO"
+      console.log(str.toLowerCase()); // Output: "hello"</code></pre>
+            </li>
+            <li>
+              <strong>indexOf(substr)</strong> e <strong>lastIndexOf(substr):</strong> Restituiscono l'indice della
+              prima/ultima occorrenza della sottostringa specificata.
+              <pre><code class="language-javascript">const str = "Hello World";
+      console.log(str.indexOf("o")); // Output: 4
+      console.log(str.lastIndexOf("o")); // Output: 7</code></pre>
+            </li>
+          </ol>
+
+          <h2>
+            Operatori
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+          <p>
+            Gli "operatori" sono simboli o parole chiave utilizzati in programmazione o nella logica per eseguire
+            operazioni su uno o più valori. Possono essere usati in vari contesti, come matematica, informatica, logica
+            e linguaggi di programmazione.
+          </p>
+          <p>
+            In informatica, gli operatori sono utilizzati per eseguire operazioni come l'addizione, la sottrazione, la
+            moltiplicazione, la divisione e molto altro ancora. Ad esempio, l'operatore "+" viene utilizzato per
+            l'addizione, "-" per la sottrazione, "*" per la moltiplicazione e "/" per la divisione.
+          </p>
+          <p>
+            Gli "operatori logici" sono specificamente utilizzati nella logica e nella programmazione per eseguire
+            operazioni logiche su valori booleani (vero o falso). Questi operatori sono utilizzati per combinare
+            condizioni logiche e valutare l'espressione risultante come vero o falso.
+          </p>
+          <p>Ecco alcuni degli operatori logici più comuni:</p>
+          <ol>
+            <li><strong>AND (&&):</strong> Restituisce vero solo se entrambe le condizioni sono vere.</li>
+            <li><strong>OR (||):</strong> Restituisce vero se almeno una delle condizioni è vera.</li>
+            <li>
+              <strong>NOT (!):</strong> Inverte il valore di verità di una condizione, quindi se la condizione è vera,
+              NOT restituisce falso e viceversa.
+            </li>
+          </ol>
+          <p>
+            Ad esempio, se abbiamo due condizioni A e B, possiamo combinare queste condizioni con gli operatori logici
+            come segue:
+          </p>
+          <ul>
+            <li>A && B (A e B devono entrambe essere vere per avere un risultato vero)</li>
+            <li>A || B (A o B deve essere vera per avere un risultato vero)</li>
+            <li>!A (A non deve essere vera per avere un risultato vero)</li>
+          </ul>
+          <p>
+            Questi operatori sono fondamentali per controllare il flusso di esecuzione in programmi informatici e per
+            valutare condizioni complesse.
+          </p>
+
+          <h2>
+            Statement
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+          <ol>
+            <li>
+              <strong>If-Else Statement:</strong> L'istruzione <code>if-else</code> è utilizzata per eseguire un blocco
+              di codice se una condizione specificata è vera, altrimenti verrà eseguito un altro blocco di codice. Ecco
+              un esempio:
+              <pre><code class="language-javascript">let x = 10;
+    
+    if (x > 5) {
+        console.log("x è maggiore di 5");
+    } else {
+        console.log("x non è maggiore di 5");
+    }</code></pre>
+            </li>
+            <li>
+              <strong>For Loop:</strong> Il ciclo <code>for</code> viene utilizzato per eseguire un blocco di codice più
+              volte. Viene spesso utilizzato quando il numero di iterazioni è noto. Ecco un esempio:
+              <pre><code class="language-javascript">for (let i = 0; i < 5; i++) {
+        console.log("Iterazione " + i);
+    }</code></pre>
+            </li>
+            <li>
+              <strong>While Loop:</strong> Il ciclo <code>while</code> viene utilizzato per eseguire un blocco di codice
+              fintanto che una condizione specificata è vera. Può essere utilizzato quando il numero di iterazioni non è
+              noto a priori. Ecco un esempio:
+              <pre><code class="language-javascript">let i = 0;
+    while (i < 5) {
+        console.log("Iterazione " + i);
+        i++;
+    }</code></pre>
+            </li>
+          </ol>
+          <p>
+            Questi sono i blocchi di costruzione fondamentali che possono essere combinati e utilizzati in modi più
+            complessi per creare algoritmi e logica più sofisticati nei tuoi programmi JavaScript. Fammi sapere se hai
+            bisogno di ulteriori chiarimenti o esempi specifici!
+          </p>
+
+          <h2>
+            Array
+            <img src="https://media.tenor.com/S2U0LSC9evkAAAAj/verified.gif" width="15px" />
+          </h2>
+          <p>
+            Gli array sono una struttura di dati fondamentale in programmazione, utilizzata per memorizzare una
+            collezione ordinata di elementi dello stesso tipo. Gli array possono contenere elementi di qualsiasi tipo di
+            dati, come numeri, stringhe, oggetti e così via. Ogni elemento in un array occupa una posizione specifica,
+            chiamata indice.
+          </p>
+          <p>
+            I metodi degli array sono funzioni predefinite che possono essere utilizzate per eseguire operazioni comuni
+            sugli array. Ecco alcuni dei metodi più comuni utilizzati con gli array:
+          </p>
+          <ol>
+            <li>
+              <strong>push():</strong> Aggiunge uno o più elementi alla fine dell'array e restituisce la nuova lunghezza
+              dell'array.
+              <pre><code class="language-javascript">const array = [1, 2, 3];
+array.push(4);
+// Ora array è [1, 2, 3, 4]</code></pre>
+            </li>
+            <li>
+              <strong>pop():</strong> Rimuove l'ultimo elemento dall'array e lo restituisce.
+              <pre><code class="language-javascript">const array = [1, 2, 3];
+const removedElement = array.pop();
+// Ora array è [1, 2] e removedElement è 3</code></pre>
+            </li>
+            <li>
+              <strong>shift():</strong> Rimuove il primo elemento dall'array e lo restituisce.
+              <pre><code class="language-javascript">const array = [1, 2, 3];
+const removedElement = array.shift();
+// Ora array è [2, 3] e removedElement è 1</code></pre>
+            </li>
+            <li>
+              <strong>unshift():</strong> Aggiunge uno o più elementi all'inizio dell'array e restituisce la nuova
+              lunghezza dell'array.
+              <pre><code class="language-javascript">const array = [2, 3];
+array.unshift(1);
+// Ora array è [1, 2, 3]</code></pre>
+            </li>
+            <li>
+              <strong>concat():</strong> Combina due o più array.
+              <pre><code class="language-javascript">const array1 = [1, 2];
+const array2 = [3, 4];
+const newArray = array1.concat(array2);
+// newArray sarà [1, 2, 3, 4]</code></pre>
+            </li>
+            <li>
+              <strong>slice():</strong> Restituisce una parte dell'array selezionata dal punto di inizio al punto di
+              fine (senza includere il punto di fine).
+              <pre><code class="language-javascript">const array = [1, 2, 3, 4, 5];
+const slicedArray = array.slice(1, 3);
+// slicedArray sarà [2, 3]</code></pre>
+            </li>
+          </ol>
+          <p>
+            Ci sono molti altri metodi disponibili per manipolare e lavorare con gli array, ma questi sono alcuni dei
+            più comuni e utilizzati frequentemente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

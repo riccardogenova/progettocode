@@ -1,0 +1,89 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Descrizione dell'oggetto <code>window</code> in JavaScript</h2>
+
+    <p>
+      L'oggetto <code>window</code> è un elemento fondamentale nella programmazione web con JavaScript. È un oggetto
+      globale che rappresenta la finestra del browser in cui viene eseguito lo script. Attraverso l'oggetto
+      <code>window</code>, puoi accedere a una vasta gamma di funzioni, oggetti e variabili che riguardano l'intera
+      finestra del browser.
+    </p>
+
+    <h3>Funzionalità Principali</h3>
+
+    <ol>
+      <li>
+        <strong>Controllo della finestra del browser</strong>: L'oggetto <code>window</code> permette di manipolare le
+        dimensioni e la posizione della finestra del browser. Ad esempio, puoi aprire nuove finestre, chiuderle,
+        cambiarne le dimensioni, e così via.
+      </li>
+      <li>
+        <strong>Gestione del tempo</strong>: Permette di eseguire funzioni dopo un certo intervallo di tempo, usando
+        metodi come <code>setTimeout()</code> e <code>setInterval()</code>.
+      </li>
+      <li>
+        <strong>Archiviazione locale</strong>: Fornisce accesso a meccanismi di storage come <code>localStorage</code> e
+        <code>sessionStorage</code>, utili per salvare dati sul lato client.
+      </li>
+      <li>
+        <strong>Navigazione</strong>: Consente di manipolare l'URL della finestra corrente tramite l'oggetto
+        <code>location</code>.
+      </li>
+    </ol>
+
+    <h4>Esempi di Utilizzo</h4>
+
+    <h5>Aprire una Nuova Finestra</h5>
+
+    <pre><code class="language-javascript">let newWindow = window.open(
+  "https://www.example.com",
+  "Example",
+  "width=800,height=600"
+);
+</code></pre>
+
+    <h5>Chiudere una Finestra</h5>
+
+    <pre><code class="language-javascript">newWindow.close();
+</code></pre>
+
+    <h5>Impostare un Timer</h5>
+
+    <pre><code class="language-javascript">// Imposta un timer che esegue una funzione dopo 2000 millisecondi (2 secondi)
+setTimeout(function () {
+  alert("Timer scaduto!");
+}, 2000);
+</code></pre>
+
+    <h5>Utilizzare localStorage</h5>
+
+    <pre><code class="language-javascript">// Salva dati in localStorage
+localStorage.setItem("chiave", "valore");
+
+// Recupera dati da localStorage
+let valore = localStorage.getItem("chiave");
+alert(valore);
+</code></pre>
+
+    <h3>Buone Pratiche</h3>
+
+    <ul>
+      <li>
+        <strong>Usa con cautela</strong>: L'apertura di nuove finestre può essere bloccata dai popup blocker dei browser
+        se non attivata direttamente da un'azione dell'utente (come il clic su un pulsante).
+      </li>
+      <li>
+        <strong>Attenzione alla compatibilità</strong>: Verifica la compatibilità delle funzionalità di
+        <code>window</code> con tutti i browser in cui il tuo sito dovrebbe funzionare.
+      </li>
+    </ul>
+  </body>
+</html>

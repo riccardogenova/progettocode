@@ -1,0 +1,17 @@
+/** @format */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+}
+
+p {
+  color: white;
+  font-size: 30px;
+  padding: 0px 100px;
+}

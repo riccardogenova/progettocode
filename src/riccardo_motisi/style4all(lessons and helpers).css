@@ -1,0 +1,8 @@
+/** @format */
+
+body {
+  background-image: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/f/f2/Dirt_background_BE1.png/revision/latest?cb=20210820093527);
+  background-size: cover;
+  background-size: 100vw 100vh;
+  color: white;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "progettocode",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "test:lint": "eslint .",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "./src/**/**/*.{js,html,css}": [
+      "npm run format",
+      "npm run test:lint"
+    ]
+  },
+  "validate-branch-name": {
+    "pattern": "^(main){1}$|^(feat)(/[a-z-]+){1,2}$|^(bugfix)/[a-z-]+$|^(chore)/[a-z-]+$|^(docs)/[a-z-]+$",
+    "errorMsg": "There is something wrong with your branch name. Your commit will be rejected. You should rename your branch to a valid name and try again."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "globals": "^15.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "validate-branch-name": "^1.3.0"
+  }
+}

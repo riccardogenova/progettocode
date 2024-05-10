@@ -1,0 +1,30 @@
+/** @format */
+
+main {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 0 20px;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+main > h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+code {
+  font-family: monospace;
+}
+
+.lessons {
+  font-size: 20px;
+}

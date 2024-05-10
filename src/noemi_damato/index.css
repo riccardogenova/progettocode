@@ -1,0 +1,33 @@
+/** @format */
+
+body {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5a04e59e9f07f5503c831361/1617934171895-8DDS98ZSJDQ88IZKIKHY/fields_GoogleR3d.jpg?format=1500w);
+  background-size: cover;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(92, 41, 94);
+  opacity: 0.7;
+  font-family: 'Fanfare Ticker';
+  font-size: 20px;
+  padding: 2px 40px;
+}
+.navbar p {
+  float: left;
+  color: rgb(229, 142, 184);
+}
+.navbar a {
+  display: block;
+  text-decoration-style: double;
+  float: right;
+  color: rgb(229, 142, 184);
+  padding: 14px 20px;
+}
+
+.navbar a:hover {
+  background-color: #d963cf;
+  color: whitesmoke;
+}
