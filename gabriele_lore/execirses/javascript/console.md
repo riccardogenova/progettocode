@@ -58,7 +58,11 @@ const people = [
 function onFilter(ele) {
     return ele.age>20;
 }
-const p = people.filter(onFilter)
+function FilterName(ele) {
+    return ele.name;
+}
+const p = people.filter(onFilter);
+const nomi = p.map(FilterName)
 ```
 
 ```

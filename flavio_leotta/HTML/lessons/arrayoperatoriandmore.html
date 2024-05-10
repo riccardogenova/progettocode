@@ -68,6 +68,26 @@ const bello1 = [...bello]; // Copia l'array bello in bello1
 </code></pre>
 
 <p>In questo modo, <code>bello1</code> sarà una copia indipendente di <code>bello</code>, e le modifiche a uno non influenzeranno l'altro.</p>
+<p>Lo spread operator (<code>...</code>) in JavaScript è un operatore molto utile che consente di espandere gli elementi di un array o gli elementi di un oggetto. Può essere utilizzato in diversi contesti per semplificare e migliorare la leggibilità del codice.</p>
 
+    <p>Ecco come funziona in due contesti principali:</p>
+
+    <ol>
+        <li><strong>Espansione degli elementi di un array:</strong>
+            <pre><code class="language-javascript">const array1 = [1, 2, 3];
+const array2 = [...array1, 4, 5, 6];
+console.log(array2); // Output: [1, 2, 3, 4, 5, 6]</code></pre>
+            <p>In questo esempio, <code>...array1</code> espande gli elementi di <code>array1</code> all'interno di <code>array2</code>, creando così un nuovo array che include tutti gli elementi di <code>array1</code>, seguiti dagli elementi specificati dopo lo spread operator.</p>
+        </li>
+
+        <li><strong>Espansione delle proprietà di un oggetto:</strong>
+            <pre><code class="language-javascript">const object1 = { x: 1, y: 2 };
+const object2 = { ...object1, z: 3 };
+console.log(object2); // Output: { x: 1, y: 2, z: 3 }</code></pre>
+            <p>In questo caso, <code>...object1</code> espande le proprietà di <code>object1</code> all'interno di <code>object2</code>, creando così un nuovo oggetto che include tutte le proprietà di <code>object1</code>, seguite dalle proprietà specificate dopo lo spread operator.</p>
+        </li>
+    </ol>
+
+    <p>Lo spread operator è molto utile quando si desidera creare copie di array o oggetti esistenti con alcune modifiche o quando si vogliono combinare più array o oggetti in uno nuovo.</p>
 
 </body>
