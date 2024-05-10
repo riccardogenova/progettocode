@@ -1,3 +1,5 @@
+/** @format */
+
 // Dati
 
 const students = [];
@@ -26,17 +28,11 @@ function selectGroupBy(selectedGroupBy) {
 }
 //connetti con ui
 function onclickAddStudent() {
-  const studentName = document.getElementById("studentName").value;
+  const studentName = document.getElementById('studentName').value;
   addStudentToList(studentName);
 }
 function onclickGenerategroups() {}
-document
-  .getElementById("addStudent")
-  .addEventListener("click", onclickAddStudent);
-document
-  .getElementById(generateGroups)
-  .addEventListener("click", generateGroups);
+document.getElementById('addStudent').addEventListener('click', onclickAddStudent);
+document.getElementById(generateGroups).addEventListener('click', generateGroups);
 
-document
-  .getElementById("selectGroupBy")
-  .addEventListener("change", selectGroupBy);
+document.getElementById('selectGroupBy').addEventListener('change', selectGroupBy);
