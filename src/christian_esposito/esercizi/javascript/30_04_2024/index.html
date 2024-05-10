@@ -1,22 +1,22 @@
-<!DOCTYPE html>
+<!-- @format -->
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        .class_add{
-            background-color: aqua;
-            width: 3em;
-            height: 3em;
-        }
+      .class_add {
+        background-color: aqua;
+        width: 3em;
+        height: 3em;
+      }
     </style>
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
 
-
-<!-- 
+  <body>
+    <!-- 
 1_Al Clic, cambia il colore del testo di un paragrafo in rosso.
 2_Nascondi un elemento quando viene cliccato.
 3_Al Clic, aggiungi un nuovo paragrafo al div esistente.
@@ -33,172 +33,155 @@
 
  -->
 
+    <!-- 1_Al Clic, cambia il colore del testo di un paragrafo in rosso. -->
 
-
-
-<!-- 1_Al Clic, cambia il colore del testo di un paragrafo in rosso. -->
-
-<div class="ex1">
-    <button id="btn_ex1">Clicca per cambiare colore</button>
-<p id="ex1"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-</p>
-</div>
-
-
-<br>
-<hr>
-<!-- 2_Nascondi un elemento quando viene cliccato. -->
-
-
-
-<div class="ex2">
-    <button id="btn_hidden">Hidden</button>
-    <div id="ex2" style="width: 3em; height: 3em; background-color: cornflowerblue;"></div>
-</div>
-
-<br>
-<hr>
-
-<!-- 3_Al Clic, aggiungi un nuovo paragrafo al div esistente. -->
-
-<div class="ex3" id="ex3">
-    <button id="btn_ex3">clicca per aggiungere</button>
-</div>
-
-<br>
-<hr>
-
-<!--  4_Al Clic, cambia il testo di un elemento specifico. -->
-
-<div class="ex4">
-    <button id="btn_ex4">Clicka ed esplodi</button>
-    <p id="ex4_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Impedit temporibus,
-        non velit tenetur excepturi tempora asperiores deserunt tempore commodi dolorum repellat nobis nihil vitae quasi suscipit
-        voluptate alias ex minima!
-    </p>
-</div>
-
-<br>
-<hr>
-
-<!-- 5_Al Clic, aggiungi una classe CSS a un elemento. -->
-
-<div class="ex5" >
-<button id="btn_ex5">clicca per la magia</button>
-<div id="ex5" >
-</div>
-
-<br>
-<hr>
-
-<!-- 6_Al Clic di un bottone, rimuovi un altro elemento specifico dal DOM. -->
-<div class="ex6">
-    <button id="btn_ex6">Clicca per rimuovere il testo dell'esercizio 1</button>
-</div>
-
-<br>
-<hr>
-
-<!-- 7_ Al Clic di un bottone, sostituisci un elemento esistente con un nuovo elemento. -->
-
-<div class="ex7">
-    <button id="btn_ex7">clicca per sostituire un elemento</button>
-    <p id="text_ex7"> 
-        Lorem ipsum dolor, 
-        sit amet consectetur adipisicing elit. 
-        Provident cupiditate voluptatibus sint perferendis ipsum,
-        a iste veritatis iusto adipisci non dignissimos quod quia repudiandae optio excepturi soluta corrupti.
-        Error, iste?
-    </p>
-</div>
-
-<br>
-<hr>
-
-<!-- 8_Al clic di un elemento, modifica una proprietà CSS di un elemento. -->
-
-<div class="ex8">
-    <button id="btn_ex8">clicca per cambiare colore</button>
-</div>
-
-<br>
-<hr>
-
-<!-- 9_ In JavaScript (non CSS) cambia il colore di sfondo di un elemento quando il mouse passa sopra. -->
-
-<div class="ex9">
-<div class="class_add" id="color_ex9"> 
-
-</div>
-</div>
-
-<br>
-<hr>
-
-<!-- 10_ cambia l'immagine visualizzata quando l'utente clicca su un bottone. -->
-
-<div class="ex10">
-    <p id="text_ex10">NON TOCCARE YAMCHA</p>
-    <img id="img_ex10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQlX58DypbUWGFWyxOO_D03UPal6yZ0bbvALLzneoGupcIaBV8E9CqRHHUNii9ChCM38I" alt="yamtcha" width="200em" height="200px">
-</div>
-
-<br>
-<hr>
-
-<!-- 11_Al Clic di un bottone, aggiungi un nuovo paragrafo prima di un elemento esistente. -->
-
-<div class="ex11" id="ex11">
-    <div id="newEl11">
-
-        <button id="btn_ex11">Clicca per aggiungere un elemento</button>
+    <div class="ex1">
+      <button id="btn_ex1">Clicca per cambiare colore</button>
+      <p id="ex1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum
+      </p>
     </div>
-</div>
 
-<br>
-<br>
-<hr>
+    <br />
+    <hr />
+    <!-- 2_Nascondi un elemento quando viene cliccato. -->
 
-<p>ESERCIZIO 12 NON FORNITO</p>
+    <div class="ex2">
+      <button id="btn_hidden">Hidden</button>
+      <div id="ex2" style="width: 3em; height: 3em; background-color: cornflowerblue"></div>
+    </div>
 
-<br>
-<hr>
-<p>ESERCIZIO 13 NON FORNITO</p>
-<br>
-<hr>
+    <br />
+    <hr />
 
-<!-- 14_Mostra o nascondi un elemento ogni volta che si clicca su un bottone. -->
+    <!-- 3_Al Clic, aggiungi un nuovo paragrafo al div esistente. -->
 
-<div class="ex14">
-    <button id="btn_hidden_ex14">Hidden</button>
-    <div id="ex14" style="width: 3em; height: 3em; background-color: cornflowerblue;"></div>
-    <button id="btn_show_ex14">show</button>
-</div>
-<br>
-<hr>
-<!-- 15_ Aggiungi un elemento al DOM dopo un ritardo di 5 secondi. -->
+    <div class="ex3" id="ex3">
+      <button id="btn_ex3">clicca per aggiungere</button>
+    </div>
 
-<div class="ex15" id="ex15">
-    <p>TESTIAMO LA TUA PAZIENZA</p>
-<button id="btn_ex15">clicca</button>
-<div id="addElement"></div>
-</div>
+    <br />
+    <hr />
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <!--  4_Al Clic, cambia il testo di un elemento specifico. -->
 
+    <div class="ex4">
+      <button id="btn_ex4">Clicka ed esplodi</button>
+      <p id="ex4_text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus, non velit tenetur excepturi tempora
+        asperiores deserunt tempore commodi dolorum repellat nobis nihil vitae quasi suscipit voluptate alias ex minima!
+      </p>
+    </div>
 
-</body>
-<script type="text/javaScript" src="./main.js"></script>
+    <br />
+    <hr />
+
+    <!-- 5_Al Clic, aggiungi una classe CSS a un elemento. -->
+
+    <div class="ex5">
+      <button id="btn_ex5">clicca per la magia</button>
+      <div id="ex5"></div>
+
+      <br />
+      <hr />
+
+      <!-- 6_Al Clic di un bottone, rimuovi un altro elemento specifico dal DOM. -->
+      <div class="ex6">
+        <button id="btn_ex6">Clicca per rimuovere il testo dell'esercizio 1</button>
+      </div>
+
+      <br />
+      <hr />
+
+      <!-- 7_ Al Clic di un bottone, sostituisci un elemento esistente con un nuovo elemento. -->
+
+      <div class="ex7">
+        <button id="btn_ex7">clicca per sostituire un elemento</button>
+        <p id="text_ex7">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident cupiditate voluptatibus sint perferendis
+          ipsum, a iste veritatis iusto adipisci non dignissimos quod quia repudiandae optio excepturi soluta corrupti.
+          Error, iste?
+        </p>
+      </div>
+
+      <br />
+      <hr />
+
+      <!-- 8_Al clic di un elemento, modifica una proprietà CSS di un elemento. -->
+
+      <div class="ex8">
+        <button id="btn_ex8">clicca per cambiare colore</button>
+      </div>
+
+      <br />
+      <hr />
+
+      <!-- 9_ In JavaScript (non CSS) cambia il colore di sfondo di un elemento quando il mouse passa sopra. -->
+
+      <div class="ex9">
+        <div class="class_add" id="color_ex9"></div>
+      </div>
+
+      <br />
+      <hr />
+
+      <!-- 10_ cambia l'immagine visualizzata quando l'utente clicca su un bottone. -->
+
+      <div class="ex10">
+        <p id="text_ex10">NON TOCCARE YAMCHA</p>
+        <img
+          id="img_ex10"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQlX58DypbUWGFWyxOO_D03UPal6yZ0bbvALLzneoGupcIaBV8E9CqRHHUNii9ChCM38I"
+          alt="yamtcha"
+          width="200em"
+          height="200px"
+        />
+      </div>
+
+      <br />
+      <hr />
+
+      <!-- 11_Al Clic di un bottone, aggiungi un nuovo paragrafo prima di un elemento esistente. -->
+
+      <div class="ex11" id="ex11">
+        <div id="newEl11">
+          <button id="btn_ex11">Clicca per aggiungere un elemento</button>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <hr />
+
+      <p>ESERCIZIO 12 NON FORNITO</p>
+
+      <br />
+      <hr />
+      <p>ESERCIZIO 13 NON FORNITO</p>
+      <br />
+      <hr />
+
+      <!-- 14_Mostra o nascondi un elemento ogni volta che si clicca su un bottone. -->
+
+      <div class="ex14">
+        <button id="btn_hidden_ex14">Hidden</button>
+        <div id="ex14" style="width: 3em; height: 3em; background-color: cornflowerblue"></div>
+        <button id="btn_show_ex14">show</button>
+      </div>
+      <br />
+      <hr />
+      <!-- 15_ Aggiungi un elemento al DOM dopo un ritardo di 5 secondi. -->
+
+      <div class="ex15" id="ex15">
+        <p>TESTIAMO LA TUA PAZIENZA</p>
+        <button id="btn_ex15">clicca</button>
+        <div id="addElement"></div>
+      </div>
+    </div>
+  </body>
 </html>
+<script type="text/javaScript" src="./main.js"></script>

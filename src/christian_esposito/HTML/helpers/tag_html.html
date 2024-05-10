@@ -1,121 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/helpers_css/tag_html.css">
-  <link rel="stylesheet" href="../css/utils/navbar.css">
-  <link rel="stylesheet" href="../css/utils/reset_all.css">
-  <link rel="stylesheet" href="../css/utils/bg_img.css">
-  <title>Document</title>
-</head>
-<body>
+<!-- @format -->
 
-  <header>
-    <input type="checkbox" id="hamburger"/> 
-             <label class="menuicon" for="hamburger"> 
-                   <span></span> 
-             </label> 
-        <div id="bar"> 
-            <a id="logo" href="../index.html"></a> 
-                 <!--/fine logo-->
-        </div>
-          <nav class="menu-visibility">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/helpers_css/tag_html.css" />
+    <link rel="stylesheet" href="../css/utils/navbar.css" />
+    <link rel="stylesheet" href="../css/utils/reset_all.css" />
+    <link rel="stylesheet" href="../css/utils/bg_img.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="hamburger" />
+      <label class="menuicon" for="hamburger">
+        <span></span>
+      </label>
+      <div id="bar">
+        <a id="logo" href="../index.html"></a>
+        <!--/fine logo-->
+      </div>
+      <nav class="menu-visibility">
+        <ul>
+          <li>
+            <a class="submenu" href="#">LEZIONI</a>
             <ul>
-        
-              <li><a class="submenu" href="#">LEZIONI</a>
-                <ul>
-                  <li>
-                    <a href="./git.html">Lezione GIT</a>
-                  </li>
-                  <li>
-                    <a href="./html.html"> Lezione HTML</a>
-                  </li>
-                  <li>
-                    <a href="./markdown.html"> Lezione MARKDOWN</a>
-                  </li>
-                  <li>
-                    <a href="./dom.html"> Lezione DOM</a>
-                  </li>
-                  <li>
-                    <a href="./css.html"> Lezione CSS</a>
-                  </li>
-                  <li>
-                    <a href="./css_om.html"> Lezione CSS_OM</a>
-                  </li>
-                </ul>
+              <li>
+                <a href="./git.html">Lezione GIT</a>
               </li>
-        
-              <li><a class="submenu" href="#"></a>HELPERS</a>
-                <ul>
-                  <li>
-                    <a href="../helpers/git_command.html">Git command</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/git_flows.html">Git Flows</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/markdown.html">MarkDown</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/tag_html.html">Tag Html</a>
-                  </li>
-                  <li>
-                    <a href="../helpers/css_sheet.html">CSS</a>
-                  </li>
-                </ul>
+              <li>
+                <a href="./html.html"> Lezione HTML</a>
+              </li>
+              <li>
+                <a href="./markdown.html"> Lezione MARKDOWN</a>
+              </li>
+              <li>
+                <a href="./dom.html"> Lezione DOM</a>
+              </li>
+              <li>
+                <a href="./css.html"> Lezione CSS</a>
+              </li>
+              <li>
+                <a href="./css_om.html"> Lezione CSS_OM</a>
               </li>
             </ul>
-          </nav>
-  </header>
+          </li>
 
-  <div class="inbox">
-  <h2>Struttura del documento:</h2>
-<p>
-  &lt; !DOCTYPE html&gt;: Dichiara il tipo di documento come HTML5. &lt;
-  html&gt;: Elemento radice che racchiude l&#39;intero contenuto della pagina
-  web. &lt; head&gt;: Contiene metadati sulla pagina, come titolo, script e
-  fogli di stile. &lt; title&gt;: Specifica il titolo della pagina web, visibile
-  nella barra del titolo del browser. &lt; body&gt;: Contiene il contenuto
-  principale della pagina web, visibile nell&#39;area di visualizzazione del
-  browser. Testo:
-</p>
-<p>
-  &lt; h1&gt; - &lt; h6&gt;: Definiscono sei livelli di intestazione,
-  dall&#39;intestazione principale (&lt; h1&gt;) alle sottointestazioni (&lt;
-  h6&gt;). &lt; p&gt;: Definisce un paragrafo di testo. &lt; br&gt;: Inserisce
-  un&#39;interruzione di riga. Contenuti multimediali:
-</p>
-<p>
-  &lt; img&gt;: Inserisce un&#39;immagine nella pagina web. &lt; video&gt;:
-  Inserisce un video nella pagina web. &lt; audio&gt;: Inserisce un file audio
-  nella pagina web. Collegamenti:
-</p>
-<p>
-  &lt; a&gt;: Crea un collegamento ipertestuale ad un&#39;altra pagina web o ad
-  un&#39;ancora all&#39;interno della stessa pagina. Liste:
-</p>
-<p>
-  &lt; ul&gt;: Crea una lista non ordinata (elenco puntato). &lt; ol&gt;: Crea
-  una lista ordinata (elenco numerato). &lt; li&gt;: Definisce un elemento
-  all&#39;interno di una lista. Moduli:
-</p>
-<p>
-  &lt; form&gt;: Crea un modulo per la raccolta di dati dall&#39;utente. &lt;
-  input&gt;: Definisce un elemento di input nel modulo, come un campo di testo,
-  una casella di controllo o un pulsante di scelta. &lt; label&gt;: Associa
-  un&#39;etichetta a un elemento di input. &lt; button&gt;: Crea un pulsante nel
-  modulo. Tabelle:
-</p>
-<p>
-  &lt; table&gt;: Definisce una tabella. &lt; tr&gt;: Definisce una riga nella
-  tabella. &lt; th&gt;: Definisce una cella di intestazione nella tabella. &lt;
-  td&gt;: Definisce una cella di dati nella tabella. Commenti:
-</p>
-<p>
-  ``: Inserisce commenti nel codice HTML che non vengono visualizzati nella
-  pagina web.
-</p>
-</div>
-</body>
+          <li>
+            <a class="submenu" href="#">HELPERS</a>
+            <ul>
+              <li>
+                <a href="../helpers/git_command.html">Git command</a>
+              </li>
+              <li>
+                <a href="../helpers/git_flows.html">Git Flows</a>
+              </li>
+              <li>
+                <a href="../helpers/markdown.html">MarkDown</a>
+              </li>
+              <li>
+                <a href="../helpers/tag_html.html">Tag Html</a>
+              </li>
+              <li>
+                <a href="../helpers/css_sheet.html">CSS</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="inbox">
+      <h2>Struttura del documento:</h2>
+      <p>
+        &lt; !DOCTYPE html&gt;: Dichiara il tipo di documento come HTML5. &lt; html&gt;: Elemento radice che racchiude
+        l&#39;intero contenuto della pagina web. &lt; head&gt;: Contiene metadati sulla pagina, come titolo, script e
+        fogli di stile. &lt; title&gt;: Specifica il titolo della pagina web, visibile nella barra del titolo del
+        browser. &lt; body&gt;: Contiene il contenuto principale della pagina web, visibile nell&#39;area di
+        visualizzazione del browser. Testo:
+      </p>
+      <p>
+        &lt; h1&gt; - &lt; h6&gt;: Definiscono sei livelli di intestazione, dall&#39;intestazione principale (&lt;
+        h1&gt;) alle sottointestazioni (&lt; h6&gt;). &lt; p&gt;: Definisce un paragrafo di testo. &lt; br&gt;:
+        Inserisce un&#39;interruzione di riga. Contenuti multimediali:
+      </p>
+      <p>
+        &lt; img&gt;: Inserisce un&#39;immagine nella pagina web. &lt; video&gt;: Inserisce un video nella pagina web.
+        &lt; audio&gt;: Inserisce un file audio nella pagina web. Collegamenti:
+      </p>
+      <p>
+        &lt; a&gt;: Crea un collegamento ipertestuale ad un&#39;altra pagina web o ad un&#39;ancora all&#39;interno
+        della stessa pagina. Liste:
+      </p>
+      <p>
+        &lt; ul&gt;: Crea una lista non ordinata (elenco puntato). &lt; ol&gt;: Crea una lista ordinata (elenco
+        numerato). &lt; li&gt;: Definisce un elemento all&#39;interno di una lista. Moduli:
+      </p>
+      <p>
+        &lt; form&gt;: Crea un modulo per la raccolta di dati dall&#39;utente. &lt; input&gt;: Definisce un elemento di
+        input nel modulo, come un campo di testo, una casella di controllo o un pulsante di scelta. &lt; label&gt;:
+        Associa un&#39;etichetta a un elemento di input. &lt; button&gt;: Crea un pulsante nel modulo. Tabelle:
+      </p>
+      <p>
+        &lt; table&gt;: Definisce una tabella. &lt; tr&gt;: Definisce una riga nella tabella. &lt; th&gt;: Definisce una
+        cella di intestazione nella tabella. &lt; td&gt;: Definisce una cella di dati nella tabella. Commenti:
+      </p>
+      <p>``: Inserisce commenti nel codice HTML che non vengono visualizzati nella pagina web.</p>
+    </div>
+  </body>
 </html>
