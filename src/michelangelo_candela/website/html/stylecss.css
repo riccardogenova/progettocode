@@ -1,0 +1,25 @@
+/** @format */
+
+body {
+  background-color: hotpink;
+  height: 100%;
+}
+
+nav {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  color: white;
+  font-style: initial;
+}
+
+.link {
+  color: white;
+  font-style: initial;
+}

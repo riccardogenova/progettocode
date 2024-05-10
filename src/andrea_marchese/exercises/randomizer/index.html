@@ -1,0 +1,54 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randomizer CODE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./icon.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="list-container">
+      <h3>LISTA NOMI</h3>
+      <ol class="style-list" id="list-items"></ol>
+    </div>
+
+    <div class="container">
+      <div class="logo-container">
+        <p>Scrivi i nomi e genera i gruppi casualmente secondo le tue esigenze!</p>
+        <h1>RANDOMIZER</h1>
+        <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z" class="ccompli1" fill="#007AFF"></path>
+          <path
+            d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
+            class="ccustom"
+            fill="#312ECB"
+          ></path>
+        </svg>
+      </div>
+      <div class="generate-container">
+        <label for="random">Dividi per</label>
+        <select name="random" id="number-choices">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button id="randomize-btn">GENERA</button>
+      </div>
+
+      <div class="input-container">
+        <input id="user-input" placeholder="Inserisci un nome" type="text" />
+        <button disabled id="add-btn">AGGIUNGI</button>
+      </div>
+    </div>
+    <div class="list-container">
+      <h3>GRUPPI</h3>
+      <ol class="style-list" id="group-list"></ol>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+/** @format */
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.page > p > a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.navigation > a {
+  display: flex;
+
+  color: #ffffff;
+}

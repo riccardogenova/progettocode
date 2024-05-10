@@ -1,0 +1,152 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  background-color: rgb(0, 0, 0);
+  width: 99vw;
+  height: 5vh;
+  position: relative;
+  display: flex;
+  /* justify-content: end; */
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 3em;
+  color: white;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+nav > div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+#main {
+  /* border: blue 2px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3em;
+}
+
+ul {
+  background-image: url('https://w0.peakpx.com/wallpaper/709/63/HD-wallpaper-death-note-death-note.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 0;
+  height: 60vh;
+  list-style: nome;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 50vw;
+  flex-direction: column;
+  /* border: red solid 2px; */
+}
+
+li {
+  margin-left: 30px;
+}
+
+#tableGroupe {
+  /* background-image: url("https://media-assets.wired.it/photos/653911d0d4c2af99f1d81214/16:9/w_2560%2Cc_limit/1b6f5eb81ea07b0ced94d8202e038e60a5b35b08f26c17d848dc2914134801c9.jpeg");
+    /* border: red solid 2px; */
+  /* background-repeat: no-repeat;
+    background-size: 100% 100%;  */
+  width: 30vw;
+  height: 10em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 10px;
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('https://media-assets.wired.it/photos/653911d0d4c2af99f1d81214/16:9/w_2560%2Cc_limit/1b6f5eb81ea07b0ced94d8202e038e60a5b35b08f26c17d848dc2914134801c9.jpeg');
+  /* border: red solid 2px; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 30vw;
+  height: 10em;
+}
+
+#btnInsert,
+#filter,
+#saveData,
+#random {
+  background-color: black;
+  color: white;
+  margin: 5px;
+  height: 2em;
+  width: 6em;
+  border-radius: 10px;
+}
+
+#random {
+  border: 2px white solid;
+}
+
+#input_text {
+  background-color: black;
+  color: aliceblue;
+  width: 15em;
+  height: 2em;
+  border-radius: 5px;
+}
+
+/* PLACEHOLDER */
+
+#input_text::-webkit-input-placeholder {
+  color: white;
+  text-align: center;
+}
+
+#input_text::-moz-placeholder {
+  color: white;
+  text-align: center;
+}
+
+#input_text:-ms-input-placeholder {
+  color: white;
+  text-align: center;
+}
+
+#input_text:-moz-placeholder {
+  color: white;
+  text-align: center;
+}
+
+#input_text:focus:placeholder-shown {
+  border: 5px rgb(255, 255, 255) solid;
+  /* position: relative; */
+  /* bottom: 10px; */
+}
+
+/* PLACEHOLDER */

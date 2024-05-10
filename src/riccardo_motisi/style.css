@@ -1,0 +1,37 @@
+/** @format */
+
+body {
+  background-image: url(https://wallpapercave.com/wp/vUYioU8.jpg);
+  background-size: cover;
+  background-size: 100vw 100vh;
+}
+/* Stile per la barra di navigazione */
+.navbar {
+  background-color: #33383a; /* Colore di sfondo */
+  opacity: 0.85;
+  overflow: hidden; /* Nasconde gli elementi che sforano */
+}
+.navbar p {
+  color: white;
+  float: left; /* Allinea i link a sinistra */
+  padding: 0px 20px;
+  font-size: x-large;
+  font-family: 'Minecraft', sans-serif;
+}
+/* Stile per i link nella barra di navigazione */
+.navbar a {
+  float: right; /* Allinea i link a destra */
+  display: block; /* Rende i link un blocco */
+  color: white; /* Colore del testo */
+  font-family: 'Minecraft', sans-serif;
+
+  padding: 24px 20px; /* Spazio interno */
+  text-decoration: none; /* Rimuove la sottolineatura */
+  font-size: x-large;
+}
+
+/* Stile per i link nella barra di navigazione quando passati sopra */
+.navbar a:hover {
+  background-color: white; /* Colore di sfondo al passaggio del mouse */
+  color: #000000; /* Cambia il colore del testo al passaggio del mouse */
+}

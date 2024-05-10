@@ -1,0 +1,16 @@
+/** @format */
+
+body {
+  background-color: aqua;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+#titolo {
+  color: blueviolet;
+}
+
+#sheet {
+  color: coral;
+}

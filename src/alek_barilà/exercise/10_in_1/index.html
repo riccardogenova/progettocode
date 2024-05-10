@@ -1,0 +1,70 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10 in 1</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p>1</p>
+    <p id="paragrafored"><span>Al Click cambio colore.</span></p>
+    <hr />
+    <p>2</p>
+    <p id="nascondimi"><span>Al Click mi nascondo.</span></p>
+    <hr />
+    <p>3</p>
+    <div id="miodiv">
+      <button onclick="aggiungiParagrafo()">
+        <span>Aggiungi Paragrafo</span>
+      </button>
+    </div>
+    <hr />
+    <p>4</p>
+    <p>Cambio questa parola ( <span id="testoDaCambiare">lol</span> !)</p>
+    <hr />
+    <p>5</p>
+    <p>Premi qui > <span id="coloreDaCambiare">CIAO</span> per cambiargli colore.</p>
+    <hr />
+    <p>6</p>
+    <p id="muorip">Non premere il pulsante ti prego! VOGLIO VIVERE!!</p>
+    <button onclick="eliminaParagrafo()">
+      <span>Elimina Paragrafo</span>
+    </button>
+    <hr />
+    <p>7</p>
+    <p>Cambia questa <em id="ParolaDaCambiare">PAROLA</em> con il pulsante.</p>
+    <button onclick="cambiaParola()">
+      <span>Cambia Parola</span>
+    </button>
+    <hr />
+    <p>8</p>
+    <p>Clicca <span id="magia">QUI</span> per cambiare <em id="trasforma">QUI</em>.</p>
+    <hr />
+    <p>9</p>
+    <p id="colsfondo">Passami sopra per cambiare il colore di sfondo</p>
+    <hr />
+    <p>10</p>
+    <img id="imgDaCambiare" src="./img/trollface.jpg" alt="trollface" />
+    <button onclick="Premi()">
+      <span>Premi-Qui</span>
+    </button>
+    <hr />
+    <p>11</p>
+    <p id="cucu">CUCU'</p>
+    <button id="mostranascondi">
+      <span>Mostra/Nascondi</span>
+    </button>
+    <hr />
+    <p>12</p>
+    <p>Colore di sfondo:</p>
+    <select id="cambiacolore" class="dropdown">
+      <option value="white">Bianco</option>
+      <option value="green">Verde</option>
+      <option value="pink">Rosa</option>
+    </select>
+  </body>
+  <script src="script.js"></script>
+</html>

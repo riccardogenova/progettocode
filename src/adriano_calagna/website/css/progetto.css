@@ -1,0 +1,51 @@
+/** @format */
+
+button {
+  font-size: 14px;
+}
+.bottone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#nascondi {
+  font-size: 34px;
+  font-size: 34px;
+  padding: 10px 20px;
+  background-color: #db3434;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+#mostra {
+  font-size: 34px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+#paragrafo {
+  font-size: 44px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 44px;
+}
+#selezionaColore {
+  font-size: 44px;
+}
