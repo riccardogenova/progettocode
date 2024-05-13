@@ -2,8 +2,9 @@
 
 .helpers-list {
   gap: 80px;
-  display: flex;
+  display: grid;
   list-style: none;
+  gap: 35px;
 }
 .redirect-list {
   color: black;
@@ -28,4 +29,5 @@ li {
   border: 1px black solid;
   padding: 5px;
   background-color: #785964;
+  text-align: center;
 }
