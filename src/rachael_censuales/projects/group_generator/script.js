@@ -10,8 +10,6 @@ const nodeList = document.getElementById('list');
 const nodeRandomButton = document.getElementById('nodeRandomButton');
 let menu = document.getElementById('menu');
 
-let groupsList = [];
-
 const group = document.getElementById('groups');
 
 function onClickAddButton() {
