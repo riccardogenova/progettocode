@@ -1,12 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var bottoneNascondi = document.getElementById("bottoneNascondi");
-  var paragafoDaNascondere = document.getElementById("paragafoDaNascondere");
+/** @format */
 
-  bottoneNascondi.addEventListener("click", function nascondiParagrafo() {
-    if (paragafoDaNascondere.classList.contains("nascosto")) {
-      paragafoDaNascondere.classList.remove("nascosto");
+document.addEventListener('DOMContentLoaded', function () {
+  var bottoneNascondi = document.getElementById('bottoneNascondi');
+  var paragafoDaNascondere = document.getElementById('paragafoDaNascondere');
+
+  bottoneNascondi.addEventListener('click', function nascondiParagrafo() {
+    if (paragafoDaNascondere.classList.contains('nascosto')) {
+      paragafoDaNascondere.classList.remove('nascosto');
     } else {
-      paragafoDaNascondere.classList.add("nascosto");
+      paragafoDaNascondere.classList.add('nascosto');
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var bottoneNascondi = document.getElementById('bottoneNascondi');
+  var paragafoDaNascondere = document.getElementById('paragafoDaNascondere');
+
+  bottoneNascondi.addEventListener('click', function nascondiParagrafo() {
+    if (paragafoDaNascondere.classList.contains('nascosto')) {
+      paragafoDaNascondere.classList.remove('nascosto');
+    } else {
+      paragafoDaNascondere.classList.add('nascosto');
     }
   });
 });

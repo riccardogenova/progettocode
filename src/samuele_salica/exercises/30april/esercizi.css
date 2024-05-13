@@ -1,0 +1,18 @@
+.bottonecambiato {
+  background-color: green;
+  color: rgb(254, 10, 10);
+}
+
+#cambiailcolore {
+  background-color: rgb(255, 64, 0);
+  color: yellowgreen;
+}
+
+#cambiailcolore {
+  background-color: rgb(255, 64, 0);
+  color: yellowgreen;
+}
+#cambiailcolore.modificato {
+  background-color: bisque;
+  color: aquamarine;
+}
