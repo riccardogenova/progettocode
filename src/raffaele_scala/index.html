@@ -22,5 +22,17 @@
     <div class="div-box">
       <div class="placeholder">BENVENUTI NEL MIO SITO</div>
     </div>
+    <h1>SOMMAMIII</h1>
+    <input id="num1" type="number" value="0" onchange="sommami()" />
+    <input id="num2" type="number" value="0" onchange="sommami()" />
+    <input type="number" id="res" />
   </body>
+  <script>
+    function sommami() {
+      var num1 = document.getElementById('num1').value;
+      var num2 = document.getElementById('num2').value;
+
+      document.getElementById('res').value = Number(num1) + Number(num2);
+    }
+  </script>
 </html>

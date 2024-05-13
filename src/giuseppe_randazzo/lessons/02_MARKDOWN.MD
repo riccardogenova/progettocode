@@ -2,7 +2,7 @@
 
 # **Cos'è Markdown**
 
-Markdown è un linguaggio di markup leggero creato con l'obiettivo di essere il più leggibile possibile.
+Markdown è un **linguaggio di markup leggero** creato con l'obiettivo di essere il più leggibile possibile.
 
 Con linguaggio di markup leggero (Il concetto di "leggero" fa riferimento alla semplicità e alla minimizzazione del codice di markup necessario per ottenere risultati di formattazione) diversamente dai linguaggi di markup più complessi come HTML o XML, i quali possono essere ingombranti e difficili da leggere e scrivere manualmente, si usano convenzioni testuali semplici.
 Per esempio, si potrebbero usare asterischi o underscore per indicare il corsivo o il grassetto, oppure simboli come # per le intestazioni.
@@ -10,13 +10,21 @@ Si intende dunque una sintassi semplificata usata per aggiungere formattazione a
 
 Alcuni esempi notevoli di linguaggi di markup leggero includono:
 
-**_Markdown:_** Probabilmente il più noto, usato per documenti, note, e contenuti web.
+**_Markdown:_**
 
-**_reStructuredText:_** Usato principalmente nella documentazione tecnica, specialmente in progetti Python.
+Probabilmente il più noto, usato per documenti, note, e contenuti web.
 
-**_AsciiDoc:_** Simile a reStructuredText ma con più funzionalità, usato per documentazione e libri digitali.
+**_reStructuredText:_**
 
-**_Textile:_** Un altro linguaggio di markup leggero che è popolare in alcuni ambienti di blogging.
+Usato principalmente nella documentazione tecnica, specialmente in progetti Python.
+
+**_AsciiDoc:_**
+
+Simile a reStructuredText ma con più funzionalità, usato per documentazione e libri digitali.
+
+**_Textile:_**
+
+Un altro linguaggio di markup leggero che è popolare in alcuni ambienti di blogging.
 
 Questi linguaggi sono progettati per essere facili da scrivere e da leggere, rendendoli ideali per la documentazione, la scrittura su web, e la comunicazione rapida. Sono particolarmente apprezzati nelle comunità di sviluppatori, dove la documentazione può essere scritta direttamente nel codice o vicino ad esso, mantenendo la leggibilità sia del codice che dei commenti e delle istruzioni. Inoltre, strumenti di blogging, piattaforme di documentazione, e altri sistemi di gestione dei contenuti spesso supportano questi formati per facilitare l'editing e la pubblicazione di contenuti testuali.
 
