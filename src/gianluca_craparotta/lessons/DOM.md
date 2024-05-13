@@ -1,5 +1,3 @@
-<!-- @format -->
-
 Il DOM (Document Object Model) è una rappresentazione gerarchica dei documenti HTML (e XML) che formano una pagina web. Funziona come un'interfaccia di programmazione che consente agli sviluppatori di manipolare dinamicamente la struttura, il contenuto e lo stile di una pagina web utilizzando JavaScript.
 
 ### Come funziona il DOM:

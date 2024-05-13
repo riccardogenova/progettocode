@@ -1,5 +1,3 @@
-<!-- @format -->
-
 Markdown è un linguaggio di formattazione leggero utilizzato per scrivere documenti che possono essere convertiti in HTML o altri formati. È particolarmente popolare nel campo dello sviluppo software, nei forum online, nei wiki e nei sistemi di gestione delle versioni. Alcuni concetti di base di Markdown includono:
 
 Headers (Intestazioni): Per creare titoli e sottotitoli utilizzando il carattere #.

@@ -1,5 +1,3 @@
-<!-- @format -->
-
 ### Comandi di base:
 
 #### Inizializzazione di un repository:

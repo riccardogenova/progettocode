@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  border: 1px solid white;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e0f3e0;
+}
+.listrn {
+  display: flex;
+  list-style-type: none;
+}
+.listrn > li:not(:last-child) {
+  margin-right: 10px; /* Aggiunge un margine tra le parole, tranne all'ultimo elemento */
+}
+
+a {
+  text-decoration: none; /* Rimuove le sottolineature */
+  color: gray; /* Imposta il colore iniziale del testo */
+}
+a:active {
+  color: red; /* Cambia il colore del testo quando viene premuto */
+}
+h1 {
+  color: #007bff;
+}
+p {
+  line-height: 1.5;
+}
+ul {
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+img {
+  width: 150px;
+  height: 150px;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+section {
+  padding: 20px;
+}
+.project-link {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+.project-link:hover {
+  background-color: white;
+}
+#pagd {
+  padding: 20px;
+}

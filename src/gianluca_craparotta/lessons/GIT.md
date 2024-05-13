@@ -1,7 +1,4 @@
-<!-- @format -->
-
 # titolo
-
 Git:
 
 Repository (Repository Git): Un repository è uno spazio di archiviazione dove vengono conservate tutte le versioni di un progetto. Può essere locale sul tuo computer o remoto su un server.
