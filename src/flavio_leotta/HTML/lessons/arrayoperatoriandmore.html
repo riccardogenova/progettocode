@@ -1,8 +1,16 @@
+<!-- @format -->
+
 <h2>Introduzione a JavaScript</h2>
 
-<p>Con JavaScript, ciò che programmiamo viene eseguito dal PC. La console di Google Chrome ti permette di modificare un sito perché contiene un ambiente Node.</p>
+<p>
+  Con JavaScript, ciò che programmiamo viene eseguito dal PC. La console di Google Chrome ti permette di modificare un
+  sito perché contiene un ambiente Node.
+</p>
 
-<p>Partiamo dalla dichiarazione delle variabili, utilizzando i famosi <code>var</code>, <code>let</code>, e <code>const</code>.</p>
+<p>
+  Partiamo dalla dichiarazione delle variabili, utilizzando i famosi <code>var</code>, <code>let</code>, e
+  <code>const</code>.
+</p>
 
 <p>Ad esempio:</p>
 
@@ -25,7 +33,10 @@ console.log(example); // Questa istruzione stampa il contenuto della stringa
 <pre><code>const num1 === const num2;
 </code></pre>
 
-<p>Per verificare se i valori sono diversi, possiamo usare <code>!=</code> o <code>!==</code>, ma è consigliato utilizzare <code>===</code> e <code>!==</code>.</p>
+<p>
+  Per verificare se i valori sono diversi, possiamo usare <code>!=</code> o <code>!==</code>, ma è consigliato
+  utilizzare <code>===</code> e <code>!==</code>.
+</p>
 
 <p>Abbiamo anche gli operatori di confronto maggiore o minore:</p>
 
@@ -38,18 +49,28 @@ console.log(example); // Questa istruzione stampa il contenuto della stringa
 
 <h3>Array</h3>
 
-<p>Allo stesso modo delle stringhe, gli array hanno vari metodi utili per manipolare i dati al loro interno. Ad esempio, il metodo <code>.push("elemento")</code> viene utilizzato per aggiungere un nuovo elemento all'array:</p>
+<p>
+  Allo stesso modo delle stringhe, gli array hanno vari metodi utili per manipolare i dati al loro interno. Ad esempio,
+  il metodo <code>.push("elemento")</code> viene utilizzato per aggiungere un nuovo elemento all'array:
+</p>
 
 <pre><code>const array = ["a", "b", "c"];
 array.push("d"); // Aggiunge "d" alla fine dell'array
 console.log(array); // Output: ["a", "b", "c", "d"]
 </code></pre>
 
-<p>Esistono molti altri metodi per manipolare gli array, come <code>.pop()</code>, <code>.shift()</code>, <code>.unshift()</code>, <code>.splice()</code> e molti altri. La ricerca su questi metodi ti permetterà di scoprire le varie possibilità offerte da JavaScript per lavorare con gli array.</p>
+<p>
+  Esistono molti altri metodi per manipolare gli array, come <code>.pop()</code>, <code>.shift()</code>,
+  <code>.unshift()</code>, <code>.splice()</code> e molti altri. La ricerca su questi metodi ti permetterà di scoprire
+  le varie possibilità offerte da JavaScript per lavorare con gli array.
+</p>
 
 <h3>Variabili e Assegnazione</h3>
 
-<p>Quando si lavora con variabili in JavaScript, è importante comprendere come avviene l'assegnazione dei valori, specialmente quando si tratta di tipi di dati complessi come gli array.</p>
+<p>
+  Quando si lavora con variabili in JavaScript, è importante comprendere come avviene l'assegnazione dei valori,
+  specialmente quando si tratta di tipi di dati complessi come gli array.
+</p>
 
 <p>Quando assegniamo una variabile a un'altra, come nel seguente esempio:</p>
 
@@ -57,37 +78,66 @@ console.log(array); // Output: ["a", "b", "c", "d"]
 const studente2 = studente1;
 </code></pre>
 
-<p>Stiamo assegnando il valore della variabile <code>studente1</code> alla variabile <code>studente2</code>. Tuttavia, se modificassimo il valore di <code>studente1</code> in seguito, <code>studente2</code> non verrebbe influenzato, poiché stiamo copiando solo il valore, non il riferimento all'oggetto.</p>
+<p>
+  Stiamo assegnando il valore della variabile <code>studente1</code> alla variabile <code>studente2</code>. Tuttavia, se
+  modificassimo il valore di <code>studente1</code> in seguito, <code>studente2</code> non verrebbe influenzato, poiché
+  stiamo copiando solo il valore, non il riferimento all'oggetto.
+</p>
 
-<p>Inoltre, quando si lavora con gli array, è importante capire che gli array sono trattati come puntatori in memoria. Ad esempio, se copiamo un array e poi aggiungiamo un elemento al nuovo array, stiamo modificando l'array originale, poiché entrambi i nuovi e vecchi array puntano allo stesso spazio di memoria.</p>
+<p>
+  Inoltre, quando si lavora con gli array, è importante capire che gli array sono trattati come puntatori in memoria. Ad
+  esempio, se copiamo un array e poi aggiungiamo un elemento al nuovo array, stiamo modificando l'array originale,
+  poiché entrambi i nuovi e vecchi array puntano allo stesso spazio di memoria.
+</p>
 
-<p>Per creare una copia vera e propria di un array senza condividerne lo spazio di memoria, possiamo utilizzare l'operatore spread <code>[...nomeArrayDaCopiare]</code>:</p>
+<p>
+  Per creare una copia vera e propria di un array senza condividerne lo spazio di memoria, possiamo utilizzare
+  l'operatore spread <code>[...nomeArrayDaCopiare]</code>:
+</p>
 
 <pre><code>const bello = ["copia"];
 const bello1 = [...bello]; // Copia l'array bello in bello1
 </code></pre>
 
-<p>In questo modo, <code>bello1</code> sarà una copia indipendente di <code>bello</code>, e le modifiche a uno non influenzeranno l'altro.</p>
-<p>Lo spread operator (<code>...</code>) in JavaScript è un operatore molto utile che consente di espandere gli elementi di un array o gli elementi di un oggetto. Può essere utilizzato in diversi contesti per semplificare e migliorare la leggibilità del codice.</p>
+<p>
+  In questo modo, <code>bello1</code> sarà una copia indipendente di <code>bello</code>, e le modifiche a uno non
+  influenzeranno l'altro.
+</p>
+<p>
+  Lo spread operator (<code>...</code>) in JavaScript è un operatore molto utile che consente di espandere gli elementi
+  di un array o gli elementi di un oggetto. Può essere utilizzato in diversi contesti per semplificare e migliorare la
+  leggibilità del codice.
+</p>
 
-    <p>Ecco come funziona in due contesti principali:</p>
+<p>Ecco come funziona in due contesti principali:</p>
 
-    <ol>
-        <li><strong>Espansione degli elementi di un array:</strong>
-            <pre><code class="language-javascript">const array1 = [1, 2, 3];
+<ol>
+  <li>
+    <strong>Espansione degli elementi di un array:</strong>
+    <pre><code class="language-javascript">const array1 = [1, 2, 3];
 const array2 = [...array1, 4, 5, 6];
 console.log(array2); // Output: [1, 2, 3, 4, 5, 6]</code></pre>
-            <p>In questo esempio, <code>...array1</code> espande gli elementi di <code>array1</code> all'interno di <code>array2</code>, creando così un nuovo array che include tutti gli elementi di <code>array1</code>, seguiti dagli elementi specificati dopo lo spread operator.</p>
-        </li>
+    <p>
+      In questo esempio, <code>...array1</code> espande gli elementi di <code>array1</code> all'interno di
+      <code>array2</code>, creando così un nuovo array che include tutti gli elementi di <code>array1</code>, seguiti
+      dagli elementi specificati dopo lo spread operator.
+    </p>
+  </li>
 
-        <li><strong>Espansione delle proprietà di un oggetto:</strong>
-            <pre><code class="language-javascript">const object1 = { x: 1, y: 2 };
+  <li>
+    <strong>Espansione delle proprietà di un oggetto:</strong>
+    <pre><code class="language-javascript">const object1 = { x: 1, y: 2 };
 const object2 = { ...object1, z: 3 };
 console.log(object2); // Output: { x: 1, y: 2, z: 3 }</code></pre>
-            <p>In questo caso, <code>...object1</code> espande le proprietà di <code>object1</code> all'interno di <code>object2</code>, creando così un nuovo oggetto che include tutte le proprietà di <code>object1</code>, seguite dalle proprietà specificate dopo lo spread operator.</p>
-        </li>
-    </ol>
+    <p>
+      In questo caso, <code>...object1</code> espande le proprietà di <code>object1</code> all'interno di
+      <code>object2</code>, creando così un nuovo oggetto che include tutte le proprietà di <code>object1</code>,
+      seguite dalle proprietà specificate dopo lo spread operator.
+    </p>
+  </li>
+</ol>
 
-    <p>Lo spread operator è molto utile quando si desidera creare copie di array o oggetti esistenti con alcune modifiche o quando si vogliono combinare più array o oggetti in uno nuovo.</p>
-
-</body>
+<p>
+  Lo spread operator è molto utile quando si desidera creare copie di array o oggetti esistenti con alcune modifiche o
+  quando si vogliono combinare più array o oggetti in uno nuovo.
+</p>
