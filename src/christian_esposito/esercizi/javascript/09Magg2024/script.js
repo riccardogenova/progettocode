@@ -24,7 +24,7 @@ class AppTodoList {
     });
     // console.log("filtDoto", filtDoto)
 
-    const newDesc = (filtDoto[0].description = newDescription);
+    filtDoto[0].description = newDescription;
 
     // console.log("nedDesc", newDesc)
     // console.log("todoWhitNewDesc",this.todos)
@@ -35,12 +35,12 @@ class AppTodoList {
       return id === e.id;
     });
     // console.log(filtDoto)
-    const newStatus = (filtDoto[0].status = !filtDoto[0].status);
+    filtDoto[0].status = !filtDoto[0].status;
     // console.log("typeof", newStatus)
     // console.log("new todo Status",this.todos)
   }
 
-  get todoList() {
+  todoList() {
     console.log('getTodoFunction', this.todos);
   }
 }

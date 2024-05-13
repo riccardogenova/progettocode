@@ -4,34 +4,34 @@
  * @format
  */
 
-const cubeRed = document.getElementById('cube');
+// const cubeRed = document.getElementById('cube');
 
-const hiddenCube = () => {
-  cubeRed.style.display = 'none';
-};
+// const hiddenCube = () => {
+//   cubeRed.style.display = 'none';
+// };
 
-const showCube = () => {
-  cubeRed.style.display = 'block';
-};
+// const showCube = () => {
+//   cubeRed.style.display = 'block';
+// };
 
 /* ESERCIZIO 2 */
 
-const text = document.getElementById('text');
+// const text = document.getElementById('text');
 
-const modifieText = () => {
-  text.innerHTML = 'SEI STATO HACKERATO';
-  text.style.fontSize = '2em';
-};
+// const modifieText = () => {
+//   text.innerHTML = 'SEI STATO HACKERATO';
+//   text.style.fontSize = '2em';
+// };
 
 /* ESERCIZIO 3 */
-const bgColor = document.getElementById('color_bg');
-const value = bgColor.value;
+// const bgColor = document.getElementById('color_bg');
+// const value = bgColor.value;
 
-const getValue = () => {
-  console.log('getValue', typeof bgColor.value.toString());
+// const getValue = () => {
+//   console.log('getValue', typeof bgColor.value.toString());
 
-  setTimeout(() => {
-    console.log('getValueTimeOut', typeof bgColor.value.toString());
-    document.body.style.backgroundColor = bgColor.value.toString();
-  }, 10);
-};
+//   setTimeout(() => {
+//     console.log('getValueTimeOut', typeof bgColor.value.toString());
+//     document.body.style.backgroundColor = bgColor.value.toString();
+//   }, 10);
+// };

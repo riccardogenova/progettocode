@@ -4,9 +4,9 @@
 const text1 = document.getElementById('ex1');
 const btnColor = document.getElementById('btn_ex1');
 
-const redTextEx1 = () => {
-  text1.style.color = 'red';
-};
+// const redTextEx1 = () => {
+//   text1.style.color = 'red';
+// };
 
 btnColor.addEventListener('click', function redT() {
   text1.style.color = 'red';
