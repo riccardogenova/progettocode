@@ -32,7 +32,7 @@ function getNumOfGroup() {
 }
 function onClickButtonGen() {
   nodeDivGroup.innerHTML = '';
-  const groupNumber = groupCalculator();
+  const groupNumber = getNumOfGroup();
   let studentListGroupCopy = [...studentListGroup];
   const selectedValue = nodeSelect.value;
   let i = 0;
