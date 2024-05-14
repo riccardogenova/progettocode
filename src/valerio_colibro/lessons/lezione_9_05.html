@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lezione 9/05</title>
+  </head>
+  <body>
+    <h1>Lezione 9/05</h1>
+    <h2>
+      <ul>
+        <li>La classe è un tipo di funzione utile a creare oggetti;</li>
+        <li>Esempio: <code>const example = {}</code></li>
+        <li>
+          Esempio2: <code>const example2 = new Objcet()</code> Questa è una classe costruttore perchè usiamo
+          <code>new</code>
+        </li>
+        <li>Guardare il documento "CLASS-JAVASCRIPT.md" nel profilo di Riccardo, dentro "docs"</li>
+        <li>
+          <code>Math.random</code> è una classe che usa un metodo statico, ossia un metodo da richiamare senza
+          distanziare la classe;
+        </li>
+        <li>
+          Esempio:
+          <code
+            >class AlessioBarila { constructor(name) {this.ilMioNome = name;} static saluta() {console.log('ciao, io
+            sono Alessio')} }</code
+          >
+        </li>
+        <li>La classe è un oggetto che contiene varie chiavi;</li>
+        <li>
+          Esempio:
+          <code>const people = [{ name: 'Antonio', age: 21}, { name: 'Sofia', age: 19 }]</code>
+        </li>
+        <li>Per richiamare, basta fare <code>nomeChiave.</code></li>
+        <li>L'ereditarietà è una caratteristica tipica delle classi di JS;</li>
+        <li>Nella programmazione, si definisce l'algoritmo attraverso dati e funzioni;</li>
+        <li>Fare una ricerca sui polyfill in JS;</li>
+        <li>
+          Fare un esercizio: sviluppare un'app in js che gestisca una to-do list, quindi aggiungere, rimuovere,
+          modificare e contrassegnare (fatto/non fatto) un elemento
+        </li>
+        <li>Si può iniziare da una classe js, individuare i dati, poi le funzioni</li>
+        <li>
+          Esempio:
+          <code
+            >class appToDoList { todos = //[ { description: 'fare la spesa', status: true/false, id:1233// } ];//
+            addTodo(todoName){ this.todos = [ ...this.todos, { {description: todoName, status: false, id:Math.random()
+            }, ]; } removeTodo(idTodo){ function onFilter(todo) { if (idTodo !== todo.id) return true; else return
+            false;} } makeTodoAsDone(idTodo){} updateTodo(idTodo, newDescription){} const newTodos =
+            this.todos.filter(onFilter); this.todos = [...newTodos];} }</code
+          >
+        </li>
+      </ul>
+    </h2>
+  </body>
+</html>
