@@ -39,22 +39,21 @@ let y = 10;
 
 **Const** = const non sono immutabili. Ciò significa che se una variabile const contiene un oggetto o un array, le proprietà o gli elementi di quell'oggetto o array possono ancora essere modificati.
 
-````javascript
+```javascript
 const PI = 3.14159;
-const nome = "Mario";
-
+const nome = 'Mario';
 
 // Tentativi di assegnazione successivi genereranno un errore
 PI = 3.14; // Questo causerà un errore perché non è possibile riassegnare una variabile const
 
 // Tuttavia, per gli oggetti e gli array, è possibile modificare le loro proprietà o elementi
 const persona = {
-  nome: "Mario",
+  nome: 'Mario',
   età: 30,
 };
 
-persona.nome = "Luigi"; // con questo si può modifcare la proprietà del nome
-persona.professione = "Ingegnere"; // con questa invece aggiungiamo un contenuto nuovo nell'oggeto
+persona.nome = 'Luigi'; // con questo si può modifcare la proprietà del nome
+persona.professione = 'Ingegnere'; // con questa invece aggiungiamo un contenuto nuovo nell'oggeto
 ```
 
 ## Oggetti
@@ -64,12 +63,12 @@ Un oggetto è una collezione di coppie chiave-valore, dove le chiavi sono string
 ```javascript
 // Sintassi di un oggetto
 let persona = {
-  nome: "Mario", //valore o value : key o chiave//
-  cognome: "Rossi",
+  nome: 'Mario', //valore o value : key o chiave//
+  cognome: 'Rossi',
   età: 30,
-  professione: "Insegnante",
+  professione: 'Insegnante',
   saluta: function () {
-    console.log("Ciao, mi chiamo " + this.nome + " " + this.cognome);
+    console.log('Ciao, mi chiamo ' + this.nome + ' ' + this.cognome);
   },
 };
 
@@ -78,14 +77,14 @@ console.log(persona.nome); // Sulla console: "Mario"
 console.log(persona.età); // Sulla console: 30
 
 // Come modificare le proprietà degli oggetti
-persona.professione = "Ingegnere";
+persona.professione = 'Ingegnere';
 
 // Come aggiungere elementi agli oggetti
-persona.indirizzo = "Via Roma, 123";
+persona.indirizzo = 'Via Roma, 123';
 
 // Chiamata di un metodo dell'oggetto
 persona.saluta(); // Sulla console: "Ciao, mi chiamo Mario Rossi"
-````
+```
 
 ### Funzioni
 
@@ -286,7 +285,7 @@ console.log(5 == '5');
 console.log(5 == 10); // false
 ```
 
-**\*Uguaglianza stretta (===)\*\***:
+**_Uguaglianza stretta (===)_**:
 L'operatore di uguaglianza stretta === confronta due valori per verificarne l'uguaglianza e il tipo. Restituisce true solo se i valori e i tipi sono gli stessi.
 
 ```javascript
@@ -321,8 +320,8 @@ let risultato = 5 > 3 || 2 < 1; // true
 **_Operatore di AND logico (&&)_**:
 L'operatore di AND logico && viene utilizzato per eseguire una valutazione booleana AND tra due espressioni. Restituisce true solo se entrambe le espressioni sono true, altrimenti restituisce false
 
-```javascriptc
-let risultato = (5 > 3) && (2 < 1); // false
+```javascript
+let risultato = 5 > 3 && 2 < 1; // false
 ```
 
 Possono essere combinati insieme per creare espressioni booleane più complesse e potenti. Ad esempio, l'uso di parentesi può determinare l'ordine di valutazione delle espressioni, consentendo di costruire condizioni logiche complesse.

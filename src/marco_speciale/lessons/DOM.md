@@ -14,47 +14,26 @@ Interazione: Il DOM è la rappresentazione che il browser utilizza per creare un
 
 Ecco un esempio di come il DOM rappresenta una semplice struttura HTML:
 
-```
-<!DOCTYPE html>
+```html
+<!doctype html>
 <html>
-<head>
-  <title>Esempio DOM</title>
-</head>
-<body>
-  <div id="contenitore">
-    <h1>Titolo</h1>
-    <p>Questo è un paragrafo.</p>
-    <ul>
-      <li>Elemento 1</li>
-      <li>Elemento 2</li>
-      <li>Elemento 3</li>
-    </ul>
-  </div>
-</body>
+  <head>
+    <title>Esempio DOM</title>
+  </head>
+  <body>
+    <div id="contenitore">
+      <h1>Titolo</h1>
+      <p>Questo è un paragrafo.</p>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+    </div>
+  </body>
 </html>
 ```
 
 In questo esempio, il DOM rappresenterebbe la struttura del documento HTML come una struttura ad albero:
-
-```
-- Document (documento)
-  - html
-    - head
-      - title
-        - Esempio DOM
-    - body
-      - div id="contenitore"
-        - h1
-          - Titolo
-        - p
-          - Questo è un paragrafo.
-        - ul
-          - li
-            - Elemento 1
-          - li
-            - Elemento 2
-          - li
-            - Elemento 3
-```
 
 In questo modo, il DOM rappresenta il documento HTML come un albero di nodi, che può essere navigato e modificato tramite script, come JavaScript.

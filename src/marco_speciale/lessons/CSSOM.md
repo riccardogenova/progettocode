@@ -10,20 +10,9 @@ CSSOM è simile al DOM (Document Object Model), è fondamentalmente la versione 
 
 Quando il browser esegue il rendering del sito Web, CSS è il linguaggio che definisce lo stile di rendering e il risultato di un sito Web; CSSOM è il risultato della mappatura del browser dei nodi della pagina con il codice CSS associato.
 
-```
- h1{
-    font-size: 1.5em;
-    color: #414141;
-  }
-
-  .box{
-    display: flex;
-    width: 300px;
-    margin: 15px;
-    text-align: center;
-  }
-
-/* css code exmaple */
+```html
+h1{ font-size: 1.5em; color: #414141; } .box{ display: flex; width: 300px; margin: 15px; text-align: center; } /* css
+code exmaple */
 ```
 
 ![grafico](https://miro.medium.com/v2/resize:fit:720/format:webp/0*RME-Yge0TELqvm8S.png)
@@ -37,8 +26,8 @@ Il browser Web visualizza le informazioni
 Cosa possiamo fare con CSSOM?
 È normale che gli sviluppatori utilizzino JavaScript per aggiungere, rimuovere e modificare elementi di un sito Web, operazione nota anche come manipolazione DOM JavaScript.
 
-```
-document.querySelector('h1').textContent ="Ciao mondo!" ;
+```javascript
+document.querySelector('h1').textContent = 'Ciao mondo!';
 
 //esempio di manipolazione del DOM JS
 //cambia il contenuto testuale dell'elemento h1 in Hello World
@@ -48,8 +37,8 @@ Anche se non è comunemente visto, JavaScript potrebbe anche essere utilizzato p
 
 Possiamo accedere ai fogli di stile di un sito web utilizzando il comando:
 
-```
-documento . styleSheets
+```javascript
+documento.styleSheets;
 ```
 
 Questo comando JS visualizzerà l'array di oggetti CSSStyleSheet utilizzati dalla pagina Web, mentre ogni foglio di stile è un oggetto e ogni regola in un foglio di stile è un oggetto.
@@ -76,10 +65,13 @@ Come accennato in precedenza, i fogli di stile sono oggetti e le regole CSS sono
 Per aggi
 4 **Aggiunta di una nuova regola CSS a un foglio di stile**
 
-```
+```javascript
 var stylesheet = document.styleSheets[0].cssRules;
 var end = stylesheet.length - 1;
-stylesheet.insertRule("body { background-image: url('http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico'); }", end);
+stylesheet.insertRule(
+  "body { background-image: url('http://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico'); }",
+  end,
+);
 ```
 
 Per aggiungere una nuova regola CSS a un foglio di stile, dobbiamo prima identificare l'indice del foglio di stile e ottenere un riferimento alla fine di un foglio di stile.
