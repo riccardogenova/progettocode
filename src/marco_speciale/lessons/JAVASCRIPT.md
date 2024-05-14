@@ -365,3 +365,127 @@ console.log(frutta); // sulla console: ['mela', 'banana', 'arancia', 'pera']
 ```
 
 Possono essere utilizzati in una vasta gamma di scenari, dall'archiviazione di dati semplici alla rappresentazione di strutture dati complesse.
+
+### Classi
+
+Le classi in js vengono definiti come dei costrutti per creare modelli di oggetti.
+All'interno di ogni classe andranno messo degli attributi (nel caso di una persona il nome, cognomeecc).
+Sempre all'interno di una classa andra inserito il costruttore ovvero la funzione che permette di
+inizializzare l'oggetto
+Per creare una classe basterà fare:
+
+```javascript
+class Persona {
+nome;
+cognome;
+età;
+
+constructor(n,c,e){
+this.nome=n;
+this.cognome=c;
+this.età=e;
+}
+}
+
+let p1 = new (new serve per creare un istanza di una persona o oggetto,
+l'instanza serve per andare a creare un oggetto nuovo ) Persona (i valori
+che prende come parametri il costruttore)
+
+let p1 = new Persona ('marco', 'speciale', 20);
+
+andando a usare il console.log() spuntera un oggetto con gli atributi
+ di persona
+
+{
+nome : 'marco'
+cognome : 'speciale'
+età : 20
+}
+// a seconda dei parametri che si mettono si verrà a creare un oggetto.
+```
+
+**Incapsulamento**
+affinche si voglia rendere sicuro "la classe" bisogna rendere privati
+gli attributi,
+questo si potrà fare usando un # nell'attributo da rendere privato
+
+```javascript
+class Persona {
+#nome;
+#cognome;
+#età;
+
+constructor(n,c,e){
+this.#nome=n;
+this.#cognome=c;
+this.#età=e;
+}
+}
+console.log(p1.nome) //sulla console risulta undefine
+//  cosi facendo se si vorra mandare a schermo un chiave particolare risultera
+// undefine
+
+// TUTTAVIA
+// se si vuole prendere un attributo privato senza togliere il # si può usare il
+// metodo  get
+
+class Persona {
+#nome;
+#cognome;
+#età;
+
+constructor(n,c,e){
+this.#nome=n;
+this.#cognome=c;
+this.#età=e;
+}
+
+get nome(){
+ return this.nome
+}
+}
+console.log(p1.nome) spunterà sulla console 'marco'.
+
+// Si puo anche fare la stessa cosa modificando il nome
+
+class Persona {
+#nome;
+#cognome;
+#età;
+
+constructor(n,c,e){
+this.#nome=n;
+this.#cognome=c;
+this.#età=e;
+
+    get nome(){
+   return this.nome
+}
+}
+
+modificaNome(nuovoNome){
+this.nome = nuovoNome
+ }
+}
+
+p1.modificaNome('logan')
+console.log(p1.nome) sulla console : 'logan'
+
+Ereditarietà
+
+possiamo fare in modo che una classe erediti gli attributi di un'altra classe,
+tramite la funzione super possiamo passare gli attributi della classe precente
+al costruttore della classe nuova
+
+class Studente extends Persona {
+#mediaVoti
+constructor (n,c,e [qua si anche cambiare nome dei parametri]){
+super(n,c,e)
+this.mediaVoti = m;
+}
+let p2 = ne Studente ('marco', 'speciale', 17,6.9)
+
+// non solo si ereditano gli attributi ma anche i metodi
+}
+
+```
