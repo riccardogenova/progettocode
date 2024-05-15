@@ -15,7 +15,7 @@ const persona2 = { name: 'Davide', lastName: 'Damico', age: 30 };
 console.log(persona2.name);
 
 //Metodo2
-const persona3 = new Object({ name: 'Davide' });
+// const persona3 = new Object({ name: 'Davide' });
 
 //Metodo3
 
@@ -98,14 +98,15 @@ const PersonaExemple = new PersonaExemple2('Davide', 'Damico', 30);
 PersonaExemple.saluta();
 console.log('\n');
 
+//commentato per il test:lint
 // extends serve per estendere la classe
-class Eroe {
-  name = 'Tony Stark';
-}
+// class Eroe {
+//   name = 'Tony Stark';
+// }
 
-class Hero extends Eroe {
-  nickname = 'Iron Man';
-}
+// class Hero extends Eroe {
+//   nickname = 'Iron Man';
+// }
 
 // come fare col constructor
 
