@@ -13,7 +13,7 @@ buttonC.addEventListener('click', function contatoreB() {
 
 //  Modifica lo stile di un elemento tramite JavaScript. Scrivi una funzione in JavaScript
 //  che modifica il colore e la dimensione del testo di un paragrafo quando l'utente passa il mouse sopra
-const para = document.getElementById('parafrago');
+const para = document.getElementById('paragrafo');
 para.addEventListener('mouseover', function colorFontChange() {
   para.style.color = 'red';
   para.style.fontSize = '30px';
@@ -30,14 +30,22 @@ buttonHidden.addEventListener('click', function hide() {
 });
 
 buttonShow.addEventListener('click', function show() {
-  testo.style.display = 'block';
+  if (testo.style.display === 'none') {
+    testo.style.display = 'block';
+  }
 });
 
 //  Cambia lo sfondo di una pagina.
 // Crea un dropdown con diverse opzioni di colore.
 // Quando un'opzione viene selezionata, cambia il colore di sfondo della pagina usando JavaScript
-const corpo = document.querySelector('body');
-const purpleB = document.getElementById('viola');
-purpleB.addEventListener('click', function cambioColore() {
-  corpo.style.backgroundColor = 'yellow';
+const selection = document.getElementById('color-chase');
+selection.addEventListener('change', function () {
+  document.body.style.backgroundColor = selection.value;
+  if (selection.value == 'purple') {
+    document.body.style.backgroundColor = 'purple';
+  } else if (selection.value == 'blue') {
+    document.body.style.backgroundColor = 'blue';
+  } else if (selection.value == 'white') {
+    document.body.style.backgroundColor = 'white';
+  }
 });
