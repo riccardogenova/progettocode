@@ -33,6 +33,8 @@ class HangMan {
         console.log(HangMan.trueLetter)
     }
 
+    // in progress
+
     // findRandomWorld(letters){
     //     if (HangMan.randomWorld.toUpperCase().includes(letters.toUpperCase())) {
     //         for (let i = 0; i < this.randomWorld.length; i++) {
@@ -50,11 +52,13 @@ class HangMan {
 }
 
 const man = new HangMan("gatto")
-// man.findWord("t")
-// man.findWord("g")
-// man.findWord("o")
-// man.findWord("u")
-// man.findWord("a")
+man.findWord("t")
+man.findWord("g")
+man.findWord("o")
+man.findWord("u")
+man.findWord("a")
+
+// in progress
 // console.log(man.randomWorld)
 // man.random10ForrandomWorld()
 // console.log(man.randomWorld)
