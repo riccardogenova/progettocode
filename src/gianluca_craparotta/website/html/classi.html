@@ -1,0 +1,170 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiegazione delle classi</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="listrn">
+        <li><a href="">GIANLUCA CRAPAROTTA</a></li>
+      </ul>
+      <ul class="listrn">
+        <li><a href="../html/link_progetti.html">project</a></li>
+      </ul>
+    </nav>
+    <div>
+      <a href="../../index.html">home</a>> <a href="../html/link_progetti.html">progetti</a>>
+      <a href="../html/classi.html">classi</a>
+    </div>
+    <div id="pagd">
+      <h1>Programmazione Orientata agli Oggetti (OOP)</h1>
+      <p>
+        La programmazione orientata agli oggetti (OOP, Object-Oriented Programming) è un paradigma di programmazione che
+        utilizza oggetti e le loro interazioni per progettare e programmare applicazioni. I principali concetti dell'OOP
+        sono:
+      </p>
+
+      <h2>1. Classe</h2>
+      <p>
+        Una classe è un modello per creare oggetti. Definisce le proprietà (attributi) e i comportamenti (metodi) che
+        gli oggetti creati da essa possiederanno. <a href="#esempio-classe">Visualizza esempio in JavaScript</a>
+      </p>
+
+      <h3 id="esempio-classe">Esempio Classe</h3>
+      <pre><code>
+    class Persona {
+        constructor(nome, cognome) {
+            this.nome = nome;
+            this.cognome = cognome;
+        }
+        
+        saluta() {
+            console.log(`Ciao, mi chiamo ${this.nome} ${this.cognome}`);
+        }
+    }
+    
+    const persona1 = new Persona('Mario', 'Rossi');
+    persona1.saluta(); // Output: Ciao, mi chiamo Mario Rossi
+        </code></pre>
+
+      <h2>2. Oggetto</h2>
+      <p>
+        Un oggetto è un'istanza di una classe. È un'entità concreta che ha uno stato e un comportamento.
+        <a href="#esempio-oggetto">Visualizza esempio in JavaScript</a>
+      </p>
+
+      <h3 id="esempio-oggetto">Esempio Oggetto</h3>
+      <pre><code>
+    const persona2 = new Persona('Luigi', 'Verdi');
+    persona2.saluta(); // Output: Ciao, mi chiamo Luigi Verdi
+        </code></pre>
+
+      <h2>3. Incapsulamento</h2>
+      <p>
+        L'incapsulamento è il concetto di nascondere i dettagli interni di un oggetto e permettere l'accesso solo
+        attraverso metodi pubblici. Questo protegge l'integrità dei dati dell'oggetto.
+        <a href="#esempio-incapsulamento">Visualizza esempio in JavaScript</a>
+      </p>
+
+      <h3 id="esempio-incapsulamento">Esempio Incapsulamento</h3>
+      <pre><code>
+    class ContoBancario {
+        #saldo; // Variabile privata
+        
+        constructor(saldoIniziale) {
+            this.#saldo = saldoIniziale;
+        }
+        
+        deposita(importo) {
+            if (importo > 0) {
+                this.#saldo += importo;
+            }
+        }
+        
+        preleva(importo) {
+            if (importo > 0 && importo <= this.#saldo) {
+                this.#saldo -= importo;
+            }
+        }
+        
+        getSaldo() {
+            return this.#saldo;
+        }
+    }
+    
+    const mioConto = new ContoBancario(100);
+    mioConto.deposita(50);
+    console.log(mioConto.getSaldo()); // Output: 150
+    mioConto.preleva(20);
+    console.log(mioConto.getSaldo()); // Output: 130
+        </code></pre>
+
+      <h2>4. Ereditarietà</h2>
+      <p>
+        L'ereditarietà permette di creare una nuova classe che eredita le proprietà e i metodi di un'altra classe.
+        Questo promuove il riuso del codice. <a href="#esempio-ereditarieta">Visualizza esempio in JavaScript</a>
+      </p>
+
+      <h3 id="esempio-ereditarieta">Esempio Ereditarietà</h3>
+      <pre><code>
+    class Studente extends Persona {
+        constructor(nome, cognome, matricola) {
+            super(nome, cognome); // Chiamata al costruttore della classe base
+            this.matricola = matricola;
+        }
+        
+        mostraMatricola() {
+            console.log(`Matricola: ${this.matricola}`);
+        }
+    }
+    
+    const studente1 = new Studente('Giulia', 'Bianchi', '12345');
+    studente1.saluta(); // Output: Ciao, mi chiamo Giulia Bianchi
+    studente1.mostraMatricola(); // Output: Matricola: 12345
+        </code></pre>
+
+      <h2>5. Polimorfismo</h2>
+      <p>
+        Il polimorfismo permette a oggetti di classi diverse di essere trattati come oggetti della stessa classe base. È
+        un modo per utilizzare un'interfaccia comune per classi diverse.
+        <a href="#esempio-polimorfismo">Visualizza esempio in JavaScript</a>
+      </p>
+
+      <h3 id="esempio-polimorfismo">Esempio Polimorfismo</h3>
+      <pre><code>
+    class Animale {
+        parla() {
+            console.log('L\'animale fa un suono');
+        }
+    }
+    
+    class Cane extends Animale {
+        parla() {
+            console.log('Il cane abbaia');
+        }
+    }
+    
+    class Gatto extends Animale {
+        parla() {
+            console.log('Il gatto miagola');
+        }
+    }
+    
+    function faiParlare(animale) {
+        animale.parla();
+    }
+    
+    const cane = new Cane();
+    const gatto = new Gatto();
+    
+    faiParlare(cane); // Output: Il cane abbaia
+    faiParlare(gatto); // Output: Il gatto miagola
+        </code></pre>
+    </div>
+  </body>
+</html>

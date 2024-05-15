@@ -1,0 +1,53 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Hero {
+        message = 'defaul';
+        constructor() {
+          console.log('INIT');
+        }
+        getMessage() {
+          console.log('CIAO');
+        }
+      }
+      class Veicolo {
+        constructor(marca, modello) {
+          this.marca = marca;
+          this.modello = modello;
+        }
+
+        descrizione() {
+          return `Questo è un veicolo ${this.marca} ${this.modello}.`;
+        }
+      }
+
+      // Estendiamo la classe Veicolo per creare la classe Auto
+      class Auto extends Veicolo {
+        constructor(marca, modello, colore) {
+          // Chiamiamo il costruttore della classe genitore usando 'super'
+          super(marca, modello);
+          // Aggiungiamo una nuova proprietà specifica per le auto
+          this.colore = colore;
+        }
+
+        descrizione() {
+          // Possiamo sovrascrivere metodi della classe genitore
+          return `${super.descrizione()} È di colore ${this.colore}.`;
+        }
+      }
+
+      // Utilizzo delle classi
+      const auto = new Auto('Toyota', 'Corolla', 'rosso');
+      console.log(auto.descrizione()); // Output: Questo è un veicolo Toyota Corolla. È di colore rosso.
+      class hangman {}
+    </script>
+  </body>
+</html>

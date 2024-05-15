@@ -1,0 +1,45 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>programmazione oop</title>
+  </head>
+  <body>
+    <script>
+      class persona {
+        constructor(nome, cognome) {
+          this.nome = nome;
+          this.cognome = cognome;
+        }
+        saluta() {
+          console.log('Ciao ' + this.nome + ' ' + this.cognome);
+        }
+      }
+      persona1 = new persona('gianluca', 'craparotta');
+      persona1.saluta();
+
+      class contobancario {
+        #saldo;
+        constructor(saldoIniziale) {
+          this.#saldo = saldoIniziale;
+        }
+        deposito(importo) {
+          this.#saldo += importo;
+        }
+        prelievo(importo) {
+          if (importo <= this.#saldo) {
+            this.#saldo -= importo;
+          } else {
+            console.log('non hai abbastanza soldi nel conto per prelevare la cifra da te richiesta');
+          }
+        }
+        getsaldo() {
+          return this.#saldo;
+        }
+      }
+    </script>
+  </body>
+</html>

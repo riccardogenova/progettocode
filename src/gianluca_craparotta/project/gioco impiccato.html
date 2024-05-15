@@ -1,0 +1,38 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let parola = 'ciao';
+      let tentativi = 3;
+      function test() {
+        while (tentativi > 0) {
+          let p = prompt('Inserisci una lettera:');
+          if (p === '') {
+            console.log('assegna una lettera alla variabile p ');
+          } else {
+            iniziogioco();
+          }
+        }
+
+        console.log('hai finito i tentativi');
+
+        function iniziogioco(p) {
+          if (parola.includes(p)) {
+            console.log('hai indovinato la lettera, ti restano ' + (parola.length - 1) + ' da indovinare');
+          } else {
+            console.log('ritenta');
+            tentativi -= 1;
+            console.log('Tentativi rimanenti:', tentativi);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
