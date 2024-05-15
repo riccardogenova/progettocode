@@ -51,47 +51,48 @@ parola.guessLetter('p');
 
 console.log(parola.savedLetters);
 
-//COMMENTATO PER IL TEST:LINT
 //CODICE RICCARDO
-// console.log('\n CODICE DI RICCARDO');
+console.log('\n CODICE DI RICCARDO');
 
-// //Arrey parole randomiche
-// const randomKeyWords = ['ciao', 'mela', 'pippo', 'paperino', 'topolino', 'gatto', 'cane', 'cavallo', 'topo', 'topa'];
+//Arrey parole randomiche
+const randomKeyWords = ['ciao', 'mela', 'pippo', 'paperino', 'topolino', 'gatto', 'cane', 'cavallo', 'topo', 'topa'];
 
-// //RandomKey presa dall'arrey
-// const keyword = randomKeyWords[Math.floor(Math.random() * randomKeyWords.length)];
+//RandomKey presa dall'arrey
+const keyword = randomKeyWords[Math.floor(Math.random() * randomKeyWords.length)];
 
-// let numOfAttemps = 5;
-// const charactersDiscovered = [];
+let numOfAttemps = 5;
+const charactersDiscovered = [];
 
-// function test(character) {
-//   if (numOfAttemps === 0) {
-//     return 'Hai perso';
-//   }
-//   if (charactersDiscovered.includes(character)) {
-//     return 'Hai già inserito questa lettera';
-//   }
-//   charactersDiscovered.push(character);
+function test(character) {
+  if (numOfAttemps === 0) {
+    return 'Hai perso';
+  }
+  if (charactersDiscovered.includes(character)) {
+    return 'Hai già inserito questa lettera';
+  }
+  charactersDiscovered.push(character);
 
-//   if (keyword.includes(character)) {
-//     charactersDiscovered.push(character);
-//   } else {
-//     numOfAttemps--;
-//   }
+  if (keyword.includes(character)) {
+    charactersDiscovered.push(character);
+  } else {
+    numOfAttemps--;
+  }
 
-// //Split rende una stringa in un array con le parole singole
-//   const keywordArray = keyword.split('');
+  //Split rende una stringa in un array con le parole singole
+  const keywordArray = keyword.split('');
 
-//   const discoveredWord = keywordArray.map(function (ch) {
-//     if (charactersDiscovered.includes(ch)) {
-//       return ch;
-//     } else {
-//       return '*';
-//     }
-//   });
-// //Transforma lo split dinuovo in una stringa
-//   if (discoveredWord.join('') === keyword) {
-//     return 'Hai vinto';
-//   }
-//   return `${discoveredWord.join('')} Tentativi rimasti: ${numOfAttemps}`;
-// }
+  const discoveredWord = keywordArray.map(function (ch) {
+    if (charactersDiscovered.includes(ch)) {
+      return ch;
+    } else {
+      return '*';
+    }
+  });
+  //Transforma lo split dinuovo in una stringa
+  if (discoveredWord.join('') === keyword) {
+    return 'Hai vinto';
+  }
+  return `${discoveredWord.join('')} Tentativi rimasti: ${numOfAttemps}`;
+}
+
+test();
