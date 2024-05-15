@@ -1,139 +1,129 @@
-<!DOCTYPE html>
+<!-- @format -->
+
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cos'è Git</title>
+    <link rel="stylesheet" href="../css/lesson_css/git.css" />
+    <link rel="stylesheet" href="../css/utils/navbar.css" />
+    <link rel="stylesheet" href="../css/utils/reset_all.css" />
+    <link rel="stylesheet" href="../css/utils/bg_img.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cos'è Git</title>
-  <link rel="stylesheet" href="../css/lesson_css/git.css">
-  <link rel="stylesheet" href="../css/utils/navbar.css">
-  <link rel="stylesheet" href="../css/utils/reset_all.css">
-  <link rel="stylesheet" href="../css/utils/bg_img.css">
-</head>
-
-<body>
-
-<header>
-
-<input type="checkbox" id="hamburger"/> 
-     <label class="menuicon" for="hamburger"> 
-           <span></span> 
-     </label> 
-<div id="bar"> 
-    <a id="logo" href="../index.html"></a> 
-         <!--/fine logo-->
-</div>
-  <nav class="menu-visibility">
-    <ul>
-
-      <li><a class="submenu" href="#">LEZIONI</a>
+  <body>
+    <header>
+      <input type="checkbox" id="hamburger" />
+      <label class="menuicon" for="hamburger">
+        <span></span>
+      </label>
+      <div id="bar">
+        <a id="logo" href="../index.html"></a>
+        <!--/fine logo-->
+      </div>
+      <nav class="menu-visibility">
         <ul>
           <li>
-            <a href="./git.html">Lezione GIT</a>
+            <a class="submenu" href="#">LEZIONI</a>
+            <ul>
+              <li>
+                <a href="./git.html">Lezione GIT</a>
+              </li>
+              <li>
+                <a href="./html.html"> Lezione HTML</a>
+              </li>
+              <li>
+                <a href="./markdown.html"> Lezione MARKDOWN</a>
+              </li>
+              <li>
+                <a href="./dom.html"> Lezione DOM</a>
+              </li>
+              <li>
+                <a href="./css.html"> Lezione CSS</a>
+              </li>
+              <li>
+                <a href="./css_om.html"> Lezione CSS_OM</a>
+              </li>
+            </ul>
           </li>
+
           <li>
-            <a href="./html.html"> Lezione HTML</a>
-          </li>
-          <li>
-            <a href="./markdown.html"> Lezione MARKDOWN</a>
-          </li>
-          <li>
-            <a href="./dom.html"> Lezione DOM</a>
-          </li>
-          <li>
-            <a href="./css.html"> Lezione CSS</a>
-          </li>
-          <li>
-            <a href="./css_om.html"> Lezione CSS_OM</a>
+            <a class="submenu" href="#">HELPERS</a>
+            <ul>
+              <li>
+                <a href="../helpers/git_command.html">Git command</a>
+              </li>
+              <li>
+                <a href="../helpers/git_flows.html">Git Flows</a>
+              </li>
+              <li>
+                <a href="../helpers/markdown.html">MarkDown</a>
+              </li>
+              <li>
+                <a href="../helpers/tag_html.html">Tag Html</a>
+              </li>
+              <li>
+                <a href="../helpers/css_sheet.html">CSS</a>
+              </li>
+            </ul>
           </li>
         </ul>
-      </li>
-
-      <li><a class="submenu" href="#"></a>HELPERS</a>
-        <ul>
-          <li>
-            <a href="../helpers/git_command.html">Git command</a>
-          </li>
-          <li>
-            <a href="../helpers/git_flows.html">Git Flows</a>
-          </li>
-          <li>
-            <a href="../helpers/markdown.html">MarkDown</a>
-          </li>
-          <li>
-            <a href="../helpers/tag_html.html">Tag Html</a>
-          </li>
-          <li>
-            <a href="../helpers/css_sheet.html">CSS</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-  <br>
-  <br>
-
-  <div class="git">
-    <h2 class="title">GIT</h2>
-    <p>
-      Git è un sistema di controllo versione (version control system, VCS)
-      molto utilizzato, in particolare per progetti software. Immagina Git
-      come uno strumento che ti permette di tenere traccia di tutte le
-      modifiche apportate ai tuoi file nel corso del tempo. È come avere una
-      macchina del tempo per il tuo codice!
-    </p>
-
-    <br/>
-    <hr>
-
-    <h3 class="sub-title">A cosa serve Git?</h3>
-    <h4>Ecco alcuni dei vantaggi principali di utilizzare Git:</h4>
-
-    <ol>
-      <li>
-        <p>
-          Cronologia: Git registra ogni modifica effettuata ai tuoi file,
-          creando una cronologia (o storico) che puoi consultare in qualsiasi
-          momento. Puoi vedere esattamente chi ha fatto cosa e quando.
-        </p>
-      </li>
-      <li>
-        <p>
-          Controllo delle versioni: Puoi tornare a qualsiasi versione
-          precedente del tuo progetto con un semplice comando. Questo è
-          utilissimo se hai fatto qualche cambiamento indesidertato e vuoi
-          tornare indietro.
-        </p>
-      </li>
-      <li>
-        <p>
-          Collaborazione: Git è fantastico per lavorare con altri sviluppatori
-          sullo stesso progetto. Consente a più persone di lavorare su diverse
-          parti del codice contemporaneamente, senza pestarsi i piedi a
-          vicenda. Come funziona Git?
-        </p>
-      </li>
-    </ol>
-
+      </nav>
+    </header>
     <br />
-    <p>
-      Git funziona creando "istantanee" (snapshot) del tuo progetto a
-      intervalli regolari. Queste istantanee, chiamate commit, memorizzano lo
-      stato di tutti i file in quel momento specifico. Ogni commit ha un
-      messaggio associato, che descrive le modifiche apportate.
-    </p>
-
     <br />
 
-    <p>
-      Pensa a Git come a una serie di scatole impilate una sopra l'altra. Ogni
-      scatola rappresenta un commit, e contiene una copia esatta di tutti i
-      tuoi file in quel momento. Puoi sempre tornare a una scatola precedente
-      (commit) per vedere come era il tuo progetto in quel preciso istante.
-    </p>
-  </div>
-</body>
+    <div class="git">
+      <h2 class="title">GIT</h2>
+      <p>
+        Git è un sistema di controllo versione (version control system, VCS) molto utilizzato, in particolare per
+        progetti software. Immagina Git come uno strumento che ti permette di tenere traccia di tutte le modifiche
+        apportate ai tuoi file nel corso del tempo. È come avere una macchina del tempo per il tuo codice!
+      </p>
 
+      <br />
+      <hr />
+
+      <h3 class="sub-title">A cosa serve Git?</h3>
+      <h4>Ecco alcuni dei vantaggi principali di utilizzare Git:</h4>
+
+      <ol>
+        <li>
+          <p>
+            Cronologia: Git registra ogni modifica effettuata ai tuoi file, creando una cronologia (o storico) che puoi
+            consultare in qualsiasi momento. Puoi vedere esattamente chi ha fatto cosa e quando.
+          </p>
+        </li>
+        <li>
+          <p>
+            Controllo delle versioni: Puoi tornare a qualsiasi versione precedente del tuo progetto con un semplice
+            comando. Questo è utilissimo se hai fatto qualche cambiamento indesidertato e vuoi tornare indietro.
+          </p>
+        </li>
+        <li>
+          <p>
+            Collaborazione: Git è fantastico per lavorare con altri sviluppatori sullo stesso progetto. Consente a più
+            persone di lavorare su diverse parti del codice contemporaneamente, senza pestarsi i piedi a vicenda. Come
+            funziona Git?
+          </p>
+        </li>
+      </ol>
+
+      <br />
+      <p>
+        Git funziona creando "istantanee" (snapshot) del tuo progetto a intervalli regolari. Queste istantanee, chiamate
+        commit, memorizzano lo stato di tutti i file in quel momento specifico. Ogni commit ha un messaggio associato,
+        che descrive le modifiche apportate.
+      </p>
+
+      <br />
+
+      <p>
+        Pensa a Git come a una serie di scatole impilate una sopra l'altra. Ogni scatola rappresenta un commit, e
+        contiene una copia esatta di tutti i tuoi file in quel momento. Puoi sempre tornare a una scatola precedente
+        (commit) per vedere come era il tuo progetto in quel preciso istante.
+      </p>
+    </div>
+  </body>
 </html>

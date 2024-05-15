@@ -63,3 +63,77 @@ console.log(automobile.run);
 console.log(automobile.name);
 
 console.log('\n Testo e spaziatura');
+console.log('\n');
+
+// 14.05
+
+class HeroDC {
+  message = "I'm a loser!";
+
+  constructor() {
+    console.log('init');
+  }
+
+  getMessage() {
+    console.log('get message');
+  }
+}
+
+console.log(HeroDC);
+console.log('\n');
+
+class PersonaExemple2 {
+  constructor(name, lastName, age) {
+    this.name = name;
+    this.lastName = lastName;
+    this.age = age;
+  }
+
+  saluta() {
+    console.log(`Ciao , io sono ${this.name} e sono single`);
+  }
+}
+
+const PersonaExemple = new PersonaExemple2('Davide', 'Damico', 30);
+PersonaExemple.saluta();
+console.log('\n');
+
+// extends serve per estendere la classe
+class Eroe {
+  name = 'Tony Stark';
+}
+
+class Hero extends Eroe {
+  nickname = 'Iron Man';
+}
+
+// come fare col constructor
+
+class Personaa {
+  constructor(initialName) {
+    this.name = initialName;
+  }
+}
+
+new Personaa('Andrea');
+
+class Heroa extends Personaa {
+  constructor(initialName, initialNickname) {
+    super(initialName);
+    this.nickname = initialNickname;
+  }
+}
+
+const Heroa2 = new Heroa();
+
+console.log(Heroa2);
+console.log('\n');
+
+// static = rendere la funzione metodo della classe stessa
+class Esempio {
+  static saluta() {
+    console.log('Ciao');
+  }
+}
+
+Esempio.saluta();

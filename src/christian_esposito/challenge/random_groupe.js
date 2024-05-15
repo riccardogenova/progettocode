@@ -11,7 +11,6 @@ const inputDelete = document.getElementById('inputDelete');
 const btnSave = document.getElementById('saveData');
 
 const nameArray = [];
-const groupeArray2D = [];
 
 function addList() {
   if (insertInput.value == '') {

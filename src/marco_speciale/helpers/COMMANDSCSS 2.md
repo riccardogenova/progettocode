@@ -9,11 +9,11 @@ Css è possibile dare un aspetto migliore al "lavoro" in svolgimento, mentre HTM
 
 ## colore testo
 
-**color : red**
+**_color : red_**
 
 ### Cambio colore sfondo
 
-**background-color : black**
+**_background-color : black_**
 
 ## Larghezza elemento
 

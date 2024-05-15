@@ -9,11 +9,11 @@ Css è possibile dare un aspetto migliore al "lavoro" in svolgimento, mentre HTM
 
 ## colore testo
 
-**color : red**
+**color :red**
 
 ### Cambio colore sfondo
 
-**background-color : black**
+**background-color :black**
 
 ## Larghezza elemento
 
@@ -106,7 +106,7 @@ Puoi utilizzare align-content per decidere come le linee verranno distanziate tr
 **flex-start**: Le linee sono raggruppate all'inizio del contenitore.
 **flex-end**: Le linee sono raggruppate alla fine del contenitore.
 **center**: Le linee vengono centrate verticalmente nel contenitore.
-**space-between\***: Le linee occupano tutto lo spazio del contenitore e sono separate tra di loro dalla stessa quantità di spazio.
+**space-between**: Le linee occupano tutto lo spazio del contenitore e sono separate tra di loro dalla stessa quantità di spazio.
 **space-around**: Le linee sono separate dalle altre linee, e dall'inizio e dalla fine del contenitore dalla stessa quantità di spazio.
 **stretch:** Le linee vengono allungate per occupare tutto lo spazio disponibile.
 Questo potrebbe creare confusione, ma align-content determina lo spazio tra le linee mentre align-items determina

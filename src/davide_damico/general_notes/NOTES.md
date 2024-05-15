@@ -201,3 +201,16 @@ Metodi mutabili degli arrey (cercare):
 modificare l'arrey di partenza
 
 Metodi inmutabili degli arrey (cercare):
+
+# 10.05
+
+Spiegazione e introduzione di node.js
+
+Comandi sul terminale
+
+npm install o npm i nome_libreria_preso_dal_sito_npmjs.com
+
+scrivere nel file package.json nella sezione "scripts":
+"format": "prettier --write ." per eseguire prettier in automatico
+
+npm run format (prettier formatterà tutti i file e aggiustera l'indentatura e ci mostrerà gli errori di sintassi nei vari file)

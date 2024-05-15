@@ -13,10 +13,6 @@
 **Testo in Grassetto**
 **Anche questo è in Grassetto**
 
-## Testo in corsivo
-
-_Testo in Corsivo_
-
 ## Elenco e sotto elenco
 
 - Elemento 1
@@ -37,14 +33,7 @@ _Testo in Corsivo_
 
 ## Codice inline
 
-<!-- ```python
+```python
 def hello():
-    print("Ciao, mondo!") -->
-
-## Linea Orizzontale
-
----
-
----
-
----
+    print("Ciao, mondo!")
+```

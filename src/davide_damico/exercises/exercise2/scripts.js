@@ -12,6 +12,9 @@ function show() {
   toggleText.style.display = 'block';
 }
 
+toggleText.addEventListener('mouseover', show);
+toggleText.addEventListener('mouseout', hide);
+
 //Esercizio 2
 
 toggleText.onmouseover = function () {

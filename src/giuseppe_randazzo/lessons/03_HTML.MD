@@ -4,7 +4,7 @@
 
 **HTML**, acronimo di **HyperText Markup Language**, è il linguaggio standard per la creazione di pagine web. Si tratta di un linguaggio di markup, ovvero un sistema di codifica che utilizza tag per definire la struttura e il contenuto di una pagina web.
 
-Pensa all'HTML come all'ossatura di una pagina web: stabilisce come i vari elementi, come testo, immagini, video e moduli, vengono disposti e organizzati all'interno della pagina.
+Pensa all'**HTML** come all'ossatura di una pagina web: stabilisce come i vari elementi, come testo, immagini, video e moduli, vengono disposti e organizzati all'interno della pagina.
 
 ## **Come funziona l'HTML?**
 
