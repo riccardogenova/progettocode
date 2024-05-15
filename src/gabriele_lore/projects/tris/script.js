@@ -2,23 +2,22 @@
 
 class TrisGame {
   grid = ['', '', '', '', '', '', '', '', ''];
-  constructor() {}
   inserisciSimbolo(simbolo, posizione) {
-    checkGrid();
+    this.checkGrid();
     if (posizione == '') {
       this.grid[posizione] = simbolo;
     } else {
       console.log('Posizione occupata');
       return false;
     }
-    AI();
+    this.AI();
     return true;
   }
   checkGrid() {
-    checkHorizontalGrids();
-    checkVerticalGrids();
-    checkHDiagonalGrids();
-    checkFilled();
+    this.checkHorizontalGrids();
+    this.checkVerticalGrids();
+    this.checkHDiagonalGrids();
+    this.checkFilled();
   }
   checkHorizontalGrids() {
     for (let i = 0; i < 9; i = i + 3) {
@@ -50,8 +49,10 @@ class TrisGame {
     return this.grid.filter(OnFilter()).lenght == 0;
   }
   AI() {
-    while (inserisciSimbolo('O', Math.floor(Math.random * this.grid.lenght))) {
+    while (this.inserisciSimbolo('O', Math.floor(Math.random * this.grid.lenght))) {
       console.log("Posizione occupata");
     }
   }
 }
+const game = new TrisGame();
+game.inserisciSimbolo('O', 0);

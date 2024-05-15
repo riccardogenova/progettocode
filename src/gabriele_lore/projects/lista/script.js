@@ -7,8 +7,8 @@ var gr = document.getElementById('gruppi');
 var NodoDiv = document.getElementById('cont');
 var nomi = [];
 
-var bottoneGruppo = document.getElementById('gruppi');
-var dropdown = document.getElementById('numero');
+//var bottoneGruppo = document.getElementById('gruppi');
+//var dropdown = document.getElementById('numero');
 function aggiungiAllaLista() {
   var elemento = document.createElement('li');
   elemento.innerHTML = casella.value;
@@ -22,7 +22,7 @@ function randomIntFromInterval(min, max) {
 function raggruppa() {
   var list = [];
 
-  for (i = 0; i < nomi.length; i++) {
+  for (let i = 0; i < nomi.length; i++) {
     var retry = true;
     var n = randomIntFromInterval(1, nomi.length) - 1;
     while (retry) {
@@ -34,7 +34,7 @@ function raggruppa() {
     }
   }
   var counter = 0;
-  for (i = 0; i < list.length; i++) {
+  for (let i = 0; i < list.length; i++) {
     var elemento = document.createElement('span');
     elemento.textContent = nomi[i];
     NodoDiv.appendChild(elemento);
