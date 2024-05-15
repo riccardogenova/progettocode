@@ -3,10 +3,10 @@
 class TrisGame {
   grid = ['', '', '', '', '', '', '', '', ''];
   constructor() {}
-  InserisciSimbolo(simbolo, posizione) {
+  inserisciSimbolo(simbolo, posizione) {
     checkGrid();
     if (posizione == '') {
-      grid[posizione] = simbolo;
+      this.grid[posizione] = simbolo;
     } else {
       console.log('Posizione occupata');
       return false;
@@ -15,41 +15,41 @@ class TrisGame {
     return true;
   }
   checkGrid() {
-    CheckHorizontalGrids();
-    CheckVerticalGrids();
-    CheckHDiagonalGrids();
-    CheckFilled();
+    checkHorizontalGrids();
+    checkVerticalGrids();
+    checkHDiagonalGrids();
+    checkFilled();
   }
-  CheckHorizontalGrids() {
+  checkHorizontalGrids() {
     for (let i = 0; i < 9; i = i + 3) {
-      if (grid[0 + i] == grid[1 + i] && grid[1 + i] == grid[2 + i]) {
-        console.log(grid[0 + i] + ' Vince');
+      if (this.grid[0 + i] == this.grid[1 + i] && this.grid[1 + i] == this.grid[2 + i]) {
+        console.log(this.grid[0 + i] + ' Vince');
       }
     }
   }
-  CheckVerticalGrids() {
+  checkVerticalGrids() {
     for (let i = 0; i < 3; i++) {
-      if (grid[0 + i] == grid[3 + i] && grid[3 + i] == grid[6 + i]) {
-        console.log(grid[0 + i] + ' Vince');
+      if (this.grid[0 + i] == this.grid[3 + i] && this.grid[3 + i] == this.grid[6 + i]) {
+        console.log(this.grid[0 + i] + ' Vince');
       }
     }
   }
-  CheckHDiagonalGrids() {
-    if (grid[6] == grid[4] && grid[4] == grid[2]) {
-      console.log(grid[6] + ' Vince');
+  checkHDiagonalGrids() {
+    if (this.grid[6] == this.grid[4] && this.grid[4] == this.grid[2]) {
+      console.log(this.grid[6] + ' Vince');
     }
-    if (grid[8] == grid[4] && grid[4] == grid[0]) {
-      console.log(grid[8] + ' Vince');
+    if (this.grid[8] == this.grid[4] && this.grid[4] == this.grid[0]) {
+      console.log(this.grid[8] + ' Vince');
     }
   }
-  CheckFilled() {
+  checkFilled() {
     function OnFilter(el) {
       if (el == '') return false;
       return true;
     }
-    return grid.filter(OnFilter()).lenght == 0;
+    return this.grid.filter(OnFilter()).lenght == 0;
   }
   AI() {
-    while (InserisciSimbolo('O', Math.floor(Math.random * grid.lenght))) {}
+    while (inserisciSimbolo('O', Math.floor(Math.random * this.grid.lenght))) {}
   }
 }
