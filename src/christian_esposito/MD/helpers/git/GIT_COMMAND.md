@@ -149,7 +149,7 @@ Dopo aver sviluppato una funzionalità in un ramo separato, puoi integrare le mo
 
 **1. new branch**
 **2. git cherry-pick ash last commit**
-**3. git restore ashh old commit**
+**3. git stash upplay ashh old commit**
 **4. le modifiche del commit di cherrypick sono in storage (rosso in git status)**
 **5. add i file**
 **6. git commit**
