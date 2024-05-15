@@ -3,13 +3,12 @@
 // nascondi pulsante; mostra pulsante
 const paragrafo = document.getElementById('paragrafo');
 
-function nascondiPulsante() {
-  paragrafo.style.display = 'none';
-}
-function mostraPulsante() {
-  paragrafo.style.display = 'block';
-}
-// Passo sopra il paragrafo con il mouse, il p   cambia colore
+// function nascondiPulsante() {
+//   paragrafo.style.display = 'none';
+// }
+// function mostraPulsante() {
+//   paragrafo.style.display = 'block';
+// }
 
 paragrafo.addEventListener('mouseover', function () {
   paragrafo.style.color = 'blue';
@@ -20,17 +19,16 @@ paragrafo.addEventListener('mouseover', function () {
 
 // cambia colore sfondo al click su un elemento dropdown
 
-function cambiaColoreSfondo() {
-  var select = document.getElementById('selezionaColore');
-  var coloreSelezionato = select.value;
-  document.body.style.backgroundColor = coloreSelezionato;
-}
+// function cambiaColoreSfondo() {
+//   var select = document.getElementById('selezionaColore');
+//   var coloreSelezionato = select.value;
+//   document.body.style.backgroundColor = coloreSelezionato;
+// }
 const cambiaparagrafo = document.getElementById('cambiaparagrafo');
 
-function cambiaColoreTesto() {
-  cambiaparagrafo.style.color = 'red';
-}
-// clicca qui per nascondere questo elemento
+// function cambiaColoreTesto() {
+//   cambiaparagrafo.style.color = 'red';
+// }
 document.getElementById('elementoDaNascondere').addEventListener('click', function () {
   this.style.display = 'none';
 });
