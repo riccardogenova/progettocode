@@ -1,0 +1,65 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gioco dell'Impiccato</title>
+    <style>
+      /* Stili CSS opzionali per la presentazione */
+      /* Puoi personalizzarli a tuo piacimento */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gioco dell'Impiccato</h1>
+    <div>
+      <p>Parola da indovinare: <span id="parola"></span></p>
+      <p id="tentativi-rimasti">Tentativi rimasti:</p>
+    </div>
+    <div id="lettere">
+      <!-- Pulsanti per le lettere -->
+      <button type="button" onclick="checkLetter('a'); return false;">A</button>
+      <button type="button" onclick="checkLetter('b'); return false;">B</button>
+      <button type="button" onclick="checkLetter('c'); return false;">C</button>
+      <button type="button" onclick="checkLetter('d'); return false;">D</button>
+      <button type="button" onclick="checkLetter('e'); return false;">E</button>
+      <button type="button" onclick="checkLetter('f'); return false;">F</button>
+      <button type="button" onclick="checkLetter('g'); return false;">G</button>
+      <button type="button" onclick="checkLetter('h'); return false;">H</button>
+      <button type="button" onclick="checkLetter('i'); return false;">I</button>
+      <button type="button" onclick="checkLetter('j'); return false;">J</button>
+      <button type="button" onclick="checkLetter('k'); return false;">K</button>
+      <button type="button" onclick="checkLetter('l'); return false;">L</button>
+      <button type="button" onclick="checkLetter('m'); return false;">M</button>
+      <button type="button" onclick="checkLetter('n'); return false;">N</button>
+      <button type="button" onclick="checkLetter('o'); return false;">O</button>
+      <button type="button" onclick="checkLetter('p'); return false;">P</button>
+      <button type="button" onclick="checkLetter('q'); return false;">Q</button>
+      <button type="button" onclick="checkLetter('r'); return false;">R</button>
+      <button type="button" onclick="checkLetter('s'); return false;">S</button>
+      <button type="button" onclick="checkLetter('t'); return false;">T</button>
+      <button type="button" onclick="checkLetter('u'); return false;">U</button>
+      <button type="button" onclick="checkLetter('v'); return false;">V</button>
+      <button type="button" onclick="checkLetter('w'); return false;">W</button>
+      <button type="button" onclick="checkLetter('x'); return false;">X</button>
+      <button type="button" onclick="checkLetter('y'); return false;">Y</button>
+      <button type="button" onclick="checkLetter('z'); return false;">Z</button>
+    </div>
+    <button id="nuova-partita">Nuova Partita</button>
+    <div id="messaggio"></div>
+    <input type="text" id="risposta" />
+    <button type="button" onclick="controllaRisposta(); return false;">Controlla Risposta</button>
+
+    <script src="../../js/impiccato.js"></script>
+  </body>
+</html>

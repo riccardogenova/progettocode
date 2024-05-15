@@ -1,0 +1,65 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gioco dell'Impiccato</title>
+    <style>
+      /* Stili CSS opzionali per la presentazione */
+      /* Puoi personalizzarli a tuo piacimento */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gioco dell'Impiccato</h1>
+    <div>
+      <p>Parola da indovinare: <span id="parola"></span></p>
+      <p id="tentativi-rimasti">Tentativi rimasti:</p>
+    </div>
+    <div id="lettere">
+      <!-- Pulsanti per le lettere -->
+      <button type="button" onclick="Impiccato.checkLetter('a')">A</button>
+      <button type="button" onclick="Impiccato.checkLetter('b')">B</button>
+      <button type="button" onclick="Impiccato.checkLetter('c')">C</button>
+      <button type="button" onclick="Impiccato.checkLetter('d')">D</button>
+      <button type="button" onclick="Impiccato.checkLetter('e')">E</button>
+      <button type="button" onclick="Impiccato.checkLetter('f')">F</button>
+      <button type="button" onclick="Impiccato.checkLetter('g')">G</button>
+      <button type="button" onclick="Impiccato.checkLetter('h')">H</button>
+      <button type="button" onclick="Impiccato.checkLetter('i')">I</button>
+      <button type="button" onclick="Impiccato.checkLetter('j')">J</button>
+      <button type="button" onclick="Impiccato.checkLetter('k')">K</button>
+      <button type="button" onclick="Impiccato.checkLetter('l')">L</button>
+      <button type="button" onclick="Impiccato.checkLetter('m')">M</button>
+      <button type="button" onclick="Impiccato.checkLetter('n')">N</button>
+      <button type="button" onclick="Impiccato.checkLetter('o')">O</button>
+      <button type="button" onclick="Impiccato.checkLetter('p')">P</button>
+      <button type="button" onclick="Impiccato.checkLetter('q')">Q</button>
+      <button type="button" onclick="Impiccato.checkLetter('r')">R</button>
+      <button type="button" onclick="Impiccato.checkLetter('s')">S</button>
+      <button type="button" onclick="Impiccato.checkLetter('t')">T</button>
+      <button type="button" onclick="Impiccato.checkLetter('u')">U</button>
+      <button type="button" onclick="Impiccato.checkLetter('v')">V</button>
+      <button type="button" onclick="Impiccato.checkLetter('w')">W</button>
+      <button type="button" onclick="Impiccato.checkLetter('x')">X</button>
+      <button type="button" onclick="Impiccato.checkLetter('y')">Y</button>
+      <button type="button" onclick="Impiccato.checkLetter('z')">Z</button>
+    </div>
+    <button id="nuova-partita">Nuova Partita</button>
+    <div id="messaggio"></div>
+    <input type="text" id="risposta" />
+    <button type="button" id="controlla-risposta" onclick="Impiccato.controllaRisposta()">Controlla Risposta</button>
+
+    <script src="../../js/impiccatos.js"></script>
+  </body>
+</html>
