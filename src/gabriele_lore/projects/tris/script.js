@@ -50,6 +50,8 @@ class TrisGame {
     return this.grid.filter(OnFilter()).lenght == 0;
   }
   AI() {
-    while (inserisciSimbolo('O', Math.floor(Math.random * this.grid.lenght))) {}
+    while (inserisciSimbolo('O', Math.floor(Math.random * this.grid.lenght))) {
+      console.log("Posizione occupata");
+    }
   }
 }
