@@ -28,14 +28,12 @@ class ApptodoList {
     //    idList[0].status = true - così setto un valore al parametro
     if (idList[0].status === true) {
       //ho recuperato la posizione dell'array con il valore che mi serviva (idList[0]), entrando dentro l'oggetto ho preso l'elemento su cuidovevo lavorare (.status)
-      //ho cambiato il valore solo se originariamente è true // porcodio('gesù')
+      //ho cambiato il valore solo se originariamente è true //
       idList[0].status = false;
     } else {
       idList[0].status = true;
     }
   }
-
-  // Tipuzzailculo.<3 nana malefica
 
   UpdateToDo(idTodo, newDescription) {
     function onFilter(el) {
@@ -46,4 +44,4 @@ class ApptodoList {
   }
 }
 
-// porcodio('gesù')
+ApptodoList.removeTodo();

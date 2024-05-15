@@ -9,8 +9,10 @@ const nodeInput = document.getElementById('input');
 const nodeList = document.getElementById('list');
 const nodeRandomButton = document.getElementById('nodeRandomButton');
 let menu = document.getElementById('menu');
-
 const group = document.getElementById('groups');
+let groupsNumber = groupCalculator();
+let studentsCopy = [...groupsList];
+let groupSize = menu.value;
 
 function onClickAddButton() {
   const newNode = document.createElement('li');
@@ -40,29 +42,25 @@ function groupCalculator() {
 function onClickRandomButton() {
   group.innerHTML = '';
   let groupSize = menu.value;
-  let groupsNumber = groupCalculator();
-  let studentsCopy = [...groupsList];
 
   return Math.ceil(groupsList.length / groupSize);
 }
 
-function onClickRandomButton() {
-  let groupSize = menu.value;
-  let groupsNumber = groupCalculator();
-
+function generateGroups() {
   let i = 0;
   while (i < groupsNumber) {
     const newNodeUl = document.createElement('ul');
     newNodeUl.textContent = 'Group ' + (i + 1);
     group.appendChild(newNodeUl);
-    let j = 0;
   }
-
+  let j = 0;
   while (j < groupSize && studentsCopy.length > 0) {
     let randomNumber = Math.floor(Math.random() * studentsCopy.length);
     let randomElement = studentsCopy[randomNumber];
+    randomElement;
 
     while (j < groupSize) {
+      const newNodeUl = document.createElement('ul');
       let randomNumber = Math.floor(Math.random() * groupsList.length);
       let randomElement = groupsList[randomNumber];
 
@@ -93,4 +91,6 @@ nodeAddButton.addEventListener('click', onClickAddButton);
 
 nodeInput.addEventListener('input', onChangeInput);
 
-nodeRandomButton.addEventListener('click', onClickRandomButton);
+nodeRandomButton.addEventListener('click', generateGroups);
+
+onClickRandomButton();

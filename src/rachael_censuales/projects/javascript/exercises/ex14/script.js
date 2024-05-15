@@ -1,7 +1,5 @@
 /** @format */
 
-const element = document.getElementById('element');
-
 function showElement() {
   const newElement = document.createElement('div');
   newElement.textContent = 'ho detto hey';
