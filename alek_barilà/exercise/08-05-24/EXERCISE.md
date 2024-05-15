@@ -78,3 +78,15 @@ const purchases = [
 { customer: 'Charlie', price: 25 }
 ];
 undefined
+
+<!-- 8.Data un'array di persone,trova l'indice della prima persona il cui nome inizia con la B -->
+
+const people = ['Alice', 'Bob', 'Charlie', 'Alice'];
+undefined
+const index = people.findIndex(person => person.startsWith('B'));
+undefined
+if (index !== -1) {
+console.log(`L'indice della prima persona il cui nome inizia con la B è: ${index}`);
+}
+undefined
+L'indice della prima persona il cui nome inizia con la B è: 1
