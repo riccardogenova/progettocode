@@ -41,4 +41,6 @@ class AppTodoList {
   }
 }
 
-const appTodo = new AppTodoList();
+const app = new AppTodoList();
+
+app.addTodo('Cucinare');

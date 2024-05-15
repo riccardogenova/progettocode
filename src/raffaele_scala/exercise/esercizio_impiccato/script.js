@@ -1182,3 +1182,5 @@ class HangMan {
 }
 
 const game = new HangMan();
+
+game.guess('a');
