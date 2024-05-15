@@ -144,6 +144,17 @@ Dopo aver sviluppato una funzionalità in un ramo separato, puoi integrare le mo
 - git stash push ''
   - Quando esegui il comando git stash push, includi un messaggio racchiuso tra virgolette singole subito dopo il comando
 
+
+## restore change commit whit new branch
+
+**1. new branch**
+**2. git cherry-pick ash last commit**
+**3. git restore ashh old commit**
+**4. le modifiche del commit di cherrypick sono in storage (rosso in git status)**
+**5. add i file**
+**6. git commit**
+**7. git push**
+
 ## trasporto commit tra branch
 
 - git cherry-pick
