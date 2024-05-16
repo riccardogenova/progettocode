@@ -1,13 +1,9 @@
-<!-- @format -->
-
 ## FORK
+*Un fork in GitHub è una copia di un repository esistente che viene creata all'interno del tuo account GitHub. I fork sono comunemente utilizzati quando si desidera contribuire a un progetto open source senza avere il permesso di modificare direttamente il repository originale. Con un fork, puoi apportare modifiche al codice nel tuo fork personale senza influenzare il repository originale. Una volta apportate le modifiche, puoi inviare una richiesta di pull al repository originale per chiedere al proprietario del progetto di includere le tue modifiche nel progetto principale.*
 
-_Un fork in GitHub è una copia di un repository esistente che viene creata all'interno del tuo account GitHub. I fork sono comunemente utilizzati quando si desidera contribuire a un progetto open source senza avere il permesso di modificare direttamente il repository originale. Con un fork, puoi apportare modifiche al codice nel tuo fork personale senza influenzare il repository originale. Una volta apportate le modifiche, puoi inviare una richiesta di pull al repository originale per chiedere al proprietario del progetto di includere le tue modifiche nel progetto principale._
-
-_I fork sono un concetto fondamentale in GitHub e sono ampiamente utilizzati nel lavoro collaborativo e nell'open source. Consentono a chiunque di contribuire a un progetto senza richiedere autorizzazioni speciali e permettono ai proprietari del progetto di controllare le modifiche prima di includerle nel repository principale._
+*I fork sono un concetto fondamentale in GitHub e sono ampiamente utilizzati nel lavoro collaborativo e nell'open source. Consentono a chiunque di contribuire a un progetto senza richiedere autorizzazioni speciali e permettono ai proprietari del progetto di controllare le modifiche prima di includerle nel repository principale.*
 
 Inoltre offre molti vantaggi, per esempio:
-
 - Indipendenza: Dopo il fork, hai il pieno controllo sul tuo repository. Puoi modificare il codice, aggiungere funzionalità e risolvere bug senza influenzare il repository originale.
 
 - Sincronizzazione: Puoi sincronizzare il tuo fork con il repository originale per integrare le sue modifiche. Questo garantisce che il tuo fork rimanga aggiornato con le ultime modifiche del progetto principale.
@@ -47,3 +43,4 @@ VIM è un editor di testo molto potente e altamente configurabile, che è spesso
 - `doc: "commento"` ;
 - `fix: "commento"` ;
 - `feat: "commento"` ;
+

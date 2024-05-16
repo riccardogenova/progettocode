@@ -1,16 +1,12 @@
-<!-- @format -->
-
 # GIT
-
-_Git è un sistema di controllo delle versioni distribuito ampiamente utilizzato per il tracciamento delle modifiche nel codice sorgente durante lo sviluppo del software._
-
+*Git è un sistema di controllo delle versioni distribuito ampiamente utilizzato per il tracciamento delle modifiche nel codice sorgente durante lo sviluppo del software.*
 ## Comandi per il terminal
 
-_CHECKLIST:_
+*CHECKLIST:*
 
 - Commit: etichettare delle modifiche;
 - Una volta committato posso vedere il mio storico con il comando "git log";
-- Se volessi cambiare l'email o il nome, utilizzo il comando "git config user.email "scrivo il mio nome o email" ";
+- Se volessi cambiare l'email o il nome, utilizzo  il comando "git config user.email "scrivo il mio nome o email" ";
 - Per salvare il file "Ctrl+s";
 - Mediante il terminal possiamo, come detto prima, vedere il mio storico con git log, ma nel caso in cui volessimo tornare in un momento specifico del nostro storico utilizzeremo il comando "git reset codice hash", il codice hash viene presentato dopo aver effettuato il comando git log;
 - Il comando "git brench" permette di visualizzare i tipi di brench presenti ovvero i tunnel in cui siamo;

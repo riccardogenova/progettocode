@@ -1,48 +1,45 @@
-<!-- @format -->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Sheet</title>
-  </head>
-  <body>
-    <h1>Git Cheat Sheet</h1>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git Sheet</title>
+</head>
+<body>
 
-    <h3>Comandi di Base</h3>
+<h1>Git Cheat Sheet</h1>
 
-    <h4>Configurazione</h4>
-    <ul>
-      <li><code>git config --global user.name "Tuo Nome"</code>: Imposta il nome dell'utente.</li>
-      <li><code>git config --global user.email "tua@email.com"</code>: Imposta l'indirizzo email dell'utente.</li>
-      <li><code>git config --global core.editor "nome_del_tuo_editor"</code>: Imposta l'editor di testo preferito.</li>
-    </ul>
+<h3>Comandi di Base</h3>
 
-    <h4>Creazione e Clonazione di Repository</h4>
-    <ul>
-      <li><code>git init</code>: Inizializza un nuovo repository Git nella directory corrente.</li>
-      <li><code>git clone url_repository</code>: Clona un repository Git esistente nella tua directory locale.</li>
-    </ul>
+<h4>Configurazione</h4>
+<ul>
+<li><code>git config --global user.name "Tuo Nome"</code>: Imposta il nome dell'utente.</li>
+<li><code>git config --global user.email "tua@email.com"</code>: Imposta l'indirizzo email dell'utente.</li>
+<li><code>git config --global core.editor "nome_del_tuo_editor"</code>: Imposta l'editor di testo preferito.</li>
+</ul>
 
-    <h4>Operazioni sui File</h4>
-    <ul>
-      <li><code>git add nome_file</code>: Aggiunge un file all'area di staging.</li>
-      <li><code>git add .</code>: Aggiunge tutti i file modificati all'area di staging.</li>
-      <li><code>git rm nome_file</code>: Rimuove un file dalla repository e dall'area di staging.</li>
-      <li><code>git mv vecchio_nome nuovo_nome</code>: Rinomina un file e aggiunge la modifica all'area di staging.</li>
-    </ul>
+<h4>Creazione e Clonazione di Repository</h4>
+<ul>
+<li><code>git init</code>: Inizializza un nuovo repository Git nella directory corrente.</li>
+<li><code>git clone url_repository</code>: Clona un repository Git esistente nella tua directory locale.</li>
+</ul>
 
-    <h4>Commit</h4>
-    <ul>
-      <li><code>git commit -m "Messaggio del commit"</code>: Esegue un commit con un messaggio descrittivo.</li>
-      <li>
-        <code>git commit -a -m "Messaggio del commit"</code>: Aggiunge automaticamente e committa tutti i file
-        modificati.
-      </li>
-      <li><code>git commit --amend</code>: Modifica l'ultimo commit.</li>
-    </ul>
+<h4>Operazioni sui File</h4>
+<ul>
+<li><code>git add nome_file</code>: Aggiunge un file all'area di staging.</li>
+<li><code>git add .</code>: Aggiunge tutti i file modificati all'area di staging.</li>
+<li><code>git rm nome_file</code>: Rimuove un file dalla repository e dall'area di staging.</li>
+<li><code>git mv vecchio_nome nuovo_nome</code>: Rinomina un file e aggiunge la modifica all'area di staging.</li>
+</ul>
 
-    <!-- Altri comandi omessi per brevità -->
-  </body>
+<h4>Commit</h4>
+<ul>
+<li><code>git commit -m "Messaggio del commit"</code>: Esegue un commit con un messaggio descrittivo.</li>
+<li><code>git commit -a -m "Messaggio del commit"</code>: Aggiunge automaticamente e committa tutti i file modificati.</li>
+<li><code>git commit --amend</code>: Modifica l'ultimo commit.</li>
+</ul>
+
+<!-- Altri comandi omessi per brevità -->
+
+</body>
 </html>
