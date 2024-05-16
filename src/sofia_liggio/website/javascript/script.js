@@ -1,27 +1,32 @@
 /** @format */
 
 //esercizio 1//
+const hideBtn = document.getElementById("hideButton");
+const showBtn = document.getElementById("showButton");
+const addPar = document.getElementById("addParag");
 
-// function elimina() {
-//   const DeletedButton = document.getElementById('delete');
 
-//   DeletedButton.remove(elimina);
-// }
+
+function elimina() {
+  const DeletedButton = document.getElementById('delete');
+
+  DeletedButton.remove(elimina);
+}
 
 let contatore = 0;
 
-// function incrementa() {
-//   contatore++;
+function incrementa() {
+  contatore++;
 
-//   document.getElementById('amount').textContent = contatore;
-// }
+  document.getElementById('amount').textContent = contatore;
+}
 // reset //
 
-// function reset() {
-//   contatore = 0;
+function reset() {
+  contatore = 0;
 
-//   document.getElementById('amount').textContent = contatore;
-// }
+  document.getElementById('amount').textContent = contatore;
+}
 
 //esercizio 2//
 const hideButton = document.getElementById('hide');
@@ -41,5 +46,6 @@ showButton.addEventListener('click', function contentHidden() {
 var changeColor = document.getElementById('content');
 
 changeColor.addEventListener('mouseover', function changeColor() {
-  content.style.color = 'red';
+  content.style.color = red;
 });
+hideBtn()

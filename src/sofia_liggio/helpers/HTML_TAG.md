@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# LISTA TAG HTML
+# Lista tag HTML
 
 ## Tag di Base:
 

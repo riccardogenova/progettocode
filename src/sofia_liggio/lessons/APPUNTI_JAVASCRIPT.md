@@ -1,28 +1,5 @@
 <!-- @format -->
 
-# OPERATORE DI CONFRONTO
-
-<p> Un operatore di confronto è un simbolo o una sequenza di simboli utilizzato in programmazione per confrontare due valori.</p> Questi operatori vengono utilizzati principalmente in condizioni logiche, come negli statement *if, while* e *for*, per determinare se una certa condizione è vera o falsa. <p>Gli operatori di confronto confrontano due valori e restituiscono un risultato booleano, cioè vero o falso, a seconda che la condizione sia soddisfatta o meno.</p> Esempi comuni di operatori di confronto includono "=", "!=", ">", "<", ">=", "<=" utilizzati per confrontare l'uguaglianza, la disuguaglianza e l'ordine tra i valori. <br/>
-
-# !
-
-Il simbolo "!" è l'operatore di negazione logica, che viene comunemente chiamato operatore _"not"_. Questo operatore viene utilizzato per invertire il valore di verità di un'espressione booleana. Ad esempio:
-
-- Se una variabile booleana è vera, l'operatore "!" la renderà falsa.
-- Se una variabile booleana è falsa, l'operatore "!" la renderà vera. <br/>
-
-# ||
-
-Il simbolo "||" è l'operatore logico OR (o). Questo operatore viene utilizzato per eseguire una operazione di confronto tra due espressioni booleane, restituendo true se almeno una delle espressioni è vera e false se entrambe le espressioni sono false. <br/>
-
-# &&
-
-Il simbolo "&&" è l'operatore logico AND (e). Questo operatore viene utilizzato per eseguire un confronto tra due espressioni booleane, restituendo true se entrambe le espressioni sono vere e false se almeno una delle espressioni è falsa. <br/>
-
-# Nan
-
-Sta per "Not a Number" ed è un valore speciale che rappresenta un risultato non valido in operazioni numeriche. Questo valore viene restituito quando si tenta di eseguire operazioni aritmetiche non valide, come dividere per zero, convertire una stringa non numerica in un numero, o quando si verifica un errore durante il parsing di numeri. <br/>
-
 In JavaScript, ci sono diversi tipi di dati fondamentali che vengono utilizzati per rappresentare varie informazioni:
 
 - **Stringhe (Strings):** Sequenze di caratteri, definite tra virgolette singole o doppie
@@ -51,7 +28,7 @@ In JavaScript, ci sono diversi tipi di dati fondamentali che vengono utilizzati 
 - **Undefined:** Indica che una variabile è stata dichiarata ma non le è stato assegnato un valore, quindi è vuota
   _let variabileNonInizializzata;_
 
-- # **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco che non può essere modificato
+- **Symbol:** Introdotto in ECMAScript 6, rappresenta un identificatore univoco che non può essere modificato
 - **Undefined:** Indica che una variabile è stata dichiarata ma non inizializzata
   _let variabileNonInizializzata;_
 
@@ -245,103 +222,6 @@ Gli oggetti sono strutture dati che contengono una raccolta di coppie chiave-val
 
 Le classi sono uno strumento per creare oggetti con la stessa struttura e comportamento. È una sorta di schema o modello da cui è possibile creare istanze di oggetti specifici. Le classi possono anche estendere altre classi, consentendo la creazione di gerarchie di classi e l'ereditarietà di proprietà e metodi.
 
-# OOP
-
-L'_Object-Oriented Programming_ (Programmazione Orientata agli Oggetti) è un paradigma di programmazione che si basa sul concetto di "oggetti", che possono contenere dati sotto forma di attributi e codice sotto forma di metodi.
-
-Gli oggetti sono istanze di classi. Una classe è una struttura che definisce gli attributi e i metodi comuni a tutti gli oggetti di quel tipo.
-
-Le principali caratteristiche della programmazione orientata agli oggetti includono l'incapsulamento, l'ereditarietà e il polimorfismo:
-
-1. **Incapsulamento:** È il concetto di racchiudere dati e i metodi che operano su di essi all'interno di una singola unità, ovvero l'oggetto. Questo permette di nascondere i dettagli di implementazione e di proteggere i dati sensibili, consentendo solo l'accesso attraverso metodi definiti
-2. **Ereditarietà:** Consente a una classe di ereditare attributi e metodi da un'altra classe. Questo favorisce il riutilizzo del codice e permette di creare gerarchie di classi in cui le classi figlie ereditano le caratteristiche delle classi genitore.
-3. **Polimorfismo:** È la capacità di oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi. In altre parole, è la capacità di un metodo di comportarsi in modo diverso in base al tipo di oggetto su cui è chiamato.
-
-# EXTENDS
-
-Questa parola chiave è utilizzata nella programmazione orientata agli oggetti per indicare l'ereditarietà tra classi. In molti linguaggi di programmazione, extends viene utilizzato per creare una sottoclasse (o classe figlia) che eredita attributi e metodi da una superclasse (o classe genitore). Ad esempio:
-class Animal {
-void sound() {
-System.out.println("Some sound");
-}
-}
-
-class Dog extends Animal {
-void sound() {
-System.out.println("Woof");
-}
-}
-
-public class Main {
-public static void main(String[] args) {
-Dog myDog = new Dog();
-myDog.sound(); // Output: Woof
-}
-}
-
-La classe Dog estende la classe Animal utilizzando extends. Questo significa che Dog eredita il metodo sound() dalla classe Animal. Tuttavia, Dog definisce una sua implementazione specifica del metodo sound(), sovrascrivendo quello della classe Animal.
-
-# EREDITARIETA' DELLE CLASSI
-
-È un concetto fondamentale nella programmazione orientata agli oggetti (OOP). Consiste nella creazione di una nuova classe (nota come sottoclasse o classe derivata) basata su una classe esistente (nota come superclasse o classe base). La sottoclasse eredita gli attributi e i metodi della superclasse e può anche aggiungere nuovi attributi e metodi o sovrascrivere quelli esistenti. Caratteristiche:
-
-- **Riutilizzo del codice:** L'ereditarietà permette di riutilizzare il codice esistente. Una sottoclasse può ereditare tutti gli attributi e i metodi della superclasse, risparmiando tempo e sforzo nella scrittura del codice
-- **Creazione di gerarchie di classi:** Con l'ereditarietà, è possibile creare gerarchie di classi, in cui le classi figlie ereditano caratteristiche da classi genitore. Questo consente di organizzare e strutturare il codice in modo gerarchico e modulare
-- **Estensione e specializzazione:** Le sottoclassi possono estendere o specializzare il comportamento della superclasse. Possono aggiungere nuovi attributi e metodi, sovrascrivere i metodi esistenti per fornire un comportamento personalizzato o aggiungere funzionalità specifiche
-- **Polimorfismo:** L'ereditarietà supporta il polimorfismo, che consente agli oggetti di classi diverse di rispondere allo stesso messaggio in modi diversi. Questo offre flessibilità nell'utilizzo degli oggetti e favorisce la modularità del codice
-
-Ad esempio:
-// Superclasse
-class Vehicle {
-void drive() {
-System.out.println("Driving...");
-}
-}
-
-// Sottoclasse
-class Car extends Vehicle {
-void honk() {
-System.out.println("Honk honk!");
-}
-}
-
-public class Main {
-public static void main(String[] args) {
-Car myCar = new Car();
-myCar.drive(); // Ereditato dalla superclasse Vehicle
-myCar.honk(); // Metodo specifico della sottoclasse Car
-}
-}
-
-In questo esempio, la classe Car estende la classe Vehicle, ereditando il metodo drive(). Inoltre, la classe Car ha un metodo aggiuntivo honk().
-
-#
-
-Il simbolo # viene utilizzato per definire le variabili private all'interno di classi o oggetti. Ad esempio:
-
-class MyClass {
-#privateVariable = 10;
-
-    getPrivateVariable() {
-        return this.#privateVariable;
-    }
-
-    setPrivateVariable(newValue) {
-        this.#privateVariable = newValue;
-    }
-
-}
-
-const myObject = new MyClass();
-console.log(myObject.getPrivateVariable()); // Output: 10
-
-myObject.setPrivateVariable(20);
-console.log(myObject.getPrivateVariable()); // Output: 20
-
-console.log(myObject.#privateVariable); // Errore: SyntaxError: Private field '#privateVariable' must be declared in an enclosing class
-
-#privateVariable è una variabile privata definita all'interno della classe MyClass. Questo significa che può essere acceduta e modificata solo all'interno di metodi della stessa classe e non è accessibile dall'esterno dell'oggetto istanziato. Quando si tenta di accedere direttamente alla variabile privata dall'esterno della classe, verrà generato un errore di sintassi.
-
 # POLYFILL
 
 Termine usato nello sviluppo software per riferirsi a un pezzo di codice (tipicamente JavaScript) che fornisce una funzionalità che manca in alcune versioni dei browser o di altri ambienti di esecuzione.
@@ -356,42 +236,92 @@ In ambito informatico, "toggle" è un termine utilizzato per riferirsi a una fun
 
 Per esempio, nel contesto delle interfacce utente, "toggle" può riferirsi a un pulsante o un'interruttore che cambia lo stato di una funzionalità o di un elemento tra attivo e non attivo, visibile e non visibile, aperto e chiuso, etc.
 
-# INCAPSULAMENTO
+const array = ["a", "b", "c"];
+array.push("z")
+Non posso riassegnare array
 
-L'incapsulamento è uno dei concetti fondamentali della programmazione orientata agli oggetti (OOP) che si basa sul nascondere i dettagli di implementazione interni di un oggetto e permettendo l'accesso solo attraverso metodi pubblici o interfacce definite dall'oggetto stesso. In altre parole, l'incapsulamento protegge gli attributi di un oggetto, permettendo loro di essere modificati solo tramite metodi specifici.
+Array mutabili:
 
-Ci sono diversi motivi per utilizzare l'incapsulamento:
+- array.push
+- array.splice(0, 2)
 
-Protezione dei dati: L'incapsulamento impedisce l'accesso diretto agli attributi di un oggetto da parte di codice esterno. Questo previene la modifica accidentale o non autorizzata dei dati.
-Riduzione della dipendenza: Nascondendo i dettagli di implementazione interni di un oggetto, si riduce la dipendenza del codice esterno da tali dettagli. Questo permette di modificare l'implementazione interna di un oggetto senza influenzare il codice esterno che lo utilizza.
-Promozione della modularità: L'incapsulamento permette di raggruppare dati e operazioni correlate in un singolo oggetto, favorendo la modularità e facilitando la comprensione e la manutenzione del codice.
-Fornitura di interfacce coerenti: L'incapsulamento permette di definire interfacce coerenti e consistenti per gli oggetti, rendendo più facile l'utilizzo e la comprensione del codice da parte di altri sviluppatori.
-Ecco un esempio di come potrebbe essere implementato l'incapsulamento in Java utilizzando classi e metodi:
+Array immutabili:
 
-public class Person {
-private String name;
-private int age;
-
-    // Metodi getter e setter per accedere agli attributi in modo controllato
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String newName) {
-        this.name = newName;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int newAge) {
-        if (newAge >= 0) {
-            this.age = newAge;
-        }
-    }
+- array.map() vuole come parametro una funzione da eseguire per ogni ciclo. Serve per fare una modifica in un array
+  array abbiamo c e z
+  function nome(){
 
 }
 
-In questo esempio, gli attributi name e age della classe Person sono dichiarati come privati, rendendoli accessibili solo all'interno della classe stessa. I metodi getter e setter sono utilizzati per fornire un'interfaccia controllata per accedere e modificare gli attributi, permettendo così l'incapsulamento dei dati.
+Lo posso anche scrivere così:
+array.map(function(el, i, array){
+return el;
+})
+
+.filter vuole una funzione che ritorna un booleano
+array.filter(function(el){
+return false
+})
+
+- array.reduce()
+- array.find()
+- array.filter()
+- array.findIndex()
+- forEach()
+
+[...array] lo spread crea un nuovo array come se "svuotasse" il precedente. Mi creo un nuovo array e non modifico quello su cui stavo lavorando
+
+array.find() vuole come parametro una funzione che torna un booleano. differenza con filter che torna solo il primo elemento, non un nuovo array
+
+array.find(function(){
+return true
+})
+
+.findIndex ritorna solo l'indice
+.reduce vuole come parametro funzione e valore inziale, cioè accumulatore. Riceve come parametro accumulatore, indice e array
+array = ["c", "z"]
+array.reduce(function (acc,el, i){
+acc= acc+i
+return acc
+}, 0)
+
+Oggetti:
+const obj = { name: "Emanuele" }
+Per modificare una chiave, si usa l'operatore "."
+obj.name mi dà il suo contenuto
+obj.lastName non dà niente perche non è ancora ssegnato
+obj.lastName = "Fava" quindi lo posso riassegnare
+delete.obj lastName per eliminare la chiave
+
+const obj2 = {...obj, lastName: ["Il marchese", "Consuelo"]}
+obj2 in questo modo ho copiato l'oggetto precedente
+{...obj, lastName: ["Giuseppe", "Il marchese"]
+obj.lastName[0] così accedo al nome Il marchese
+
+const value = obj2.lastName sto assegnando a value il contenuto
+
+const obj = new Object() Object è una classe che permette di costruire un oggetto e ha diverse funzionalità:
+const superHero = {
+name: "Tony Stark",
+nickname: "Ironman"
+}
+Object.keys(superHero) il keys, dato un oggetto, ti costruisce un array con le chiavi dell'oggetto, quindi li trasforma in stringhe. keys vuole come parametro un oggetto
+Object.values(superHero) recupera un array con la chiave valore, quindi tony stark e ironman
+
+L'oggetto viene definito come l'istanza di una classe.
+class HeroDC {
+message = "I'm loser!"
+} Dentro una classe, non usiamo const/let/var ma direttamente il nome
+
+new HeroDC() mi creerà una classe che conterrà sempre il mio oggetto, ovvero la stringa I'm loser. Posso "parametrizzare" il comportamento della classe, usando la classe constructor()
+
+class HeroDC {
+constructor(){ questa è la funzione che viene eseguita quando faccio il new. Un oggetto è l'istanza di una classe. constructor viene eseguita quando la funzione viene istanziata. Dentro il constructor si utilizza "this."
+
+}
+}
+
+chiave extends rientra nel concetto di ereditarietà perchè estenderà proprietà e metodi. partivo da una classe ma ne creo una nuova con extend. solo che i parametri nuovi sono undefined.
+
+- cercare concetto di polimorfismo
+- funzione super: è un metodo che chiama una classe e la passa alla classe "padre"

@@ -1,85 +1,91 @@
 <!-- @format -->
 
-# COMANDI DI GIT
+# Comandi di Git
 
-- **git init**: Inizializza un nuovo repository Git nella directory corrente.
+## Comandi di base
 
-- **git clone**: copia una cartella pubblicata di un utente. Clonare sempre i file sul desktop.
+### 1. Configurazione
 
-- **git clone [URL]**: Clona un repository esistente da GitHub o da un altro repository Git. L'URL è l'indirizzo del repository remoto.
+- `git config --global user.name "Tuo Nome"`: Imposta il nome dell'utente.
+- `git config --global user.email "tua@email.com"`: Imposta l'indirizzo email dell'utente.
+- `git config --global core.editor "nome_del_tuo_editor"`: Imposta l'editor di testo preferito.
 
-- **git add [file]**: Aggiunge uno o più file alla zona di stage in preparazione per il commit. Puoi utilizzare . per aggiungere tutti i file modificati.
+### 2. Creazione e Clonazione di Repository
 
-- **git commit -m "[messaggio]"**: Esegue il commit delle modifiche aggiunte allo stage. Il messaggio di commit fornisce una breve descrizione delle modifiche apportate.
+- `git init`: Inizializza un nuovo repository Git nella directory corrente.
+- `git clone url_repository`: Clona un repository Git esistente nella tua directory locale.
 
-- **git push [remote] [branch]**: Invia i tuoi commit al repository remoto specificato. Il ramo di destinazione può essere specificato, altrimenti di solito si tratta del ramo corrente.
+### 3. Operazioni sui File
 
-- **git pull [remote] [branch]**: Recupera le modifiche dal repository remoto e le integra nel tuo repository locale. Questo comando è utile per aggiornare il tuo repository locale con le ultime modifiche dal repository remoto.
+- `git add nome_file`: Aggiunge un file alla zona di staging.
+- `git add .`: Aggiunge tutti i file modificatiall'area di staging.
 
-- **git branch [nome-branch]**: Crea un nuovo branch con il nome specificato.
+### 4. Commit
 
-- **git checkout [branch]**: Cambia il branch corrente a quello specificato.
+- `git commit -m "Messaggio del commit"`: Esegue un commit con un messaggio descrittivo.
+- `git commit -a -m "Messaggio del commit"`: Aggiunge automaticamente e committa tutti i file modificati.
+- `git commit --amend`: Modifica l'ultimo commit.
+- `git revert`: Annulla le modifiche di un commit precedente.
+- `git cherry-pick`: Applica un commit specifico da un ramo a un altro.
+- `git log -- follow [file]`: Mostra i commit che hanno cambiato un file specifico.
+- `git log -- oneline`: Visualizza i log in una sola linea.
+- `git blame [file]`: Visualizza chi ha modificato una riga specifica in un file.
 
-- **git merge [branch]**: Unisce un altro branch al branch corrente. Questo è comunemente usato per integrare le modifiche da un branch di sviluppo a un branch principale come master.
+## Gestione del Repository
 
-- **git status**: Mostra lo stato attuale del repository, inclusi i file modificati, gli elementi nello stage e il ramo corrente.
+### 1. Stato
 
-- **git log**: Visualizza la cronologia dei commit nel repository.
+- `git status`: Mostra lo stato del repository.
+- `git log`: Mostra la cronologia dei commit.
 
-- **git remote -v**: Mostra l'elenco dei repository remoti collegati al repository locale, insieme agli URL associati.
+### 2. Branching
 
-- **git reset [codice commit]**: annulla una commit, solo se lavoriamo ad un progetto locale e/o non abbiamo pushato su un server remoto; questo perché il comando cancella lo storico della commit e diventa problematico se la commit è stata eseguita da altri.
+- `git branch`: Mostra l'elenco dei rami presenti.
+- `git branch nome_ramo`: Crea un nuovo ramo.
+- `git branch -m nuovo_nome`: Rinomina un ramo.
+- `git branch -d nome_ramo`: Cancella il ramo.
+- `git branch -D nome_ramo`: Elimina un ramo in modo forzato.
+- `git branch -a`: Visualizza tutti i rami, sia locali che remoti.
+- `git branch -- merged`: Elenca tutti i rami che sono stati uniti.
+- `git checkout nome_ramo`: Cambia ramo.
+- `git checkout -b nome_ramo`: Crea e passa a un nuovo ramo.
+- `git checkout --nome_file`: Annulla le modifiche in un file prima di aggiungerlo al commit.
+- `git branch -- contains nome_commit`: Visualizza i branch in cui è presente un commit specifico.
 
-- **git revert**: quando le commit che vogliamo sistemare sono state eseguite da altri. non caneclla la commit, ne crea una nuova ripristinando lo stato precedente.
+### 3. Merge e Riunione
 
-- **git diff "..."**: apre un terminale dove si vedono le modifiche fatte in un file. In rosso ciò che non c'è più, in verde le cose aggiunte.
+- `git merge nome_ramo`: Esegue il merge di un ramo nel ramo corrente.
+- `git rebase nome_ramo`: Riunisce il ramo corrente con un altro ramo.
+- `git merge -- squash nome_branch`: per unire un branch senza creare un commit di merge. Gli ultimi commit vanno sempre in cima.
 
-- **git branch -- merged**: serve a verificare che i due branch siano stati uniti. Serve anche per eliminare un altro branch che non ci serve.
+### 4. Remoti
 
-- **git branch -d [nome branch]**: lo elimina.
+- `git remote`: Mostra l'elenco dei repository remoti collegati.
+- `git remote add nome_remoto url_remoto`: Collega un repository remoto.
+- `git push nome_remoto nome_ramo`: Carica un ramo su un repository remoto.
+- `git pull nome_remoto nome_ramo`: Scarica e fonde un ramo da un repository remoto.
+- `git remote rename origin nuovo-nome`: Rinomina il repo da origin a nuovo-nome.
 
-- **git branch -D [nome branch]**: per cancellare un branch che non abbiamo ancora unito.
+### 5. Altro
 
-- **git push origin -- delete [nome branch]**:
+- `git clone url_repository`: Clona un repository Git esistente nella tua directory locale.
+- `git fetch`: Recupera i riferimenti dai repository remoti senza effettuare il merge.
+- `git diff`: Mostra le modifiche tra l'area di staging e l'ultimo commit.
+- `git stash`: Mette da parte temporaneamente le modifiche non commesse.
+- `git stash apply`: Riprende le modifiche. Se usiamo il comando due volte, non possiamo più riprendere la prima modifica.
+- `git stash list`: Elenca gli stash.
+- `git tag nome_tag`: Crea un tag per un commit specifico.
 
-- **git remote add origin [url]**: serve ad aggiungere una repository remota in git
+## Risoluzione dei conflitti
 
-- **git remote remove origin**:
+- `git diff nome_branch1..nome_branch2`: Mostra le differenze tra due rami.
+- `git mergetool`: Avvia un tool di merge per risolvere conflitti.
+- `git reset nome-del-file`: Rimuove il file dalla zona di staging.
+- `git reset --hard HASH-del-commit`: Resetta il repo al commit specificato eliminando quelli successivi.
 
-- **git flow**: aiuta a mantenere un flusso di lavoro ordinato, a separare le diverse fasi di sviluppo e a facilitare la gestione dei rilasci e delle correzioni di bug. Utile per progetti di grandi dimensioni o team di sviluppo per collaborare in modo efficiente.
+## Sviluppo Distribuito
 
-- **git fetch**: scarica le modifiche dal repository remoto senza unirle.
-
-- **git branch -m [nuovo nome]**: per rinominare un branch locale.
-
-- **git branch -a**: per visualizzare tutti i branch, sia locali che remoti.
-
-- **git checkout --[nome file]**: per annullare le modifiche in un file prima di aggiungerlo al commit.
-
-- **git reset [file]**: torno indietro ma non annulla le modifiche (infatti i file rimangono rossi).
-
-- **git clone -- bare [url]**: per creare una copia di un repository remoto sul pc senza i file di progetto.
-
-- **git stash**: mette da parte le modifiche per un cambio temporaneo dell'attuale stato di lavoro.
-
-- **git stash apply**: per riprendere le modifiche. Se mettiamo due cose da parte, quindi usiamo il comando due volte, non possiamo più riprendere la prima modifica.
-
-- **git stash list**: per vedere la lista di stash.
-
-- **git cherry-pick**: prende un commit da un altro branch e lo applica al branch corrente.
-
-- **git merge -- squash [nome branch]**: per unire un branch senza creare un commit di merge. Gli ultimi commit vanno sempre in cima.
-
-- **git log -- follow [file]**: mostra i commit che hanno cambiato un file specifico.
-
-- **git config -- global credential.helper store**: per configurare git e memorizzare le credenziali dell'utente.
-
-- **git branch -- contains [commit]**: per visualizzare i branch in cui è presente un commit specifico.
-
-- **git log -- oneline**: per visualizzare i log in una sola linea.
-
-- **git tag [nome tag] [commit]**: per aggiungere un tag a un commit.
-
-- **git blame [file]**: per vedere chi ha modificato una riga specifica in un file.
-
-- **git reset -- hard head**: per reimpostare l'head del repository all'ultimo stato di commit.
+- `git remote -v`: Visualizza gli URL dei repository remoti collegati.
+- `git fetch origin`: Recupera i cambiamenti dal repository remoto origin.
+- `git push origin nome_ramo`: Carica un ramo nel repository remoto origin.
+- `git pull origin nome_ramo`: Tira i cambiamenti dal repository remoto origin e fonde con il ramo corrente.
