@@ -144,7 +144,6 @@ Dopo aver sviluppato una funzionalità in un ramo separato, puoi integrare le mo
 - git stash push ''
   - Quando esegui il comando git stash push, includi un messaggio racchiuso tra virgolette singole subito dopo il comando
 
-
 ## restore change commit whit new branch
 
 **1. new branch**

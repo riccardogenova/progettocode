@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # OOP
 
 ## Programmazione Orientata agli Oggetti (OOP) in JavaScript
@@ -28,8 +30,8 @@ Gli oggetti sono istanze di una classe e rappresentano entità concrete con le p
 
 ```javascript
 const persona1 = new Persona();
-persona1.nome = "Mario";
-persona1.cognome = "Rossi";
+persona1.nome = 'Mario';
+persona1.cognome = 'Rossi';
 persona1.eta = 30;
 
 persona1.saluta(); // Output: Ciao, mi chiamo Mario Rossi
@@ -60,7 +62,7 @@ class Calcolatrice {
   #primoNumero;
   #secondoNumero;
 
-get primoNumero() {
+  get primoNumero() {
     return this.#primoNumero;
   }
 
@@ -92,15 +94,11 @@ get primoNumero() {
 }
 ```
 
-
-
-* I getter primoNumero e secondoNumero permettono di leggere i valori delle proprietà private corrispondenti.
-* I setter primoNumero e secondoNumero permettono di impostare i valori delle proprietà private corrispondenti, con un controllo del tipo di dato (numero) per evitare errori.
-* I metodi `somma` e `sottrai` utilizzano i getter per accedere ai valori delle proprietà.
-* I metodi `somma` e `sottrai` eseguono le operazioni matematiche
-* L'utilizzo di getter e setter offre maggiore flessibilità e controllo sull'accesso alle proprietà private, mantenendo l'incapsulamento e la coesione della classe.
-
-
+- I getter primoNumero e secondoNumero permettono di leggere i valori delle proprietà private corrispondenti.
+- I setter primoNumero e secondoNumero permettono di impostare i valori delle proprietà private corrispondenti, con un controllo del tipo di dato (numero) per evitare errori.
+- I metodi `somma` e `sottrai` utilizzano i getter per accedere ai valori delle proprietà.
+- I metodi `somma` e `sottrai` eseguono le operazioni matematiche
+- L'utilizzo di getter e setter offre maggiore flessibilità e controllo sull'accesso alle proprietà private, mantenendo l'incapsulamento e la coesione della classe.
 
 **6. Ereditarietà:**
 
@@ -116,10 +114,10 @@ class Studente extends Persona {
 }
 
 const studente1 = new Studente();
-studente1.nome = "Marco";
-studente1.cognome = "Verdi";
+studente1.nome = 'Marco';
+studente1.cognome = 'Verdi';
 studente1.eta = 22;
-studente1.matricola = "123456";
+studente1.matricola = '123456';
 
 studente1.saluta(); // Output: Ciao, mi chiamo Marco Verdi
 studente1.iscrittoA(); // Output: Lo studente Marco Verdi è iscritto al corso 123456
@@ -132,19 +130,19 @@ Il polimorfismo permette a oggetti di classi diverse di rispondere allo stesso m
 ```javascript
 class Animale {
   parla() {
-    console.log("Non so parlare!");
+    console.log('Non so parlare!');
   }
 }
 
 class Cane extends Animale {
   parla() {
-    console.log("Bau Bau!");
+    console.log('Bau Bau!');
   }
 }
 
 class Gatto extends Animale {
   parla() {
-    console.log("Miao Miao!");
+    console.log('Miao Miao!');
   }
 }
 
