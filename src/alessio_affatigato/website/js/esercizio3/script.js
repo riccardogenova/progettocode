@@ -7,3 +7,4 @@ function aggiungiParagrafo() {
   var contenitore = document.getElementById('contenitore');
   contenitore.appendChild(nuovoParagrafo);
 }
+console.log(aggiungiParagrafo);

@@ -7,3 +7,4 @@ function cambiaTesto() {
     paragrafo.textContent = nuovoTesto;
   }
 }
+console.log(cambiaTesto);
