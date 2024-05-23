@@ -1,0 +1,171 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Lessons CCSOM</title>
+    <link rel="stylesheet" href="../website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/82742da272.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><h1>Davide D'Amico</h1></div>
+        <nav class="menu">
+          <ul class="ulmenu">
+            <a href="../website.html">Home</a>
+            <a href="../helpers.html">Helpers</a>
+            <a href="../lessons.html">Lessons</a>
+            <a href="">Sign In<i class="fa-solid fa-right-to-bracket"></i></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <p>HOME</p>
+        <p>></p>
+        <p>LESSONS</p>
+        <p>></p>
+        <p>CSSOM</p>
+      </div>
+      <div class="default-css">
+        <h1>Che Cos'è il CSSOM?</h1>
+
+        <p>
+          Il CSS Object Model (CSSOM) è un concetto fondamentale e parallelo al Document Object Model (DOM) nel mondo
+          dello sviluppo web. Mentre il DOM si concentra sulla struttura e sul contenuto di una pagina web, il CSSOM si
+          occupa dell'aspetto e dello stile. Ecco alcuni punti chiave per capire meglio il CSSOM:
+        </p>
+        <ol>
+          <li>
+            <strong>Definizione</strong>: Il CSSOM è una rappresentazione di tutti gli stili CSS associati a un
+            documento web. Così come il DOM rappresenta la struttura del documento, il CSSOM rappresenta la struttura
+            stilistica, includendo le regole CSS e le loro relazioni con gli elementi del DOM.
+          </li>
+          <li>
+            <strong>Interazione con il DOM</strong>: Il CSSOM e il DOM lavorano insieme per rendere visibile e
+            stilisticamente coerente una pagina web nel browser. Mentre il DOM rappresenta la struttura del documento,
+            il CSSOM definisce come quella struttura dovrebbe essere visualizzata.
+          </li>
+        </ol>
+
+        <h2>Caratteristiche del CSSOM</h2>
+        <ol>
+          <li>
+            <strong>Accesso e Manipolazione</strong>: Il CSSOM permette ai programmatori di accedere e manipolare
+            dinamicamente gli stili di una pagina utilizzando JavaScript. Ciò include la possibilità di leggere e
+            modificare regole CSS, come cambiare colori, dimensioni, margini, e altre proprietà stilistiche.
+          </li>
+          <li>
+            <strong>Reflow e Repaint</strong>: Qualsiasi modifica al CSSOM può causare un reflow e un repaint della
+            pagina, simile a quanto accade con il DOM. Questo significa che le modifiche agli stili possono avere
+            impatti significativi sulle prestazioni della pagina, poiché il browser deve ricalcolare e ridisegnare gli
+            elementi.
+          </li>
+        </ol>
+
+        <h2>Utilizzo del CSSOM</h2>
+        <ul>
+          <li>
+            <strong>Modifica Dinamica degli Stili</strong>: Gli sviluppatori possono usare JavaScript per cambiare gli
+            stili di una pagina in risposta a eventi o azioni dell'utente. Ad esempio, cambiare il colore di sfondo di
+            un elemento quando viene cliccato.
+          </li>
+          <li>
+            <strong>Ottimizzazione delle Prestazioni</strong>: Una buona comprensione del CSSOM è fondamentale per
+            ottimizzare le prestazioni di una pagina web. Modifiche inefficaci agli stili possono portare a
+            rallentamenti, specialmente in pagine complesse.
+          </li>
+        </ul>
+
+        <h2>Considerazioni sul CSSOM</h2>
+        <ol>
+          <li>
+            <strong>Complessità</strong>: Il CSSOM può diventare piuttosto complesso, specialmente in grandi
+            applicazioni web con molti stili CSS dinamici.
+          </li>
+          <li>
+            <strong>Prestazioni</strong>: È importante fare attenzione a come si interagisce con il CSSOM. Operazioni
+            frequenti e inutili possono influenzare negativamente le prestazioni del sito.
+          </li>
+        </ol>
+
+        <h2>Esempio HTML con CSS Incorporato</h2>
+        <p>
+          Per illustrare come il CSS Object Model (CSSOM) funziona in una pagina web, prendiamo un semplice esempio HTML
+          con CSS incorporato e vediamo come potrebbe essere rappresentato e manipolato nel CSSOM. Immaginiamo di avere
+          il seguente codice HTML con stile CSS incorporato:
+        </p>
+        <pre>
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          &lt;head&gt;
+              &lt;style&gt;
+                  body {
+                      background-color: lightblue;
+                  }
+                  p {
+                      color: navy;
+                  }
+              &lt;/style&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+              &lt;p&gt;Benvenuto nel mondo di JavaScript e CSSOM!&lt;/p&gt;
+          &lt;/body&gt;
+          &lt;/html&gt;
+      </pre
+        >
+
+        <h2>Rappresentazione nel CSSOM</h2>
+        <p>
+          Quando il browser carica questa pagina, analizza il CSS e costruisce il CSSOM, una rappresentazione a oggetti
+          di queste regole CSS. Il CSSOM per questa pagina potrebbe essere rappresentato internamente in un modo simile
+          a questo (semplificato per scopi illustrativi):
+        </p>
+        <pre>
+          CSSOM
+          │
+          └─── CSSStyleSheet
+              │
+              ├─── CSSRuleList
+              │    │
+              │    ├─── CSSRule: body { background-color: lightblue; }
+              │    │
+              │    └─── CSSRule: p { color: navy; }
+              │
+              └─── (altri dettagli del foglio di stile)
+      </pre
+        >
+
+        <h2>Manipolazione del CSSOM con JavaScript</h2>
+        <p>
+          Se vogliamo modificare dinamicamente gli stili utilizzando JavaScript, possiamo farlo manipolando il CSSOM. Ad
+          esempio, possiamo cambiare il colore di sfondo del corpo della pagina:
+        </p>
+        <pre>
+          document.body.style.backgroundColor = "peachpuff";
+      </pre
+        >
+        <p>
+          Questo codice JavaScript cambierà direttamente lo stile del &lt;body&gt; modificando il CSSOM. Il browser poi
+          rileverà questa modifica e renderizzerà di nuovo la pagina con il nuovo colore di sfondo. Analogamente,
+          possiamo modificare il colore del testo dei paragrafi in questo modo:
+        </p>
+        <pre>
+          var paragrafi = document.querySelectorAll("p");
+          for (var p of paragrafi) {
+            p.style.color = "green";
+          }
+      </pre
+        >
+      </div>
+    </main>
+  </body>
+</html>

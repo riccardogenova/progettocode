@@ -1,0 +1,113 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Lessons GIT</title>
+    <link rel="stylesheet" href="../website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/82742da272.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><h1>Davide D'Amico</h1></div>
+        <nav class="menu">
+          <ul class="ulmenu">
+            <a href="../website.html">Home</a>
+            <a href="../helpers.html">Helpers</a>
+            <a href="../lessons.html">Lessons</a>
+            <a href="">Sign In<i class="fa-solid fa-right-to-bracket"></i></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <p>HOME</p>
+        <p>></p>
+        <p>LESSONS</p>
+        <p>></p>
+        <p>GIT</p>
+      </div>
+
+      <div class="default-css">
+        <h1>Git: Una Guida Introduttiva</h1>
+
+        <p>
+          Git è un sistema di controllo di versione distribuito che consente a voi e ai vostri team di tracciare le
+          modifiche nei file di progetto e di collaborare efficacemente, indipendentemente dalla dimensione del
+          progetto. È diventato uno strumento indispensabile per sviluppatori, programmatori e professionisti che
+          lavorano su documenti o progetti che richiedono revisioni o contributi multipli.
+        </p>
+
+        <h2>A cosa serve Git?</h2>
+        <ul>
+          <li>
+            <strong>Tracciamento delle Modifiche</strong>: Git vi aiuta a monitorare ogni cambiamento nei vostri file,
+            permettendovi di ripristinare versioni precedenti in caso di errori o di necessità.
+          </li>
+          <li>
+            <strong>Collaborazione</strong>: Facilita la collaborazione tra più persone su un unico progetto,
+            consentendo a ciascuno di lavorare su una propria copia e poi unire le modifiche senza perdere il lavoro
+            altrui.
+          </li>
+          <li>
+            <strong>Branching e Merging</strong>: Vi permette di sviluppare nuove funzionalità o correggere bug in modo
+            isolato attraverso i rami (branches), per poi unire (merge) tali cambiamenti al progetto principale quando
+            siete pronti.
+          </li>
+        </ul>
+
+        <h2>Come si usa Git?</h2>
+        <h3>1. Installazione</h3>
+        <p>Per iniziare, installate Git sul vostro computer. È disponibile per Windows, macOS e Linux.</p>
+
+        <h3>2. Configurazione Iniziale</h3>
+        <p>
+          Una volta installato, aprite il terminale o il prompt dei comandi e configurate il vostro nome utente e email
+          con i comandi:
+        </p>
+        <code>git config --global user.name "Il vostro nome"</code><br />
+        <code>git config --global user.email "la_vostra_email@example.com"</code>
+        <p>Questo è importante perché ogni commit che fate sarà associato a queste informazioni.</p>
+
+        <h3>Iniziare un Nuovo Repository</h3>
+        <p>
+          Per iniziare a tracciare un progetto con Git, dovrete navigare nella cartella del progetto tramite il
+          terminale e digitare:
+        </p>
+        <code>git init</code>
+        <p>
+          Questo comando crea un nuovo sottodirectory <code>.git</code> nella vostra cartella del progetto, che contiene
+          tutti i file necessari per il tracciamento delle versioni.
+        </p>
+
+        <h3>Tracciare i File e Fare Commit</h3>
+        <p>
+          Dopo aver modificato i file nel vostro progetto, potete usare i seguenti comandi per tracciarli e registrare
+          le vostre modifiche:
+        </p>
+        <code>git add .</code><br />
+        <code>git commit -m "Un messaggio che descrive la modifica"</code>
+        <p>
+          Il comando <code>git add .</code> aggiunge tutti i file modificati all'area di staging, preparandoli per il
+          commit. <code>git commit</code> registra effettivamente le modifiche, con un messaggio che descrive cosa avete
+          fatto.
+        </p>
+
+        <h3>Collaborare</h3>
+        <p>
+          Per collaborare con altri, di solito caricherete il vostro repository su un servizio di hosting Git come
+          GitHub, GitLab o Bitbucket. Da lì, potete clonare repository, fare push delle vostre modifiche, fare pull
+          delle modifiche degli altri, e gestire le merge delle divergenze.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Lessons Function</title>
+    <link rel="stylesheet" href="../website.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/82742da272.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo"><h1>Davide D'Amico</h1></div>
+        <nav class="menu">
+          <ul class="ulmenu">
+            <a href="../website.html">Home</a>
+            <a href="../helpers.html">Helpers</a>
+            <a href="../lessons.html">Lessons</a>
+            <a href="">Sign In<i class="fa-solid fa-right-to-bracket"></i></a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="breadcrumb">
+        <p>HOME</p>
+        <p>></p>
+        <p>LESSONS</p>
+        <p>></p>
+        <p>FUNCTION</p>
+      </div>
+
+      <div class="default-css">
+        <h2>Function in JavaScript</h2>
+
+        <h3>Cosa è l'oggetto <code>Function</code>?</h3>
+        <p>
+          L'oggetto <code>Function</code> è uno dei costruttori built-in in JavaScript, usato per creare nuove funzioni
+          dinamicamente. Le funzioni create con il costruttore <code>Function</code> non sono chiuse nel loro contesto
+          di creazione; possono accedere solamente alle variabili globali e alle loro variabili locali.
+        </p>
+
+        <h3>Come si usa?</h3>
+        <p>
+          Per creare una nuova funzione, puoi usare la sintassi del costruttore
+          <code>Function</code>, dove passi una serie di argomenti come stringhe, seguiti da una stringa che contiene il
+          corpo della funzione.
+        </p>
+
+        <h4>Sintassi</h4>
+        <pre>
+    <code>new Function ([arg1[, arg2[, ...argN]],] functionBody)</code>
+    </pre>
+        <ul>
+          <li>
+            <strong>arg1, arg2, ..., argN</strong> - Nomi degli argomenti della funzione, ognuno come una stringa
+            separata.
+          </li>
+          <li>
+            <strong>functionBody</strong> - Una stringa che contiene le istruzioni JavaScript che costituiscono il corpo
+            della funzione.
+          </li>
+        </ul>
+
+        <h3>Esempio</h3>
+        <pre>
+    <code>// Crea una funzione che accetta due argomenti e ritorna la loro somma
+    var add = new Function("a", "b", "return a + b;");
+    
+    // Usa la funzione
+    console.log(add(2, 3)); // Output: 5
+    </code>
+    </pre>
+
+        <h3>Vantaggi e svantaggi dell'uso di <code>Function</code></h3>
+
+        <h4>Vantaggi:</h4>
+        <ol>
+          <li>
+            <strong>Flessibilità</strong>: Le funzioni create con <code>Function</code> possono essere generate
+            dinamicamente da stringhe, il che può essere utile per eseguire codice generato in tempo reale.
+          </li>
+          <li>
+            <strong>Isolamento</strong>: Le funzioni create non hanno accesso alle variabili locali dello scope in cui
+            sono create (a meno che non siano globali), il che le rende isolate e meno soggette a interferenze esterne.
+          </li>
+        </ol>
+
+        <h4>Svantaggi:</h4>
+        <ol>
+          <li>
+            <strong>Sicurezza</strong>: Usare il costruttore <code>Function</code> con input non fidati può portare a
+            problemi di sicurezza, come attacchi di iniezione di codice, perché esegue il codice specificato come una
+            stringa.
+          </li>
+          <li>
+            <strong>Performance</strong>: Le funzioni create con <code>Function</code> possono essere meno performanti
+            rispetto a funzioni dichiarate normalmente, perché il codice deve essere parsato e compilato durante
+            l'esecuzione, che è un processo più lento rispetto al parsing e alla compilazione al momento del caricamento
+            dello script.
+          </li>
+          <li>
+            <strong>Debugging</strong>: Il debugging di funzioni create dinamicamente può essere più complicato, in
+            quanto non hanno riferimenti chiari nel codice sorgente.
+          </li>
+        </ol>
+
+        <h3>Quando usare il costruttore <code>Function</code>?</h3>
+        <p>
+          Il costruttore <code>Function</code> dovrebbe essere usato con cautela. È più adatto in scenari dove c'è la
+          necessità di generare e eseguire codice dinamicamente, e dove le alternative più sicure e performanti (come
+          <code>eval()</code>) non sono appropriate. Assicurati sempre di validare e sanificare qualsiasi input che
+          possa essere inserito in una funzione generata dinamicamente per evitare rischi di sicurezza.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
