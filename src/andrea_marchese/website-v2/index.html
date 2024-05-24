@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>DevHub</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.3/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        mode: "jit",
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#112D4E",
+              secondary: "#3F72AF",
+              tertiary: "#DBE2EF",
+              light: "#F9F7F7",
+              dark: "#222",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-primary dark:bg-dark h-screen">
+    <!-- NAVBAR  -->
+    <nav
+      class="container bg-light mx-auto flex justify-between items-center text-primary px-8 py-4 text-lg"
+    >
+      <a
+        href="#"
+        class="flex justify-center items-center gap-2 transition-all hover:scale-105 hover:text-secondary"
+      >
+        <i class="fa-brands fa-squarespace text-xl"></i>
+        <p>DevHub</p>
+      </a>
+
+      <div class="flex justify-center items-center gap-8">
+        <a
+          href="https://andreawebdev.netlify.app/"
+          target="_blank"
+          class="flex justify-center items-center gap-2 transition-all hover:scale-105 hover:text-secondary"
+        >
+          <i class="fa-solid fa-user scale-90"></i>
+          <p>Portfolio</p>
+        </a>
+        <a
+          href="https://github.com/yocopk"
+          target="_blank"
+          class="flex justify-center items-center gap-2 transition-all hover:scale-105 hover:text-secondary"
+        >
+          <i class="fa-brands fa-github"></i>
+          <p>GitHub</p>
+        </a>
+        <label class="cursor-pointer grid place-items-center">
+          <input
+            id="theme-toggle"
+            type="checkbox"
+            value="synthwave"
+            class="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
+          />
+          <svg
+            class="col-start-1 row-start-1 stroke-base-100 fill-base-100"
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+            />
+          </svg>
+          <svg
+            class="col-start-2 row-start-1 stroke-base-100 fill-base-100"
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </label>
+      </div>
+    </nav>
+    <!-- SIDEBAR -->
+    <div class="grid grid-cols-4 row-auto text-primary px-14 py-6">
+      <div
+        class="flex flex-col bg-light max-h-[225px] mr-10 gap-6 justify-start p-6 rounded-xl"
+      >
+        <a
+          href="#"
+          class="flex items-center gap-3 bg-secondary mr-6 px-4 py-1 text-light transition-all cursor-pointer rounded-xl"
+        >
+          <i class="fa-solid fa-house"></i>
+          <p class="">Home</p>
+        </a>
+
+        <a
+          href="./html/docs.html"
+          class="flex items-center gap-3 hover:bg-secondary mr-6 hover:px-4 hover:py-1 hover:text-light transition-all cursor-pointer rounded-xl"
+        >
+          <i class="fa-solid fa-folder-open"></i>
+          <p>Docs</p>
+        </a>
+
+        <a
+          href="./html/sheets.html"
+          class="flex items-center gap-4 hover:bg-secondary mr-6 hover:px-4 hover:py-1 hover:text-light transition-all cursor-pointer rounded-xl"
+        >
+          <i class="fa-solid fa-file"></i>
+          <p>Sheets</p>
+        </a>
+
+        <a
+          href="./html/exercises.html"
+          class="flex items-center gap-2 hover:bg-secondary mr-6 hover:px-4 hover:py-1 hover:text-light transition-all cursor-pointer rounded-xl"
+        >
+          <i class="fa-solid fa-code"></i>
+          <p>Esercizi</p>
+        </a>
+      </div>
+
+      <!-- MAIN -->
+      <div class="grid col-span-3 p-10 bg-light rounded-xl">
+        <div class="flex flex-col items-center justify-center gap-4">
+          <h1 class="text-5xl font-bold">Benvenuto su DevHub!</h1>
+          <p class="text-center">
+            DevHub è un sito web che ti permette di accedere a tutte le
+            informazioni di cui hai bisogno per diventare uno sviluppatore web
+            professionista.
+          </p>
+          <img
+            class="w-2/3 rounded-xl shadow-xl mt-4"
+            src="https://media.tenor.com/C9yxFcjG0OsAAAAC/world-connected-planet.gif"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div
+        class="container mx-auto h-[150px] flex justify-center items-center py-4"
+      >
+        <p>&copy; 2024 DevHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
