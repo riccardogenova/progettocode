@@ -48,40 +48,6 @@ Si utilizza per eseguire diverse azioni basate su condizioni multiple. È spesso
 
 Questo tipo di costrutto può essere utile quando si vuole assicurare che un blocco di codice venga eseguito almeno una volta, indipendentemente dalla condizione di partenza.
 
-# Array
-
-Un array in programmazione è una struttura dati che contiene una sequenza ordinata di elementi. Gli array sono utilizzati per memorizzare più valori in una singola variabile, consentendo un accesso facile e efficiente a ciascun elemento tramite un indice.
-
-Alcuni concetti chiave relativi agli array:
-
-- **Indice:** Gli elementi all'interno di un array sono accessibili tramite un numero intero chiamato indice. Gli indici degli array solitamente iniziano da zero, quindi il primo elemento ha indice 0, il secondo ha indice 1 e così via.
-- **Dimensione:** La dimensione di un array è il numero di elementi contenuti al suo interno. In molti linguaggi di programmazione, la dimensione di un array può essere fissa o dinamica, ma in JavaScript gli array sono dinamici, il che significa che possono crescere o ridursi dinamicamente aggiungendo o rimuovendo elementi.
-- **Tipo degli elementi:** Gli array possono contenere elementi di qualsiasi tipo di dato, inclusi numeri, stringhe, oggetti, altri array, booleani e così via. In alcuni linguaggi di programmazione, gli array possono contenere solo elementi dello stesso tipo, ma in linguaggi come JavaScript, gli array possono contenere una miscela di tipi di dati.
-- **Operazioni sugli array:** Gli array supportano varie operazioni comuni, come aggiungere o rimuovere elementi, accedere agli elementi in base all'indice, iterare su tutti gli elementi, ordinare gli elementi e molto altro ancora.
-
-# Metodi array immutabili
-
-Gli array supportano molti metodi che possono essere utilizzati per eseguire operazioni su di essi. Alcuni di questi metodi sono considerati "immutabili", il che significa che non modificano direttamente l'array originale, ma restituiscono un nuovo array o un nuovo valore basato sulle operazioni eseguite. Questo è utile quando si desidera mantenere l'integrità dell'array originale.
-
-Alcuni esempi di metodi array immutabili:
-
-- **map():** Restituisce un nuovo array applicando una funzione a ciascun elemento dell'array originale
-- **filter():** Restituisce un nuovo array contenente solo gli elementi che soddisfano una determinata condizione
-- **concat():** Concatena uno o più array a un array esistente, restituendo un nuovo array
-- **slice():** Restituisce una parte di un array, senza modificarlo
-- **reduce():** Applica una funzione riduttiva a ciascun elemento dell'array, restituendo un singolo valore risultante
-
-# Proprietà e metodi
-
-JavaScript fornisce una serie di proprietà e metodi integrati per lavorare con gli array. Alcuni di questi includono:
-
-- **length:** Proprietà che restituisce il numero di elementi in un array
-- **push():** Metodo che aggiunge uno o più elementi alla fine di un array
-- **pop():** Metodo che rimuove e restituisce l'ultimo elemento di un array
-- **shift():** Metodo che rimuove e restituisce il primo elemento di un array
-- **unshift():** Metodo che aggiunge uno o più elementi all'inizio di un array
-- **splice():** Metodo che consente di aggiungere, rimuovere o sostituire elementi in un array
-
 ## Ritorno di una funzione
 
 Quando diciamo che una funzione "ritorna qualcosa", intendiamo che la funzione produce un valore che può essere utilizzato in seguito nel programma. Questo valore può essere di qualsiasi tipo: numerico, stringa, array, oggetto o persino un'altra funzione.
@@ -325,3 +291,21 @@ chiave extends rientra nel concetto di ereditarietà perchè estenderà propriet
 
 - cercare concetto di polimorfismo
 - funzione super: è un metodo che chiama una classe e la passa alla classe "padre"
+
+## Diagramma ER (Entity-Relationship Diagram)
+Strumento visivo utilizzato per modellare la struttura logica di un database. 
+Questo tipo di diagramma rappresenta le entità all'interno del sistema, le loro proprietà e le relazioni tra di esse.
+
+### Componenti
+1. **Entità**: Rappresentate da rettangoli, sono gli oggetti o concetti principali di cui si desidera conservare informazioni.
+2. **Relazioni**: Rappresentate da rombi, indicano come le entità sono collegate tra loro.
+3. **Attributi**: Rappresentati da ovali, descrivono le proprietà delle entità.
+4. **Chiave Primaria**: Attributo unico che identifica univocamente un'istanza di un'entità, spesso sottolineato.
+5. **Relazioni 1 a N, N a 1, e N a N**: Indicano il tipo di associazione tra le entità.
+
+### Vantaggi
+Un diagramma ER è uno strumento potente per la progettazione di database e sistemi, e la sua implementazione può essere un ottimo modo per simulare e gestire dati complessi in applicazioni web.
+
+- **Validazione delle Relazioni**: È importante assicurarsi che le relazioni siano valide.
+- **Chiarezza del Modello**: Aiuta a visualizzare la struttura e le relazioni tra le entità, facilitando la comprensione e la progettazione del sistema.
+- **Implementazione**: La traduzione del modello ER in codice JavaScript richiede la creazione di classi e la gestione delle relazioni tra le istanze di queste classi.

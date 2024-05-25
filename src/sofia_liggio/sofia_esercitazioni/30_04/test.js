@@ -105,3 +105,45 @@ function addParagraph() {
 }
 
 bottoneNuovoParagrafo.addEventListener('click', addParagraph);
+
+// Rimozione di Elementi. 
+// Scrivi una funzione rimuoviUltimoElemento che accetta un array e rimuove l'ultimo elemento dell'array.
+
+const persone = ["consuelo", "christian", "andrea", "gabriele"];
+const animali = ["cani", "gatti"];
+
+function rimuoviUltimoElemento(array){ // rendo una funzione dinamica, qualsiasi array riceve andrà a modificare quello specifico. 
+  // il nome che è stato passato come elemento (array) sarà TUTTI  i parametri che passerò quando richiamo la funzione (vedi 120-121).
+  array.pop();
+}
+
+rimuoviUltimoElemento(persone); // qui scrivo il tipo di parametro che dovrò passare
+rimuoviUltimoElemento(animali); // in console spunterà solo cani e tutti i nomi tranne gabriele
+
+
+// Inserimento di Elementi. 
+// Scrivi una funzione aggiungiElemento che accetta un array e un elemento come parametri e aggiunge l'elemento alla fine dell'array.
+const colori = ["rosso", "verde", "blu"];
+
+function aggiungiElemento(e, array) {
+  array.push(e);
+}
+aggiungiElemento("giallo", colori);
+
+
+// Ricerca di Elementi.
+// Scrivi una funzione trovaElemento che accetta un array e un elemento come parametri e 
+// restituisce true se l'elemento è presente nell'array, altrimenti false.
+
+const luoghi = ["mare", "montagna", "campeggio"];
+
+
+function trovaElemento(elementoDaTrovare, arrayDaInserire) {
+  arrayDaInserire.find(function (elementoDaCercare) {
+    if (elementoDaCercare === elementoDaTrovare) console.log(elementoDaTrovare,true);
+    else console.log(elementoDaTrovare,false);
+    });
+}
+trovaElemento("montagna", luoghi);
+// spunta false/true/false perché cicla i tre elementi e ne restitutisce true soltanto uno.
+
