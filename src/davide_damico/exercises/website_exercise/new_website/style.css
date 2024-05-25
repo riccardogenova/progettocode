@@ -10,7 +10,7 @@ body {
   line-height: 2;
   font-size: 18px;
   font-family: 'Lato', sans-serif;
-  color: #000000;
+  color: #cacacacf;
   height: 100%;
   margin: 0;
 }
@@ -19,7 +19,7 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
-  background-image: url('https://i.ibb.co/hLVsxRN/87e9575838649d0237c617948a967993.jpg');
+  background-image: url('https://i.ibb.co/RQcWTqg/7a5e8efa4d7644e054fb4e4517c8bf00.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -32,7 +32,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   width: 100%;
   height: 100%;
 }
@@ -46,7 +46,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10px;
   padding: 50px 90px 50px 50px;
 }
 
@@ -59,7 +59,7 @@ header {
 
 .logo > a {
   text-decoration: none;
-  color: black;
+  color: #cacacacf;
   font-weight: bolder;
 }
 
@@ -74,7 +74,7 @@ header {
 
 .menu > li > a {
   text-decoration: none;
-  color: black;
+  color: #cacacacf;
 }
 
 .menu > li > a:hover {
@@ -95,10 +95,10 @@ main {
   margin-top: 150px;
   margin-right: 110px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.575);
+  /* background-color: rgba(255, 255, 255, 0.575); */
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-align: justify;
-  color: #000000;
+  color: #cacacacf;
 }
 
 .main-title {
@@ -122,10 +122,10 @@ main {
   margin-top: 440px;
   margin-right: 110px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.575);
+  /* background-color: rgba(255, 255, 255, 0.575); */
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-align: justify;
-  color: #000000;
+  color: #cacacacf;
 }
 
 .box-opinno {
@@ -138,10 +138,10 @@ main {
   border-radius: 10px;
   height: 360px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.575);
+  /* background-color: rgba(255, 255, 255, 0.575); */
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   text-align: justify;
-  color: #000000;
+  color: #cacacacf;
 }
 
 .trained {
@@ -175,7 +175,7 @@ footer {
   margin-top: 6px;
   line-height: 1;
   text-decoration: none;
-  color: #000000;
+  color: #cacacacf;
 }
 
 .links > li > a:hover {
